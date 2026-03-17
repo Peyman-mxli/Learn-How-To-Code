@@ -1,0 +1,87 @@
+📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
+"""
+📁 Assert0Statements-Examples
+
+Topic: Exception Handling — Assert Statements
+
+This file contains RUNNABLE EXAMPLES showing how assert
+statements are used to validate conditions during development.
+
+How to use this file:
+
+Run it with: python AssertStatements_Examples.py
+
+Read the comment before each example
+
+Observe how assertions catch logical errors early
+"""
+
+==================================================
+Example 1 — Simple assertion
+==================================================
+
+print("\nExample 1 — Simple assertion")
+
+age = 18
+
+assert age >= 0
+print("Age is valid")
+
+==================================================
+Example 2 — Assertion with message
+==================================================
+
+print("\nExample 2 — Assertion with custom message")
+
+temperature = -300
+
+try:
+assert temperature >= -273.15, "Temperature below absolute zero!"
+except AssertionError as e:
+print("Assertion error:", e)
+
+==================================================
+Example 3 — Assertion inside a function
+==================================================
+
+print("\nExample 3 — Assertion inside a function")
+
+def calculate_average(numbers):
+assert len(numbers) > 0, "List must not be empty"
+return sum(numbers) / len(numbers)
+
+try:
+result = calculate_average([10, 20, 30])
+print("Average:", result)
+except AssertionError as e:
+print("Assertion error:", e)
+
+==================================================
+Example 4 — Assertion for internal logic
+==================================================
+
+print("\nExample 4 — Assertion for internal logic")
+
+def withdraw(balance, amount):
+assert amount >= 0, "Withdrawal amount must be positive"
+assert balance >= amount, "Insufficient funds"
+return balance - amount
+
+try:
+remaining = withdraw(1000, 250)
+print("Remaining balance:", remaining)
+except AssertionError as e:
+print("Assertion error:", e)
+
+==================================================
+End of Assert-Statements-Examples
+==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
