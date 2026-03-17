@@ -1,0 +1,72 @@
+📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
+"""
+📁 AssertStatements-Tasks
+
+Topic: Exception Handling — Assert Statements
+
+This file contains PRACTICE TASKS to help you master using
+assert statements for debugging and validating internal logic.
+
+Instructions:
+
+Complete tasks from Rank 1 to Rank 5
+
+Focus on using assert correctly (not for user input)
+
+Do NOT check the solutions until you finish all tasks
+"""
+
+==================================================
+Rank 1 — Positive Number Assertion
+==================================================
+Task:
+Write a program that defines a variable number.
+Use an assert statement to ensure the number is positive.
+If the assertion fails, display a clear error message.
+==================================================
+Rank 2 — Non-Empty String Check
+==================================================
+Task:
+Create a variable text.
+Use an assert statement to ensure the string is not empty.
+Include a custom message if the assertion fails.
+==================================================
+Rank 3 — List Validation Function
+==================================================
+Task:
+Write a function check_list(items).
+Use assert to ensure the list has at least one element.
+Return the list if valid.
+==================================================
+Rank 4 — Function Preconditions
+==================================================
+Task:
+Write a function divide(a, b).
+Use multiple assert statements to:
+- Ensure a is a number
+- Ensure b is a number
+- Ensure b is not zero
+Return the division result.
+==================================================
+Rank 5 — Protect Internal Logic
+==================================================
+Task:
+Write a function process_scores(scores).
+Use assert to ensure:
+- The list is not empty
+- All values are numbers
+- All values are between 0 and 100
+The assertions should protect internal logic
+(NOT user input handling).
+==================================================
+End of Assert-Statements-Tasks
+==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
