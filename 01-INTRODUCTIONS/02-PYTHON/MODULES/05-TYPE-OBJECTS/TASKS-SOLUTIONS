@@ -1,0 +1,145 @@
+"""
+📘 Module — Type Objects —(type, isinstance, id)
+
+✅ Tasks Solutions File (Rank 1 → Rank 5)
+
+This file contains one possible set of correct solutions.
+Your own solutions may differ and still be valid,
+as long as the logic and type handling are correct.
+"""
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Task 1 Solution:
+number = 10
+text = "Python"
+flag = True
+
+print(number, type(number))
+print(text, type(text))
+print(flag, type(flag))
+
+# Task 2 Solution:
+value = 5
+print(type(value))
+
+value = "Five"
+print(type(value))
+
+# Task 3 Solution:
+pi = 3.14
+print(type(pi) == float)
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Task 4 Solution:
+a = 50
+b = 50
+
+print(id(a))
+print(id(b))
+
+# Task 5 Solution:
+s1 = "hello"
+s2 = "hello"
+
+print(s1 == s2)
+print(s1 is s2)
+
+
+# Task 6 Solution:
+num = 7
+print(isinstance(num, (int, float)))
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Task 7 Solution:
+list1 = [1, 2, 3]
+list2 = list1
+
+list2.append(4)
+
+print(list1)
+print(list2)
+
+# Task 8 Solution:
+x = 10
+old_id = id(x)
+print(old_id)
+
+x = 20
+new_id = id(x)
+print(new_id)
+
+# Task 9 Solution:
+def print_type_if_not_string(value):
+    if not isinstance(value, str):
+        print(type(value))
+
+print_type_if_not_string(10)
+print_type_if_not_string("Python")
+# ===========================================================================
+# 🔴 Rank 4 — Advanced
+# ===========================================================================
+# Task 10 Solution:
+a = [1, 2]
+b = a
+
+print(a is b)
+
+# Task 11 Solution:
+def square_number(value):
+    if isinstance(value, (int, float)):
+        return value ** 2
+    return "Invalid input"
+
+print(square_number(4))
+print(square_number("4"))
+
+# Task 12 Solution:
+x = [1, 2, 3]
+y = [1, 2, 3]
+
+print(x == y)
+print(x is y)
+# ===========================================================================
+# 🔵 Rank 5 — Professional
+# ===========================================================================
+# Task 13 Solution:
+def inspect_object(obj):
+    print("Value:", obj)
+    print("Type:", type(obj))
+    print("ID:", id(obj))
+
+inspect_object(42)
+inspect_object("Python")
+
+
+# Task 14 Solution:
+def safe_add(a, b):
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+        return a + b
+    return "Addition not allowed"
+
+print(safe_add(3, 5))
+print(safe_add("3", 5))
+
+
+# Task 15 Solution:
+mixed_list = [10, "hello", 3.5, True, None, 7]
+
+for item in mixed_list:
+    if isinstance(item, (int, float)) and not isinstance(item, bool):
+        print(item)
+# ===========================================================================
+# 🏁 End of Solutions
+# ===========================================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
