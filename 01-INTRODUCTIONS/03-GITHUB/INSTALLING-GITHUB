@@ -1,0 +1,173 @@
+## 💾 Step 1: Create a GitHub Account
+
+1. Go to the official website:
+   👉 https://github.com/
+2. Click **Sign up**
+3. Create your account (username, email, password)
+4. Verify your email
+
+✅ Your GitHub account is now ready.
+
+---
+
+## 💻 Step 2: Install Git (REQUIRED)
+
+Git must be installed on your computer.
+
+### 🔹 Download Git
+Official website:
+
+👉 https://git-scm.com/downloads
+
+Choose your operating system and download.
+
+---
+
+### 🔹 Install Git (Windows)
+During installation:
+- Use default options
+- Choose **Git from the command line and also from 3rd-party software**
+- Keep default editor (you can change later)
+
+Finish installation.
+
+---
+
+### 🔹 Verify Git Installation
+
+Open **Command Prompt** or **PowerShell** and type:
+
+```bash
+git --version
+
+If you see a version number → ✅ Git is installed correctly.
+
+---
+
+Step 3: Connect GitHub to Your Computer
+🔹 Configure Git (First Time Only)
+
+Run these commands (replace with your info):
+
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+
+This information will appear in your commits.
+
+---
+
+🧩 Using GitHub with Visual Studio Code
+
+VS Code has built-in Git support.
+
+🔹 Check Git in VS Code
+
+Open VS Code
+
+Open a folder
+
+Click Source Control icon (left sidebar)
+
+If Git is installed, VS Code will detect it automatically.
+
+---
+
+📂 Creating Your First Git Repository
+
+Option 1: From GitHub Website
+
+-Go to GitHub
+
+-Click New repository
+
+-Name it (example):Learning_Python_2025
+-Add a README
+
+-Click Create repository
+
+---
+
+Option 2: Clone Repository to Your Computer
+
+In VS Code terminal:
+
+git clone https://github.com/USERNAME/REPOSITORY_NAME.git
+
+Example:
+
+git clone https://github.com/Peymanmxli-stack/Learning_Python_2025.git
+
+🔄 Basic Git Commands (Beginner) 
+
+Command	                        Description
+git status	                 Check file changes
+git add .	                   Stage all changes
+git commit -m "message"	       Save changes
+git push	                    Upload to GitHub
+git pull	                     Download updates
+
+Example workflow:
+
+git add .
+git commit -m "Add new module"
+git push
+
+❌ Common Beginner Mistakes
+
+-❌ Git not installed
+
+-❌ Not logged into GitHub
+
+-❌ Forgetting to commit
+
+-❌ Forgetting to push changes
+
+-❌ Editing files outside repository folder
+
+---
+
+✅ What You Should Know Before Moving On
+
+Before continuing, you should:
+
+✔️ Have a GitHub account
+
+✔️ Have Git installed
+
+✔️ Clone a repository
+
+✔️ Push code to GitHub
+
+Once completed, you are ready to manage your projects professionally 🚀
+
+---
+
+
+
+## 🧭 Recommended Folder Structure
+
+
+00-introduction-and-setup/
+│
+├── README.md
+│
+├── python/
+│ └── README.md
+│
+├── visual-studio-code/
+│ └── README.md
+│
+└── github/
+└── README.md
+
+---
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+
+
