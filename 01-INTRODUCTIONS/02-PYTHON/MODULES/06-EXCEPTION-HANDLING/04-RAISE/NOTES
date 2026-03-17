@@ -1,0 +1,123 @@
+📘 Module — Exception Handling — (raise)
+
+"""
+ 📁 Notes.py
+
+Topic: Exception Handling — raise (manual exception control)
+
+This file contains STUDY NOTES explaining how and why `raise`
+controls program flow in Python.
+
+It focuses on concepts, rules, and behavior — not runnable exercises.
+"""
+# ==================================================
+# 1. What is `raise`?
+# ==================================================
+# `raise` is used to manually trigger an exception.
+#
+# Python normally raises exceptions automatically (e.g. ZeroDivisionError),
+# but `raise` allows the programmer to decide when an error should occur.
+# ==================================================
+# 2. Why `raise` is Important
+# ==================================================
+# Not all errors come from Python itself.
+# Many errors come from invalid logic or invalid data.
+#
+# Examples:
+# - Invalid user input
+# - Values outside allowed ranges
+# - Broken business rules
+# - Security or permission checks
+#
+# `raise` allows you to stop execution and signal these problems clearly.
+# ==================================================
+# 3. Basic Syntax
+# ==================================================
+# raise ExceptionType("Optional error message")
+#
+# Examples:
+# raise ValueError("Invalid value")
+# raise TypeError("Wrong data type")
+# ==================================================
+# 4. Execution Flow of `raise`
+# ==================================================
+# When Python encounters `raise`:
+# 1. Normal execution stops immediately
+# 2. Python searches for a matching `except` block
+# 3. If found, the exception is handled
+# 4. If not found, the program crashes
+# 5. `finally` (if present) ALWAYS executes before exit
+# ==================================================
+# 5. `raise` inside try / except
+# ==================================================
+# `raise` is often used inside a try block to enforce rules.
+#
+# try:
+#     if condition_is_wrong:
+#         raise ValueError("Rule violated")
+# except ValueError:
+#     handle_error
+# ==================================================
+# 6. Re-raising Exceptions
+# ==================================================
+# After catching an exception, you may want to raise it again.
+# This preserves the original traceback.
+#
+# except SomeError:
+#     log_error
+#     raise
+# ==================================================
+# 7. Raising Custom Exceptions
+# ==================================================
+# Custom exceptions improve readability and debugging.
+# They should inherit from Exception.
+#
+# Example:
+# class CustomError(Exception):
+#     pass
+#
+# raise CustomError("Something went wrong")
+# ==================================================
+# 8. `raise` vs `return`
+# ==================================================
+# `return`:
+# - Ends a function normally
+# - Indicates success
+# - Does NOT signal an error
+#
+# `raise`:
+# - Ends execution abnormally
+# - Signals an error condition
+# - Can be caught by except
+# ==================================================
+# 9. Important Rules
+# ==================================================
+# - Code after `raise` NEVER executes
+# - Avoid raising generic `Exception`
+# - Prefer specific built-in exceptions
+# - Do not use `raise` for normal control flow
+# ==================================================
+# 10. Best Practices
+# ==================================================
+# ✅ Raise clear and meaningful errors
+# ✅ Validate inputs early
+# ✅ Use custom exceptions for complex systems
+# ❌ Do not hide or ignore exceptions
+# ❌ Do not overuse `raise`
+# ==================================================
+# 11. Key Takeaway
+# ==================================================
+# `raise` gives you FULL control over error signaling.
+# Use it to make your programs safer, clearer, and more professional.
+# ==================================================
+# End of Raise_Notes.py
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
