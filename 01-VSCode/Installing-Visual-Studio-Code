@@ -1,0 +1,71 @@
+## 💾 How to Install Visual Studio Code
+
+### 🔹 Step 1: Download VS Code
+
+Official website (always use this):
+
+👉 https://code.visualstudio.com/
+
+Click **Download** and install it for your operating system.
+
+---
+
+### 🔹 Step 2: Install VS Code
+
+During installation:
+- Use default settings
+- Allow VS Code to add itself to PATH (recommended)
+
+Once installed, open VS Code.
+
+---
+
+## 🧩 Installing Python Support in VS Code
+
+VS Code needs the **Python extension** to work properly with Python.
+
+### 🔹 Steps:
+1. Open VS Code
+2. Click **Extensions** icon (left sidebar)
+3. Search for **Python**
+4. Install **Python (by Microsoft)**
+
+This extension enables:
+- Running Python files
+- Syntax highlighting
+- Code suggestions
+- Debugging
+
+---
+
+## 🐍 Connecting Python to VS Code
+
+### 🔹 Select Python Interpreter
+
+1. Open VS Code
+2. Press:Ctrl + Shift + P
+3. Type:Python: Select Interpreter
+4. Choose the installed Python version (e.g., Python 3.11)
+
+✅ This step is very important.
+
+---
+
+## 📂 Creating Your First Python File##
+
+1. Create a folder on your computer
+2. Open the folder in VS Code:
+- **File → Open Folder**
+3. Create a new file:main.py
+
+### Write your first code:
+```python
+print("Hello from Visual Studio Code!")
+
+## Author##
+- Peyman Miyandashti
+- Polytechnic University of Baja California
+- Information Technology Engineering & Digital Innovation
+- From Mexico
+- Year: 2025
+- ID: 250161
