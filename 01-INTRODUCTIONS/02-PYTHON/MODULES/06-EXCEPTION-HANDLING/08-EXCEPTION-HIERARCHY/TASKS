@@ -1,0 +1,81 @@
+"""
+📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
+
+📁 Exception Hierarchy — Tasks
+
+Complete the following exercises to practice understanding
+Python's exception hierarchy.
+
+Follow the difficulty ranking from Rank 1 (Beginner)
+to Rank 5 (Professional).
+"""
+
+# --------------------------------------------------
+# Rank 1 — Beginner
+# --------------------------------------------------
+# Task 1:
+# Convert the string "abc" to an integer.
+# Catch only the correct exception.
+
+# Write your code below:
+
+
+
+# --------------------------------------------------
+# Rank 2 — Easy
+# --------------------------------------------------
+# Task 2:
+# Divide a number by zero.
+# Catch the exception using its specific type.
+
+# Write your code below:
+
+
+
+# --------------------------------------------------
+# Rank 3 — Intermediate
+# --------------------------------------------------
+# Task 3:
+# Access a non-existing index in a list.
+# Catch the exception and print its name using type().
+
+# Write your code below:
+
+
+
+# --------------------------------------------------
+# Rank 4 — Advanced
+# --------------------------------------------------
+# Task 4:
+# Demonstrate exception inheritance.
+# Raise a ZeroDivisionError and catch it using ArithmeticError.
+
+# Write your code below:
+
+
+
+# --------------------------------------------------
+# Rank 5 — Professional
+# --------------------------------------------------
+# Task 5:
+# Write a try/except block that:
+# - Tries multiple operations
+# - Catches specific exceptions first
+# - Uses a generic Exception block last
+
+# Write your code below:
+
+
+
+# --------------------------------------------------
+# End of Tasks
+# --------------------------------------------------
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
