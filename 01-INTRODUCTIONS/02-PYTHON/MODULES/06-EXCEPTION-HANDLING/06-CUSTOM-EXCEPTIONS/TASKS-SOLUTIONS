@@ -1,0 +1,115 @@
+📘 Module —  Custom Exceptions — (Class-Based)
+
+"""
+📁 CustomExceptions-Tasks-Solutions
+
+Topic: Exception Handling — Custom Exceptions (Class-Based)
+
+This file contains SOLUTIONS for all tasks in CustomExceptions_Tasks.py.
+
+Review notes:
+- Pay attention to how custom exceptions are defined
+- Notice where `raise` is used
+- Observe how specific exceptions are caught
+"""
+
+# ==================================================
+# Rank 1 — Create a Simple Custom Exception (Solution)
+# ==================================================
+class EmptyStringError(Exception):
+    pass
+
+text = ""
+
+try:
+    if text == "":
+        raise EmptyStringError("Text cannot be empty")
+except EmptyStringError as e:
+    print("Custom error:", e)
+
+
+# ==================================================
+# Rank 2 — Age Validation (Solution)
+# ==================================================
+class AgeTooLowError(Exception):
+    pass
+
+try:
+    age = int(input("Enter your age: "))
+    if age < 18:
+        raise AgeTooLowError("You must be at least 18 years old")
+except ValueError:
+    print("Invalid age input")
+except AgeTooLowError as e:
+    print(e)
+else:
+    print("Age accepted")
+
+
+# ==================================================
+# Rank 3 — Positive Number Checker (Solution)
+# ==================================================
+class NotPositiveNumberError(Exception):
+    pass
+
+try:
+    number = int(input("Enter a positive number: "))
+    if number <= 0:
+        raise NotPositiveNumberError("Number must be positive")
+except ValueError:
+    print("Invalid number")
+except NotPositiveNumberError as e:
+    print(e)
+else:
+    print("Valid number:", number)
+
+
+# ==================================================
+# Rank 4 — Password Validation Function (Solution)
+# ==================================================
+class PasswordTooShortError(Exception):
+    pass
+
+def check_password(password):
+    if len(password) < 6:
+        raise PasswordTooShortError("Password must be at least 6 characters")
+    return True
+
+try:
+    check_password("123")
+except PasswordTooShortError as e:
+    print("Password error:", e)
+else:
+    print("Password accepted")
+
+
+# ==================================================
+# Rank 5 — Custom Exception Hierarchy (Solution)
+# ==================================================
+class AppError(Exception):
+    pass
+
+class LoginError(AppError):
+    pass
+
+try:
+    raise LoginError("Login failed: invalid credentials")
+except LoginError as e:
+    print("Login error:", e)
+except AppError:
+    print("General application error")
+
+
+# ==================================================
+# End of CustomExceptions-Tasks-Solutions
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
