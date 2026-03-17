@@ -1,0 +1,102 @@
+"""
+📘 Module —  Exception Chaining — (raise ... from ...)
+
+
+Topic: Exception Handling — Exception Chaining (raise ... from ...)
+
+This file contains RUNNABLE EXAMPLES demonstrating how exception
+chaining works using `raise ... from ...`.
+
+How to use this file:
+- Run it with: python ExceptionChaining_Examples.py
+- Read the comment before each example
+- Observe how the original exception is preserved
+"""
+
+# ==================================================
+# Example 1 — Basic exception chaining
+# ==================================================
+print("\nExample 1 — Basic chaining")
+
+try:
+    int("abc")
+except ValueError as e:
+    raise RuntimeError("Conversion failed") from e
+
+
+# ==================================================
+# Example 2 — Chaining into a custom exception
+# ==================================================
+print("\nExample 2 — Built-in → Custom exception")
+
+class DataFormatError(Exception):
+    pass
+
+try:
+    float("xyz")
+except ValueError as e:
+    raise DataFormatError("Invalid numeric format") from e
+
+
+# ==================================================
+# Example 3 — Chaining inside a function
+# ==================================================
+print("\nExample 3 — Function-level chaining")
+
+class FileProcessingError(Exception):
+    pass
+
+def read_number_from_file(filename):
+    try:
+        with open(filename) as file:
+            return int(file.read())
+    except (IOError, ValueError) as e:
+        raise FileProcessingError("Failed to read number from file") from e
+
+try:
+    read_number_from_file("missing.txt")
+except FileProcessingError as e:
+    print("Caught error:", e)
+
+
+# ==================================================
+# Example 4 — Suppressing the original exception
+# ==================================================
+print("\nExample 4 — Suppressing context")
+
+try:
+    int("not_a_number")
+except ValueError:
+    raise RuntimeError("Conversion error") from None
+
+
+# ==================================================
+# Example 5 — Bad vs Good chaining
+# ==================================================
+print("\nExample 5 — Comparison")
+
+# ❌ Bad: original cause hidden
+try:
+    int("oops")
+except ValueError:
+    raise RuntimeError("Something went wrong")
+
+# ✅ Good: original cause preserved
+try:
+    int("oops")
+except ValueError as e:
+    raise RuntimeError("Something went wrong") from e
+
+
+# ==================================================
+# End of Exception-Chaining-Examples
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
