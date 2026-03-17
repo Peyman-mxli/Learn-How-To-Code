@@ -1,0 +1,132 @@
+"""
+📘 Module — Control Flow — For-loops
+Tasks File (Rank 1 → Rank 5)
+
+Instructions:
+- Read each task carefully.
+- Solve the tasks in THIS file first.
+- Do NOT look at the solutions until you have tried seriously.
+- Write clean, readable Python code.
+"""
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Task 1:
+# Use a for loop to print numbers from 1 to 5.
+
+# Your code here:
+
+# Task 2:
+# Loop through the string "Python" and print each character.
+
+# Your code here:
+
+# Task 3:
+# Create a list of three colors and print each one using a for loop.
+
+# Your code here:
+
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Task 4:
+# Use range() to print even numbers from 2 to 10.
+
+# Your code here:
+
+# Task 5:
+# Loop through a list of numbers and print only the numbers greater than 10.
+# Example list: [3, 15, 8, 22, 7]
+
+# Your code here:
+
+# Task 6:
+# Use enumerate() to print the index and value of each item in this list:
+# ["apple", "banana", "cherry"]
+
+# Your code here:
+
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Task 7:
+# Calculate the sum of all numbers in the list [4, 7, 1, 9, 3] using a for loop.
+
+# Your code here:
+
+# Task 8:
+# Count how many times the letter "a" appears in the string "banana".
+
+# Your code here:
+
+# Task 9:
+# Loop through numbers from 1 to 20 and print:
+# - "Fizz" if the number is divisible by 3
+# - "Buzz" if the number is divisible by 5
+# - The number itself otherwise
+
+# Your code here:
+
+# ===========================================================================
+# 🔴 Rank 4 — Advanced
+# ===========================================================================
+# Task 10:
+# Given this list of names:
+# ["peyman", "arlette", "nova", "python"]
+# Print each name capitalized using a for loop.
+
+# Your code here:
+
+# Task 11:
+# Loop through the dictionary below and print:
+# "key -> value"
+user = {
+    "username": "peyman",
+    "active": True,
+    "level": "admin"
+}
+
+# Your code here:
+
+# Task 12:
+# Build a list containing the squares of numbers from 1 to 10
+# using a for loop (NOT list comprehension).
+
+# Your code here:
+
+# ===========================================================================
+# 🟣 Rank 5 — Professional
+# ===========================================================================
+# Task 13:
+# Ask the user to enter 5 numbers (one at a time).
+# Store them in a list and then print the total sum.
+
+# Your code here:
+
+# Task 14:
+# Given a sentence entered by the user, count how many words it has.
+# Hint: use split()
+
+# Your code here:
+
+# Task 15:
+# Create a simple password checker:
+# - Loop through characters in the password
+# - Check if it contains at least one digit
+# - Print "Strong password" or "Weak password"
+
+# Your code here:
+# ===========================================================================
+# 🧠 End of Tasks
+# ===========================================================================
+# Try to solve everything before opening:
+# TASKS-SOLUTIONS
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
