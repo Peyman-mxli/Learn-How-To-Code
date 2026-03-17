@@ -1,0 +1,151 @@
+"""
+📘 Module — Control Flow — For-loops
+Tasks Solutions (Rank 1 → Rank 5)
+These are one possible set of correct solutions.
+Your solution may look different and still be valid.
+Focus on readability, correctness, and Pythonic style.
+"""
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Task 1 Solution:
+for i in range(1, 6):
+    print(i)
+
+
+# Task 2 Solution:
+for char in "Python":
+    print(char)
+
+
+# Task 3 Solution:
+colors = ["red", "green", "blue"]
+for color in colors:
+    print(color)
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Task 4 Solution:
+for i in range(2, 11, 2):
+    print(i)
+
+
+# Task 5 Solution:
+numbers = [3, 15, 8, 22, 7]
+for num in numbers:
+    if num > 10:
+        print(num)
+
+
+# Task 6 Solution:
+fruits = ["apple", "banana", "cherry"]
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Task 7 Solution:
+numbers = [4, 7, 1, 9, 3]
+total = 0
+
+for num in numbers:
+    total += num
+
+print("Sum:", total)
+
+
+# Task 8 Solution:
+word = "banana"
+count = 0
+
+for char in word:
+    if char == "a":
+        count += 1
+
+print("Number of 'a':", count)
+
+
+# Task 9 Solution:
+for number in range(1, 21):
+    if number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
+# ===========================================================================
+# 🔴 Rank 4 — Advanced
+# ===========================================================================
+# Task 10 Solution:
+names = ["peyman", "arlette", "nova", "python"]
+
+for name in names:
+    print(name.capitalize())
+
+
+# Task 11 Solution:
+user = {
+    "username": "peyman",
+    "active": True,
+    "level": "admin"
+}
+
+for key, value in user.items():
+    print(f"{key} -> {value}")
+
+
+# Task 12 Solution:
+squares = []
+
+for i in range(1, 11):
+    squares.append(i ** 2)
+
+print(squares)
+# ===========================================================================
+# 🟣 Rank 5 — Professional
+# ===========================================================================
+# Task 13 Solution:
+numbers = []
+
+for _ in range(5):
+    num = int(input("Enter a number: "))
+    numbers.append(num)
+
+print("Total sum:", sum(numbers))
+
+
+# Task 14 Solution:
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+print("Word count:", len(words))
+
+
+# Task 15 Solution:
+password = input("Enter a password: ")
+has_digit = False
+
+for char in password:
+    if char.isdigit():
+        has_digit = True
+        break
+
+if has_digit:
+    print("Strong password")
+else:
+    print("Weak password")
+
+# ===========================================================================
+# 🧠 Final Notes
+# ===========================================================================
+# ✔ These solutions prioritize clarity and correctness
+# ✔ Alternative solutions are valid if they work correctly
+# ✔ Review your own code and refactor when needed
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
