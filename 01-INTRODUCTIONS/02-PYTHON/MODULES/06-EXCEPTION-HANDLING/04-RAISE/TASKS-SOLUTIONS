@@ -1,0 +1,87 @@
+📘 Module — Exception Handling — (raise)
+
+"""
+📁 Tasks_Solutions FILE
+
+Topic: Exception Handling — raise (manual exception control)
+
+This file contains the complete solutions for:
+Raise_Tasks.py (Rank 1 → Rank 5)
+
+Read each solution carefully and focus on WHY `raise` is used
+instead of normal control flow.
+"""
+# ==================================================
+# Rank 1 — Solution
+# ==================================================
+print("\nRank 1 — Solution")
+age = -5
+
+if age < 0:
+    raise ValueError("Age cannot be negative")
+
+print("Valid age:", age)
+# ==================================================
+# Rank 2 — Solution
+# ==================================================
+print("\nRank 2 — Solution")
+try:
+    number = int(input("Enter a number: "))
+    if number == 0:
+        raise ZeroDivisionError("Zero is not allowed")
+    print("Valid number:", number)
+except ZeroDivisionError as e:
+    print("Caught error:", e)
+# ==================================================
+# Rank 3 — Solution
+# ==================================================
+print("\nRank 3 — Solution")
+
+def withdraw(balance, amount):
+    if amount > balance:
+        raise ValueError("Insufficient funds")
+    return balance - amount
+
+try:
+    print("New balance:", withdraw(100, 30))
+    print("New balance:", withdraw(100, 150))
+except ValueError as e:
+    print("Transaction failed:", e)
+# ==================================================
+# Rank 4 — Solution
+# ==================================================
+print("\nRank 4 — Solution")
+
+class InvalidPasswordError(Exception):
+    pass
+
+try:
+    password = "123"
+    if len(password) < 8:
+        raise InvalidPasswordError("Password must be at least 8 characters long")
+    print("Password accepted")
+except InvalidPasswordError as e:
+    print("Password error:", e)
+# ==================================================
+# Rank 5 — Solution
+# ==================================================
+print("\nRank 5 — Solution")
+
+try:
+    system_value = -1
+    if system_value < 0:
+        raise ValueError("Invalid system value detected")
+finally:
+    print("System cleanup completed")
+# ==================================================
+# End of Raise-Tasks-Solutions
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
