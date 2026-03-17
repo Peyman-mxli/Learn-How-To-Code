@@ -62,9 +62,7 @@ print("Block:", "█")
 # ---------------------------------------------------------------------------
 # ALT codes are a visual enhancement tool.
 # They should support clarity, not reduce it.
-#
-# Next Step:
-# Continue with ALT_Codes_Examples.py
+
 
 👤 Author
 Peyman Miyandashti
