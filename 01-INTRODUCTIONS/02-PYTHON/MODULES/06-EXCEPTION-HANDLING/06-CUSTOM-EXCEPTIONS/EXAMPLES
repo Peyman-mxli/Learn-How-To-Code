@@ -1,0 +1,126 @@
+📘 Module —  Custom Exceptions — (Class-Based)
+"""
+📁 CustomExceptions-Examples
+
+Topic: Exception Handling — Custom Exceptions (Class-Based)
+
+This file contains RUNNABLE EXAMPLES showing how to define,
+raise, and catch custom (user-defined) exceptions in Python.
+
+How to use this file:
+- Run it with: python CustomExceptions_Examples.py
+- Read the comment before each example
+- Observe how custom exceptions improve clarity
+"""
+
+# ==================================================
+# Example 1 — Defining and raising a simple custom exception
+# ==================================================
+print("\nExample 1 — Simple custom exception")
+
+class AgeTooLowError(Exception):
+    pass
+
+age = 16
+
+try:
+    if age < 18:
+        raise AgeTooLowError("User must be at least 18 years old")
+except AgeTooLowError as e:
+    print("Custom error caught:", e)
+
+
+# ==================================================
+# Example 2 — Custom exception with user input
+# ==================================================
+print("\nExample 2 — Input validation with custom exception")
+
+class NegativeNumberError(Exception):
+    pass
+
+try:
+    number = int(input("Enter a positive number: "))
+    if number < 0:
+        raise NegativeNumberError("Negative numbers are not allowed")
+except ValueError:
+    print("Invalid input (not a number)")
+except NegativeNumberError as e:
+    print("Custom error:", e)
+else:
+    print("Valid number entered:", number)
+
+
+# ==================================================
+# Example 3 — Custom exception with a function
+# ==================================================
+print("\nExample 3 — Custom exception inside a function")
+
+class PasswordTooShortError(Exception):
+    pass
+
+def check_password(password):
+    if len(password) < 6:
+        raise PasswordTooShortError("Password must be at least 6 characters")
+    return True
+
+try:
+    check_password("123")
+except PasswordTooShortError as e:
+    print("Password error:", e)
+else:
+    print("Password accepted")
+
+
+# ==================================================
+# Example 4 — Custom exception hierarchy
+# ==================================================
+print("\nExample 4 — Custom exception hierarchy")
+
+class AppError(Exception):
+    pass
+
+class ValidationError(AppError):
+    pass
+
+try:
+    raise ValidationError("Validation failed")
+except ValidationError as e:
+    print("Validation error:", e)
+except AppError:
+    print("General application error")
+
+
+# ==================================================
+# Example 5 — Bad vs Good exception design
+# ==================================================
+print("\nExample 5 — Exception design comparison")
+
+# ❌ Bad: generic exception
+try:
+    raise Exception("Something went wrong")
+except Exception as e:
+    print("Generic error:", e)
+
+# ✅ Good: custom exception
+class PaymentError(Exception):
+    pass
+
+try:
+    raise PaymentError("Payment was declined")
+except PaymentError as e:
+    print("Payment error:", e)
+
+
+# ==================================================
+# End of CustomExceptions-Examples
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
