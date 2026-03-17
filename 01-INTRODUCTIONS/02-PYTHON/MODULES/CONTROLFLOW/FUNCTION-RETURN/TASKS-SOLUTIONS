@@ -1,0 +1,139 @@
+"""
+📘 Module — Functions — return(Output & Control Flow)
+
+====================================================
+FUNCTIONS — RETURN (TASK SOLUTIONS)
+====================================================
+
+This file contains clean, correct, and professional
+solutions for all Functions — return tasks.
+
+Rules followed:
+✔ Every function uses `return`
+✔ No unnecessary print() inside functions
+✔ Returned values are stored and used
+✔ Clear execution flow
+✔ Professional formatting
+"""
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+# Task 1 Solution
+def give_number():
+    return 10
+
+number = give_number()
+print(number)
+
+# Task 2 Solution
+def get_name():
+    return "Peyman Miyandashti"
+
+name = get_name()
+print(name)
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+# Task 3 Solution
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(5, 7)
+print(result)
+
+
+# Task 4 Solution
+def is_adult(age):
+    if age >= 18:
+        return True
+    return False
+
+adult_status = is_adult(20)
+print(adult_status)
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+# Task 5 Solution
+def calculate_area(length, width):
+    return length * width
+
+area = calculate_area(8, 5)
+print(area)
+
+
+# Task 6 Solution
+def grade_evaluator(score):
+    if score >= 90:
+        return "Excellent"
+    elif score >= 75:
+        return "Good"
+    elif score >= 60:
+        return "Pass"
+    else:
+        return "Fail"
+
+grade = grade_evaluator(82)
+print(grade)
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+# Task 7 Solution
+def validate_username(username):
+    if username == "":
+        return "Invalid"
+    return "Valid"
+
+status = validate_username("admin_user")
+print(status)
+
+# Task 8 Solution
+def login_status(username, password_length):
+    if password_length < 8:
+        return "Weak Password"
+    return "Login Accepted"
+
+login_result = login_status("admin", 10)
+print(login_result)
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ===================================================
+# Task 9 Solution
+def employee_bonus(salary, performance_score):
+    if performance_score >= 90:
+        return salary * 0.20
+    elif performance_score >= 75:
+        return salary * 0.10
+    else:
+        return 0
+
+bonus = employee_bonus(50000, 88)
+print(bonus)
+
+
+# Task 10 Solution
+def system_access_level(role):
+    if role == "admin":
+        return "Full Access"
+    elif role == "user":
+        return "Limited Access"
+    else:
+        return "No Access"
+
+access = system_access_level("admin")
+print(access)
+# ====================================================
+# END OF SOLUTIONS — RETURN
+# ====================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
