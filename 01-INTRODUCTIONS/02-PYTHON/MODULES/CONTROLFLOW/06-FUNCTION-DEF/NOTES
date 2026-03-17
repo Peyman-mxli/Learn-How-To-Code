@@ -1,0 +1,259 @@
+"""
+📘 Module — Functions — def (Function Definition)
+
+====================================================
+FUNCTIONS — DEF (FUNCTION DEFINITION)
+====================================================
+
+This notes file explains how functions are DEFINED in Python
+using the `def` keyword.
+
+This module focuses strictly on:
+- What a function is
+- Why functions exist
+- How to define a function
+- How parameters work
+- How function calls execute code
+
+❗ The `return` statement is intentionally NOT covered here.
+It is treated as a separate professional topic.
+"""
+
+# ====================================================
+# 1. WHAT IS A FUNCTION?
+# ====================================================
+"""
+A function is a named block of code that performs a specific task.
+
+Instead of writing the same code multiple times, we define it once
+and reuse it whenever needed.
+
+Think of a function as:
+- A machine
+- It receives input (parameters)
+- It performs operations
+- It executes code when called
+
+Functions help transform scripts into structured programs.
+"""
+
+# ====================================================
+# 2. WHY WE USE FUNCTIONS
+# ====================================================
+"""
+Functions are essential in professional programming for many reasons:
+
+1. Reusability
+   Write once, use many times.
+
+2. Readability
+   Code becomes easier to understand.
+
+3. Maintainability
+   Changes are made in one place.
+
+4. Debugging
+   Errors are isolated in small units.
+
+5. Team Collaboration
+   Developers can work on separate functions.
+
+Without functions, real-world software would be impossible to manage.
+"""
+
+# ====================================================
+# 3. THE `def` KEYWORD
+# ====================================================
+"""
+The `def` keyword is used to DEFINE a function.
+
+Syntax:
+
+def function_name(parameters):
+    function body
+
+Key rules:
+- `def` starts the function definition
+- Function name must follow naming rules
+- Parentheses () hold parameters
+- Colon (:) starts the function block
+- Indentation defines the function body
+"""
+
+def example_function():
+    print("This is a function defined using def")
+
+# ====================================================
+# 4. FUNCTION NAMING RULES
+# ====================================================
+"""
+Function names must follow Python identifier rules:
+
+✔ Must start with a letter or underscore
+✔ Cannot start with a number
+✔ Cannot use spaces
+✔ Cannot use reserved keywords
+✔ Should use snake_case (professional standard)
+
+Good examples:
+- calculate_total
+- print_report
+- get_user_input
+
+Bad examples:
+- 1function
+- my Function
+- def
+"""
+
+def calculate_sum():
+    print("Function names should describe what they do")
+
+# ====================================================
+# 5. FUNCTION PARAMETERS
+# ====================================================
+"""
+Parameters are variables listed inside the function definition.
+
+They allow data to be passed INTO the function.
+
+Parameters act as placeholders that receive values when the function is called.
+"""
+
+def greet_user(name):
+    print("Hello", name)
+
+# ====================================================
+# 6. PARAMETERS VS ARGUMENTS
+# ====================================================
+"""
+Parameter:
+- Variable defined in the function definition
+
+Argument:
+- Actual value passed when calling the function
+"""
+
+def show_age(age):     # age is a parameter
+    print("Age:", age)
+
+show_age(25)           # 25 is an argument
+
+# ====================================================
+# 7. MULTIPLE PARAMETERS
+# ====================================================
+"""
+Functions can accept multiple parameters.
+
+Each parameter is separated by a comma.
+"""
+
+def display_user_info(name, city, profession):
+    print("Name:", name)
+    print("City:", city)
+    print("Profession:", profession)
+
+# ====================================================
+# 8. FUNCTION CALLING (EXECUTION FLOW)
+# ====================================================
+"""
+Defining a function does NOT execute it.
+
+A function runs ONLY when it is CALLED.
+
+Execution flow:
+1. Python reads the function definition
+2. Python stores the function in memory
+3. Code runs only when function is called
+"""
+
+def announce():
+    print("Function executed")
+
+# Function call
+announce()
+
+# ====================================================
+# 9. INDENTATION RULES
+# ====================================================
+"""
+Indentation defines the function body.
+
+Everything indented under `def` belongs to the function.
+Incorrect indentation causes syntax errors.
+"""
+
+def indentation_example():
+    print("This line is inside the function")
+    print("So is this one")
+
+# ====================================================
+# 10. DOCSTRINGS (INTRODUCTION)
+# ====================================================
+"""
+A docstring is a string that documents what a function does.
+
+It is placed immediately after the function definition.
+"""
+
+def multiply(a, b):
+    """
+    This function multiplies two numbers.
+    It demonstrates how to document a function.
+    """
+    print(a * b)
+
+# ====================================================
+# 11. FUNCTIONS WITHOUT PARAMETERS
+# ====================================================
+"""
+Not all functions need parameters.
+
+Some functions simply perform tasks.
+"""
+
+def show_welcome_message():
+    print("Welcome to the system")
+
+# ====================================================
+# 12. FUNCTIONS AS BUILDING BLOCKS
+# ====================================================
+"""
+Professional software is built using many small functions.
+
+Each function should:
+- Do ONE job
+- Be easy to read
+- Be easy to test
+"""
+
+def validate_login():
+    print("Validating user credentials")
+
+def load_dashboard():
+    print("Loading dashboard")
+
+# ====================================================
+# END OF NOTES — def
+# ====================================================
+
+"""
+Next Module:
+FUNCTIONS — RETURN
+
+That module will cover:
+- return keyword
+- returning values
+- multiple returns
+- early exits
+- function outputs
+"""
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
