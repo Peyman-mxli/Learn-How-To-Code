@@ -1,0 +1,78 @@
+📘 Module — Exception Handling — (raise)
+
+"""
+📁 EXAMPLE FILE
+Topic: Exception Handling — raise (manual exception control)
+
+This file contains runnable examples showing how `raise` changes
+program execution flow.
+
+How to use this file:
+- Run it with: python Raise_Examples.py
+- Read the comment before each example
+- Observe where execution stops
+"""
+# ==================================================
+# Example 1 — Simple manual raise
+# ==================================================
+print("\nExample 1 — Simple raise")
+age = -3
+
+if age < 0:
+    raise ValueError("Age cannot be negative")
+
+print("This line will never run")
+# ==================================================
+# Example 2 — raise inside try / except
+# ==================================================
+print("\nExample 2 — raise with handling")
+try:
+    number = int(input("Enter a positive number: "))
+    if number <= 0:
+        raise ValueError("Number must be greater than zero")
+    print("Valid number:", number)
+except ValueError as e:
+    print("Caught error:", e)
+# ==================================================
+# Example 3 — re-raising an exception
+# ==================================================
+print("\nExample 3 — re-raise")
+try:
+    x = int("abc")
+except ValueError:
+    print("Logging error before re-raise")
+    raise
+# ==================================================
+# Example 4 — raise with finally
+# ==================================================
+print("\nExample 4 — raise + finally")
+try:
+    value = -10
+    if value < 0:
+        raise ValueError("Negative value detected")
+finally:
+    print("Finally always executes")
+# ==================================================
+# Example 5 — Custom exception
+# ==================================================
+print("\nExample 5 — custom exception")
+
+class InvalidScoreError(Exception):
+    pass
+
+score = 150
+
+if score > 100:
+    raise InvalidScoreError("Score cannot exceed 100")
+# ==================================================
+# End of Raise-Examples
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
