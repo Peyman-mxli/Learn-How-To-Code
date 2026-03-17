@@ -1,0 +1,129 @@
+📘 Module — Exception Handling — (try / else)
+
+"""
+Try-Else-Examples
+
+Topic: Exception Handling — try / else
+
+This file contains runnable examples demonstrating how the `else`
+block works with `try` and `except`.
+
+How to use this file:
+- Run it with: python Try_Else_Examples.py
+- Read the comment before each example
+- Observe when `else` runs and when it is skipped
+"""
+
+# ==================================================
+# Example 1 — else runs when no exception occurs
+# ==================================================
+print("\nExample 1 — Successful try")
+try:
+    x = int("20")
+except ValueError:
+    print("Conversion failed")
+else:
+    print("Conversion successful:", x)
+
+
+# ==================================================
+# Example 2 — else is skipped when exception occurs
+# ==================================================
+print("\nExample 2 — Exception occurs")
+try:
+    x = int("abc")
+except ValueError:
+    print("Conversion failed")
+else:
+    print("This will NOT run")
+
+
+# ==================================================
+# Example 3 — Proper input validation using else
+# ==================================================
+print("\nExample 3 — Input validation")
+try:
+    number = int(input("Enter an integer: "))
+except ValueError:
+    print("Invalid input")
+else:
+    print("Valid input received:", number)
+
+
+# ==================================================
+# Example 4 — try / else with finally
+# ==================================================
+print("\nExample 4 — else with finally")
+file = None
+try:
+    file = open("example.txt", "w")
+    file.write("Hello from try / else example")
+except IOError:
+    print("File error")
+else:
+    print("File written successfully")
+finally:
+    if file:
+        file.close()
+        print("File closed (finally)")
+
+
+# ==================================================
+# Example 5 — Bad vs Good structure comparison
+# ==================================================
+print("\nExample 5 — Structure comparison")
+
+# ❌ Bad practice
+try:
+    x = int("5")
+    result = x * 2
+    print(result)
+except ValueError:
+    print("Error")
+
+# ✅ Good practice
+try:
+    x = int("5")
+except ValueError:
+    print("Error")
+else:
+    result = x * 2
+    print(result)
+
+
+# ==================================================
+# End of Try-Else-Examples
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
