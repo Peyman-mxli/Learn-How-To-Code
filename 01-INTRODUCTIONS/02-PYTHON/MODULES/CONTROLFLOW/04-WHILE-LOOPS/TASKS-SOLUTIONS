@@ -1,0 +1,186 @@
+"""
+📘 Module — Control Flow — While-loops
+
+📁 Tasks Solutions (Rank 1 → Rank 5)
+
+These solutions represent one correct approach.
+Different implementations are valid if they work correctly.
+"""
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Task 1 Solution:
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+
+# Task 2 Solution:
+word = "Python"
+index = 0
+
+while index < len(word):
+    print(word[index])
+    index += 1
+
+
+# Task 3 Solution:
+count = 0
+while count < 3:
+    print("Hello")
+    count += 1
+
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Task 4 Solution:
+num = 2
+while num <= 10:
+    print(num)
+    num += 2
+
+
+# Task 5 Solution:
+numbers = [10, 20, 30, 40]
+index = 0
+
+while index < len(numbers):
+    print(numbers[index])
+    index += 1
+
+
+# Task 6 Solution:
+count = 5
+while count >= 1:
+    print(count)
+    count -= 1
+
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Task 7 Solution:
+total = 0
+num = 1
+
+while num <= 10:
+    total += num
+    num += 1
+
+print("Sum:", total)
+
+
+# Task 8 Solution:
+total = 0
+value = None
+
+while value != 0:
+    value = int(input("Enter a number (0 to stop): "))
+    total += value
+
+print("Total sum:", total)
+
+
+# Task 9 Solution:
+number = 51
+
+while True:
+    if number % 7 == 0:
+        print("First number found:", number)
+        break
+    number += 1
+
+# ===========================================================================
+# 🔴 Rank 4 — Advanced
+# ===========================================================================
+# Task 10 Solution:
+password = ""
+
+while len(password) < 6:
+    password = input("Enter a password (min 6 chars): ")
+
+print("Access granted")
+
+
+# Task 11 Solution:
+running = True
+counter = 0
+
+while running:
+    print("Iteration:", counter + 1)
+    counter += 1
+
+    if counter == 3:
+        running = False
+
+
+# Task 12 Solution:
+items = ["Python", "Java", "C++"]
+
+while items:
+    removed_item = items.pop()
+    print("Removed:", removed_item)
+
+# ===========================================================================
+# 🟣 Rank 5 — Professional
+# ===========================================================================
+# Task 13 Solution:
+choice = ""
+
+while choice != "exit":
+    print("\nMenu:")
+    print("1. Say Hello")
+    print("2. Show Date")
+    print("Type 'exit' to quit")
+
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        print("Hello!")
+    elif choice == "2":
+        print("Today is a great day.")
+    elif choice != "exit":
+        print("Invalid option")
+
+
+# Task 14 Solution:
+number = -1
+
+while number <= 0:
+    number = int(input("Enter a number greater than 0: "))
+
+print("Valid number entered:", number)
+
+
+# Task 15 Solution:
+attempts = 3
+
+while attempts > 0:
+    password = input("Enter password: ")
+
+    if password == "admin123":
+        print("Login successful")
+        break
+
+    attempts -= 1
+    print("Attempts left:", attempts)
+
+if attempts == 0:
+    print("Account locked")
+
+# ===========================================================================
+# 🧠 Final Notes
+# ===========================================================================
+# ✔ Clear exit conditions prevent infinite loops
+# ✔ Flags and counters help control flow
+# ✔ Input validation is a real-world use case
+# ✔ Alternative solutions are acceptable
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
