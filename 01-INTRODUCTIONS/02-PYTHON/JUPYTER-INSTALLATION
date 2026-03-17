@@ -1,0 +1,167 @@
+# 📓 Installing & Using Jupyter Notebook (Professional Guide)
+
+This document explains **how to install Jupyter Notebook correctly**, how to connect it with **`.venv` and VS Code**, and how to use it in a **professional GitHub Python project**.
+
+---
+
+## 📌 What You Will Learn Here
+
+By following this guide, you will know how to:
+
+* Install Jupyter safely
+* Use Jupyter inside a virtual environment (`.venv`)
+* Open and run notebooks in VS Code
+* Select the correct Python kernel
+
+This is the **recommended workflow for modern Python projects**.
+
+---
+
+## ⚠️ Important Rule (Read First)
+
+✅ Jupyter must be installed **inside the project virtual environment**, not globally.
+
+Why?
+
+* Prevents dependency conflicts
+* Keeps projects isolated
+* Matches professional standards
+
+---
+
+## 🗂️ Starting Point (Example Project)
+
+```
+Desktop/
+└── Learning_Python/
+    ├── .venv/
+    ├── notebooks/
+    ├── requirements.txt
+    └── README.md
+```
+
+Make sure you opened **Learning_Python** in VS Code.
+
+---
+
+## 🛠️ Step 1 — Activate the Virtual Environment
+
+Open VS Code terminal and run:
+
+### PowerShell
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+You should see:
+
+```
+(.venv)
+```
+
+---
+
+## 📦 Step 2 — Install Jupyter
+
+With `.venv` activated:
+
+```bash
+pip install jupyter
+```
+
+This installs:
+
+* Jupyter Notebook
+* Jupyter kernel support
+
+---
+
+## 📄 Step 3 — Save Dependencies
+
+Always update `requirements.txt`:
+
+```bash
+pip freeze > requirements.txt
+```
+
+This allows others to reproduce your environment.
+
+---
+
+## 🧩 Step 4 — Install Jupyter Extension in VS Code
+
+1. Open **Extensions** in VS Code
+2. Search for **Jupyter** (by Microsoft)
+3. Install it
+
+This enables `.ipynb` files inside VS Code.
+
+---
+
+## 🎯 Step 5 — Select the Correct Kernel (VERY IMPORTANT)
+
+1. Open a `.ipynb` file
+2. Look at the top-right corner
+3. Click **Select Kernel**
+4. Choose:
+
+   ```
+   Python (.venv)
+   ```
+
+Now Jupyter uses your project environment.
+
+---
+
+## ▶️ Step 6 — Run a Test Cell
+
+Create a new notebook or open one, then run:
+
+```python
+print("Jupyter is working correctly")
+```
+
+If you see the output below the cell, everything is set up correctly.
+
+---
+
+## 🚀 Optional: Run Jupyter from Terminal
+
+You can also start Jupyter manually:
+
+```bash
+jupyter notebook
+```
+
+This opens Jupyter in your browser using the same `.venv`.
+
+---
+
+## 🔁 Common Mistakes to Avoid
+
+* ❌ Installing Jupyter globally
+* ❌ Using global Python as kernel
+* ❌ Forgetting to activate `.venv`
+* ❌ Not saving `requirements.txt`
+
+---
+
+## 🏁 Final Checklist
+
+* [x] `.venv` activated
+* [x] Jupyter installed inside `.venv`
+* [x] VS Code Jupyter extension installed
+* [x] Kernel set to `.venv`
+
+You are now working **like a professional Python developer**.
+
+---
+
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
