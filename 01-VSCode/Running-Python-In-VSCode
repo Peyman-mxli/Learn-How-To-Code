@@ -1,0 +1,70 @@
+▶️ Running Python Code in VS Code
+
+---
+
+Option 1: Run Button
+
+Click Run ▶️ (top right)
+
+Choose Run Python File
+
+---
+
+Option 2: Terminal
+
+Open terminal in VS Code:Ctrl + `
+Run:python main.py
+🛠️ VS Code Interface (Basic Overview)
+Part	        Description
+Explorer	    Shows project files
+Editor	      Where you write code
+Terminal	    Run commands
+Extensions	  Install tools
+Status Bar	  Shows Python version
+
+---
+
+🔧 Recommended VS Code Settings (Beginner)
+
+-You can enable:
+-Auto save
+-Line numbers
+-Word wrap
+
+Go to:File → Preferences → Settings
+
+---
+
+❌ Common Beginner Mistakes
+
+-❌ Python not installed
+
+-❌ Python not added to PATH
+
+-❌ Python interpreter not selected
+
+-❌ Running code outside the project folder
+
+If something doesn’t work, check these first.
+
+✅ What You Should Know Before Moving On
+
+Before continuing:
+
+✔️ VS Code is installed
+
+✔️ Python extension is installed
+
+✔️ Python interpreter is selected
+
+✔️ You can run a .py file
+
+Once all are done, you are ready to start coding 🚀
+
+## Author
+- Peyman Miyandashti
+- Polytechnic University of Baja California
+- Information Technology Engineering & Digital Innovation
+- From Mexico
+- Year: 2025
+- ID: 250161
