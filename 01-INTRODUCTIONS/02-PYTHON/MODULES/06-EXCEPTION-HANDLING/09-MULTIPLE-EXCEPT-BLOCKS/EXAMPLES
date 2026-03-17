@@ -1,0 +1,127 @@
+"""
+📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
+
+📁 Multiple Except Blocks — Examples
+
+This file demonstrates how multiple except blocks work in Python.
+Each example shows how different exceptions can be handled individually
+using separate except clauses in a structured and professional way.
+"""
+# --------------------------------------------------
+# Example 1: Handling ValueError and TypeError
+# --------------------------------------------------
+try:
+    x = int("abc")
+    y = "5" + 5
+except ValueError:
+    print("Example 1: Caught ValueError")
+except TypeError:
+    print("Example 1: Caught TypeError")
+# --------------------------------------------------
+# Example 2: Order Matters (Specific → General)
+# --------------------------------------------------
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Example 2: Caught ZeroDivisionError")
+except Exception:
+    print("Example 2: Caught generic exception")
+# --------------------------------------------------
+# Example 3: Multiple Except with Different Logic
+# --------------------------------------------------
+try:
+    data = {"name": "Python"}
+    print(data["version"])
+except KeyError:
+    print("Example 3: Missing key in dictionary")
+except TypeError:
+    print("Example 3: Wrong data type")
+# --------------------------------------------------
+# Example 4: Combining Arithmetic Errors
+# --------------------------------------------------
+try:
+    value = int("10")
+    result = value / 0
+except ValueError:
+    print("Example 4: Invalid conversion")
+except ZeroDivisionError:
+    print("Example 4: Division by zero")
+# --------------------------------------------------
+# Example 5: Using 'as e' for Detailed Output
+# --------------------------------------------------
+try:
+    numbers = [1, 2, 3]
+    print(numbers[5])
+except IndexError as e:
+    print("Example 5:", type(e).__name__, "-", e)
+except Exception as e:
+    print("Example 5: Other error:", type(e).__name__)
+# --------------------------------------------------
+# Example 6: Multiple Except with Else Block
+# --------------------------------------------------
+try:
+    num = int("50")
+    result = 100 / num
+except ValueError:
+    print("Example 6: Conversion error")
+except ZeroDivisionError:
+    print("Example 6: Division by zero")
+else:
+    print("Example 6: Success →", result)
+# --------------------------------------------------
+# Example 7: Multiple Except with Finally Block
+# --------------------------------------------------
+try:
+    file = open("nonexistent.txt")
+except FileNotFoundError:
+    print("Example 7: File not found")
+except PermissionError:
+    print("Example 7: Permission denied")
+finally:
+    print("Example 7: Execution completed")
+# --------------------------------------------------
+# Example 8: Grouping Exceptions (Tuple)
+# --------------------------------------------------
+try:
+    value = int("abc")
+except (ValueError, TypeError):
+    print("Example 8: Caught ValueError or TypeError")
+# --------------------------------------------------
+# Example 9: Fallback Generic Handler
+# --------------------------------------------------
+try:
+    result = 10 / 0
+except ValueError:
+    print("Example 9: ValueError occurred")
+except TypeError:
+    print("Example 9: TypeError occurred")
+except Exception as e:
+    print("Example 9: Fallback →", type(e).__name__)
+# --------------------------------------------------
+# Example 10: Best Practice Pattern
+# --------------------------------------------------
+try:
+    x = int("100")
+    y = 10 / 0
+except ValueError:
+    print("Example 10: ValueError occurred")
+except ZeroDivisionError:
+    print("Example 10: ZeroDivisionError occurred")
+except Exception as e:
+    print("Example 10: Unknown exception:", type(e).__name__)
+else:
+    print("Example 10: No errors")
+finally:
+    print("Example 10: Cleanup done"
+# --------------------------------------------------
+# End of Examples
+# --------------------------------------------------
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
