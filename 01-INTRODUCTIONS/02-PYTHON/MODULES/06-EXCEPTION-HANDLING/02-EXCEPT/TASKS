@@ -1,0 +1,133 @@
+"""
+📘 Module —  Exception Handling — The except Statement
+
+📁 Tasks File (Rank 1 → Rank 5)
+
+Instructions:
+- Focus on handling errors using except blocks.
+- Prefer specific exceptions over generic ones.
+- Do NOT open the solutions until you have tried seriously.
+"""
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Task 1:
+# Write a try/except block that catches a ZeroDivisionError
+# and prints a friendly message.
+
+# Your code here:
+
+# Task 2:
+# Convert the string "abc" to an integer.
+# Catch the ValueError and print an error message.
+
+# Your code here:
+
+# Task 3:
+# Access an invalid index in a list and handle the IndexError.
+
+numbers = [1, 2, 3]
+
+# Your code here:
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Task 4:
+# Ask the user to enter an integer.
+# Catch ValueError if the input is invalid.
+
+# Your code here:
+
+# Task 5:
+# Open a file named "data.txt".
+# Catch FileNotFoundError if the file does not exist.
+
+# Your code here:
+
+# Task 6:
+# Convert each value in the list to int.
+# Catch ValueError and TypeError separately.
+
+values = ["10", "x", None, "5"]
+
+# Your code here:
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Task 7:
+# Write a function that divides two numbers.
+# Catch ZeroDivisionError inside the function.
+
+# Your code here:
+
+# Task 8:
+# Ask the user for a number.
+# Catch ValueError and print a success message if no error occurs.
+
+# Your code here:
+
+# Task 9:
+# Loop through a list and sum only numeric values.
+# Catch TypeError when invalid data is found.
+
+data = [5, "a", 10, None, 3]
+
+# Your code here:
+# ===========================================================================
+# 🔴 Rank 4 — Advanced
+# ===========================================================================
+# Task 10:
+# Continuously ask the user for integers.
+# Catch invalid input and continue asking.
+
+# Your code here:
+
+# Task 11:
+# Handle multiple exceptions using a single except block
+# when converting user input to an integer.
+
+# Your code here:
+
+# Task 12:
+# Demonstrate that except allows the program to continue running
+# after an error occurs.
+
+# Your code here:
+# ===========================================================================
+# 🟣 Rank 5 — Professional
+# ===========================================================================
+# Task 13:
+# Capture the exception object and print the error message
+# when division by zero occurs.
+
+# Your code here:
+
+# Task 14:
+# Loop through a list of filenames.
+# Catch FileNotFoundError and continue processing.
+
+files = ["a.txt", "b.txt", "c.txt"]
+
+# Your code here:
+
+# Task 15:
+# Build a small calculator that:
+# - Catches invalid operators
+# - Catches division by zero
+# - Prints meaningful error messages
+
+# Your code here:
+# ===========================================================================
+# 🧠 End of Tasks
+# ===========================================================================
+# When ready, compare with:
+# Exception-Handling-Tasks-Solutions
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
