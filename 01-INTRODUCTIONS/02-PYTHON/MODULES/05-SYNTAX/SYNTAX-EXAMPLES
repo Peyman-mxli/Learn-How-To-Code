@@ -1,0 +1,171 @@
+"""
+📘 Module — Python Syntax
+📂 Examples File
+
+This file contains clear, runnable examples that demonstrate
+correct Python syntax, indentation, structure, and style.
+
+Each example focuses on a fundamental syntax rule that every
+Python developer must master.
+"""
+
+
+# ===========================================================================
+# 🧱 1. Basic Python Statements
+# ===========================================================================
+# Python statements are written line by line.
+# Each line is executed from top to bottom.
+
+print("Hello, Python Syntax!")
+print("Each line is a statement")
+
+
+# ===========================================================================
+# 🧩 2. Indentation (Very Important)
+# ===========================================================================
+# Python uses indentation to define code blocks.
+# Incorrect indentation causes syntax errors.
+
+if True:
+    print("This line is inside the if block")
+    print("Indentation defines the block")
+
+print("This line is outside the if block")
+
+
+# ===========================================================================
+# 🔁 3. Indentation with Loops
+# ===========================================================================
+# Loops also depend on indentation.
+
+for i in range(3):
+    print("Loop iteration:", i)
+
+print("Loop finished")
+
+
+# ===========================================================================
+# 🔑 4. Colons (:) in Python
+# ===========================================================================
+# Colons indicate the start of a new block.
+
+if 10 > 5:
+    print("10 is greater than 5")
+
+for letter in "ABC":
+    print("Letter:", letter)
+
+
+# ===========================================================================
+# 📝 5. Comments
+# ===========================================================================
+# Comments are ignored by Python.
+# They are used to explain code.
+
+# This is a single-line comment
+
+print("Comments improve readability")  # inline comment
+
+
+# ===========================================================================
+# 🧠 6. Variables and Identifiers
+# ===========================================================================
+# Variable names must:
+# - start with a letter or underscore
+# - not start with a number
+# - not be Python keywords
+
+user_name = "Peyman"
+age = 43
+_is_valid = True
+
+print(user_name)
+print(age)
+print(_is_valid)
+
+
+# ===========================================================================
+# ❌ 7. Invalid Syntax Examples (DO NOT RUN)
+# ===========================================================================
+# These examples show common syntax mistakes.
+
+# if True
+#     print("Missing colon")
+
+# for i in range(3)
+#     print(i)
+
+# 2name = "Error"
+
+
+# ===========================================================================
+# 📦 8. Multiple Statements and Expressions
+# ===========================================================================
+# Python evaluates expressions and assigns results.
+
+x = 10
+y = 3
+result = x * y + 5
+
+print("Result:", result)
+
+
+# ===========================================================================
+# 🔍 9. Whitespace and Readability
+# ===========================================================================
+# Extra spaces do not change logic, but readability matters.
+
+a=5+3
+b = 5 + 3
+
+print(a)
+print(b)
+
+
+# ===========================================================================
+# 🧪 10. Syntax vs Runtime Errors
+# ===========================================================================
+# Syntax errors prevent the program from running.
+# Runtime errors occur while the program is running.
+
+print("This line is valid syntax")
+
+# Example of runtime error (commented):
+# print(10 / 0)
+
+
+# ===========================================================================
+# 🧼 11. Clean Code Example
+# ===========================================================================
+# Proper spacing, indentation, and naming.
+
+total_score = 0
+
+for point in [10, 20, 30]:
+    total_score += point
+
+print("Total score:", total_score)
+
+
+# ===========================================================================
+# 🧠 12. Key Takeaways
+# ===========================================================================
+# ✔ Python relies on indentation, not braces
+# ✔ Colons define new blocks
+# ✔ Comments explain code, not execute it
+# ✔ Clean syntax improves readability and debugging
+# ✔ Syntax errors must be fixed before running code
+
+
+# ===========================================================================
+# 🏁 End of Examples
+# ===========================================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
