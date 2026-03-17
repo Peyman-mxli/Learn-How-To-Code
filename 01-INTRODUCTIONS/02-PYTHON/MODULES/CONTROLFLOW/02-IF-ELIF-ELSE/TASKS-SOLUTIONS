@@ -1,0 +1,146 @@
+
+"""
+📘 Module — Control Flow — if / elif / else in python
+✅ Tasks Solutions (Rank 1 → Rank 5)
+
+This file contains one possible correct solution for each task.
+Focus on readability, logic, and Python best practices.
+"""
+
+
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Task 1
+age = 20
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+# Task 2
+temperature = -3
+
+if temperature < 0:
+    print("Freezing")
+else:
+    print("Not Freezing")
+
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Task 3
+score = 85
+
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("F")
+
+# Task 4
+is_admin = True
+is_logged_in = True
+
+if is_admin and is_logged_in:
+    print("Access granted")
+else:
+    print("Access denied")
+
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Task 5
+numbers = []
+
+if not numbers:
+    print("List is empty")
+else:
+    print("List has values")
+
+# Task 6
+def check_number(number):
+    if number > 0:
+        return "Positive"
+    elif number == 0:
+        return "Zero"
+    else:
+        return "Negative"
+
+
+print(check_number(10))
+print(check_number(0))
+print(check_number(-5))
+
+# ===========================================================================
+# 🔴 Rank 4 — Advanced
+# ===========================================================================
+# Task 7
+username = "admin"
+password = "1234"
+
+if username == "admin" and password == "1234":
+    print("Login successful")
+else:
+    print("Invalid credentials")
+
+# Task 8
+def classify_age(age):
+    if age < 13:
+        return "Child"
+    elif age <= 17:
+        return "Teen"
+    else:
+        return "Adult"
+
+
+print(classify_age(10))
+print(classify_age(15))
+print(classify_age(25))
+
+
+# ===========================================================================
+# 🔵 Rank 5 — Professional
+# ===========================================================================
+# Task 9
+number = 0
+
+if number > 0:
+    result = "Positive"
+elif number < 0:
+    result = "Negative"
+else:
+    result = "Zero"
+
+print(result)
+
+# Task 10
+value = 15
+
+if value % 3 == 0 and value % 5 == 0:
+    print("FizzBuzz")
+elif value % 3 == 0:
+    print("Fizz")
+elif value % 5 == 0:
+    print("Buzz")
+else:
+    print(value)
+# ===========================================================================
+# 🧠 End of Solutions
+# ===========================================================================
+# ✔ Clear conditions
+# ✔ No unnecessary nesting
+# ✔ Professional control flow
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
