@@ -1,0 +1,126 @@
+"""
+📘 Module — Control Flow — break / continue / pass
+📁 Examples File
+
+This file contains practical, runnable examples that demonstrate how
+loop control statements affect the flow of for and while loops.
+
+Run this file:
+    python Loop_Control_Examples.py
+Experiment by changing values and conditions.
+"""
+# ===========================================================================
+# 🧪 Example 1: Using break in a for Loop
+# ===========================================================================
+for number in range(1, 10):
+    if number == 6:
+        print("Breaking at:", number)
+        break
+    print("Number:", number)
+# ===========================================================================
+# 🧪 Example 2: Using break in a while Loop
+# ===========================================================================
+count = 1
+
+while True:
+    print("Count:", count)
+    if count == 4:
+        break
+    count += 1
+# ===========================================================================
+# 🧪 Example 3: Using continue in a for Loop
+# ===========================================================================
+for number in range(1, 8):
+    if number % 2 == 0:
+        continue
+    print("Odd number:", number)
+# ===========================================================================
+# 🧪 Example 4: Using continue in a while Loop
+# ===========================================================================
+num = 0
+
+while num < 6:
+    num += 1
+    if num == 3:
+        print("Skipping:", num)
+        continue
+    print("Current:", num)
+# ===========================================================================
+# 🧪 Example 5: Using pass as a Placeholder
+# ===========================================================================
+for i in range(3):
+    pass  # Logic will be added later
+
+print("pass example completed")
+# ===========================================================================
+# 🧪 Example 6: pass Inside a Conditional
+# ===========================================================================
+value = 5
+
+if value > 0:
+    pass
+else:
+    print("Value is not positive")
+
+print("Conditional with pass executed")
+# ===========================================================================
+# 🧪 Example 7: Combining break and continue
+# ===========================================================================
+numbers = [5, 10, -3, 8, 0, 12]
+
+for n in numbers:
+    if n < 0:
+        continue
+    if n == 0:
+        print("Stopping at zero")
+        break
+    print("Valid number:", n)
+# ===========================================================================
+# 🧪 Example 8: Searching for an Item
+# ===========================================================================
+names = ["Ana", "Nova", "Peyman", "Arlette"]
+
+for name in names:
+    if name == "Peyman":
+        print("Found:", name)
+        break
+else:
+    print("Name not found")
+# ===========================================================================
+# 🧪 Example 9: Skipping Incomplete Data
+# ===========================================================================
+data = [10, None, 5, None, 20]
+
+for item in data:
+    if item is None:
+        continue
+    print("Processed value:", item)
+# ===========================================================================
+# 🧪 Example 10: Controlled Infinite Loop
+# ===========================================================================
+
+counter = 0
+
+while True:
+    counter += 1
+    print("Loop count:", counter)
+
+    if counter == 3:
+        break
+# ===========================================================================
+# 🧠 Summary
+# ===========================================================================
+print("\nSummary:")
+print("- break exits a loop immediately")
+print("- continue skips the current iteration")
+print("- pass does nothing (placeholder)")
+print("- use control statements to manage flow clearly")
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
