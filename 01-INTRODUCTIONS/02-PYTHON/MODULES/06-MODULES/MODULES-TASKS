@@ -1,0 +1,221 @@
+"""
+📘 Module — Python Modules
+
+====================================================
+MODULES — TASKS (RANK 1 → RANK 5)
+====================================================
+
+This file contains structured exercises focused on
+understanding and using Python modules.
+
+Covered module types:
+✔ Built-in modules
+✔ User-defined modules
+✔ Third-party modules
+
+Rules:
+- Follow rank order (1 → 5)
+- Focus on correct importing
+- Use clean and professional formatting
+- Do NOT solve tasks in this file
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+"""
+Task 1:
+Import the built-in `math` module and print:
+- The value of pi
+"""
+
+# Your code here
+
+
+"""
+Task 2:
+Import the built-in `random` module and print
+a random number between 1 and 5.
+"""
+
+# Your code here
+
+
+"""
+Task 3:
+Import the built-in `datetime` module and print
+the current year.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+
+"""
+Task 4:
+Import the `math` module and print:
+- Square root of 81
+- 3 raised to the power of 4
+"""
+
+# Your code here
+
+
+"""
+Task 5:
+Import `random` and randomly select
+a value from the list:
+["Admin", "User", "Guest"]
+"""
+
+# Your code here
+
+
+"""
+Task 6:
+Import `datetime` and print:
+- Current date
+- Current time
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+
+"""
+Task 7:
+Assume a user-defined module named `greetings.py`
+exists with a function called `say_hello(name)`.
+
+Import the module and call the function.
+"""
+
+# Your code here
+
+
+"""
+Task 8:
+Assume a module named `calculator.py` exists
+with functions:
+- add(a, b)
+- multiply(a, b)
+
+Import the module and use both functions.
+"""
+
+# Your code here
+
+
+"""
+Task 9:
+Import the `math` module using an alias `m`
+and calculate the square root of 144.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+
+"""
+Task 10:
+Assume a module named `user_info.py` exists
+with the following functions:
+- display_name(name)
+- display_program(program)
+- display_status(status)
+
+Import the module and call all functions
+with realistic values.
+"""
+
+# Your code here
+
+
+"""
+Task 11:
+Import only the `randint` function
+from the `random` module and generate
+a random number between 50 and 100.
+"""
+
+# Your code here
+
+
+"""
+Task 12:
+Import the `datetime` module and print
+a formatted message showing:
+"System Check Performed On: <date>"
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+
+"""
+Task 13:
+Create and use a user-defined module named
+`system_utils.py` that contains:
+- a function to print system status
+- a function to print system version
+
+Import and execute both functions.
+"""
+
+# Your code here
+
+
+"""
+Task 14:
+Assume the third-party module `requests`
+is installed.
+
+Import the module and perform a GET request
+to a public API (no data processing required).
+Print the status code.
+"""
+
+# Your code here
+
+
+"""
+Task 15:
+Create a professional program structure
+that uses:
+✔ One built-in module
+✔ One user-defined module
+✔ One third-party module
+
+Demonstrate correct importing and usage
+for each one.
+"""
+
+# Your code here
+
+
+# ====================================================
+# END OF TASKS — MODULES
+# ====================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
