@@ -1,0 +1,181 @@
+"""
+📘 Module — Basic Data Types: Boolean(bool)
+📝 Tasks File
+This file contains practice tasks designed to help me master Boolean logic
+in Python. The tasks are organized from very basic to professional-level
+usage.
+
+Important rules:
+- I must try to solve each task myself.
+- I should NOT look at the solutions while working.
+- I should write clean, readable Python code.
+"""
+
+
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Focus: basic Boolean values and simple comparisons
+
+
+# Task 1.1
+# Create a Boolean variable called is_student and set it to True.
+# Print its value and its type.
+
+
+# Task 1.2
+# Create two numbers and compare them using == and !=.
+# Print the results.
+
+
+# Task 1.3
+# Check if the number 10 is greater than 5.
+# Store the result in a variable and print it.
+
+
+# Task 1.4
+# Create a Boolean variable called is_online and set it to False.
+# Print a message showing its value.
+
+
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Focus: comparisons and simple if statements
+
+
+# Task 2.1
+# Ask the user for their age (as an integer).
+# If the age is 18 or older, print "Adult".
+# Otherwise, print "Minor".
+
+
+# Task 2.2
+# Create a variable score.
+# If the score is greater than or equal to 60, print "Passed".
+# Otherwise, print "Failed".
+
+
+# Task 2.3
+# Compare two strings and check if they are equal.
+# Print the Boolean result.
+
+
+# Task 2.4
+# Create a Boolean variable called has_access.
+# Use an if statement to print "Access granted" or "Access denied".
+
+
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Focus: logical operators (and, or, not)
+
+
+# Task 3.1
+# Create two Boolean variables: is_logged_in and is_admin.
+# Print True only if both are True.
+
+
+# Task 3.2
+# Ask the user for a number.
+# Check if the number is between 1 and 100 (inclusive).
+# Print the result.
+
+
+# Task 3.3
+# Create a Boolean variable called is_banned.
+# Use not to allow access only if the user is NOT banned.
+
+
+# Task 3.4
+# Check if a number is even AND greater than 10.
+# Print the result.
+
+
+# ===========================================================================
+# 🔵 Rank 4 — Advanced
+# ===========================================================================
+# Focus: realistic conditions and validation logic
+
+
+# Task 4.1
+# Ask the user for a username and password.
+# If the username is "admin" AND the password is "1234",
+# print "Login successful".
+# Otherwise, print "Invalid credentials".
+
+
+# Task 4.2
+# Ask the user for an email string.
+# Check if it contains "@" and ".".
+# Print whether the email looks valid.
+
+
+# Task 4.3
+# Ask the user for a number.
+# Check if the number is NOT zero.
+# Print whether division is safe.
+
+
+# Task 4.4
+# Create a variable temperature.
+# If it is less than 0, print "Freezing".
+# If it is between 0 and 25, print "Moderate".
+# Otherwise, print "Hot".
+
+
+# ===========================================================================
+# 🔴 Rank 5 — Professional
+# ===========================================================================
+# Focus: clean logic, reusable code, and readability
+
+
+# Task 5.1
+# Write a function called is_even(number).
+# The function should return True if the number is even, otherwise False.
+# Test the function with different values.
+
+
+# Task 5.2
+# Write a function called can_login(is_active, is_verified).
+# The function should return True only if both values are True.
+# Test the function.
+
+
+# Task 5.3
+# Write a function called is_valid_password(password).
+# Rules:
+# - Password length must be at least 8 characters
+# - Password must not be empty
+# Return True or False.
+
+
+# Task 5.4
+# Write a small program that checks:
+# - user is logged in
+# - user has permission
+# Use clear Boolean variables and readable logic.
+# Print whether the action is allowed or denied.
+
+
+# Task 5.5
+# Refactor a complex condition into readable Boolean variables.
+# Example idea:
+# Instead of writing one long if statement,
+# create intermediate Boolean variables that make the logic clear.
+
+
+# ======================================================================
+# 🏁 End of Tasks
+# ======================================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
