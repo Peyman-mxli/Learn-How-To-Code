@@ -1,0 +1,85 @@
+📘 Module — Exception Handling — (raise)
+
+"""
+ 📁  Tasks FILE
+
+Topic: Exception Handling — raise (manual exception control)
+
+Instructions:
+- Tasks are ordered from Rank 1 (Beginner) to Rank 5 (Advanced).
+- Do NOT write solutions in this file.
+- Focus on WHEN to use `raise` and WHICH exception to raise.
+- Try each task before checking the solutions file.
+"""
+# ==================================================
+# Rank 1 — Basic manual raise
+# ==================================================
+# Task:
+# Create a variable `age`.
+# If age is less than 0, manually raise a ValueError
+# with the message: "Age cannot be negative".
+#
+# Test with both valid and invalid values.
+
+# TODO: Write your code here
+# ==================================================
+# Rank 2 — raise inside try / except
+# ==================================================
+# Task:
+# Ask the user for an integer input.
+# If the number is 0, manually raise a ZeroDivisionError
+# with a custom message.
+# Catch the exception and print the error message.
+
+# TODO: Write your code here
+# ==================================================
+# Rank 3 — raise vs return
+# ==================================================
+# Task:
+# Create a function called `withdraw(balance, amount)`.
+# Rules:
+# - If amount is greater than balance, raise a ValueError
+# - Otherwise, return the new balance
+#
+# Call the function with valid and invalid values
+# and observe the difference between `return` and `raise`.
+
+# TODO: Write your code here
+# ==================================================
+# Rank 4 — Custom exception
+# ==================================================
+# Task:
+# Create a custom exception called `InvalidPasswordError`.
+# Write code that:
+# - Checks a password length
+# - If the password is shorter than 8 characters,
+#   raise InvalidPasswordError with a clear message
+# - Catch the custom exception and print the message
+
+# TODO: Write your code here
+# ==================================================
+# Rank 5 — raise + finally (Advanced)
+# ==================================================
+# Task:
+# Simulate a system check using try / finally.
+#
+# Requirements:
+# - Inside try, validate a value
+# - If the value is invalid, manually raise an exception
+# - Use finally to print "System cleanup completed"
+#
+# Confirm that finally runs even when an exception is raised.
+
+# TODO: Write your code here
+# ==================================================
+# End of Raise-Tasks
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
