@@ -1,0 +1,160 @@
+"""
+📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
+
+📁 Exception Hierarchy — Notes
+
+In Python, exceptions are not random errors.
+They are organized in a class hierarchy where all exceptions
+inherit from a common base class.
+
+Understanding this hierarchy allows us to:
+- Catch errors correctly
+- Avoid hiding critical system signals
+- Write clean and professional error-handling code
+"""
+
+# --------------------------------------------------
+# 1. What is an Exception Hierarchy?
+# --------------------------------------------------
+# An exception hierarchy means that exception classes
+# inherit from other exception classes.
+#
+# At the top of the hierarchy is:
+# BaseException
+#
+# Most user-defined and built-in errors inherit from:
+# Exception
+
+
+# --------------------------------------------------
+# 2. BaseException (Top-Level)
+# --------------------------------------------------
+# BaseException is the root of ALL exceptions.
+# It includes system-level exceptions such as:
+# - KeyboardInterrupt
+# - SystemExit
+# - GeneratorExit
+#
+# These exceptions usually should NOT be caught
+# because they control program termination.
+
+# BAD PRACTICE:
+# except BaseException:
+#     pass
+
+
+# --------------------------------------------------
+# 3. Exception (Recommended Base Class)
+# --------------------------------------------------
+# The Exception class is the base for most runtime errors.
+# This is the class you usually catch when handling errors.
+
+# Good practice:
+# except Exception:
+#     handle error safely
+
+
+# --------------------------------------------------
+# 4. Common Built-in Exception Types
+# --------------------------------------------------
+
+# ValueError
+# Raised when a function receives the right type
+# but an invalid value.
+#
+# Example: int("abc")
+
+# TypeError
+# Raised when an operation is applied to the wrong type.
+#
+# Example: "5" + 5
+
+# IndexError
+# Raised when accessing an invalid list index.
+#
+# Example: my_list[10]
+
+# KeyError
+# Raised when accessing a missing dictionary key.
+#
+# Example: my_dict["missing"]
+
+# ZeroDivisionError
+# Raised when dividing by zero.
+#
+# Example: 10 / 0
+
+
+# --------------------------------------------------
+# 5. Inheritance Example
+# --------------------------------------------------
+# Many exceptions inherit from parent classes.
+#
+# Example hierarchy (simplified):
+#
+# BaseException
+#   └── Exception
+#         ├── ArithmeticError
+#         │      └── ZeroDivisionError
+#         ├── LookupError
+#         │      ├── IndexError
+#         │      └── KeyError
+#         ├── ValueError
+#         └── TypeError
+#
+# Catching a parent class will also catch its children.
+
+
+# --------------------------------------------------
+# 6. Catching Specific vs Generic Exceptions
+# --------------------------------------------------
+
+# Specific exception (recommended):
+try:
+    number = int("abc")
+except ValueError:
+    print("Caught ValueError")
+
+# Generic exception (use carefully):
+try:
+    result = 10 / 0
+except Exception as e:
+    print("Caught exception:", type(e).__name__)
+
+
+# --------------------------------------------------
+# 7. Why NOT Catch BaseException?
+# --------------------------------------------------
+# Catching BaseException will also catch:
+# - KeyboardInterrupt (Ctrl+C)
+# - SystemExit
+#
+# This can prevent programs from exiting properly
+# and cause serious debugging problems.
+
+
+# --------------------------------------------------
+# 8. Professional Rule
+# --------------------------------------------------
+# Catch the MOST SPECIFIC exception you can handle.
+# Let other exceptions propagate naturally.
+
+# Correct order:
+# - Specific exceptions first
+# - Generic exceptions last (if needed)
+
+
+# --------------------------------------------------
+# End of Notes
+# --------------------------------------------------
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
+
+"""
