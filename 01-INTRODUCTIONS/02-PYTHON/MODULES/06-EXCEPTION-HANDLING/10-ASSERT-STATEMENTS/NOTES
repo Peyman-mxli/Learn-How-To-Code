@@ -1,0 +1,114 @@
+📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
+"""
+📁 Assert-Statements-Notes
+
+Topic: Exception Handling — Assert Statements
+
+This file contains STUDY NOTES explaining how and why to use
+assert statements in Python.
+
+These notes focus on concepts, rules, and best practices.
+"""
+
+==================================================
+1. What Is an Assert Statement?
+==================================================
+The assert statement is used to test if a condition is True.
+If the condition evaluates to False, Python raises an AssertionError.
+It is mainly used as a debugging tool during development.
+Syntax:
+assert condition
+assert condition, "Error message"
+==================================================
+2. How Assert Works
+==================================================
+Python evaluates the condition:
+- If True → program continues normally
+- If False → AssertionError is raised immediately
+Example:
+
+x = 10
+assert x > 0
+
+==================================================
+3. Assert with Custom Message
+==================================================
+You can include a custom error message for clarity.
+Example:
+
+y = -5
+assert y >= 0, "y must be non-negative"
+
+==================================================
+4. Why Use Assert?
+==================================================
+Assertions are useful for:
+- Debugging code
+- Verifying assumptions
+- Catching programmer mistakes early
+They help ensure internal logic is correct.
+==================================================
+5. When NOT to Use Assert
+==================================================
+Assertions should NOT be used for:
+- User input validation
+- Runtime error handling
+- Critical production logic
+Reason:
+Assertions can be disabled, making them unreliable in production.
+==================================================
+6. Disabling Assertions
+==================================================
+Assertions can be globally disabled using optimization mode.
+Command:
+python -O script.py
+When disabled:
+- All assert statements are ignored
+- No AssertionError will be raised
+==================================================
+7. Assert vs Exceptions
+==================================================
+assert:
+- Used for internal checks
+- For developer/debugging purposes
+raise Exception:
+- Used for real error handling
+- For user-facing or runtime errors
+==================================================
+8. Best Practices
+==================================================
+✅ Use assert for internal logic checks
+✅ Add clear messages for easier debugging
+✅ Use during development and testing
+❌ Do not rely on assert in production
+❌ Do not validate external/user data with assert
+==================================================
+9. Common Use Cases
+==================================================
+- Checking function inputs (internal)
+- Verifying invariants
+- Testing assumptions in algorithms
+Example:
+
+def divide(a, b):
+assert b != 0, "b must not be zero"
+return a / b
+
+==================================================
+10. Key Takeaway
+==================================================
+Assert statements are a lightweight debugging tool.
+They help catch logical errors early but should not
+replace proper error handling in production systems.
+==================================================
+End of Assert-Statements-Notes
+==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
