@@ -1,0 +1,126 @@
+"""
+📘 Module —  Exception Chaining — (raise ... from ...)
+
+Topic: Exception Handling — Exception Chaining (raise ... from ...)
+
+This file contains STUDY NOTES explaining how exception chaining works
+in Python and why it is important for debugging and clean design.
+
+These notes focus on concepts, rules, and best practices.
+"""
+
+# ==================================================
+# 1. What Is Exception Chaining?
+# ==================================================
+# Exception chaining allows one exception to be raised
+# while preserving the original exception that caused it.
+#
+# Syntax:
+# raise NewException() from original_exception
+
+
+# ==================================================
+# 2. Why Exception Chaining Exists
+# ==================================================
+# Without chaining, the original error may be lost.
+# This makes debugging harder and hides the real cause.
+#
+# Chaining keeps a clear cause → effect relationship
+# between low-level errors and high-level errors.
+
+
+# ==================================================
+# 3. Basic Structure
+# ==================================================
+# try:
+#     risky_code()
+# except OriginalError as e:
+#     raise NewError("More context") from e
+
+
+# ==================================================
+# 4. What Python Shows
+# ==================================================
+# When an exception is chained, Python displays:
+# - The original exception (cause)
+# - A message indicating it caused another exception
+# - The new exception
+#
+# This greatly improves tracebacks.
+
+
+# ==================================================
+# 5. Common Use Cases
+# ==================================================
+# - Converting ValueError into a domain-specific error
+# - Wrapping low-level errors in custom exceptions
+# - Adding context without losing original information
+
+
+# ==================================================
+# 6. Chaining with Custom Exceptions
+# ==================================================
+# Custom exceptions work perfectly with chaining.
+#
+# Example:
+# class DataError(Exception):
+#     pass
+#
+# try:
+#     int("abc")
+# except ValueError as e:
+#     raise DataError("Invalid data") from e
+
+
+# ==================================================
+# 7. Suppressing the Original Exception
+# ==================================================
+# You can suppress the original exception using:
+# raise NewError() from None
+#
+# This removes the context completely.
+# Use this ONLY when the original error is irrelevant.
+
+
+# ==================================================
+# 8. raise vs raise ... from ...
+# ==================================================
+# raise:
+# - Raises a new exception
+# - Original cause may be unclear
+#
+# raise ... from ...:
+# - Raises a new exception
+# - Explicitly links it to the original cause
+
+
+# ==================================================
+# 9. Best Practices
+# ==================================================
+# ✅ Use chaining when adding context
+# ✅ Chain built-in exceptions into custom ones
+# ❌ Do not chain if it adds no value
+# ❌ Avoid suppressing context unnecessarily
+
+
+# ==================================================
+# 10. Key Takeaway
+# ==================================================
+# Exception chaining improves transparency and debugging.
+# It is essential for clean, professional Python programs.
+
+
+# ==================================================
+# End of Exception-Chaining-Notes
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
+
+🆔 ID: 250161
