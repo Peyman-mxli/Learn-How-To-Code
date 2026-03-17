@@ -1,0 +1,101 @@
+"""
+📘 Module —  Exception Chaining — (raise ... from ...)
+
+
+Topic: Exception Handling — Exception Chaining (raise ... from ...)
+
+INSTRUCTIONS:
+- Complete each task by writing code where indicated
+- Do NOT modify task descriptions
+- Tasks increase in difficulty from Rank 1 → Rank 5
+- Use proper exception chaining with `raise ... from ...`
+"""
+
+# ==================================================
+# Rank 1 — Basic chaining
+# ==================================================
+"""
+TASK:
+Convert the string "123a" to an integer.
+If a ValueError occurs, raise a RuntimeError
+called "Invalid integer conversion" and chain
+the original exception.
+"""
+
+# WRITE YOUR CODE BELOW
+
+
+# ==================================================
+# Rank 2 — Built-in to custom exception
+# ==================================================
+"""
+TASK:
+1. Create a custom exception called InputError
+2. Convert the string "abc" to float
+3. If it fails, raise InputError with message
+   "Float conversion failed" and chain the original exception
+"""
+
+# WRITE YOUR CODE BELOW
+
+
+# ==================================================
+# Rank 3 — Function-level chaining
+# ==================================================
+"""
+TASK:
+Create a function `load_age(data)` that:
+- Tries to convert `data` to int
+- If conversion fails, raises ValueError
+- Then catches that ValueError and raises
+  a RuntimeError("Invalid age data") chained
+  from the original exception
+"""
+
+# WRITE YOUR CODE BELOW
+
+
+# ==================================================
+# Rank 4 — File + conversion chaining
+# ==================================================
+"""
+TASK:
+1. Create a custom exception FileDataError
+2. Open a file named "age.txt"
+3. Read its content and convert to int
+4. If ANY error occurs (file missing or bad data),
+   raise FileDataError("Failed to load age")
+   chained from the original exception
+"""
+
+# WRITE YOUR CODE BELOW
+
+
+# ==================================================
+# Rank 5 — Context control (advanced)
+# ==================================================
+"""
+TASK:
+1. Convert the string "XYZ" to int
+2. Catch the ValueError
+3. Raise RuntimeError("Invalid numeric input")
+   BUT suppress the original exception context
+   using `from None`
+
+⚠️ This is ADVANCED. Use only when necessary.
+"""
+
+# WRITE YOUR CODE BELOW
+
+
+# ==================================================
+# End of Exception-Chaining-Tasks
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
