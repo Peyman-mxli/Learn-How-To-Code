@@ -1,5 +1,6 @@
 """
-📘 Module — Basic Data Types: Float(flo)
+📘 Module — Basic Data Types: Boolean(bool)
+
 Booleans represent truth values in Python. They are the foundation of
 decision-making in programs and control how code behaves.
 
