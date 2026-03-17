@@ -1,0 +1,197 @@
+"""
+📘 Module — Python Modules
+====================================================
+MODULES — PRACTICAL EXAMPLES
+====================================================
+
+This file contains professional, real-world examples
+demonstrating how MODULES are used in Python.
+
+Covered module types:
+✔ Built-in modules
+✔ User-defined modules
+✔ Third-party modules (conceptual examples)
+
+Each section includes 3 practical examples.
+"""
+
+# ====================================================
+# BUILT-IN MODULES — EXAMPLES
+# ====================================================
+
+# ----------------------------------------------------
+# EXAMPLE 1: math MODULE
+# ----------------------------------------------------
+"""
+Scenario:
+A program needs to perform mathematical calculations.
+"""
+
+import math
+
+print("Square root of 64:", math.sqrt(64))
+print("Value of PI:", math.pi)
+print("Power (2^5):", math.pow(2, 5))
+
+
+# ----------------------------------------------------
+# EXAMPLE 2: datetime MODULE
+# ----------------------------------------------------
+"""
+Scenario:
+An application needs to track the current date and time.
+"""
+
+import datetime
+
+current_time = datetime.datetime.now()
+print("Current Date & Time:", current_time)
+print("Current Year:", current_time.year)
+print("Current Month:", current_time.month)
+
+
+# ----------------------------------------------------
+# EXAMPLE 3: random MODULE
+# ----------------------------------------------------
+"""
+Scenario:
+A system generates random values for testing.
+"""
+
+import random
+
+print("Random number (1–10):", random.randint(1, 10))
+print("Random choice:", random.choice(["Admin", "User", "Guest"]))
+print("Random decimal:", random.random())
+
+
+# ====================================================
+# USER-DEFINED MODULES — EXAMPLES
+# ====================================================
+"""
+User-defined modules are Python files created by the developer.
+
+Assume the following modules exist in the same directory:
+- greetings.py
+- calculator.py
+- user_info.py
+"""
+
+# ----------------------------------------------------
+# EXAMPLE 4: greetings MODULE
+# ----------------------------------------------------
+"""
+File: greetings.py
+Contains functions for greeting users.
+"""
+
+import greetings
+
+greetings.say_hello("Peyman")
+greetings.say_goodbye("Peyman")
+greetings.welcome_message()
+
+
+# ----------------------------------------------------
+# EXAMPLE 5: calculator MODULE
+# ----------------------------------------------------
+"""
+File: calculator.py
+Contains basic arithmetic functions.
+"""
+
+import calculator
+
+print("Addition:", calculator.add(5, 3))
+print("Multiplication:", calculator.multiply(4, 6))
+print("Subtraction:", calculator.subtract(10, 4))
+
+
+# ----------------------------------------------------
+# EXAMPLE 6: user_info MODULE
+# ----------------------------------------------------
+"""
+File: user_info.py
+Handles user-related information.
+"""
+
+import user_info
+
+user_info.display_name("Peyman Miyandashti")
+user_info.display_program("IT Engineering")
+user_info.display_status("Active")
+
+
+# ====================================================
+# THIRD-PARTY MODULES — EXAMPLES
+# ====================================================
+"""
+Third-party modules must be installed before use.
+
+These examples demonstrate professional usage.
+"""
+
+# ----------------------------------------------------
+# EXAMPLE 7: requests MODULE
+# ----------------------------------------------------
+"""
+Scenario:
+An application communicates with a web API.
+"""
+
+import requests
+
+response = requests.get("https://api.github.com")
+print("Status Code:", response.status_code)
+print("Response Type:", response.headers["Content-Type"])
+
+
+# ----------------------------------------------------
+# EXAMPLE 8: numpy MODULE
+# ----------------------------------------------------
+"""
+Scenario:
+A system performs numerical computations.
+"""
+
+import numpy as np
+
+numbers = np.array([1, 2, 3, 4, 5])
+print("Array:", numbers)
+print("Mean:", np.mean(numbers))
+print("Sum:", np.sum(numbers))
+
+
+# ----------------------------------------------------
+# EXAMPLE 9: pandas MODULE
+# ----------------------------------------------------
+"""
+Scenario:
+A data analysis system processes structured data.
+"""
+
+import pandas as pd
+
+data = {
+    "Name": ["Peyman", "Arlette", "Carlos"],
+    "Age": [43, 21, 30],
+    "Program": ["IT", "Education", "Engineering"]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+
+# ====================================================
+# END OF EXAMPLES — MODULES
+# ====================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
