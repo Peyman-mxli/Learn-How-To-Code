@@ -1,4 +1,5 @@
 🧵Module — Control Flow — While-loops
+------------------------------------------
 ✨ Overview
 A while loop in Python repeatedly executes a block of code as long as a condition remains True.
 Unlike for loops (which iterate over sequences), 
