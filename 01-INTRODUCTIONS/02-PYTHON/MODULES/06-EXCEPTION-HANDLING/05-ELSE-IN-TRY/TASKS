@@ -1,0 +1,80 @@
+📘 Module — Exception Handling — (try / else)
+
+"""
+📁 Try-Else-Tasks
+
+Topic: Exception Handling — try / else
+
+This file contains PRACTICE TASKS designed to help you master
+how and when to use the `else` block in exception handling.
+
+Instructions:
+- Solve tasks from Rank 1 to Rank 5
+- Do NOT look at the solutions until you finish
+- Focus on placing code correctly in try vs else
+"""
+
+# ==================================================
+# Rank 1 — Basic Conversion
+# ==================================================
+# Task:
+# Convert the string "15" to an integer.
+# If conversion fails, print "Conversion error".
+# If conversion succeeds, print the number multiplied by 2 using else.
+
+
+# ==================================================
+# Rank 2 — User Input Validation
+# ==================================================
+# Task:
+# Ask the user to enter a number.
+# If input is invalid, print "Invalid number".
+# If input is valid, print "You entered:" followed by the number.
+# Use try / except / else.
+
+
+# ==================================================
+# Rank 3 — Division with else
+# ==================================================
+# Task:
+# Ask the user for two numbers.
+# Catch ValueError if conversion fails.
+# Catch ZeroDivisionError if division by zero occurs.
+# If everything is correct, print the division result using else.
+
+
+# ==================================================
+# Rank 4 — File Writing Check
+# ==================================================
+# Task:
+# Try to open a file called "data.txt" in write mode.
+# Write any text into the file.
+# If a file error occurs, print "File error".
+# If writing succeeds, print "File written successfully" using else.
+# Always close the file properly.
+
+
+# ==================================================
+# Rank 5 — Clean Structure Challenge
+# ==================================================
+# Task:
+# Validate that a variable `age` is an integer.
+# If conversion fails, print "Invalid age".
+# If conversion succeeds:
+#   - Check if age is 18 or older
+#   - Print "Access granted" or "Access denied"
+# Use else correctly (do NOT put logic inside try).
+
+
+# ==================================================
+# End of Try-Else-Tasks
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
