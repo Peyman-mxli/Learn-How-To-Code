@@ -1,0 +1,96 @@
+"""
+📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
+
+📁 LoggingVsExceptions-Examples
+
+Topic: Exception Handling — Logging vs Exceptions
+
+This file contains RUNNABLE EXAMPLES demonstrating how logging
+and exceptions are used separately and together in real scenarios.
+
+How to use this file:
+- Run it with: python LoggingVsExceptions_Examples.py
+- Read the comment before each example
+- Observe when logging is used vs when exceptions are raised
+"""
+
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
+# ==================================================
+# Example 1 — Logging without exception
+# ==================================================
+print("\nExample 1 — Logging without exception")
+
+def load_config(file):
+    logging.info("Loading configuration file")
+    if not file:
+        logging.warning("Config file name is empty")
+        return None
+    return "Config loaded"
+
+result = load_config("")
+print("Result:", result)
+
+
+# ==================================================
+# Example 2 — Exception without logging
+# ==================================================
+print("\nExample 2 — Exception without logging")
+
+def divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Division by zero is not allowed")
+    return a / b
+
+try:
+    divide(10, 0)
+except ZeroDivisionError as e:
+    print("Caught exception:", e)
+
+
+# ==================================================
+# Example 3 — Logging + Exception
+# ==================================================
+print("\nExample 3 — Logging with exception")
+
+def read_file(filename):
+    try:
+        with open(filename, "r") as f:
+            return f.read()
+    except FileNotFoundError as e:
+        logging.error(f"File not found: {filename}")
+        raise
+
+try:
+    read_file("missing.txt")
+except FileNotFoundError:
+    print("Handled missing file")
+
+
+# ==================================================
+# Example 4 — Do NOT swallow exceptions
+# ==================================================
+print("\nExample 4 — Logging critical error and re-raising")
+
+try:
+    divide(10, 0)
+except ZeroDivisionError:
+    logging.critical("Fatal calculation error")
+    raise
+
+
+# ==================================================
+# End of LoggingVsExceptions-Examples
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
