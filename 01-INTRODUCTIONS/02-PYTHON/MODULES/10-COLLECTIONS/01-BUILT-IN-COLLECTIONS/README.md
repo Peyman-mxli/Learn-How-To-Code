@@ -1,6 +1,6 @@
-# ======================================================
+# ============================
 # 🧵 Module — Built-in Collections
-# ======================================================
+# ============================
 
 ✨ Overview
 Python provides several built-in collection data types used to store,
