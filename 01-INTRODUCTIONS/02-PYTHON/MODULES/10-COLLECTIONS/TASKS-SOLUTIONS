@@ -1,0 +1,268 @@
+"""
+📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
+
+📁 Collections-Tasks-Solutions
+
+Topic: Python Collections — Lists, Tuples, Sets, Dictionaries
+
+This file contains COMPLETE SOLUTIONS for all tasks.
+Each solution is written in a clean, readable, and professional way.
+"""
+
+# ==================================================
+# 1️⃣ LIST — Solutions
+# ==================================================
+
+# Rank 1
+languages = ["Python", "Java", "C++"]
+print(languages)
+
+# Rank 2
+languages.append("JavaScript")
+languages.append("Go")
+languages.remove("Java")
+print(languages)
+
+# Rank 3
+numbers = [10, 20, 30, 40]
+total = 0
+
+for n in numbers:
+    total += n
+
+average = total / len(numbers)
+print("Average:", average)
+
+# Rank 4
+names = ["Ali", "Peyman", "Sara", "Arlette"]
+long_names = []
+
+for name in names:
+    if len(name) > 4:
+        long_names.append(name)
+
+print(long_names)
+
+# Rank 5
+values = [1, 2, 2, 3, 1, 4]
+unique_values = []
+
+for v in values:
+    if v not in unique_values:
+        unique_values.append(v)
+
+print(unique_values)
+
+
+# ==================================================
+# 2️⃣ TUPLE — Solutions
+# ==================================================
+
+# Rank 1
+colors = ("red", "blue", "green")
+print(colors[0], colors[1], colors[2])
+
+# Rank 2
+user_data = ("Peyman", 43, "Mexico")
+name, age, country = user_data
+print(name, age, country)
+
+# Rank 3
+numbers_tuple = (1, 2, 3)
+numbers_list = list(numbers_tuple)
+
+numbers_list.append(4)
+
+numbers_tuple = tuple(numbers_list)
+print(numbers_tuple)
+
+# Rank 4
+def get_user_info():
+    return ("peyman", "admin", True)
+
+username, role, active = get_user_info()
+print(username, role, active)
+
+# Rank 5
+locations = {
+    (10, 20): "Office",
+    (30, 40): "Warehouse"
+}
+
+print(locations[(10, 20)])
+
+
+# ==================================================
+# 3️⃣ SET — Solutions
+# ==================================================
+
+# Rank 1
+numbers_set = {1, 2, 3}
+print(numbers_set)
+
+# Rank 2
+numbers_set.add(4)
+numbers_set.remove(2)
+print(numbers_set)
+
+# Rank 3
+duplicated = [1, 1, 2, 3, 3, 4]
+unique = set(duplicated)
+print(unique)
+
+# Rank 4
+admin_permissions = {"read", "write", "delete"}
+user_permissions = {"read"}
+
+common = admin_permissions.intersection(user_permissions)
+only_admin = admin_permissions.difference(user_permissions)
+
+print("Common:", common)
+print("Admin only:", only_admin)
+
+# Rank 5
+dataset_a = {1, 2, 3, 4}
+dataset_b = {2, 3}
+
+is_subset = dataset_b.issubset(dataset_a)
+print("Is subset:", is_subset)
+
+
+# ==================================================
+# 4️⃣ DICTIONARY — Solutions
+# ==================================================
+
+# Rank 1
+user = {"name": "Peyman", "age": 43}
+print(user)
+
+# Rank 2
+user["age"] = 44
+user["country"] = "Mexico"
+print(user)
+
+# Rank 3
+for key in user:
+    print("Key:", key)
+
+for value in user.values():
+    print("Value:", value)
+
+# Rank 4
+email = user.get("email", "Not provided")
+print("Email:", email)
+
+# Rank 5
+def validate_user(data):
+    required_fields = ["name", "email", "role"]
+
+    for field in required_fields:
+        if field not in data:
+            raise ValueError(f"Missing required field: {field}")
+
+    return True
+
+user_data = {
+    "name": "Peyman",
+    "email": "p@email.com",
+    "role": "admin"
+}
+
+print(validate_user(user_data))
+
+
+# ==================================================
+# 5️⃣ NESTED COLLECTIONS — Solutions
+# ==================================================
+
+# Rank 1
+users = [
+    {"id": 1, "name": "Peyman"},
+    {"id": 2, "name": "Arlette"}
+]
+
+print(users)
+
+# Rank 2
+print(users[0]["name"])
+
+# Rank 3
+for user in users:
+    print(f"User ID: {user['id']} | Name: {user['name']}")
+
+# Rank 4
+school = {
+    "teacher": "Arlette",
+    "students": ["Ali", "Sara"]
+}
+
+school["students"].append("Peyman")
+print(school)
+
+# Rank 5
+course = {
+    "course_name": "Python Programming",
+    "instructor": {
+        "name": "Arlette",
+        "department": "IT"
+    },
+    "students": [
+        {"name": "Peyman", "grade": 90},
+        {"name": "Ali", "grade": 85}
+    ]
+}
+
+print("Course:", course["course_name"])
+print("Instructor:", course["instructor"]["name"])
+
+print("Students:")
+for student in course["students"]:
+    print(f"- {student['name']} ({student['grade']})")
+
+
+# ==================================================
+# 6️⃣ COLLECTION SELECTION — Solutions
+# ==================================================
+
+# Rank 1
+config = ("localhost", 8080, True)
+
+# Rank 2
+# Set is best for removing duplicates because it enforces uniqueness
+unique_items = set([1, 1, 2, 3])
+
+# Rank 3
+data_list = [1, 2, 3]
+data_set = set(data_list)
+data_tuple = tuple(data_set)
+
+print(data_tuple)
+
+# Rank 4
+permissions = {
+    "peyman": {"read", "write"},
+    "guest": {"read"}
+}
+
+print("Peyman permissions:", permissions["peyman"])
+
+# Rank 5
+users_list = ["peyman", "arlette", "ali"]
+
+users_dict = {user: True for user in users_list}
+
+print("Fast lookup:", users_dict.get("peyman"))
+
+
+# ==================================================
+# End of Collections-Tasks-Solutions
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
