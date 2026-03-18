@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: url("/static/images/background.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Background Watermark Logo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    background: url("/static/images/logo.png") no-repeat center;
+    background-size: contain;
+    opacity: 0.04;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Main Application Container (Used in ALL pages) */
+.app-container {
+    background: rgba(75, 0, 130, 0.92);
+    backdrop-filter: blur(15px);
+    padding: 100px 80px;
+    border-radius: 30px;
+    text-align: center;
+    color: #f8f9fa;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    max-width: 750px;
+    min-height: 750px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo (only used if needed) */
+.main-logo {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+/* Titles */
+.app-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.main-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    height: 2px;
+    background: white;
+    margin: 20px 0 30px 0;
+    width: 80%;
+}
+
+/* Inputs */
+.custom-input {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Facebook Blue Buttons */
+.btn-custom {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #1877F2;
+    color: white;
+    border: none;
+    width: 220px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #166fe5;
+}
+
+/* Back Link */
+.back-link {
+    display: block;
+    margin-top: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
