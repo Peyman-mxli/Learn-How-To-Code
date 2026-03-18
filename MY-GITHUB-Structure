@@ -1,0 +1,114 @@
+# Learn-How-To-Code
+
+=======================================
+
+## Project Structure
+
+=============================================================================
+
+```plaintext
+Learn-How-To-Code/
+│
+├── 01-INTRODUCTIONS/
+│   │
+│   ├── 01-VSCODE/
+│   │   ├── README.md
+│   │   ├── VSCODE-Notes.py
+│   │   ├── VSCODE-Examples.py
+│   │   ├── VSCODE-Tasks.py
+│   │   └── VSCODE-Tasks-Solutions.py
+│   │
+│   ├── 02-PYTHON/
+│   │   ├── README.md
+│   │   ├── Python-Notes.py
+│   │   ├── Python-Examples.py
+│   │   ├── Python-Tasks.py
+│   │   └── Python-Tasks-Solutions.py
+│   │
+│   ├── 03-GITHUB/
+│   │   ├── README.md
+│   │   ├── GitHub-Notes.py
+│   │   ├── GitHub-Examples.py
+│   │   ├── GitHub-Tasks.py
+│   │   └── GitHub-Tasks-Solutions.py
+│   │
+│   ├── 04-EMOJIS/
+│   │   ├── README.md
+│   │   ├── Emojis-Notes.py
+│   │   ├── Emojis-Examples.py
+│   │   ├── Emojis-Tasks.py
+│   │   └── Emojis-Tasks-Solutions.py
+│   │
+│   └── README.md
+│
+├── 02-PYTHON/
+│   │
+│   ├── 01-INSTALLING-PYTHON/
+│   │   ├── README.md
+│   │   ├── Installing-Notes.py
+│   │   ├── Installing-Examples.py
+│   │   ├── Installing-Tasks.py
+│   │   └── Installing-Tasks-Solutions.py
+│   │
+│   ├── 02-JUPYTER/
+│   │   ├── README.md
+│   │   ├── Jupyter-Notes.py
+│   │   ├── Jupyter-Examples.py
+│   │   ├── Jupyter-Tasks.py
+│   │   └── Jupyter-Tasks-Solutions.py
+│   │
+│   ├── 03-PYTHON-ENVIRONMENT/
+│   │   ├── README.md
+│   │   ├── Env-Notes.py
+│   │   ├── Env-Examples.py
+│   │   ├── Env-Tasks.py
+│   │   └── Env-Tasks-Solutions.py
+│   │
+│   ├── 04-VIRTUAL-ENVIRONMENTS/
+│   │   ├── README.md
+│   │   ├── Venv-Notes.py
+│   │   ├── Venv-Examples.py
+│   │   ├── Venv-Tasks.py
+│   │   └── Venv-Tasks-Solutions.py
+│   │
+│   ├── 05-MODULES/
+│   │   │
+│   │   ├── 01-VARIABLES/
+│   │   ├── 02-SYNTAX/
+│   │   ├── 03-MODULES/
+│   │   ├── 04-CONTROL-FLOW/
+│   │   ├── 05-TYPES-OBJECTS/
+│   │   ├── 06-ERROR-HANDLING/
+│   │   ├── 07-FUNCTIONS-ADVANCED/
+│   │   ├── 08-FILE-HANDLING-DEEP-DIVE/
+│   │   ├── 09-NONE-TYPE/
+│   │   ├── 10-COLLECTIONS/
+│   │   ├── 11-OOP/
+│   │   └── 12-TESTING-DEBUGGING/
+│   │
+│   └── README.md
+│
+├── PROJECTS/
+│   │
+│   ├── 01-CLI-CALCULATOR/
+│   ├── 02-TODO-APP/
+│   └── ...
+│
+├── README.md
+└── LICENSE
+```
+
+
+
+A structured programming learning repository teaching Python,
+HTML, JavaScript, C#, and core programming concepts through 
+organized lessons, exercises, and real-world projects.
+=============================================================================
+
+👤 Author
+Peyman Miyandashti 
+🎓 Polytechnic University of Baja California 
+💻 Information Technology Engineering & Digital Innovation 
+📍 From Mexico 
+📅 Year: 2026 
+🆔 ID: 250161
