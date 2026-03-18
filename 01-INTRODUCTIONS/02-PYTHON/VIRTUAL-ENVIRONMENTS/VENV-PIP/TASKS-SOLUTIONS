@@ -1,0 +1,175 @@
+📘 Module — VIRTUAL ENVIRONMENTS & PIP
+
+"""
+====================================================
+📘 VIRTUAL ENVIRONMENTS & pip — 
+📁 TASK SOLUTIONS
+====================================================
+
+This file contains clean, correct, and professional
+solutions for all Virtual Environments & pip tasks.
+
+⚠️ NOTE:
+Most solutions are TERMINAL commands.
+They are written here for documentation and learning.
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+# Task 1 Solution
+# Check Python version
+# Terminal:
+# python --version
+
+
+# Task 2 Solution
+# Create project folder
+# Terminal:
+# mkdir venv_practice
+# cd venv_practice
+
+
+# Task 3 Solution
+# Create virtual environment
+# Terminal:
+# python -m venv venv
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+
+# Task 4 Solution
+# Activate virtual environment
+
+# Windows:
+# venv\Scripts\activate
+
+# macOS / Linux:
+# source venv/bin/activate
+
+
+# Task 5 Solution
+# Verify active Python interpreter
+# Terminal:
+# where python      # Windows
+# which python      # macOS / Linux
+
+
+# Task 6 Solution
+# List installed packages
+# Terminal:
+# pip list
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+
+# Task 7 Solution
+# Install required packages
+# Terminal:
+# pip install requests
+# pip install numpy
+
+
+# Task 8 Solution
+# Verify installed packages
+# Terminal:
+# pip list
+
+
+# Task 9 Solution
+# Python file example (test_requests.py)
+
+import requests
+
+response = requests.get("https://api.github.com")
+print("Status Code:", response.status_code)
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+
+# Task 10 Solution
+# Create requirements.txt
+# Terminal:
+# pip freeze > requirements.txt
+
+
+# Task 11 Solution
+# Deactivate virtual environment
+# Terminal:
+# deactivate
+
+
+# Task 12 Solution
+# Recreate environment and install dependencies
+# Terminal:
+# python -m venv venv
+# source venv/bin/activate   # or venv\Scripts\activate
+# pip install -r requirements.txt
+
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+
+# Task 13 Solution
+"""
+Professional Workflow:
+
+1. mkdir professional_project
+2. cd professional_project
+3. python -m venv venv
+4. source venv/bin/activate
+5. pip install requests numpy pandas
+6. pip freeze > requirements.txt
+7. deactivate
+8. Recreate venv and install dependencies
+
+This ensures full reproducibility.
+"""
+
+
+# Task 14 Solution
+"""
+The `venv` folder should not be committed to Git because:
+
+✔ It is platform-specific
+✔ It can be recreated easily
+✔ It increases repository size
+✔ Dependencies are tracked via requirements.txt
+
+Best practice:
+Commit requirements.txt, NOT the venv directory.
+"""
+
+
+# Task 15 Solution
+"""
+Virtual environments and pip prevent conflicts by:
+
+✔ Isolating dependencies per project
+✔ Allowing different versions of the same package
+✔ Ensuring consistent environments across teams
+✔ Supporting reproducible builds
+
+This eliminates the classic:
+"It works on my machine" problem.
+"""
+# ====================================================
+# END OF SOLUTIONS — VIRTUAL ENVIRONMENTS & pip
+# ====================================================
+#👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+# ====================================================
