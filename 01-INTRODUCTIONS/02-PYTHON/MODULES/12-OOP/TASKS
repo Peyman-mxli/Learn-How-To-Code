@@ -12,11 +12,9 @@ Rules:
 ❗ Focus on class design and object behavior
 ❗ Follow clean and professional structure
 """
-
 # ====================================================
 # 🟢 RANK 1 — VERY EASY
 # ====================================================
-
 """
 Task 1:
 Create a class named Person.
@@ -25,7 +23,6 @@ Create an object and print the name.
 """
 
 # Your code here
-
 
 """
 Task 2:
@@ -36,7 +33,6 @@ Create one object and display both values.
 
 # Your code here
 
-
 """
 Task 3:
 Create a class named Book.
@@ -45,12 +41,9 @@ Create an object and print the title.
 """
 
 # Your code here
-
-
 # ====================================================
 # 🟡 RANK 2 — EASY
 # ====================================================
-
 """
 Task 4:
 Create a class named Student.
@@ -62,7 +55,6 @@ Create an object and display both values.
 """
 
 # Your code here
-
 
 """
 Task 5:
@@ -77,16 +69,13 @@ that prints the balance.
 
 # Your code here
 
-
 """
 Task 6:
 Create a class named Device.
 Add a method power_on()
 that prints a message.
 """
-
 # Your code here
-
 
 # ====================================================
 # 🟠 RANK 3 — INTERMEDIATE
@@ -100,7 +89,6 @@ Create a method to read the balance.
 
 # Your code here
 
-
 """
 Task 8:
 Create a class named Employee.
@@ -110,7 +98,6 @@ Add a method manage().
 
 # Your code here
 
-
 """
 Task 9:
 Create two classes with the same method name
@@ -118,8 +105,6 @@ and demonstrate polymorphism.
 """
 
 # Your code here
-
-
 # ====================================================
 # 🔵 RANK 4 — ADVANCED
 # ====================================================
@@ -129,18 +114,14 @@ Create an abstract class named Shape.
 Add an abstract method area().
 Create a subclass that implements it.
 """
-
 # Your code here
-
 
 """
 Task 11:
 Create a base class Payment.
 Create two subclasses with different implementations.
 """
-
 # Your code here
-
 
 """
 Task 12:
@@ -149,7 +130,6 @@ Create a class that combines:
 - Methods
 - Inheritance
 """
-
 # Your code here
 # ====================================================
 # 🔴 RANK 5 — PROFESSIONAL
@@ -162,7 +142,6 @@ Include:
 - Login method
 - Encapsulation for password
 """
-
 # Your code here
 
 """
@@ -175,7 +154,6 @@ Include:
 """
 
 # Your code here
-
 """
 Task 15:
 Build a mini system using:
@@ -189,7 +167,6 @@ Example ideas:
 - Payment system
 - University system
 """
-
 # Your code here
 # ====================================================
 # END OF TASKS — OOP
