@@ -1,0 +1,169 @@
+"""
+📘 Module — Functions — (Advanced Concepts)
+
+📁 AdvancedFunctions-Tasks
+
+Topic: Python Functions — Defaults, Arguments, Lambda, Scope, Closures
+
+This file contains PRACTICE TASKS to help you master advanced
+function concepts in Python.
+
+Instructions:
+- Complete tasks from Rank 1 to Rank 5
+- Follow topic sections carefully
+- Do NOT check solutions until all tasks are completed
+"""
+
+# ==================================================
+# 1️⃣ Default Arguments — Tasks
+# ==================================================
+
+# Rank 1
+# Create a function greet() that prints "Hello User" by default.
+
+# Rank 2
+# Create a function power(base, exponent=2) that returns base^exponent.
+
+# Rank 3
+# Create a function calculate_salary(salary, bonus=0) and return total.
+
+# Rank 4
+# Create a function send_email(to, subject="No Subject", urgent=False).
+
+# Rank 5
+# Create a function create_user(username, role="user", active=True)
+# Return a dictionary with user info.
+
+
+# ==================================================
+# 2️⃣ Keyword Arguments — Tasks
+# ==================================================
+
+# Rank 1
+# Call a function using keyword arguments.
+
+# Rank 2
+# Create a function profile(name, age, country) and call it using keywords.
+
+# Rank 3
+# Create a function order(item, quantity, price) using keyword calls.
+
+# Rank 4
+# Call a function with reordered keyword arguments.
+
+# Rank 5
+# Create a configuration function and pass arguments clearly by name.
+
+
+# ==================================================
+# 3️⃣ *args — Tasks
+# ==================================================
+
+# Rank 1
+# Create a function sum_numbers(*args) that returns the sum.
+
+# Rank 2
+# Create a function max_value(*args).
+
+# Rank 3
+# Create a function print_all(*args) that prints each value.
+
+# Rank 4
+# Create a function average(*args) safely (handle no values).
+
+# Rank 5
+# Create a logger(*messages) that numbers each message.
+
+
+# ==================================================
+# 4️⃣ **kwargs — Tasks
+# ==================================================
+
+# Rank 1
+# Create a function show_info(**kwargs) and print key-value pairs.
+
+# Rank 2
+# Create a function build_user(**kwargs) and return a dictionary.
+
+# Rank 3
+# Create a function settings(**kwargs) and check for "debug".
+
+# Rank 4
+# Create a function validate_user(**kwargs) requiring name & email.
+
+# Rank 5
+# Create a report generator using **kwargs.
+
+
+# ==================================================
+# 5️⃣ Lambda Functions — Tasks
+# ==================================================
+
+# Rank 1
+# Create a lambda that doubles a number.
+
+# Rank 2
+# Create a lambda that adds two numbers.
+
+# Rank 3
+# Use lambda with sorted().
+
+# Rank 4
+# Use lambda with filter().
+
+# Rank 5
+# Use lambda with map() to convert values.
+
+
+# ==================================================
+# 6️⃣ Scope — Tasks
+# ==================================================
+
+# Rank 1
+# Demonstrate local scope.
+
+# Rank 2
+# Use a global variable.
+
+# Rank 3
+# Modify global variable using global keyword.
+
+# Rank 4
+# Demonstrate enclosing scope.
+
+# Rank 5
+# Use nonlocal to modify enclosing variable.
+
+
+# ==================================================
+# 7️⃣ Closures — Tasks
+# ==================================================
+
+# Rank 1
+# Create a simple closure.
+
+# Rank 2
+# Create a multiplier closure.
+
+# Rank 3
+# Create a counter closure.
+
+# Rank 4
+# Create a role checker using closure.
+
+# Rank 5
+# Create a configurable logger using closure.
+
+
+# ==================================================
+# End of AdvancedFunctions-Tasks
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
