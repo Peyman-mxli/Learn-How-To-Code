@@ -1,21 +1,18 @@
 📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
 """
 ====================================================
-OBJECT-ORIENTED PROGRAMMING (OOP)
-PRACTICAL EXAMPLES
+📘 OBJECT-ORIENTED PROGRAMMING (OOP)
+📁 PRACTICAL EXAMPLES
 ====================================================
-
 This file demonstrates real-world usage of
 Object-Oriented Programming (OOP) concepts in Python.
 
 Each section contains clear, professional examples
 showing how OOP is applied in software development.
 """
-
 # ====================================================
 # 1. CLASSES & OBJECTS
 # ====================================================
-
 # Example 1: User Account
 class User:
     def __init__(self, username):
@@ -27,7 +24,6 @@ user2 = User("guest")
 print(user1.username)
 print(user2.username)
 
-
 # Example 2: Product
 class Product:
     def __init__(self, name, price):
@@ -37,7 +33,6 @@ class Product:
 product1 = Product("Laptop", 1200)
 print(product1.name, product1.price)
 
-
 # Example 3: Student
 class Student:
     def __init__(self, name):
@@ -45,12 +40,9 @@ class Student:
 
 student = Student("Peyman")
 print(student.name)
-
-
 # ====================================================
 # 2. ATTRIBUTES & METHODS
 # ====================================================
-
 # Example 1: Bank Account
 class BankAccount:
     def __init__(self, owner, balance):
@@ -62,7 +54,6 @@ class BankAccount:
 
 account = BankAccount("Peyman", 5000)
 account.display_balance()
-
 
 # Example 2: Car System
 class Car:
@@ -88,12 +79,9 @@ class Employee:
 
 emp = Employee("Arlette", "Teacher")
 emp.introduce()
-
-
 # ====================================================
 # 3. ENCAPSULATION
 # ====================================================
-
 # Example 1: Private Balance
 class SecureAccount:
     def __init__(self, balance):
@@ -105,7 +93,6 @@ class SecureAccount:
 account = SecureAccount(3000)
 print("Balance:", account.get_balance())
 
-
 # Example 2: Protected Attribute
 class System:
     def __init__(self):
@@ -113,7 +100,6 @@ class System:
 
 system = System()
 print(system._status)
-
 
 # Example 3: Login Protection
 class Login:
@@ -128,12 +114,9 @@ class Login:
 
 login = Login("admin123")
 login.authenticate("admin123")
-
-
 # ====================================================
 # 4. INHERITANCE
 # ====================================================
-
 # Example 1: Employee Hierarchy
 class Employee:
     def work(self):
@@ -147,7 +130,6 @@ mgr = Manager()
 mgr.work()
 mgr.manage()
 
-
 # Example 2: Vehicle System
 class Vehicle:
     def move(self):
@@ -158,7 +140,6 @@ class Bike(Vehicle):
 
 bike = Bike()
 bike.move()
-
 
 # Example 3: University System
 class Person:
@@ -172,12 +153,9 @@ class Professor(Person):
 prof = Professor()
 prof.introduce()
 prof.teach()
-
-
 # ====================================================
 # 5. POLYMORPHISM
 # ====================================================
-
 # Example 1: Animal Sounds
 class Dog:
     def speak(self):
@@ -189,7 +167,6 @@ class Cat:
 
 for animal in (Dog(), Cat()):
     animal.speak()
-
 
 # Example 2: Payment System
 class Cash:
@@ -206,7 +183,6 @@ def process_payment(method):
 process_payment(Cash())
 process_payment(Card())
 
-
 # Example 3: Notification System
 class Email:
     def send(self):
@@ -218,12 +194,9 @@ class SMS:
 
 for service in (Email(), SMS()):
     service.send()
-
-
 # ====================================================
 # 6. ABSTRACTION
 # ====================================================
-
 # Example 1: Shape Interface
 from abc import ABC, abstractmethod
 
@@ -239,7 +212,6 @@ class Circle(Shape):
 circle = Circle()
 circle.draw()
 
-
 # Example 2: Payment Interface
 class Payment(ABC):
     @abstractmethod
@@ -253,7 +225,6 @@ class PayPal(Payment):
 paypal = PayPal()
 paypal.pay()
 
-
 # Example 3: Database Connector
 class Database(ABC):
     @abstractmethod
@@ -266,13 +237,8 @@ class MySQL(Database):
 
 db = MySQL()
 db.connect()
-
-
 # ====================================================
 # END OF EXAMPLES — OOP
-# ====================================================
-
-
 # ====================================================
 # 👤 Author
 # ====================================================
@@ -281,6 +247,4 @@ db.connect()
 📍 From IRAN (Mexico)
 📅 Year: 2026
 🆔 ID: 250161
-
-# 🏁 End of Notes
 # ====================================================
