@@ -1,0 +1,150 @@
+
+---
+
+# 📘 NOTES — TODO APP
+
+```python
+📘 Project — TODO Application
+"""
+====================================================
+📘 TODO APPLICATION
+📁 DEEP THEORY & PROFESSIONAL NOTES
+====================================================
+
+This file explains the structure, logic, and purpose
+of the TODO application in a professional context.
+"""
+# ====================================================
+# 1. PROJECT PURPOSE
+# ====================================================
+"""
+WHAT IT IS:
+A task management system built using CLI.
+
+WHY WE BUILD IT:
+To practice managing data and application state.
+
+WHEN TO USE:
+When learning CRUD operations and data handling.
+
+IMPORTANT:
+This project focuses on logic and structure,
+not interface design.
+"""
+# ====================================================
+# 2. DATA STRUCTURE (CORE)
+# ====================================================
+"""
+WHAT IT IS:
+A list used to store tasks.
+
+WHY WE USE IT:
+To dynamically add, update, and remove tasks.
+
+EXAMPLE:
+tasks = []
+
+IMPORTANT:
+Each task can be stored as a dictionary:
+{ "title": "...", "completed": False }
+"""
+# ====================================================
+# 3. CRUD OPERATIONS
+# ====================================================
+"""
+WHAT IT IS:
+Core operations used in real applications.
+
+CREATE → Add task
+READ → View tasks
+UPDATE → Mark task complete
+DELETE → Remove task
+
+IMPORTANT:
+CRUD is used in databases and APIs.
+"""
+# ====================================================
+# 4. PROGRAM FLOW
+# ====================================================
+"""
+FLOW:
+1. Show menu
+2. User selects action
+3. Perform operation
+4. Update data
+5. Repeat
+
+IMPORTANT:
+Structured flow ensures predictable behavior.
+"""
+# ====================================================
+# 5. USER INPUT HANDLING
+# ====================================================
+"""
+WHAT IT IS:
+Reading and validating user input.
+
+WHY WE USE IT:
+To prevent invalid operations.
+
+IMPORTANT:
+Always check:
+- Valid menu choice
+- Valid task index
+"""
+# ====================================================
+# 6. STATE MANAGEMENT
+# ====================================================
+"""
+WHAT IT IS:
+Tracking current tasks and their status.
+
+WHY WE USE IT:
+To maintain correct application data.
+
+IMPORTANT:
+State must always be consistent.
+"""
+# ====================================================
+# 7. CLEAN CODE PRINCIPLES
+# ====================================================
+"""
+✔ Clear function names
+✔ Small functions
+✔ Separation of logic
+✔ Readable structure
+
+IMPORTANT:
+Professional code is easy to understand.
+"""
+# ====================================================
+# 8. REAL-WORLD CONNECTION
+# ====================================================
+"""
+THIS PROJECT TEACHES:
+
+- Data management
+- Application logic
+- CLI systems
+- CRUD operations
+
+REAL APPLICATIONS:
+- Task managers
+- Project management tools
+- Backend APIs
+
+IMPORTANT:
+This is a core step toward full applications.
+"""
+# ====================================================
+# END OF NOTES — TODO APP
+# ====================================================
+# 👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+# ====================================================
