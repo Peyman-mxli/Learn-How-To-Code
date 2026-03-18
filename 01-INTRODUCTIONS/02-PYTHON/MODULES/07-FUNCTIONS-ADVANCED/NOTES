@@ -1,0 +1,206 @@
+"""
+📘 Module — Functions — (Advanced Concepts)
+
+📁 ADVANCED FUNCTIONS — THEORY & NOTES
+
+Functions are the building blocks of clean and reusable Python code.
+Advanced function concepts allow us to write flexible, readable,
+and scalable programs used in real-world software development.
+
+This file explains each advanced function concept clearly:
+- What it is
+- Why it exists
+- When and how to use it
+"""
+# ======================================================
+# 1. DEFAULT ARGUMENTS
+# ======================================================
+"""
+WHAT IT IS:
+Default arguments allow a function parameter to have a predefined value.
+If the caller does not provide a value, the default is used.
+
+WHY WE USE IT:
+- Simplifies function calls
+- Avoids repetitive arguments
+- Provides sensible fallback values
+
+WHEN TO USE:
+- When a parameter usually has the same value
+- When you want optional behavior without complexity
+"""
+
+def greet(name="User"):
+    print(f"Hello, {name}")
+
+greet()          # Uses default value
+greet("Peyman")  # Overrides default
+
+# ======================================================
+# 2. KEYWORD ARGUMENTS
+# ======================================================
+"""
+WHAT IT IS:
+Keyword arguments allow values to be passed by parameter name
+instead of position.
+
+WHY WE USE IT:
+- Improves readability
+- Avoids mistakes with argument order
+- Makes function calls self-documenting
+
+WHEN TO USE:
+- When functions have many parameters
+- When clarity is more important than brevity
+"""
+
+def create_user(username, role="student"):
+    print(username, role)
+
+create_user(username="peyman", role="admin")
+create_user(role="teacher", username="arlette")
+
+# ======================================================
+# 3. *args (VARIABLE POSITIONAL ARGUMENTS)
+# ======================================================
+"""
+WHAT IT IS:
+*args allows a function to accept any number of positional arguments.
+Internally, they are stored as a tuple.
+
+WHY WE USE IT:
+- When we don’t know how many arguments will be passed
+- Makes functions flexible and reusable
+
+WHEN TO USE:
+- Mathematical operations
+- Data aggregation
+- Utility/helper functions
+"""
+
+def add_numbers(*numbers):
+    return sum(numbers)
+
+print(add_numbers(1, 2, 3))
+print(add_numbers(10, 20, 30, 40))
+
+# ======================================================
+# 4. **kwargs (VARIABLE KEYWORD ARGUMENTS)
+# ======================================================
+"""
+WHAT IT IS:
+**kwargs allows a function to accept any number of keyword arguments.
+Internally, they are stored as a dictionary.
+
+WHY WE USE IT:
+- Flexible configuration
+- Optional named parameters
+- Clean APIs
+
+WHEN TO USE:
+- Configuration functions
+- User profiles
+- Settings and options
+"""
+
+def print_info(**info):
+    for key, value in info.items():
+        print(f"{key}: {value}")
+
+print_info(name="Peyman", age=43, country="Mexico")
+
+# ======================================================
+# 5. LAMBDA FUNCTIONS
+# ======================================================
+
+"""
+WHAT IT IS:
+Lambda functions are small, anonymous functions written in one line.
+
+WHY WE USE IT:
+- Short, simple logic
+- Avoid defining full functions for small operations
+
+WHEN TO USE:
+- map(), filter(), sorted()
+- Simple transformations
+
+WHEN NOT TO USE:
+- Complex logic
+- Multi-step operations
+"""
+
+square = lambda x: x * x
+print(square(5))
+
+# ======================================================
+# 6. SCOPE (LEGB RULE)
+# ======================================================
+"""
+WHAT IT IS:
+Scope defines where a variable is accessible.
+
+LEGB RULE:
+L → Local
+E → Enclosing
+G → Global
+B → Built-in
+
+WHY WE USE IT:
+- Prevents naming conflicts
+- Keeps variables controlled and predictable
+
+IMPORTANT:
+Changing scope incorrectly causes bugs.
+"""
+
+x = "global"
+
+def example():
+    x = "local"
+    print(x)
+
+example()
+print(x)
+
+# ======================================================
+# 7. CLOSURES
+# ======================================================
+"""
+WHAT IT IS:
+A closure is a function that remembers variables
+from its enclosing (outer) function even after
+the outer function has finished execution.
+
+WHY WE USE IT:
+- Maintain state
+- Data hiding
+- Cleaner design than global variables
+
+WHEN TO USE:
+- Counters
+- State managers
+- Function factories
+"""
+
+def counter():
+    count = 0
+    def increment():
+        nonlocal count
+        count += 1
+        return count
+    return increment
+
+c = counter()
+print(c())
+print(c())
+print(c())
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
