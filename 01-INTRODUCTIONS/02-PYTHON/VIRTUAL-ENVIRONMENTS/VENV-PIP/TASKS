@@ -1,0 +1,197 @@
+📘 Module — VIRTUAL ENVIRONMENTS & PIP
+
+"""
+====================================================
+📘 VIRTUAL ENVIRONMENTS & pip — 
+📁 TASKS (RANK 1 → RANK 5)
+====================================================
+
+These tasks focus on understanding and using:
+
+✔ Virtual Environments
+✔ pip package management
+✔ Dependency isolation
+✔ requirements.txt
+
+⚠️ IMPORTANT:
+Most tasks require TERMINAL commands.
+Do NOT write solutions in this file.
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+"""
+Task 1:
+Check the installed Python version
+using a terminal command.
+"""
+
+# Your command here
+
+
+"""
+Task 2:
+Create a new project folder named:
+`venv_practice`
+"""
+
+# Your command here
+
+
+"""
+Task 3:
+Create a virtual environment named `venv`
+inside the project folder.
+"""
+
+# Your command here
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+
+"""
+Task 4:
+Activate the virtual environment.
+
+Write the command for:
+- Windows
+- macOS / Linux
+"""
+
+# Your commands here
+
+
+"""
+Task 5:
+Verify that the virtual environment is active
+by checking the Python interpreter path.
+"""
+
+# Your command here
+
+
+"""
+Task 6:
+List all installed packages inside the virtual environment.
+"""
+
+# Your command here
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+
+"""
+Task 7:
+Install the following packages using pip:
+- requests
+- numpy
+"""
+
+# Your commands here
+
+
+"""
+Task 8:
+Verify that both packages were installed correctly.
+"""
+
+# Your command here
+
+
+"""
+Task 9:
+Create a Python file that imports `requests`
+and performs a simple GET request.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+
+"""
+Task 10:
+Create a requirements.txt file
+containing all installed dependencies.
+"""
+
+# Your command here
+
+
+"""
+Task 11:
+Deactivate the virtual environment
+and confirm it is no longer active.
+"""
+
+# Your command here
+
+
+"""
+Task 12:
+Delete the virtual environment folder,
+recreate it, activate it, and reinstall
+dependencies using requirements.txt.
+"""
+
+# Your commands here
+
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+
+"""
+Task 13:
+Simulate a professional workflow:
+
+✔ Create a new project
+✔ Create and activate venv
+✔ Install at least 3 packages
+✔ Freeze dependencies
+✔ Verify reproducibility
+
+Document the commands used.
+"""
+
+# Your documentation here
+
+
+"""
+Task 14:
+Explain why the `venv` folder should NOT
+be committed to a Git repository.
+"""
+
+# Your explanation here
+
+
+"""
+Task 15:
+Describe how virtual environments and pip
+prevent dependency conflicts in teams.
+"""
+
+# Your explanation here
+
+
+# ====================================================
+# END OF TASKS — VIRTUAL ENVIRONMENTS & pip
+# ====================================================
+#👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+# ====================================================
