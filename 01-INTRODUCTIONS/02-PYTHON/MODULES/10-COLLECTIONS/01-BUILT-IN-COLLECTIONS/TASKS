@@ -1,0 +1,269 @@
+📘 Module — Built-in Collections
+
+"""
+====================================================
+📘 PYTHON BUILT-IN COLLECTIONS
+📁 TASKS (RANK 1 → RANK 5)
+====================================================
+
+This file contains structured practice tasks covering
+ALL Python built-in collections:
+
+- list
+- tuple
+- str
+- range
+- set
+
+🎯 Goal:
+Progress from basic understanding to professional-level
+usage of Python collections.
+
+❗ Rules:
+- Follow the task instructions carefully
+- Use the appropriate collection type
+- Focus on clean, readable code
+- Difficulty increases from Rank 1 to Rank 5
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+"""
+Task 1 (List):
+Create a list of three numbers and print it.
+"""
+# Your code here
+
+
+"""
+Task 2 (Tuple):
+Create a tuple containing your name and age.
+Print the tuple.
+"""
+# Your code here
+
+
+"""
+Task 3 (String):
+Create a string with a welcome message and print it.
+"""
+# Your code here
+
+
+"""
+Task 4 (Range):
+Create a range from 1 to 5 and print it as a list.
+"""
+# Your code here
+
+
+"""
+Task 5 (Set):
+Create a set with three unique values and print it.
+"""
+# Your code here
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+
+"""
+Task 6 (List):
+Create a list of fruits.
+Add one fruit and print the updated list.
+"""
+# Your code here
+
+
+"""
+Task 7 (Tuple):
+Create a tuple of three city names.
+Access and print the second city.
+"""
+# Your code here
+
+
+"""
+Task 8 (String):
+Create a string with your full name.
+Print the length of the string.
+"""
+# Your code here
+
+
+"""
+Task 9 (Range):
+Use range to print numbers from 0 to 9.
+"""
+# Your code here
+
+
+"""
+Task 10 (Set):
+Create a set with duplicate values.
+Print the set and observe the result.
+"""
+# Your code here
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+
+"""
+Task 11 (List):
+Create a list of student scores.
+Replace one score and print the updated list.
+"""
+# Your code here
+
+
+"""
+Task 12 (Tuple):
+Create a tuple representing RGB color values.
+Print each value separately.
+"""
+# Your code here
+
+
+"""
+Task 13 (String):
+Create a string email address.
+Extract and print the domain name.
+"""
+# Your code here
+
+
+"""
+Task 14 (Range):
+Create a range of even numbers from 2 to 20
+and print them as a list.
+"""
+# Your code here
+
+
+"""
+Task 15 (Set):
+Create two sets of skills.
+Print the common skills between them.
+"""
+# Your code here
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+
+"""
+Task 16 (List):
+Create a list of tasks.
+Remove one task and print the remaining tasks.
+"""
+# Your code here
+
+
+"""
+Task 17 (Tuple):
+Create a tuple with user login information
+(username, role, status).
+Print a formatted message using the tuple values.
+"""
+# Your code here
+
+
+"""
+Task 18 (String):
+Create a string sentence.
+Count and print how many times a specific letter appears.
+"""
+# Your code here
+
+
+"""
+Task 19 (Range):
+Use range and a loop to calculate
+the sum of numbers from 1 to 100.
+Print the result.
+"""
+# Your code here
+
+
+"""
+Task 20 (Set):
+Create a set of authorized users.
+Check if a specific user has access and print the result.
+"""
+# Your code here
+
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+
+"""
+Task 21 (List):
+Create a list of product prices.
+Calculate and print the total price.
+"""
+# Your code here
+
+
+"""
+Task 22 (Tuple):
+Create a tuple representing system configuration
+(host, port, protocol).
+Use the tuple values in a print statement.
+"""
+# Your code here
+
+
+"""
+Task 23 (String):
+Create a password string.
+Check if its length is at least 8 characters
+and print an appropriate message.
+"""
+# Your code here
+
+
+"""
+Task 24 (Range):
+Use range to generate user IDs from 1000 to 1010.
+Print each ID.
+"""
+# Your code here
+
+
+"""
+Task 25 (Set):
+Create two sets of course enrollments.
+Print students enrolled in BOTH courses.
+"""
+# Your code here
+
+
+# ====================================================
+# END OF TASKS — BUILT-IN COLLECTIONS
+# ====================================================
+
+"""
+Next File:
+Built-in_Collections_Tasks_Solutions.py
+"""
+
+
+# ===========================================================================
+# 👤 Author
+# ===========================================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+
+# 🏁 End of Notes
+# ===========================================================================
