@@ -1,0 +1,205 @@
+📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
+"""
+====================================================
+📘 OBJECT-ORIENTED PROGRAMMING (OOP)
+📁 TASKS (RANK 1 → RANK 5)
+====================================================
+These tasks help you practice Object-Oriented Programming
+from basic concepts to professional-level design.
+
+Rules:
+❗ Do NOT include solutions here
+❗ Focus on class design and object behavior
+❗ Follow clean and professional structure
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+"""
+Task 1:
+Create a class named Person.
+Add one attribute: name.
+Create an object and print the name.
+"""
+
+# Your code here
+
+
+"""
+Task 2:
+Create a class named Car.
+Add attributes: brand and year.
+Create one object and display both values.
+"""
+
+# Your code here
+
+
+"""
+Task 3:
+Create a class named Book.
+Add an attribute title.
+Create an object and print the title.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+
+"""
+Task 4:
+Create a class named Student.
+Use __init__ to store:
+- name
+- student_id
+
+Create an object and display both values.
+"""
+
+# Your code here
+
+
+"""
+Task 5:
+Create a class named Account.
+Add attributes:
+- owner
+- balance
+
+Create a method show_balance()
+that prints the balance.
+"""
+
+# Your code here
+
+
+"""
+Task 6:
+Create a class named Device.
+Add a method power_on()
+that prints a message.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+"""
+Task 7:
+Create a class named BankAccount.
+Make the balance attribute private.
+Create a method to read the balance.
+"""
+
+# Your code here
+
+
+"""
+Task 8:
+Create a class named Employee.
+Create a subclass Manager.
+Add a method manage().
+"""
+
+# Your code here
+
+
+"""
+Task 9:
+Create two classes with the same method name
+and demonstrate polymorphism.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+"""
+Task 10:
+Create an abstract class named Shape.
+Add an abstract method area().
+Create a subclass that implements it.
+"""
+
+# Your code here
+
+
+"""
+Task 11:
+Create a base class Payment.
+Create two subclasses with different implementations.
+"""
+
+# Your code here
+
+
+"""
+Task 12:
+Create a class that combines:
+- Encapsulation
+- Methods
+- Inheritance
+"""
+
+# Your code here
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+"""
+Task 13:
+Design a User Authentication System using OOP.
+Include:
+- User class
+- Login method
+- Encapsulation for password
+"""
+
+# Your code here
+
+"""
+Task 14:
+Design a small e-commerce system using OOP.
+Include:
+- Product class
+- Order class
+- Methods to display data
+"""
+
+# Your code here
+
+"""
+Task 15:
+Build a mini system using:
+✔ Abstract base class
+✔ Inheritance
+✔ Polymorphism
+✔ Encapsulation
+
+Example ideas:
+- Notification system
+- Payment system
+- University system
+"""
+
+# Your code here
+# ====================================================
+# END OF TASKS — OOP
+# ====================================================
+# 👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+# ====================================================
