@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POO — Sistema de Biblioteca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+<style>
+  :root {
+    --bg:        #f5f3ee;
+    --surface:   #ffffff;
+    --surface2:  #faf9f6;
+    --border:    #e2ddd6;
+    --border2:   #ccc6bd;
+
+    --text:      #1c1917;
+    --muted:     #78716c;
+    --light:     #a8a29e;
+
+    --blue:      #2563eb;
+    --blue-bg:   #eff6ff;
+    --blue-bdr:  #bfdbfe;
+
+    --green:     #16a34a;
+    --green-bg:  #f0fdf4;
+    --green-bdr: #bbf7d0;
+
+    --amber:     #d97706;
+    --amber-bg:  #fffbeb;
+    --amber-bdr: #fde68a;
+
+    --red:       #dc2626;
+    --red-bg:    #fef2f2;
+    --red-bdr:   #fecaca;
+
+    --purple:    #7c3aed;
+    --purple-bg: #f5f3ff;
+    --purple-bdr:#ddd6fe;
+
+    --accent:    #c2410c;   /* terra-cotta — acento principal */
+    --accent-bg: #fff7ed;
+    --accent-bdr:#fed7aa;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ─────────────────────────────────────────── */
+  header {
+    background: var(--surface);
+    border-bottom: 2px solid var(--accent);
+    padding: 0 2rem;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  }
+
+  .logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.03em;
+  }
+  .logo span { color: var(--muted); font-weight: 500; }
+
+  .header-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+  }
+
+  /* ── TABS ───────────────────────────────────────────── */
+  .tabs {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0 1.5rem;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+
+  .tab {
+    padding: 0.75rem 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ── LAYOUT ─────────────────────────────────────────── */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 5rem;
+  }
+
+  .step { display: none; animation: up 0.25s ease; }
+  .step.active { display: block; }
+
+  @keyframes up {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── STEP HEADER ─────────────────────────────────────── */
+  .step-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .step-num {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--border2);
+    line-height: 1;
+    min-width: 64px;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .step-meta { flex: 1; }
+  .step-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+  }
+  h1 { font-size: 1.8rem; font-weight: 700; line-height: 1.2; color: var(--text); }
+  .step-desc { margin-top: 0.4rem; color: var(--muted); font-size: 0.92rem; }
+
+  /* ── TYPOGRAPHY ─────────────────────────────────────── */
+  h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 2rem 0 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  h2 .h2-bar {
+    display: inline-block;
+    width: 4px;
+    height: 1rem;
+    background: var(--accent);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  h3 {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  p { margin-bottom: 0.7rem; color: var(--text); font-size: 0.93rem; }
+
+  code {
+    font-family: 'DM Mono', monospace;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    font-size: 0.83em;
+    color: var(--accent);
+  }
+
+  /* ── CODE BLOCKS ─────────────────────────────────────── */
+  .code-wrap {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    margin: 1rem 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+
+  .code-bar {
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+    padding: 0.45rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  .dots { display: flex; gap: 5px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot.r { background: #ff6058; }
+  .dot.y { background: #ffbd2e; }
+  .dot.g { background: #28c840; }
+
+  pre.hljs, pre {
+    background: #fafaf8 !important;
+    padding: 1.2rem 1.4rem !important;
+    margin: 0 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.82rem !important;
+    line-height: 1.75 !important;
+    overflow-x: auto;
+    border-radius: 0 !important;
+  }
+
+  /* ── CARDS ──────────────────────────────────────────── */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.9rem;
+    margin: 1.2rem 0;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem;
+    transition: box-shadow 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--border2); box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+  .card-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  .card h3 { font-size: 0.85rem; color: var(--blue); margin-bottom: 0.3rem; }
+  .card p  { font-size: 0.82rem; color: var(--muted); margin: 0; }
+
+  /* ── ALERTS ─────────────────────────────────────────── */
+  .alert {
+    border-left: 4px solid;
+    padding: 0.85rem 1.1rem;
+    border-radius: 0 8px 8px 0;
+    margin: 0.9rem 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .alert strong {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+  .alert.info   { background: var(--blue-bg);   border-color: var(--blue);   }
+  .alert.ok     { background: var(--green-bg);  border-color: var(--green);  }
+  .alert.warn   { background: var(--amber-bg);  border-color: var(--amber);  }
+  .alert.err    { background: var(--red-bg);    border-color: var(--red);    }
+  .alert.tip    { background: var(--accent-bg); border-color: var(--accent); }
+  .alert.info   strong { color: var(--blue);   }
+  .alert.ok     strong { color: var(--green);  }
+  .alert.warn   strong { color: var(--amber);  }
+  .alert.err    strong { color: var(--red);    }
+  .alert.tip    strong { color: var(--accent); }
+
+  /* ── LIST ───────────────────────────────────────────── */
+  ul.pts {
+    margin: 0.5rem 0 1rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  ul.pts li { font-size: 0.9rem; color: var(--text); }
+  ul.pts li::marker { color: var(--accent); }
+
+  /* ── ATTR TABLE ─────────────────────────────────────── */
+  .attr-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.8rem 0 1.2rem;
+    font-size: 0.87rem;
+    background: var(--surface);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .attr-table th {
+    background: var(--surface2);
+    padding: 0.6rem 1rem;
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+  .attr-table td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: top;
+  }
+  .attr-table tr:last-child td { border-bottom: none; }
+  .attr-table td code { font-size: 0.8rem; }
+  .attr-table .type { color: var(--blue); font-family: 'DM Mono', monospace; font-size: 0.78rem; }
+  .attr-table .note { color: var(--muted); font-size: 0.82rem; }
+
+  /* ── RETO CARD ──────────────────────────────────────── */
+  .reto {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--purple);
+    border-radius: 10px;
+    padding: 1.3rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .reto-head {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+  .reto-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--purple-bg);
+    color: var(--purple);
+    border: 1px solid var(--purple-bdr);
+    padding: 0.15rem 0.55rem;
+    border-radius: 20px;
+  }
+  .reto h3 { color: var(--purple); font-size: 1rem; margin: 0; }
+
+  /* ── QUESTION CARD ──────────────────────────────────── */
+  .questions { display: flex; flex-direction: column; gap: 0.8rem; margin: 1rem 0; }
+  .q-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .q-item:hover { border-color: var(--border2); }
+  .q-item .q-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .q-num {
+    font-size: 0.7rem;
+    font-weight: 700;
+    background: var(--blue-bg);
+    color: var(--blue);
+    border: 1px solid var(--blue-bdr);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .q-text { font-size: 0.9rem; font-weight: 600; color: var(--text); flex: 1; }
+  .q-hint { font-size: 0.82rem; color: var(--muted); margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px solid var(--border); display: none; }
+  .q-item.open .q-hint { display: block; }
+  .q-arrow { color: var(--light); font-size: 0.75rem; transition: transform 0.2s; margin-top: 3px; }
+  .q-item.open .q-arrow { transform: rotate(90deg); }
+
+  /* ── CHECKLIST ──────────────────────────────────────── */
+  .checklist { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+  .checklist li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.15s;
+    user-select: none;
+  }
+  .checklist li:hover { background: var(--bg); }
+  .check-box {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border2);
+    border-radius: 4px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    transition: all 0.15s;
+    color: #fff;
+    font-weight: 700;
+  }
+  .checklist li.done { background: var(--green-bg); border-color: var(--green-bdr); }
+  .checklist li.done .check-box { background: var(--green); border-color: var(--green); }
+
+  /* ── COMPARE ─────────────────────────────────────────── */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin: 1rem 0; }
+  @media (max-width: 560px) { .compare { grid-template-columns: 1fr; } }
+  .cmp { border-radius: 8px; overflow: hidden; border: 1px solid; }
+  .cmp.bad  { border-color: var(--red); }
+  .cmp.good { border-color: var(--green); }
+  .cmp-head {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .cmp.bad  .cmp-head { background: var(--red-bg);   color: var(--red);   }
+  .cmp.good .cmp-head { background: var(--green-bg); color: var(--green); }
+
+  /* ── SALIDA ESPERADA ─────────────────────────────────── */
+  .output {
+    background: #1c1917;
+    color: #e7e5e4;
+    border-radius: 10px;
+    padding: 1.2rem 1.4rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+    border: 1px solid #292524;
+  }
+  .output .ok  { color: #4ade80; }
+  .output .err { color: #f87171; }
+  .output .dim { color: #78716c; }
+
+  /* ── NAV FOOTER ─────────────────────────────────────── */
+  .nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.55rem 1.3rem;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .nav-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+  .nav-btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .nav-btn.primary:hover { background: #b83509; }
+
+  .prog { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
+
+  hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📚 Biblioteca <span>/ Sistema POO</span></div>
+  <div class="header-tag">Python · Clases · Objetos</div>
+</header>
+
+<div class="tabs" id="tabs">
+  <div class="tab active"  onclick="goTo(0)">Introducción</div>
+  <div class="tab"         onclick="goTo(1)">Clase Libro</div>
+  <div class="tab"         onclick="goTo(2)">Métodos</div>
+  <div class="tab"         onclick="goTo(3)">Reto 1 — Validaciones</div>
+  <div class="tab"         onclick="goTo(4)">Reto 2 — Biblioteca</div>
+  <div class="tab"         onclick="goTo(5)">Reflexión</div>
+  <div class="tab"         onclick="goTo(6)">Checklist</div>
+</div>
+
+<main>
+
+<!-- ══════════════ 0 · INTRO ══════════════ -->
+<section class="step active" id="step-0">
+  <div class="step-header">
+    <div class="step-num">00</div>
+    <div class="step-meta">
+      <div class="step-label">Bienvenida</div>
+      <h1>Sistema de Biblioteca</h1>
+      <p class="step-desc">Aprenderemos los conceptos base de POO creando un sistema real: gestión de libros. Sin herencia ni clases abstractas aún — solo clases, atributos, métodos y objetos.</p>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">📦</div>
+      <h3>Clase</h3>
+      <p>Plantilla para crear objetos. Define qué datos tendrá y qué puede hacer.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔵</div>
+      <h3>Objeto</h3>
+      <p>Instancia concreta de una clase. Cada libro es un objeto diferente.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Atributo</h3>
+      <p>Dato que describe al objeto: título, autor, año, disponibilidad.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚙️</div>
+      <h3>Método</h3>
+      <p>Acción que puede hacer el objeto: prestar, devolver, mostrar info.</p>
+    </div>
+  </div>
+
+  <h2><span class="h2-bar"></span>¿Qué vamos a construir?</h2>
+  <p>Un sistema con <strong>dos clases</strong>: <code>Libro</code> (representa un libro individual) y <code>Biblioteca</code> (gestiona una colección de libros). Cada parte se construye sobre la anterior.</p>
+
+  <div class="alert info">
+    <strong>💡 Consejo antes de empezar</strong>
+    Lee cada paso completo antes de escribir código. Entender <em>qué</em> hace el método antes de <em>cómo</em> escribirlo facilita mucho el proceso.
+  </div>
+
+  <h2><span class="h2-bar"></span>Estructura del ejercicio</h2>
+  <ul class="pts">
+    <li><strong>Parte base:</strong> clase <code>Libro</code> con 4 métodos</li>
+    <li><strong>Reto 1:</strong> agregar validaciones y método <code>es_clasico()</code></li>
+    <li><strong>Reto 2:</strong> clase <code>Biblioteca</code> que agrupa libros</li>
+    <li><strong>Reflexión:</strong> preguntas conceptuales sobre POO</li>
+  </ul>
+
+  <div class="nav-footer">
+    <button class="nav-btn" disabled>← Anterior</button>
+    <span class="prog">Paso 1 / 7</span>
+    <button class="nav-btn primary" onclick="goTo(1)">Siguiente →</button>
+  </div>
+</section>
+
+<!-- ══════════════ 1 · CLASE LIBRO ══════════════ -->
+<section class="step" id="step-1">
+  <div class="step-header">
+    <div class="step-num">01</div>
+    <div class="step-meta">
+      <div class="step-label">Parte Base</div>
+      <h1>La clase Libro</h1>
+      <p class="step-desc">Primero definimos la estructura: qué datos tiene un libro y cómo se inicializa. Aún sin métodos de acción.</p>
+    </div>
+  </div>
+
+  <h2><span class="h2-bar"></span>Atributos que necesitamos</h2>
+
+  <table class="attr-table">
+    <thead>
+      <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>titulo</code></td><td class="type">str</td><td class="note">Nombre del libro</td></tr>
+      <tr><td><code>autor</code></td><td class="type">str</td><td class="note">Nombre del autor</td></tr>
+      <tr><td><code>año_publicacion</code></td><td class="type">int</td><td class="note">Año en que se publicó</td></tr>
+      <tr><td><code>disponible</code></td><td class="type">bool</td><td class="note">¿Está disponible para préstamo? Por defecto <code>True</code></td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="h2-bar"></span>Constructor <code>__init__()</code></h2>
+  <p>El constructor se ejecuta automáticamente cada vez que creamos un objeto con <code>Libro(...)</code>. Recibe los datos iniciales y los guarda en el objeto usando <code>self</code>.</p>
+
+  <div class="code-wrap">
+    <div class="code-bar">
+      <div class="dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+      libro.py — estructura inicial
+    </div>
+    <pre><code class="language-python">class Libro:
+    """Representa un libro en la biblioteca."""
+
+    def __init__(self, titulo: str, autor: str, año_publicacion: int):
+        """
+        Constructor: se ejecuta al crear un objeto Libro.
+        Parámetros: titulo, autor, año_publicacion
+        """
+        self.titulo          = titulo
+        self.autor           = autor
+        self.año_publicacion = año_publicacion
+        self.disponible      = True   # siempre empieza disponible
+
+
+# ── Uso ───────────────────────────────────────────────────
+libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", 1967)
+libro2 = Libro("Don Quijote", "Miguel de Cervantes", 1605)
+
+# Acceder a atributos directamente
+print(libro1.titulo)       # Cien años de soledad
+print(libro1.disponible)   # True
+</code></pre>
+  </div>
+
+  <h2><span class="h2-bar"></span>¿Qué es <code>self</code>?</h2>
+  <p><code>self</code> es una referencia al objeto actual. Cuando escribes <code>self.titulo = titulo</code>, estás guardando el dato <em>dentro</em> de ese objeto específico. Cada objeto tiene su propia copia de los atributos.</p>
+
+  <div class="compare">
+    <div class="cmp bad">
+      <div class="cmp-head">❌ Sin self — dato perdido</div>
+      <pre><code class="language-python">def __init__(self, titulo):
+    titulo = titulo  # variable local
+    # el dato desaparece aquí</code></pre>
+    </div>
+    <div class="cmp good">
+      <div class="cmp-head">✅ Con self — dato guardado</div>
+      <pre><code class="language-python">def __init__(self, titulo):
+    self.titulo = titulo  # guardado en el objeto
+    # accesible desde cualquier método</code></pre>
+    </div>
+  </div>
+
+  <div class="alert tip">
+    <strong>📝 Nota sobre tipos</strong>
+    Los <code>: str</code>, <code>: int</code> en los parámetros son <em>anotaciones de tipo</em> (type hints). Son opcionales y no afectan el funcionamiento, pero hacen el código más legible.
+  </div>
+
+  <div class="nav-footer">
+    <button class="nav-btn" onclick="goTo(0)">← Anterior</button>
+    <span class="prog">Paso 2 / 7</span>
+    <button class="nav-btn primary" onclick="goTo(2)">Siguiente →</button>
+  </div>
+</section>
+
+<!-- ══════════════ 2 · MÉTODOS ══════════════ -->
+<section class="step" id="step-2">
+  <div class="step-header">
+    <div class="step-num">02</div>
+    <div class="step-meta">
+      <div class="step-label">Parte Base</div>
+      <h1>Los 3 métodos de acción</h1>
+      <p class="step-desc">Ahora agregamos <code>prestar()</code>, <code>devolver()</code> y <code>mostrar_info()</code>. Cada uno modifica o consulta el estado del objeto.</p>
+    </div>
+  </div>
+
+  <div class="code-wrap">
+    <div class="code-bar">
+      <div class="dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+      libro.py — clase completa (parte base)
+    </div>
+    <pre><code class="language-python">class Libro:
+    """Representa un libro en la biblioteca."""
+
+    def __init__(self, titulo: str, autor: str, año_publicacion: int):
+        self.titulo          = titulo
+        self.autor           = autor
+        self.año_publicacion = año_publicacion
+        self.disponible      = True
+
+    # ── 1. prestar() ─────────────────────────────────────
+    def prestar(self) -> None:
+        """Presta el libro si está disponible."""
+        if self.disponible:
+            self.disponible = False
+            print(f'✓ El libro "{self.titulo}" ha sido prestado.')
+        else:
+            print(f'✗ El libro "{self.titulo}" ya está prestado.')
+
+    # ── 2. devolver() ────────────────────────────────────
+    def devolver(self) -> None:
+        """Devuelve el libro a la biblioteca."""
+        self.disponible = True
+        print(f'✓ El libro "{self.titulo}" ha sido devuelto.')
+
+    # ── 3. mostrar_info() ────────────────────────────────
+    def mostrar_info(self) -> None:
+        """Muestra la información completa del libro."""
+        estado = "Disponible" if self.disponible else "Prestado"
+        print(f"📖 Título : {self.titulo}")
+        print(f"✍️  Autor  : {self.autor}")
+        print(f"📅 Año    : {self.año_publicacion}")
+        print(f"📌 Estado : {estado}")
+        print()   # línea en blanco al final
+</code></pre>
+  </div>
+
+  <h2><span class="h2-bar"></span>Prueba el código</h2>
+
+  <div class="code-wrap">
+    <div class="code-bar">
+      <div class="dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+      Ejemplo de uso
+    </div>
+    <pre><code class="language-python">libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", 1967)
+
+libro1.mostrar_info()   # muestra todo
+libro1.prestar()        # presta
+libro1.prestar()        # intenta prestar de nuevo → mensaje de error
+libro1.devolver()       # devuelve
+</code></pre>
+  </div>
+
+  <h2><span class="h2-bar"></span>Salida esperada en consola</h2>
+
+  <div class="output">
+    📖 Título : Cien años de soledad<br>
+    ✍️ &nbsp;Autor &nbsp;: Gabriel García Márquez<br>
+    📅 Año &nbsp;&nbsp;&nbsp;: 1967<br>
+    📌 Estado : Disponible<br>
+    <br>
+    <span class="ok">✓ El libro "Cien años de soledad" ha sido prestado.</span><br>
+    <span class="err">✗ El libro "Cien años de soledad" ya está prestado.</span><br>
+    <span class="ok">✓ El libro "Cien años de soledad" ha sido devuelto.</span>
+  </div>
+
+  <h2><span class="h2-bar"></span>Puntos clave</h2>
+  <ul class="pts">
+    <li><code>if self.disponible:</code> — leemos el atributo para decidir qué hacer</li>
+    <li><code>self.disponible = False</code> — modificamos el estado del objeto</li>
+    <li>Los f-strings <code>f"..."</code> permiten insertar variables dentro del texto con <code>{variable}</code></li>
+    <li><code>-> None</code> indica que el método no retorna ningún valor</li>
+  </ul>
+
+  <div class="alert warn">
+    <strong>⚠️ Pregunta para pensar</strong>
+    ¿Por qué <code>devolver()</code> no verifica si el libro ya estaba disponible? ¿Debería hacerlo? ¿Qué mensaje mostrarías?
+  </div>
+
+  <div class="nav-footer">
+    <button class="nav-btn" onclick="goTo(1)">← Anterior</button>
+    <span class="prog">Paso 3 / 7</span>
+    <button class="nav-btn primary" onclick="goTo(3)">Siguiente →</button>
+  </div>
+</section>
+
+<!-- ══════════════ 3 · RETO 1 ══════════════ -->
+<section class="step" id="step-3">
+  <div class="step-header">
+    <div class="step-num">03</div>
+    <div class="step-meta">
+      <div class="step-label">Reto 1</div>
+      <h1>Validaciones y método clásico</h1>
+      <p class="step-desc">Mejoramos la clase <code>Libro</code> para rechazar datos inválidos y poder identificar libros clásicos.</p>
+    </div>
+  </div>
+
+  <div class="reto">
+    <div class="reto-head">
+      <span class="reto-badge">🎯 Reto 1</span>
+      <h3>¿Qué debes agregar?</h3>
+    </div>
+    <ul class="pts">
+      <li>En <code>__init__()</code>: validar que <code>titulo</code> y <code>autor</code> no estén vacíos</li>
+      <li>En <code>__init__()</code>: validar que <code>año_publicacion</code> esté entre 1000 y 2025</li>
+      <li>Si una validación falla: imprimir un mensaje de error claro</li>
+      <li>Nuevo método <code>es_clasico()</code> que retorna <code>True</code> si el libro tiene más de 50 años</li>
+    </ul>
+  </div>
+
+  <div class="code-wrap">
+    <div class="code-bar">
+      <div class="dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+      libro.py — con validaciones y es_clasico()
+    </div>
+    <pre><code class="language-python">class Libro:
+
+    def __init__(self, titulo: str, autor: str, año_publicacion: int):
+
+        # ── Validación 1: título no vacío ─────────────────
+        if not titulo or titulo.strip() == "":
+            print("❌ Error: el título no puede estar vacío.")
+
+        # ── Validación 2: autor no vacío ──────────────────
+        if not autor or autor.strip() == "":
+            print("❌ Error: el autor no puede estar vacío.")
+
+        # ── Validación 3: año dentro del rango válido ─────
+        if año_publicacion < 1000 or año_publicacion > 2025:
+            print(f"❌ Error: el año {año_publicacion} no es válido "
+                  f"(debe estar entre 1000 y 2025).")
+
+        # Guardar los atributos de todos modos
+        self.titulo          = titulo
+        self.autor           = autor
+        self.año_publicacion = año_publicacion
+        self.disponible      = True
+
+    # ── Método es_clasico() ───────────────────────────────
+    def es_clasico(self) -> bool:
+        """
+        Retorna True si el libro tiene más de 50 años de antigüedad.
+        Retorna False en caso contrario.
+        """
+        return (2025 - self.año_publicacion) > 50
+
+    # ... (los demás métodos no cambian)
+</code></pre>
+  </div>
+
+  <h2><span class="h2-bar"></span>Prueba las validaciones</h2>
+
+  <div class="code-wrap">
+    <div class="code-bar">
+      <div class="dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+      Casos de prueba
+    </div>
+    <pre><code class="language-python"># ✅ Caso válido
+libro_ok = Libro("Don Quijote", "Cervantes", 1605)
+print(libro_ok.es_clasico())   # True  (más de 50 años)
+
+# ✅ Libro reciente — no clásico
+libro_nuevo = Libro("Dune", "Frank Herbert", 1965)
+print(libro_nuevo.es_clasico())  # True (1965 también tiene +50)
+
+libro_2020 = Libro("El problema de los tres cuerpos", "Liu Cixin", 2008)
+print(libro_2020.es_clasico())   # False (menos de 50 años)
+
+# ❌ Año inválido
+libro_mal = Libro("Sin título", "Alguien", 500)
+# Imprime: ❌ Error: el año 500 no es válido
+
+# ❌ Título vacío
+libro_vacio = Libro("", "Autor", 2020)
+# Imprime: ❌ Error: el título no puede estar vacío.
+</code></pre>
+  </div>
+
+  <div class="alert ok">
+    <strong>✅ Nota sobre strip()</strong>
+    <code>titulo.strip()</code> elimina espacios al inicio y al final. Así un título de <code>"   "</code> (solo espacios) también se detecta como vacío. Es buena práctica usarlo en validaciones de texto.
+  </div>
+
+  <div class="alert info">
+    <strong>💡 Mejora avanzada opcional</strong>
+    En lugar de solo imprimir el error, puedes lanzar una excepción con <code>raise ValueError("El título no puede estar vacío")</code>. Esto detiene la ejecución y obliga al usuario del código a manejar el error correctamente.
+  </div>
+
+  <div class="nav-footer">
+    <button class="nav-btn" onclick="goTo(2)">← Anterior</button>
+    <span class="prog">Paso 4 / 7</span>
+    <button class="nav-btn primary" onclick="goTo(4)">Siguiente →</button>
+  </div>
+</section>
+
+<!-- ══════════════ 4 · RETO 2 ══════════════ -->
+<section class="step" id="step-4">
+  <div class="step-header">
+    <div class="step-num">04</div>
+    <div class="step-meta">
+      <div class="step-label">Reto 2</div>
+      <h1>La clase Biblioteca</h1>
+      <p class="step-desc">Una clase que <em>contiene</em> objetos de otra clase. La lista <code>libros</code> guarda objetos <code>Libro</code> — esto se llama <strong>composición</strong>.</p>
+    </div>
+  </div>
+
+  <div class="reto">
+    <div class="reto-head">
+      <span class="reto-badge">🎯 Reto 2</span>
+      <h3>¿Qué debe tener la clase Biblioteca?</h3>
+    </div>
+    <ul class="pts">
+      <li>Atributo <code>nombre</code>: nombre de la biblioteca</li>
+      <li>Atributo <code>libros</code>: lista vacía que almacenará objetos <code>Libro</code></li>
+      <li>Método <code>agregar_libro(libro)</code>: añade un libro a la lista</li>
+      <li>Método <code>buscar_por_titulo(titulo)</code>: retorna el libro o <code>None</code></li>
+      <li>Método <code>listar_disponibles()</code>: muestra solo los disponibles</li>
+      <li>Método <code>contar_libros()</code>: retorna el total de libros</li>
+    </ul>
+  </div>
+
+  <div class="code-wrap">
+    <div class="code-bar">
+      <div class="dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+      biblioteca.py
+    </div>
+    <pre><code class="language-python">class Biblioteca:
+    """Gestiona una colección de objetos Libro."""
+
+    def __init__(self, nombre: str):
+        self.nombre = nombre
+        self.libros = []   # lista vacía al inicio
+
+    # ── agregar_libro() ───────────────────────────────────
+    def agregar_libro(self, libro) -> None:
+        """Agrega un objeto Libro a la colección."""
+        self.libros.append(libro)
+        print(f'📚 "{libro.titulo}" agregado a {self.nombre}.')
+
+    # ── buscar_por_titulo() ───────────────────────────────
+    def buscar_por_titulo(self, titulo: str):
+        """
+        Busca un libro por su título.
+        Retorna el objeto Libro si lo encuentra, o None si no existe.
+        """
+        for libro in self.libros:
+            if libro.titulo.lower() == titulo.lower():
+                return libro
+        return None   # no se encontró
+
+    # ── listar_disponibles() ─────────────────────────────
+    def listar_disponibles(self) -> None:
+        """Muestra todos los libros que están disponibles."""
+        print(f"\n📖 Libros disponibles en {self.nombre}:")
+        disponibles = [l for l in self.libros if l.disponible]
+
+        if not disponibles:
+            print("   (No hay libros disponibles en este momento)")
+        else:
+            for i, libro in enumerate(disponibles, 1):
+                print(f"   {i}. {libro.titulo} — {libro.autor} ({libro.año_publicacion})")
+
+    # ── contar_libros() ───────────────────────────────────
+    def contar_libros(self) -> int:
+        """Retorna el número total de libros en la colección."""
+        return len(self.libros)
+</code></pre>
+  </div>
+
+  <h2><span class="h2-bar"></span>Uso completo del sistema</h2>
+
+  <div class="code-wrap">
+    <div class="code-bar">
+      <div class="dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+      main.py — todo junto
+    </div>
+    <pre><code class="language-python">from libro      import Libro
+from biblioteca import Biblioteca
+
+# Crear libros
+libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", 1967)
+libro2 = Libro("Don Quijote",          "Miguel de Cervantes",    1605)
+libro3 = Libro("El Principito",        "Antoine de Saint-Exupéry", 1943)
+
+# Crear biblioteca y agregar libros
+bib = Biblioteca("Biblioteca Central")
+bib.agregar_libro(libro1)
+bib.agregar_libro(libro2)
+bib.agregar_libro(libro3)
+
+print(f"\nTotal de libros: {bib.contar_libros()}")   # 3
+
+# Prestar un libro
+libro1.prestar()
+
+# Ver solo los disponibles (debe mostrar libro2 y libro3)
+bib.listar_disponibles()
+
+# Buscar un libro
+encontrado = bib.buscar_por_titulo("Don Quijote")
+if encontrado:
+    print(f"\nEncontrado: {encontrado.titulo}")
+    encontrado.mostrar_info()
+
+# Buscar uno que no existe
+no_existe = bib.buscar_por_titulo("Harry Potter")
+print(no_existe)   # None
+</code></pre>
+  </div>
+
+  <div class="alert info">
+    <strong>🔍 List comprehension</strong>
+    La línea <code>[l for l in self.libros if l.disponible]</code> crea una nueva lista filtrando solo los disponibles. Es equivalente a un <code>for</code> con un <code>if</code>, pero más corta. Ambas formas son correctas.
+  </div>
+
+  <div class="nav-footer">
+    <button class="nav-btn" onclick="goTo(3)">← Anterior</button>
+    <span class="prog">Paso 5 / 7</span>
+    <button class="nav-btn primary" onclick="goTo(5)">Siguiente →</button>
+  </div>
+</section>
+
+<!-- ══════════════ 5 · REFLEXIÓN ══════════════ -->
+<section class="step" id="step-5">
+  <div class="step-header">
+    <div class="step-num">05</div>
+    <div class="step-meta">
+      <div class="step-label">Preguntas conceptuales</div>
+      <h1>Para reflexionar</h1>
+      <p class="step-desc">Estas preguntas ayudan a afianzar los conceptos. Haz clic en cada una para ver una pista de respuesta.</p>
+    </div>
+  </div>
+
+  <div class="questions">
+
+    <div class="q-item" onclick="toggleQ(this)">
+      <div class="q-top">
+        <div class="q-num">1</div>
+        <div class="q-text">¿Qué es el encapsulamiento y cómo lo vemos en la clase Libro?</div>
+        <div class="q-arrow">▶</div>
+      </div>
+      <div class="q-hint">
+        Encapsulamiento significa que los datos y los métodos que los manipulan viven juntos dentro de la clase. En <code>Libro</code>, el atributo <code>disponible</code> no se modifica directamente desde fuera — se hace a través de <code>prestar()</code> y <code>devolver()</code>, que validan el estado antes de cambiar nada. Esto evita que el dato quede en un estado inconsistente.
+      </div>
+    </div>
+
+    <div class="q-item" onclick="toggleQ(this)">
+      <div class="q-top">
+        <div class="q-num">2</div>
+        <div class="q-text">¿Por qué usar <code>libro.prestar()</code> en vez de <code>libro.disponible = False</code>?</div>
+        <div class="q-arrow">▶</div>
+      </div>
+      <div class="q-hint">
+        <code>libro.disponible = False</code> no valida nada: puedes prestar un libro que ya estaba prestado sin ningún aviso. <code>prestar()</code> revisa primero el estado y muestra un mensaje apropiado. Además, si en el futuro agregas un registro de préstamos, lo haces solo dentro de <code>prestar()</code>, no en todos los lugares del código que asignan el atributo.
+      </div>
+    </div>
+
+    <div class="q-item" onclick="toggleQ(this)">
+      <div class="q-top">
+        <div class="q-num">3</div>
+        <div class="q-text">¿Qué ventaja tiene la clase Biblioteca frente a usar una lista suelta?</div>
+        <div class="q-arrow">▶</div>
+      </div>
+      <div class="q-hint">
+        Con una lista suelta tendrías que repetir el código de búsqueda, filtrado y conteo en cada parte del programa. La clase <code>Biblioteca</code> centraliza esa lógica: si cambia la forma de buscar, lo modificas en un solo lugar. También agrupa datos (<code>nombre</code>, <code>libros</code>) con las operaciones que los usan — eso es POO.
+      </div>
+    </div>
+
+    <div class="q-item" onclick="toggleQ(this)">
+      <div class="q-top">
+        <div class="q-num">4</div>
+        <div class="q-text">Si crearas <code>LibroDigital</code> heredando de <code>Libro</code>, ¿qué agregarías?</div>
+        <div class="q-arrow">▶</div>
+      </div>
+      <div class="q-hint">
+        Posibles atributos extra: <code>formato</code> ("PDF", "EPUB"), <code>tamaño_mb</code>, <code>url_descarga</code>, <code>descargas_simultaneas</code> (límite de cuántos lo pueden "tener" al mismo tiempo). Métodos extra: <code>descargar()</code>, <code>obtener_formato()</code>. Heredaría <code>prestar()</code> y <code>devolver()</code> de <code>Libro</code>, quizás sobreescribiendo <code>prestar()</code> para permitir múltiples préstamos simultáneos.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nav-footer">
+    <button class="nav-btn" onclick="goTo(4)">← Anterior</button>
+    <span class="prog">Paso 6 / 7</span>
+    <button class="nav-btn primary" onclick="goTo(6)">Siguiente →</button>
+  </div>
+</section>
+
+<!-- ══════════════ 6 · CHECKLIST ══════════════ -->
+<section class="step" id="step-6">
+  <div class="step-header">
+    <div class="step-num">06</div>
+    <div class="step-meta">
+      <div class="step-label">Evaluación</div>
+      <h1>Checklist de entrega</h1>
+      <p class="step-desc">Verifica cada punto antes de entregar. Haz clic en cada item para marcarlo.</p>
+    </div>
+  </div>
+
+  <h2><span class="h2-bar"></span>Parte base — clase Libro</h2>
+  <ul class="checklist">
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div>La clase <code>Libro</code> tiene los 4 atributos correctos</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>disponible</code> inicia en <code>True</code> automáticamente</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>prestar()</code> verifica si el libro ya está prestado</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>devolver()</code> cambia el estado a <code>True</code></li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>mostrar_info()</code> imprime todos los atributos</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div>El código ejecuta sin errores</li>
+  </ul>
+
+  <h2><span class="h2-bar"></span>Reto 1 — Validaciones</h2>
+  <ul class="checklist">
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div>Se valida que título y autor no estén vacíos</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div>Se valida que el año esté entre 1000 y 2025</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>es_clasico()</code> retorna <code>True</code> / <code>False</code> correctamente</li>
+  </ul>
+
+  <h2><span class="h2-bar"></span>Reto 2 — clase Biblioteca</h2>
+  <ul class="checklist">
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>agregar_libro()</code> añade correctamente a la lista</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>buscar_por_titulo()</code> retorna <code>None</code> si no existe</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>listar_disponibles()</code> filtra correctamente</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div><code>contar_libros()</code> usa <code>len()</code> de la lista</li>
+  </ul>
+
+  <h2><span class="h2-bar"></span>Calidad del código</h2>
+  <ul class="checklist">
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div>Cada método tiene un docstring o comentario</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div>Los nombres de variables son descriptivos</li>
+    <li onclick="toggleItem(this)"><div class="check-box">✓</div>Las preguntas de reflexión respondidas (al menos 2)</li>
+  </ul>
+
+  <hr>
+
+  <div class="alert ok">
+    <strong>🚀 ¡Listo!</strong>
+    Si completaste todos los puntos, tienes un sistema de biblioteca funcional usando los principios fundamentales de POO: encapsulamiento, cohesión y composición de clases.
+  </div>
+
+  <div class="nav-footer">
+    <button class="nav-btn" onclick="goTo(5)">← Anterior</button>
+    <span class="prog">Paso 7 / 7</span>
+    <button class="nav-btn" onclick="goTo(0)">↺ Inicio</button>
+  </div>
+</section>
+
+</main>
+
+<script>
+  hljs.highlightAll();
+
+  let cur = 0;
+
+  function goTo(n) {
+    document.getElementById('step-' + cur).classList.remove('active');
+    document.querySelectorAll('.tab')[cur].classList.remove('active');
+    cur = n;
+    document.getElementById('step-' + cur).classList.add('active');
+    document.querySelectorAll('.tab')[cur].classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelectorAll('#step-' + cur + ' pre code').forEach(el => {
+      if (!el.classList.contains('hljs')) hljs.highlightElement(el);
+    });
+  }
+
+  function toggleQ(el) {
+    el.classList.toggle('open');
+  }
+
+  function toggleItem(li) {
+    li.classList.toggle('done');
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' && cur < 6) goTo(cur + 1);
+    if (e.key === 'ArrowLeft'  && cur > 0) goTo(cur - 1);
+  });
+</script>
+</body>
+</html>
