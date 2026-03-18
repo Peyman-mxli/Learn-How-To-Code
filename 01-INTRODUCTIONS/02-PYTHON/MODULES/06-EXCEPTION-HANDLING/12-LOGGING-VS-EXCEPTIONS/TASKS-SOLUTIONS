@@ -1,0 +1,103 @@
+"""
+📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
+
+📁 LoggingVsExceptions-Tasks-Solutions
+
+Topic: Exception Handling — Logging vs Exceptions
+
+This file contains SOLUTIONS for all tasks in LoggingVsExceptions_Tasks.py.
+
+Review notes:
+- Observe where logging is used for visibility
+- Notice where exceptions enforce correctness
+- Understand how both are combined properly
+"""
+
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
+# ==================================================
+# Rank 1 — Log Function Start (Solution)
+# ==================================================
+def start_app():
+    logging.info("Application started")
+
+start_app()
+
+
+# ==================================================
+# Rank 2 — Log Warning for Suspicious Input (Solution)
+# ==================================================
+def check_age(age):
+    if age < 0:
+        logging.warning("Negative age provided")
+        return False
+    return True
+
+print("Valid age:", check_age(25))
+print("Valid age:", check_age(-5))
+
+
+# ==================================================
+# Rank 3 — Raise Exception for Invalid Input (Solution)
+# ==================================================
+def withdraw(balance, amount):
+    if amount > balance:
+        raise ValueError("Insufficient funds")
+    return balance - amount
+
+try:
+    print("New balance:", withdraw(100, 50))
+    print("New balance:", withdraw(100, 150))
+except ValueError as e:
+    print("Error:", e)
+
+
+# ==================================================
+# Rank 4 — Combine Logging and Exception Handling (Solution)
+# ==================================================
+def open_file(name):
+    try:
+        with open(name):
+            logging.info("File opened successfully")
+    except FileNotFoundError:
+        logging.error("File does not exist")
+        raise
+
+try:
+    open_file("missing.txt")
+except FileNotFoundError:
+    print("Handled missing file")
+
+
+# ==================================================
+# Rank 5 — Smart Function Design (Solution)
+# ==================================================
+def process_payment(amount):
+    logging.info("Processing payment")
+    if amount <= 0:
+        logging.error("Invalid payment amount")
+        raise ValueError("Amount must be positive")
+    logging.info("Payment successful")
+
+try:
+    process_payment(100)
+    process_payment(-10)
+except ValueError as e:
+    logging.critical(f"Critical error: {e}")
+
+
+# ==================================================
+# End of LoggingVsExceptions-Tasks-Solutions
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
