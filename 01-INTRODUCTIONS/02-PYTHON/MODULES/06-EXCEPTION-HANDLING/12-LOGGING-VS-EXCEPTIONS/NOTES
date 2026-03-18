@@ -1,0 +1,132 @@
+"""
+📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
+
+
+📁 LoggingVsExceptions-Notes
+
+Topic: Exception Handling — Logging vs Exceptions (Algorithm Thinking)
+
+This file explains the difference between logging and exceptions
+using a step-by-step algorithm approach.
+
+Goal:
+- Understand WHEN to raise exceptions
+- Understand WHEN to use logging
+- Apply correct decision flow in real programs
+"""
+
+# ==================================================
+# 1. Core Concept (Algorithm View)
+# ==================================================
+# Step 1: Detect a situation in the program
+# Step 2: Ask → Is this an ERROR that breaks logic?
+#     YES → Raise an exception
+#     NO  → Continue to Step 3
+#
+# Step 3: Ask → Is this information useful for tracking/debugging?
+#     YES → Log the event
+#     NO  → Ignore or continue normally
+# ==================================================
+# 2. Exceptions — Algorithm Behavior
+# ==================================================
+# IF program state is invalid:
+#     → raise Exception
+#     → execution stops (unless handled)
+#
+# Use exceptions for:
+# - Invalid inputs
+# - Broken assumptions
+# - Business rule violations
+# ==================================================
+# 3. Logging — Algorithm Behavior
+# ==================================================
+# IF program is running normally BUT you want visibility:
+#     → log message
+#     → execution continues
+#
+# Use logging for:
+# - Tracking flow
+# - Debugging
+# - Monitoring system behavior
+# ==================================================
+# 4. Logging Levels (Decision Tree)
+# ==================================================
+# IF very detailed internal info:
+#     → DEBUG
+#
+# ELSE IF normal operation:
+#     → INFO
+#
+# ELSE IF something unexpected but recoverable:
+#     → WARNING
+#
+# ELSE IF a serious issue occurred:
+#     → ERROR
+#
+# ELSE IF system may crash or stop:
+#     → CRITICAL
+# ==================================================
+# 5. Rule of Thumb (Algorithm)
+# ==================================================
+# IF state is WRONG:
+#     → raise Exception
+#
+# IF state is OK but worth recording:
+#     → use logging
+# ==================================================
+# 6. Practical Flow Example
+# ==================================================
+# INPUT → Validate
+#
+# IF invalid:
+#     raise ValueError
+#
+# ELSE:
+#     log INFO "Valid input received"
+#
+# PROCESS → Execute logic
+#
+# IF minor issue:
+#     log WARNING
+#
+# IF major failure:
+#     log ERROR or raise Exception
+# ==================================================
+# 7. Logging Example
+# ==================================================
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
+logging.debug("Debug message")
+logging.info("Info message")
+logging.warning("Warning message")
+logging.error("Error message")
+logging.critical("Critical message")
+# ==================================================
+# 8. Best Practices
+# ==================================================
+# ✅ Use exceptions to enforce correctness
+# ✅ Use logging for observability
+# ✅ Choose correct logging level
+# ❌ Do not replace exceptions with logging
+# ❌ Do not over-log unnecessary details
+# ==================================================
+# 9. Key Takeaway
+# ==================================================
+# Exceptions control program correctness.
+# Logging provides visibility without stopping execution.
+#
+# Both must be used together for professional applications.
+# ==================================================
+# End of LoggingVsExceptions-Notes
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
