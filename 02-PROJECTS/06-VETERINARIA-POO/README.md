@@ -39,9 +39,10 @@ plaintext
 biblioteca_poo/
 │
 ├── main.py
-├── libro.py
-├── usuario.py
-├── biblioteca.py
+├── __init__.py
+├── ave.py
+├── gato.py
+├── perro.py
 └── README.md
 ============================================================================
 🧠 What You Will Learn
