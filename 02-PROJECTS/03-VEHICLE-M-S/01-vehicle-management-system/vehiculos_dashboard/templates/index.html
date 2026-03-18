@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Vehicle Dashboard</title>
+
+<link rel="stylesheet" href="../static/css/styles.css">
+
+</head>
+
+<body>
+
+<h1>Vehicle Fleet Dashboard</h1>
+
+<!-- ================= CAR ================= -->
+
+<div class="card">
+
+<h2>🚗 Automóvil</h2>
+
+<p>Speed: <span id="speed">0</span> km/h</p>
+
+<button onclick="accelerate()">Accelerate</button>
+<button onclick="brake()">Brake</button>
+
+<p>
+Model: Toyota Corolla <br>
+Doors: 4 <br>
+Transmission: Automatic
+</p>
+
+</div>
+
+
+<!-- ================= MOTORCYCLE ================= -->
+
+<div class="card">
+
+<h2>🏍️ Motocicleta</h2>
+
+<p>Model: Yamaha R6</p>
+<p>Cilindrada: 600cc</p>
+
+<button onclick="alert('Levantando caballete 🏍️')">Levantar caballete</button>
+<button onclick="alert('¡Haciendo caballito! 🤘')">Caballito</button>
+<button onclick="alert('🪖 Casco puesto. Seguridad primero.')">Ponerse casco</button>
+
+</div>
+
+
+<!-- ================= TRUCK ================= -->
+
+<div class="card">
+
+<h2>🚚 Camión</h2>
+
+<p>Model: Volvo FH16</p>
+
+<p>Capacidad: 25 toneladas</p>
+
+<button onclick="alert('Cargando 10 toneladas')">Cargar</button>
+<button onclick="alert('Descargando camión')">Descargar</button>
+
+</div>
+
+
+<!-- ================= BICYCLE ================= -->
+
+<div class="card">
+
+<h2>🚲 Bicicleta</h2>
+
+<p>Model: Trek X-Caliber</p>
+<p>Tipo: Montaña</p>
+<p>Cambios: 12</p>
+
+<button onclick="alert('🔔 Ring Ring!')">Tocar timbre</button>
+<button onclick="alert('Cambio ajustado')">Cambiar velocidad</button>
+
+</div>
+
+
+<!-- ================= POLYMORPHISM ================= -->
+
+<div class="card">
+
+<h2>🎭 Fleet / Polymorphism</h2>
+
+<p>All vehicles respond to the same method:</p>
+
+<pre>
+for v in flota:
+    v.acelerar()
+    v.obtener_informacion()
+</pre>
+
+<p>
+Vehicles in fleet:
+</p>
+
+<ul>
+<li>Automóvil</li>
+<li>Motocicleta</li>
+<li>Camión</li>
+<li>Bicicleta</li>
+</ul>
+
+</div>
+
+<script src="../static/js/app.js"></script>
+
+</body>
+</html>
