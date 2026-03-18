@@ -1,4 +1,4 @@
-🚀— Introductions, Setups & Foundations
+— Introductions, Setups & Foundations
 Welcome to the first module of my Python learning journey in 2025!
 This foundational module prepares me with everything I need before diving into real Python coding.
 
@@ -46,7 +46,7 @@ Recommended order:
 🎯 Confirm your environment is ready for Module 02 — Loops
 Once I’m confident everything works, I can move on to the next module.
 
-➡️ Next Module: 02-Loops 🔁
+
 
 👨‍💻 Notes & Tips
 If you get stuck:
