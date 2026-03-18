@@ -1,0 +1,66 @@
+"""
+📘 Module — File Handling — (Deep Dive)
+
+📁 FileHandling-Tasks-Solutions
+
+Topic: Python File Handling — Read, Write, Append, Errors
+
+This file contains SOLUTIONS for all tasks in FileHandling-Tasks.py.
+
+Review notes:
+- Focus on correct file modes
+- Use safe file handling (with)
+- Handle errors properly
+"""
+
+# ==================================================
+# 🧠 FILE HANDLING — Solutions
+# ==================================================
+
+# Rank 1
+with open("task.txt", "w") as f:
+    f.write("First task completed")
+
+
+# Rank 2
+with open("task.txt", "r") as f:
+    print(f.read())
+
+
+# Rank 3
+with open("task.txt", "a") as f:
+    f.write("\nSecond line")
+    f.write("\nThird line")
+
+
+# Rank 4
+try:
+    with open("task.txt", "r") as f:
+        print(f.read())
+except FileNotFoundError:
+    print("File not found")
+
+
+# Rank 5
+def count_lines(filename):
+    try:
+        with open(filename, "r") as f:
+            return len(f.readlines())
+    except FileNotFoundError:
+        return 0
+
+print(count_lines("task.txt"))
+
+
+# ==================================================
+# End of FileHandling-Tasks-Solutions
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
