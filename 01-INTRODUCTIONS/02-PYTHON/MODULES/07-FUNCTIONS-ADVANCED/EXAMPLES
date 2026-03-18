@@ -1,0 +1,209 @@
+"""
+📘 Module — Functions — (Advanced Concepts)
+
+📁 AdvancedFunctions-Notes
+
+Topic: Python Functions — Defaults, Arguments, Lambda, Scope, Closures
+
+This file contains STUDY NOTES explaining advanced function
+features in Python with structured concepts and best practices.
+
+Focus:
+- Function flexibility
+- Code readability
+- Reusability
+- Real-world usage patterns
+"""
+# ==================================================
+# 1. Default Arguments
+# ==================================================
+# Default arguments allow functions to have predefined values.
+#
+# Syntax:
+# def function(param=value):
+#     pass
+#
+# Behavior:
+# - Used when no argument is provided
+# - Can be overridden by passing a value
+#
+# Advantages:
+# - Reduces repetition
+# - Simplifies function calls
+# - Provides safe defaults
+#
+# Rules:
+# - Default parameters must come AFTER required ones
+#
+# Example pattern:
+# def greet(name="User"):
+#     pass
+# ==================================================
+# 2. Keyword Arguments
+# ==================================================
+# Keyword arguments allow passing arguments using parameter names.
+#
+# Syntax:
+# function(param=value)
+#
+# Advantages:
+# - Improves readability
+# - Allows reordering arguments
+# - Makes APIs clearer
+#
+# Behavior:
+# - Order does NOT matter when using keywords
+#
+# Example pattern:
+# connect(host="localhost", port=443)
+# ==================================================
+# 3. *args (Variable Positional Arguments)
+# ==================================================
+# *args allows a function to accept unlimited positional arguments.
+#
+# Syntax:
+# def function(*args):
+#     pass
+#
+# Behavior:
+# - Collected into a tuple
+# - Useful when number of inputs is unknown
+#
+# Use cases:
+# - Math operations
+# - Aggregations
+# - Flexible input handling
+#
+# Example pattern:
+# def add(*numbers):
+#     return sum(numbers)
+# ==================================================
+# 4. **kwargs (Variable Keyword Arguments)
+# ==================================================
+# **kwargs allows a function to accept unlimited keyword arguments.
+#
+# Syntax:
+# def function(**kwargs):
+#     pass
+#
+# Behavior:
+# - Collected into a dictionary
+# - Keys = parameter names
+# - Values = passed values
+#
+# Use cases:
+# - Configuration systems
+# - Dynamic data structures
+# - Flexible APIs
+#
+# Example pattern:
+# def configure(**settings):
+#     pass
+# ==================================================
+# 5. Lambda Functions
+# ==================================================
+# Lambda functions are small anonymous functions.
+#
+# Syntax:
+# lambda arguments: expression
+#
+# Behavior:
+# - One-line functions
+# - No name required
+# - Returns value automatically
+#
+# Use cases:
+# - Short operations
+# - Sorting keys
+# - Functional programming (map, filter)
+#
+# Limitations:
+# - Only one expression
+# - Not suitable for complex logic
+#
+# Example pattern:
+# square = lambda x: x * x
+# ==================================================
+# 6. Scope (LEGB Rule)
+# ==================================================
+# Scope determines where variables are accessible.
+#
+# LEGB Rule:
+# L → Local       (inside function)
+# E → Enclosing   (nested functions)
+# G → Global      (module level)
+# B → Built-in    (Python built-ins)
+#
+# Lookup order:
+# Python searches variables in LEGB order.
+#
+# Keywords:
+# - global → modify global variables
+# - nonlocal → modify enclosing variables
+#
+# Example pattern:
+# def outer():
+#     x = 10
+#     def inner():
+#         print(x)
+# ==================================================
+# 7. Closures
+# ==================================================
+# A closure is a function that remembers variables
+# from its enclosing scope even after execution ends.
+#
+# Requirements:
+# - Nested function
+# - Uses variable from outer function
+# - Outer function returns inner function
+#
+# Behavior:
+# - Preserves state
+# - Enables function factories
+#
+# Use cases:
+# - Counters
+# - Configurable functions
+# - Encapsulation
+#
+# Example pattern:
+# def multiplier(n):
+#     def multiply(x):
+#         return x * n
+#     return multiply
+# ==================================================
+# 8. Best Practices
+# ==================================================
+# ✅ Use default arguments for common values
+# ✅ Use keyword arguments for clarity
+# ✅ Use *args for flexible positional input
+# ✅ Use **kwargs for dynamic configurations
+# ✅ Use lambda for simple one-line logic
+# ✅ Understand scope to avoid bugs
+# ✅ Use closures for reusable logic
+# ❌ Avoid too many parameters
+# ❌ Avoid complex lambda expressions
+# ❌ Avoid misuse of global variables
+# ❌ Avoid unclear argument usage
+# ==================================================
+# 9. Key Takeaway
+# ==================================================
+# Advanced function features make Python code:
+# - Flexible
+# - Readable
+# - Scalable
+#
+# Mastering these concepts is essential for
+# professional-level Python development.
+# ==================================================
+# End of AdvancedFunctions-Notes
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
