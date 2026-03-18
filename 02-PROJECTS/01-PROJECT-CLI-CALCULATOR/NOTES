@@ -1,0 +1,183 @@
+---
+#📘 NOTES — CLI CALCULATOR (DEEP THEORY)
+```python
+📘 Project — CLI Calculator
+"""
+====================================================
+📘 CLI CALCULATOR
+📁 DEEP THEORY & PROFESSIONAL NOTES
+====================================================
+
+This file explains how the CLI Calculator is built,
+why each step exists, and how it reflects real-world
+software development practices.
+"""
+# ====================================================
+# 1. PROJECT PURPOSE
+# ====================================================
+"""
+WHAT IT IS:
+A command-line calculator that performs arithmetic operations.
+
+WHY WE BUILD IT:
+To practice core programming concepts in a real application.
+
+WHEN TO USE:
+When learning how to move from scripts to interactive programs.
+
+IMPORTANT:
+This project is not about math,
+it is about program structure and logic flow.
+"""
+# ====================================================
+# 2. PROGRAM FLOW (CORE LOGIC)
+# ====================================================
+"""
+WHAT IT IS:
+The sequence of steps the program follows.
+
+FLOW:
+1. Start program
+2. Show menu
+3. Get user choice
+4. Get numbers
+5. Perform calculation
+6. Show result
+7. Repeat
+
+WHY IT MATTERS:
+Every real-world application follows a structured flow.
+
+IMPORTANT:
+Good flow = predictable, maintainable program.
+"""
+# ====================================================
+# 3. USER INPUT HANDLING
+# ====================================================
+"""
+WHAT IT IS:
+Reading data from the user using input().
+
+WHY WE USE IT:
+To make the program interactive.
+
+WHEN TO USE:
+In CLI tools and user-driven systems.
+
+IMPORTANT:
+Always validate input to avoid crashes.
+"""
+# ====================================================
+# 4. CONDITIONAL LOGIC
+# ====================================================
+"""
+WHAT IT IS:
+Using if / elif / else to control decisions.
+
+WHY WE USE IT:
+To select the correct operation.
+
+EXAMPLE:
+If user selects 1 → addition
+If user selects 2 → subtraction
+
+IMPORTANT:
+This is the decision-making core of the program.
+"""
+# ====================================================
+# 5. LOOPS (PROGRAM CONTINUITY)
+# ====================================================
+"""
+WHAT IT IS:
+Using a loop (while) to keep the program running.
+
+WHY WE USE IT:
+So the user can perform multiple calculations.
+
+WHEN TO STOP:
+When the user chooses to exit.
+
+IMPORTANT:
+Without loops → program runs only once.
+"""
+# ====================================================
+# 6. FUNCTIONS (OPTIONAL IMPROVEMENT)
+# ====================================================
+"""
+WHAT IT IS:
+Reusable blocks of code.
+
+WHY WE USE IT:
+To organize logic and avoid repetition.
+
+EXAMPLE:
+Function for addition
+Function for subtraction
+
+IMPORTANT:
+Functions improve readability and scalability.
+"""
+# ====================================================
+# 7. ERROR HANDLING
+# ====================================================
+"""
+WHAT IT IS:
+Managing invalid input and runtime errors.
+
+WHY WE USE IT:
+To prevent program crashes.
+
+EXAMPLES:
+- Non-numeric input
+- Division by zero
+
+IMPORTANT:
+Professional programs NEVER crash on user input.
+"""
+# ====================================================
+# 8. CLEAN CODE PRINCIPLES
+# ====================================================
+"""
+WHAT IT IS:
+Writing readable and maintainable code.
+
+RULES:
+✔ Use clear variable names
+✔ Keep logic simple
+✔ Avoid repetition
+✔ Structure code properly
+
+IMPORTANT:
+Readable code = professional code.
+"""
+# ====================================================
+# 9. REAL-WORLD CONNECTION
+# ====================================================
+"""
+THIS PROJECT TEACHES:
+
+- CLI tool development
+- Input/output handling
+- Logic structuring
+- Program flow design
+
+REAL APPLICATIONS:
+- Terminal tools
+- Automation scripts
+- System utilities
+
+IMPORTANT:
+This is your first step into real software systems.
+"""
+# ====================================================
+# END OF NOTES — CLI CALCULATOR
+# ====================================================
+# 👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+# ====================================================
