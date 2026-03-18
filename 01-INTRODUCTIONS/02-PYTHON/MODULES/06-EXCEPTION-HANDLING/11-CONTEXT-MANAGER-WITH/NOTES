@@ -1,0 +1,128 @@
+📘 Module — Context Managers — (The with Statement)
+
+📁 ContextManagers-Notes
+
+Topic: Exception Handling — Context Managers (with Statement)
+
+This file contains STUDY NOTES explaining how context managers work
+in Python and how they are used to safely manage resources.
+
+These notes focus on concepts, rules, and best practices.
+"""
+# ==================================================
+# 1. What Is a Context Manager?
+# ==================================================
+# A context manager is an object that manages resources.
+# It defines two special methods:
+# - __enter__()
+# - __exit__()
+#
+# It is used with the 'with' statement to ensure that
+# resources are properly acquired and released.
+# ==================================================
+# 2. Why Use Context Managers?
+# ==================================================
+# Manual resource management can lead to problems such as:
+# - Memory leaks
+# - Open files not being closed
+# - Unreleased connections
+#
+# Context managers:
+# - Automatically clean up resources
+# - Make code cleaner and safer
+# - Handle exceptions properly
+# ==================================================
+# 3. Basic Syntax
+# ==================================================
+# with resource as variable:
+#     block
+#
+# Steps:
+# 1. __enter__() is called
+# 2. Block executes
+# 3. __exit__() is called (even if error occurs)
+# ==================================================
+# 4. Equivalent try/finally
+# ==================================================
+# Context managers replace this pattern:
+#
+# try:
+#     resource = open("file.txt")
+# finally:
+#     resource.close()
+#
+# Using 'with' is cleaner and safer.
+# ==================================================
+# 5. Creating a Context Manager (Class-Based)
+# ==================================================
+# A context manager class must implement:
+#
+# class MyContext:
+#     def __enter__(self):
+#         return resource
+#
+#     def __exit__(self, exc_type, exc_value, traceback):
+#         pass
+#
+# Rules:
+# - __enter__ returns the resource
+# - __exit__ handles cleanup
+# ==================================================
+# 6. Handling Exceptions
+# ==================================================
+# __exit__ receives:
+# - exc_type
+# - exc_value
+# - traceback
+#
+# Return values:
+# - False → propagate exception
+# - True → suppress exception
+# ==================================================
+# 7. Example Explanation
+# ==================================================
+class SimpleContext:
+    def __enter__(self):
+        print("Entering context")
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Exiting context")
+        return False
+# ==================================================
+# 8. When to Use Context Managers
+# ==================================================
+# Use context managers for:
+# - File handling
+# - Database connections
+# - Network resources
+# - Locks (threading)
+#
+# Avoid:
+# - Simple short scripts without resource management
+# ==================================================
+# 9. Best Practices
+# ==================================================
+# ✅ Always use 'with' for file operations
+# ✅ Keep __enter__ and __exit__ simple
+# ✅ Handle exceptions carefully
+# ❌ Do not suppress exceptions unless necessary
+# ❌ Do not overcomplicate context managers
+# ==================================================
+# 10. Key Takeaway
+# ==================================================
+# Context managers provide a clean and reliable way
+# to manage resources and ensure proper cleanup,
+# making Python code safer and more professional.
+# ==================================================
+# End of ContextManagers-Notes
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
