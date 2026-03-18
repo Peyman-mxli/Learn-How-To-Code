@@ -1,0 +1,371 @@
+📘 Module — TESTING & DEBUGGING (PYTHON)
+"""
+📘 TESTING & DEBUGGING — PYTHON
+📁 DEEP THEORY & PROFESSIONAL NOTES
+
+This file provides a complete and professional explanation
+of Testing and Debugging in Python.
+
+Testing ensures code behaves correctly, while debugging
+helps identify and fix errors efficiently.
+"""
+
+====================================================
+1️⃣ WHAT IS A BUG?
+====================================================
+
+"""
+WHAT IT IS:
+A bug is an error, flaw, or mistake in a program
+that causes incorrect or unexpected behavior.
+
+WHY WE USE IT:
+Understanding bugs helps developers detect and fix issues.
+
+WHEN TO USE:
+Whenever a program behaves incorrectly or produces
+unexpected results.
+
+IMPORTANT:
+Bugs are normal in programming, even for professionals.
+"""
+
+====================================================
+2️⃣ WHY BUGS HAPPEN
+====================================================
+
+"""
+WHAT IT IS:
+Reasons why errors occur during software development.
+
+WHY WE USE IT:
+To prevent and reduce common mistakes.
+
+WHEN TO USE:
+When analyzing and fixing errors.
+
+IMPORTANT:
+Common causes:
+1️⃣ Logic mistakes
+2️⃣ Incorrect assumptions
+3️⃣ Missing edge cases
+4️⃣ Typing errors
+5️⃣ Changing existing code
+"""
+
+====================================================
+3️⃣ TYPES OF ERRORS IN PYTHON
+====================================================
+
+"""
+WHAT IT IS:
+Different categories of errors in Python.
+
+WHY WE USE IT:
+To identify and handle problems correctly.
+
+WHEN TO USE:
+When debugging or writing reliable programs.
+
+IMPORTANT:
+Three main types:
+"""
+
+----------------------------------------------------
+🔹 Syntax Errors
+----------------------------------------------------
+
+"""
+WHAT IT IS:
+Errors in code structure.
+
+WHY WE USE IT:
+To ensure Python understands the code.
+
+WHEN TO USE:
+Before running the program.
+
+IMPORTANT:
+Caught before execution.
+"""
+
+----------------------------------------------------
+🔹 Runtime Errors (Exceptions)
+----------------------------------------------------
+
+"""
+WHAT IT IS:
+Errors that occur during program execution.
+
+WHY WE USE IT:
+To handle unexpected situations.
+
+WHEN TO USE:
+When program crashes or fails.
+
+IMPORTANT:
+Examples:
+ZeroDivisionError, TypeError, ValueError
+"""
+
+----------------------------------------------------
+🔹 Logic Errors
+----------------------------------------------------
+
+"""
+WHAT IT IS:
+Errors where code runs but gives wrong results.
+
+WHY WE USE IT:
+To detect hidden issues.
+
+WHEN TO USE:
+When output is incorrect.
+
+IMPORTANT:
+Most dangerous because no error message appears.
+"""
+
+====================================================
+4️⃣ WHAT IS TESTING?
+====================================================
+
+"""
+WHAT IT IS:
+Testing is verifying that code works correctly.
+
+WHY WE USE IT:
+To detect bugs and validate behavior.
+
+WHEN TO USE:
+During and after development.
+
+IMPORTANT:
+Answers: "Does my code work as expected?"
+"""
+
+====================================================
+5️⃣ WHY WE TEST CODE
+====================================================
+
+"""
+WHAT IT IS:
+Benefits of testing in software development.
+
+WHY WE USE IT:
+To improve code quality and reliability.
+
+WHEN TO USE:
+Always during development.
+
+IMPORTANT:
+✔ Detect bugs early
+✔ Prevent regressions
+✔ Increase confidence
+"""
+
+====================================================
+6️⃣ TYPES OF TESTING
+====================================================
+----------------------------------------------------
+🔹 Manual Testing
+----------------------------------------------------
+
+"""
+WHAT IT IS:
+Testing by running code manually.
+
+WHY WE USE IT:
+Simple and quick validation.
+
+WHEN TO USE:
+Small programs or quick checks.
+
+IMPORTANT:
+Not scalable for large systems.
+"""
+
+----------------------------------------------------
+🔹 Automated Testing
+----------------------------------------------------
+
+"""
+WHAT IT IS:
+Using code to test code.
+
+WHY WE USE IT:
+Efficient and repeatable testing.
+
+WHEN TO USE:
+Professional and large-scale systems.
+
+IMPORTANT:
+Industry standard.
+"""
+
+====================================================
+7️⃣ WHAT IS DEBUGGING?
+====================================================
+
+"""
+WHAT IT IS:
+Process of finding and fixing bugs.
+
+WHY WE USE IT:
+To ensure correct program behavior.
+
+WHEN TO USE:
+When errors or unexpected results occur.
+
+IMPORTANT:
+Debugging is logical analysis, not guessing.
+"""
+
+====================================================
+8️⃣ DEBUGGING TECHNIQUES
+====================================================
+----------------------------------------------------
+🔹 Print Debugging
+----------------------------------------------------
+
+"""
+WHAT IT IS:
+Using print() to inspect values.
+
+WHY WE USE IT:
+Quick and simple debugging.
+
+WHEN TO USE:
+Small programs or early debugging.
+
+IMPORTANT:
+Not suitable for large systems.
+"""
+
+----------------------------------------------------
+🔹 Step-by-Step Debugging
+----------------------------------------------------
+
+"""
+WHAT IT IS:
+Tracing execution line by line.
+
+WHY WE USE IT:
+To locate where errors occur.
+
+WHEN TO USE:
+When logic is complex.
+
+IMPORTANT:
+Helps isolate issues.
+"""
+
+----------------------------------------------------
+🔹 Using a Debugger
+----------------------------------------------------
+
+"""
+WHAT IT IS:
+Using tools to control execution.
+
+WHY WE USE IT:
+To analyze code deeply.
+
+WHEN TO USE:
+Professional debugging.
+
+IMPORTANT:
+Allows breakpoints and inspection.
+"""
+
+====================================================
+9️⃣ ASSERTIONS
+====================================================
+
+"""
+WHAT IT IS:
+Statements that check conditions.
+
+WHY WE USE IT:
+To validate assumptions in code.
+
+WHEN TO USE:
+During development and testing.
+
+IMPORTANT:
+Stops program if condition fails.
+"""
+
+====================================================
+🔟 WRITING TESTABLE CODE
+====================================================
+
+"""
+WHAT IT IS:
+Writing code that is easy to test.
+
+WHY WE USE IT:
+To improve maintainability.
+
+WHEN TO USE:
+Always when designing programs.
+
+IMPORTANT:
+✔ Small functions
+✔ Clear logic
+✔ Predictable behavior
+"""
+
+====================================================
+1️⃣1️⃣ DEBUGGING MINDSET
+====================================================
+
+"""
+WHAT IT IS:
+Professional approach to solving bugs.
+
+WHY WE USE IT:
+To debug efficiently.
+
+WHEN TO USE:
+During problem-solving.
+
+IMPORTANT:
+✔ Reproduce bug
+✔ Isolate issue
+✔ Fix root cause
+✔ Verify solution
+"""
+
+====================================================
+1️⃣2️⃣ BEST PRACTICES
+====================================================
+
+"""
+WHAT IT IS:
+Guidelines for testing and debugging.
+
+WHY WE USE IT:
+To write professional code.
+
+WHEN TO USE:
+Always.
+
+IMPORTANT:
+✔ Test early
+✔ Handle errors properly
+✔ Never assume code works
+"""
+====================================================
+END OF NOTES — TESTING & DEBUGGING
+====================================================
+👤 Author
+====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+
+====================================================
