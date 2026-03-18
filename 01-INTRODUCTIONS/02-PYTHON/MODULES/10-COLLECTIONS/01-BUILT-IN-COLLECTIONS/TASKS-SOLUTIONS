@@ -1,0 +1,168 @@
+📘 Module — Built-in Collections
+
+"""
+====================================================
+📘 PYTHON BUILT-IN COLLECTIONS
+📁 TASK SOLUTIONS (RANK 1 → RANK 5)
+====================================================
+
+This file contains clean and professional solutions
+for all collection tasks.
+
+✔ Correct use of data structures
+✔ Clean and readable code
+✔ Real-world logic
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+# Task 1
+numbers = [1, 2, 3]
+print(numbers)
+
+# Task 2
+person = ("Peyman", 25)
+print(person)
+
+# Task 3
+message = "Welcome to Python"
+print(message)
+
+# Task 4
+r = range(1, 6)
+print(list(r))
+
+# Task 5
+unique_values = {10, 20, 30}
+print(unique_values)
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+
+# Task 6
+fruits = ["Apple", "Banana", "Orange"]
+fruits.append("Mango")
+print(fruits)
+
+# Task 7
+cities = ("Paris", "Tokyo", "Mexico City")
+print(cities[1])
+
+# Task 8
+full_name = "Peyman Miyandashti"
+print(len(full_name))
+
+# Task 9
+for i in range(10):
+    print(i)
+
+# Task 10
+duplicates = {1, 2, 2, 3, 3, 4}
+print(duplicates)
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+
+# Task 11
+scores = [80, 85, 90]
+scores[1] = 88
+print(scores)
+
+# Task 12
+rgb = (255, 100, 50)
+print(rgb[0], rgb[1], rgb[2])
+
+# Task 13
+email = "user@example.com"
+domain = email.split("@")[1]
+print(domain)
+
+# Task 14
+even_numbers = list(range(2, 21, 2))
+print(even_numbers)
+
+# Task 15
+skills1 = {"Python", "Networking", "Security"}
+skills2 = {"Python", "Databases"}
+print(skills1 & skills2)
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+
+# Task 16
+tasks = ["Login", "Dashboard", "Logout"]
+tasks.remove("Dashboard")
+print(tasks)
+
+# Task 17
+user = ("admin", "manager", "active")
+print(f"User: {user[0]}, Role: {user[1]}, Status: {user[2]}")
+
+# Task 18
+sentence = "hello world"
+print(sentence.count("l"))
+
+# Task 19
+total = 0
+for i in range(1, 101):
+    total += i
+print(total)
+
+# Task 20
+authorized = {"admin", "manager", "auditor"}
+user = "admin"
+print(user in authorized)
+
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+
+# Task 21
+prices = [100, 200, 300]
+print(sum(prices))
+
+# Task 22
+config = ("localhost", 8080, "http")
+print(f"Server running on {config[2]}://{config[0]}:{config[1]}")
+
+# Task 23
+password = "secure123"
+if len(password) >= 8:
+    print("Password is valid")
+else:
+    print("Password is too short")
+
+# Task 24
+for user_id in range(1000, 1011):
+    print(user_id)
+
+# Task 25
+course1 = {"Peyman", "Carlos", "Arlette"}
+course2 = {"Carlos", "Ana"}
+print(course1 & course2)
+
+
+# ====================================================
+# END OF SOLUTIONS — BUILT-IN COLLECTIONS
+# ====================================================
+# ====================================================
+# 👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+
+# 🏁 End of Notes
+# ===========================================================================
