@@ -4,14 +4,12 @@
 OBJECT-ORIENTED PROGRAMMING (OOP)
 DEEP THEORY & PROFESSIONAL NOTES
 ====================================================
-
 This file provides a complete and professional explanation
 of Object-Oriented Programming (OOP) in Python.
 
 OOP is a programming paradigm that structures software
 around objects and classes instead of functions and logic alone.
 """
-
 # ====================================================
 # 1. WHAT IS A CLASS?
 # ====================================================
@@ -32,8 +30,6 @@ it represents the idea of an object.
 
 class Person:
     pass
-
-
 # ====================================================
 # 2. WHAT IS AN OBJECT?
 # ====================================================
@@ -50,11 +46,8 @@ Whenever we need to work with actual data and behavior.
 IMPORTANT:
 Multiple objects can be created from one class.
 """
-
 person1 = Person()
 person2 = Person()
-
-
 # ====================================================
 # 3. THE __init__ METHOD (CONSTRUCTOR)
 # ====================================================
@@ -76,8 +69,6 @@ class Student:
     def __init__(self, name, student_id):
         self.name = name
         self.student_id = student_id
-
-
 # ====================================================
 # 4. ATTRIBUTES
 # ====================================================
@@ -96,7 +87,6 @@ Two types:
 1️⃣ Instance attributes → unique per object
 2️⃣ Class attributes → shared across all objects
 """
-
 class Car:
     wheels = 4  # Class attribute
 
@@ -129,8 +119,6 @@ class Account:
 
     def show_balance(self):
         print("Balance:", self.balance)
-
-
 # ====================================================
 # 6. THE `self` KEYWORD
 # ====================================================
@@ -154,8 +142,6 @@ class Device:
 
     def show_name(self):
         print(self.name)
-
-
 # ====================================================
 # 7. ENCAPSULATION
 # ====================================================
@@ -175,7 +161,6 @@ Public → attribute
 Protected → _attribute
 Private → __attribute
 """
-
 class BankAccount:
     def __init__(self, owner, balance):
         self.owner = owner
@@ -183,8 +168,6 @@ class BankAccount:
 
     def get_balance(self):
         return self.__balance
-
-
 # ====================================================
 # 8. INHERITANCE
 # ====================================================
@@ -209,8 +192,6 @@ class Animal:
 class Dog(Animal):
     def speak(self):
         print("Dog barks")
-
-
 # ====================================================
 # 9. POLYMORPHISM
 # ====================================================
@@ -236,8 +217,6 @@ animals = [Dog(), Cat()]
 
 for animal in animals:
     animal.speak()
-
-
 # ====================================================
 # 10. ABSTRACTION
 # ====================================================
@@ -270,7 +249,8 @@ Guidelines for writing professional OOP code.
 WHY WE USE IT:
 To ensure clean, scalable, and maintainable systems.
 WHEN TO USE:
-Always when designing OOP systems.
+Always when designing OOP systems
+# ====================================================
 IMPORTANT:
 ✔ Use meaningful class names (PascalCase)
 ✔ One class = one responsibility
