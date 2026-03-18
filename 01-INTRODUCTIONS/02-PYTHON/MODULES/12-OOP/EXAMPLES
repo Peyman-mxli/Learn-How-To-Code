@@ -1,0 +1,286 @@
+📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
+"""
+====================================================
+OBJECT-ORIENTED PROGRAMMING (OOP)
+PRACTICAL EXAMPLES
+====================================================
+
+This file demonstrates real-world usage of
+Object-Oriented Programming (OOP) concepts in Python.
+
+Each section contains clear, professional examples
+showing how OOP is applied in software development.
+"""
+
+# ====================================================
+# 1. CLASSES & OBJECTS
+# ====================================================
+
+# Example 1: User Account
+class User:
+    def __init__(self, username):
+        self.username = username
+
+user1 = User("admin")
+user2 = User("guest")
+
+print(user1.username)
+print(user2.username)
+
+
+# Example 2: Product
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+product1 = Product("Laptop", 1200)
+print(product1.name, product1.price)
+
+
+# Example 3: Student
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+student = Student("Peyman")
+print(student.name)
+
+
+# ====================================================
+# 2. ATTRIBUTES & METHODS
+# ====================================================
+
+# Example 1: Bank Account
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def display_balance(self):
+        print("Balance:", self.balance)
+
+account = BankAccount("Peyman", 5000)
+account.display_balance()
+
+
+# Example 2: Car System
+class Car:
+    def __init__(self, brand, year):
+        self.brand = brand
+        self.year = year
+
+    def show_info(self):
+        print(self.brand, "-", self.year)
+
+car = Car("Toyota", 2024)
+car.show_info()
+
+
+# Example 3: Employee
+class Employee:
+    def __init__(self, name, role):
+        self.name = name
+        self.role = role
+
+    def introduce(self):
+        print("Employee:", self.name, "| Role:", self.role)
+
+emp = Employee("Arlette", "Teacher")
+emp.introduce()
+
+
+# ====================================================
+# 3. ENCAPSULATION
+# ====================================================
+
+# Example 1: Private Balance
+class SecureAccount:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def get_balance(self):
+        return self.__balance
+
+account = SecureAccount(3000)
+print("Balance:", account.get_balance())
+
+
+# Example 2: Protected Attribute
+class System:
+    def __init__(self):
+        self._status = "Running"
+
+system = System()
+print(system._status)
+
+
+# Example 3: Login Protection
+class Login:
+    def __init__(self, password):
+        self.__password = password
+
+    def authenticate(self, input_password):
+        if input_password == self.__password:
+            print("Access granted")
+        else:
+            print("Access denied")
+
+login = Login("admin123")
+login.authenticate("admin123")
+
+
+# ====================================================
+# 4. INHERITANCE
+# ====================================================
+
+# Example 1: Employee Hierarchy
+class Employee:
+    def work(self):
+        print("Employee working")
+
+class Manager(Employee):
+    def manage(self):
+        print("Manager managing")
+
+mgr = Manager()
+mgr.work()
+mgr.manage()
+
+
+# Example 2: Vehicle System
+class Vehicle:
+    def move(self):
+        print("Vehicle moving")
+
+class Bike(Vehicle):
+    pass
+
+bike = Bike()
+bike.move()
+
+
+# Example 3: University System
+class Person:
+    def introduce(self):
+        print("I am a person")
+
+class Professor(Person):
+    def teach(self):
+        print("Teaching students")
+
+prof = Professor()
+prof.introduce()
+prof.teach()
+
+
+# ====================================================
+# 5. POLYMORPHISM
+# ====================================================
+
+# Example 1: Animal Sounds
+class Dog:
+    def speak(self):
+        print("Dog barks")
+
+class Cat:
+    def speak(self):
+        print("Cat meows")
+
+for animal in (Dog(), Cat()):
+    animal.speak()
+
+
+# Example 2: Payment System
+class Cash:
+    def pay(self):
+        print("Paid with cash")
+
+class Card:
+    def pay(self):
+        print("Paid with card")
+
+def process_payment(method):
+    method.pay()
+
+process_payment(Cash())
+process_payment(Card())
+
+
+# Example 3: Notification System
+class Email:
+    def send(self):
+        print("Email sent")
+
+class SMS:
+    def send(self):
+        print("SMS sent")
+
+for service in (Email(), SMS()):
+    service.send()
+
+
+# ====================================================
+# 6. ABSTRACTION
+# ====================================================
+
+# Example 1: Shape Interface
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def draw(self):
+        pass
+
+class Circle(Shape):
+    def draw(self):
+        print("Drawing a circle")
+
+circle = Circle()
+circle.draw()
+
+
+# Example 2: Payment Interface
+class Payment(ABC):
+    @abstractmethod
+    def pay(self):
+        pass
+
+class PayPal(Payment):
+    def pay(self):
+        print("Payment via PayPal")
+
+paypal = PayPal()
+paypal.pay()
+
+
+# Example 3: Database Connector
+class Database(ABC):
+    @abstractmethod
+    def connect(self):
+        pass
+
+class MySQL(Database):
+    def connect(self):
+        print("Connected to MySQL")
+
+db = MySQL()
+db.connect()
+
+
+# ====================================================
+# END OF EXAMPLES — OOP
+# ====================================================
+
+
+# ====================================================
+# 👤 Author
+# ====================================================
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+
+# 🏁 End of Notes
+# ====================================================
