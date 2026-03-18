@@ -1,0 +1,20 @@
+# ====================================================
+# 📦 REQUIREMENTS — TODO APP
+# ====================================================
+
+# This project uses only Python standard library.
+# No external dependencies required.
+
+# Run with:
+# python main.py
+
+# ====================================================
+# 👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+# ====================================================
