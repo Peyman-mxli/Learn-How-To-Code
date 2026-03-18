@@ -1,0 +1,118 @@
+"""
+📘 Module — File Handling — (Deep Dive)
+
+📁 FileHandling-Examples
+
+Topic: Python File Handling — Read, Write, Append, Errors
+
+This file contains EXAMPLES demonstrating file handling
+operations in Python using safe and real-world patterns.
+
+Focus:
+- File operations
+- Safe handling (with)
+- Reading strategies
+- Error handling
+"""
+
+# ==================================================
+# 1. Writing to a File
+# ==================================================
+# Write mode ("w") creates or overwrites a file.
+#
+# Syntax:
+# with open(filename, "w") as file:
+#     file.write(data)
+#
+# Behavior:
+# - Creates file if not exists
+# - Overwrites existing content
+#
+# Example:
+with open("example.txt", "w") as file:
+    file.write("Hello, File Handling!")
+
+
+# ==================================================
+# 2. Reading a File
+# ==================================================
+# Read mode ("r") reads file content.
+#
+# Syntax:
+# with open(filename, "r") as file:
+#     data = file.read()
+#
+# Behavior:
+# - Raises FileNotFoundError if file does not exist
+#
+# Example:
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+
+# ==================================================
+# 3. Appending to a File
+# ==================================================
+# Append mode ("a") adds content without overwriting.
+#
+# Syntax:
+# with open(filename, "a") as file:
+#     file.write(data)
+#
+# Behavior:
+# - Creates file if not exists
+# - Adds content at the end
+#
+# Example:
+with open("example.txt", "a") as file:
+    file.write("\nAppending new content.")
+
+
+# ==================================================
+# 4. Reading Line by Line
+# ==================================================
+# Iterating over file reads line by line.
+#
+# Syntax:
+# for line in file:
+#     process(line)
+#
+# Advantages:
+# - Memory efficient
+# - Ideal for large files
+#
+# Example:
+with open("example.txt", "r") as file:
+    for line in file:
+        print(line.strip())
+
+
+# ==================================================
+# 5. Handling File Errors
+# ==================================================
+# Use try/except to handle file-related errors.
+#
+# Common Exception:
+# FileNotFoundError
+#
+# Example:
+try:
+    with open("missing.txt", "r") as file:
+        pass
+except FileNotFoundError:
+    print("File not found!")
+
+
+# ==================================================
+# End of FileHandling-Examples
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
