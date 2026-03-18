@@ -1,0 +1,297 @@
+📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
+"""
+====================================================
+OBJECT-ORIENTED PROGRAMMING (OOP)
+DEEP THEORY & PROFESSIONAL NOTES
+====================================================
+
+This file provides a complete and professional explanation
+of Object-Oriented Programming (OOP) in Python.
+
+OOP is a programming paradigm that structures software
+around objects and classes instead of functions and logic alone.
+"""
+
+# ====================================================
+# 1. WHAT IS A CLASS?
+# ====================================================
+"""
+WHAT IT IS:
+A class is a blueprint or template used to create objects.
+
+WHY WE USE IT:
+To define structure and behavior for multiple objects.
+
+WHEN TO USE:
+When modeling real-world entities or structured systems.
+
+IMPORTANT:
+A class does NOT represent a real object,
+it represents the idea of an object.
+"""
+
+class Person:
+    pass
+
+
+# ====================================================
+# 2. WHAT IS AN OBJECT?
+# ====================================================
+"""
+WHAT IT IS:
+An object is an instance of a class.
+
+WHY WE USE IT:
+To create real, usable entities from a blueprint.
+
+WHEN TO USE:
+Whenever we need to work with actual data and behavior.
+
+IMPORTANT:
+Multiple objects can be created from one class.
+"""
+
+person1 = Person()
+person2 = Person()
+
+
+# ====================================================
+# 3. THE __init__ METHOD (CONSTRUCTOR)
+# ====================================================
+"""
+WHAT IT IS:
+A special method that initializes object data.
+
+WHY WE USE IT:
+To assign initial values when an object is created.
+
+WHEN TO USE:
+Whenever objects need predefined data at creation.
+
+IMPORTANT:
+It runs automatically when creating an object.
+"""
+
+class Student:
+    def __init__(self, name, student_id):
+        self.name = name
+        self.student_id = student_id
+
+
+# ====================================================
+# 4. ATTRIBUTES
+# ====================================================
+"""
+WHAT IT IS:
+Variables that belong to an object.
+
+WHY WE USE IT:
+To store object data (state).
+
+WHEN TO USE:
+When objects need to hold information.
+
+IMPORTANT:
+Two types:
+1️⃣ Instance attributes → unique per object
+2️⃣ Class attributes → shared across all objects
+"""
+
+class Car:
+    wheels = 4  # Class attribute
+
+    def __init__(self, brand, year):
+        self.brand = brand
+        self.year = year
+
+
+# ====================================================
+# 5. METHODS
+# ====================================================
+"""
+WHAT IT IS:
+Functions defined inside a class.
+
+WHY WE USE IT:
+To define object behavior.
+
+WHEN TO USE:
+When objects need to perform actions.
+
+IMPORTANT:
+Methods use 'self' to access object data.
+"""
+
+class Account:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def show_balance(self):
+        print("Balance:", self.balance)
+
+
+# ====================================================
+# 6. THE `self` KEYWORD
+# ====================================================
+"""
+WHAT IT IS:
+Reference to the current object instance.
+
+WHY WE USE IT:
+To access attributes and methods inside the class.
+
+WHEN TO USE:
+In every instance method.
+
+IMPORTANT:
+Without 'self', Python cannot identify object data.
+"""
+
+class Device:
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):
+        print(self.name)
+
+
+# ====================================================
+# 7. ENCAPSULATION
+# ====================================================
+"""
+WHAT IT IS:
+Restricting access to internal object data.
+
+WHY WE USE IT:
+To protect data and ensure controlled access.
+
+WHEN TO USE:
+When sensitive or critical data must be protected.
+
+IMPORTANT:
+Naming conventions:
+Public → attribute
+Protected → _attribute
+Private → __attribute
+"""
+
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance
+
+    def get_balance(self):
+        return self.__balance
+
+
+# ====================================================
+# 8. INHERITANCE
+# ====================================================
+"""
+WHAT IT IS:
+A class inherits from another class.
+
+WHY WE USE IT:
+To reuse code and create logical hierarchies.
+
+WHEN TO USE:
+When one class is a specialized version of another.
+
+IMPORTANT:
+Promotes extensibility and reduces duplication.
+"""
+
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
+
+
+# ====================================================
+# 9. POLYMORPHISM
+# ====================================================
+"""
+WHAT IT IS:
+Same method name, different behavior.
+
+WHY WE USE IT:
+To allow flexible and dynamic code.
+
+WHEN TO USE:
+When multiple objects share behavior but implement it differently.
+
+IMPORTANT:
+Improves scalability and code flexibility.
+"""
+
+class Cat:
+    def speak(self):
+        print("Cat meows")
+
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    animal.speak()
+
+
+# ====================================================
+# 10. ABSTRACTION
+# ====================================================
+"""
+WHAT IT IS:
+Hiding implementation details and showing only functionality.
+
+WHY WE USE IT:
+To simplify complex systems.
+
+WHEN TO USE:
+When designing large or complex architectures.
+
+IMPORTANT:
+Implemented using abstract classes.
+"""
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+# ====================================================
+# 11. OOP BEST PRACTICES
+# ====================================================
+"""
+WHAT IT IS:
+Guidelines for writing professional OOP code.
+WHY WE USE IT:
+To ensure clean, scalable, and maintainable systems.
+WHEN TO USE:
+Always when designing OOP systems.
+IMPORTANT:
+✔ Use meaningful class names (PascalCase)
+✔ One class = one responsibility
+✔ Keep methods small and focused
+✔ Use encapsulation for safety
+✔ Prefer composition over inheritance when needed
+✔ Avoid deep inheritance chains
+✔ Write clean and readable code
+✔ Think in objects, not scripts
+"""
+# ====================================================
+# END OF NOTES — OOP
+# ====================================================
+# 👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+
+# 🏁 End of Notes
+# ===========================================================================
