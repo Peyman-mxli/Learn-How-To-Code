@@ -1,0 +1,89 @@
+"""
+📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
+
+📁 LoggingVsExceptions-Tasks
+
+Topic: Exception Handling — Logging vs Exceptions
+
+This file contains PRACTICE TASKS to help you master when to use
+logging and when to raise exceptions in Python programs.
+
+Instructions:
+- Complete tasks from Rank 1 to Rank 5
+- Use appropriate logging levels
+- Raise exceptions only when necessary
+- Do NOT check solutions until all tasks are completed
+"""
+
+# ==================================================
+# Rank 1 — Log Function Start
+# ==================================================
+# Task:
+# Create a function called process_data().
+# Log an INFO message when the function starts.
+# Print "Processing data..." inside the function.
+
+
+# ==================================================
+# Rank 2 — Log Warning for Suspicious Input
+# ==================================================
+# Task:
+# Create a function that takes a number as input.
+# If the number is negative, log a WARNING message.
+# Do NOT raise an exception.
+# Return the number.
+
+
+# ==================================================
+# Rank 3 — Raise Exception for Invalid Input
+# ==================================================
+# Task:
+# Create a function that takes a number.
+# If the number is zero, raise a ValueError.
+# Otherwise, return 100 divided by that number.
+
+
+# ==================================================
+# Rank 4 — Combine Logging and Exception Handling
+# ==================================================
+# Task:
+# Create a function read_config(filename).
+# Log an INFO message when attempting to read the file.
+# If the file does not exist:
+#   - Log an ERROR message
+#   - Raise FileNotFoundError
+# Use try/except when calling the function.
+
+
+# ==================================================
+# Rank 5 — Smart Function Design
+# ==================================================
+# Task:
+# Create a function process_payment(amount).
+#
+# Behavior:
+# - Log INFO when the process starts
+# - If amount is negative:
+#     → Log WARNING (do not raise)
+# - If amount is zero:
+#     → Raise ValueError
+# - If amount is valid:
+#     → Log INFO "Payment processed"
+#
+# Use try/except when calling the function
+# and log a CRITICAL message if an exception occurs.
+
+
+# ==================================================
+# End of LoggingVsExceptions-Tasks
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
