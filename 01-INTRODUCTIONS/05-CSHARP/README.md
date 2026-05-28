@@ -105,6 +105,128 @@ C# is not just a programming language.
 It is a professional tool for building real-world software.
 
 Learning C# will help me understand programming structure, logic, errors, debugging, and professional development.
+---
+Understanding Basic C# Code
+using System;
+using System;
+What does this mean?
+
+using means:
+
+"I want to use tools from somewhere else."
+
+System is a built-in library in C# made by Microsoft.
+
+It contains useful tools like:
+
+printing text
+working with numbers
+handling time
+reading files
+
+Without System, the program would not recognize Console.
+
+Think of it like:
+
+using System;
+
+means:
+
+"Hey C#, give me access to basic tools."
+
+class Program
+class Program
+What is a class?
+
+A class is like a container or blueprint.
+
+Think about a house:
+
+the class = the house
+the code inside = the furniture
+
+C# likes organized code.
+
+So most code lives inside classes.
+
+Program is simply the name of the class.
+
+You can name it something else:
+
+class MyApp
+
+or
+
+class HelloWorld
+
+But Program is the common beginner name.
+
+static void Main()
+static void Main()
+
+This is the starting point of the program.
+
+Think of it like:
+
+Main = where the program starts running
+
+When you press Run ▶️:
+
+C# looks for Main() first.
+
+Then it executes the code inside it.
+
+Console.WriteLine();
+Console.WriteLine("Hello");
+
+This prints text on the screen.
+
+Break it into pieces
+Part	Meaning
+Console	The screen/terminal
+WriteLine	Write text and go to next line
+()	Used to pass information
+"Hello"	The text to print
+;	End of instruction
+Example
+Console.WriteLine("My name is Peyman");
+
+Output:
+
+My name is Peyman
+Why Semicolon ; Is Important
+;
+
+The semicolon means:
+
+"This instruction is finished."
+
+Without it, C# gets confused.
+
+Example of error:
+
+Console.WriteLine("Hello")
+
+Correct:
+
+Console.WriteLine("Hello");
+Full Beginner Example
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello World");
+        Console.WriteLine("I am learning C#");
+    }
+}
+
+Output:
+
+Hello World
+I am learning C#
+---
 
 Author
 
