@@ -1,4 +1,4 @@
-# 02 - Syntax
+# 🧵- Syntax
 
 ## Introduction
 
