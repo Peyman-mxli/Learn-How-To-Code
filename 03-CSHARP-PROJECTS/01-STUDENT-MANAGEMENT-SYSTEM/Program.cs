@@ -32,8 +32,7 @@ namespace StudentManagementSystem
                 switch (choice)
                 {
                     case "1":
-                        Console.WriteLine();
-                        Console.WriteLine("Add Student feature coming soon.");
+                        AddStudentFromUserInput(studentManager);
                         break;
 
                     case "2":
@@ -75,6 +74,42 @@ namespace StudentManagementSystem
                     Console.ReadKey();
                 }
             }
+        }
+
+        private static void AddStudentFromUserInput(StudentManager studentManager)
+        {
+            Console.WriteLine();
+            Console.WriteLine("ADD NEW STUDENT");
+            Console.WriteLine("----------------------------------------");
+
+            Console.Write("Student ID: ");
+            int studentId = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Full Name: ");
+            string fullName = Console.ReadLine();
+
+            Console.Write("Age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Email: ");
+            string email = Console.ReadLine();
+
+            Console.Write("Course: ");
+            string course = Console.ReadLine();
+
+            Console.Write("Grade: ");
+            double grade = Convert.ToDouble(Console.ReadLine());
+
+            Student student = new Student(
+                studentId,
+                fullName,
+                age,
+                email,
+                course,
+                grade
+            );
+
+            studentManager.AddStudent(student);
         }
     }
 }
