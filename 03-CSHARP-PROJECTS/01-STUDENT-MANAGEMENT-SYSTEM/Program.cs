@@ -36,8 +36,7 @@ namespace StudentManagementSystem
                         break;
 
                     case "2":
-                        Console.WriteLine();
-                        studentManager.DisplayAllStudents();
+                        ViewAllStudents(studentManager);
                         break;
 
                     case "3":
@@ -45,13 +44,11 @@ namespace StudentManagementSystem
                         break;
 
                     case "4":
-                        Console.WriteLine();
-                        Console.WriteLine("Update Student feature coming soon.");
+                        UpdateStudentFromUserInput(studentManager);
                         break;
 
                     case "5":
-                        Console.WriteLine();
-                        Console.WriteLine("Delete Student feature coming soon.");
+                        DeleteStudentFromUserInput(studentManager);
                         break;
 
                     case "6":
@@ -111,6 +108,15 @@ namespace StudentManagementSystem
             studentManager.AddStudent(student);
         }
 
+        private static void ViewAllStudents(StudentManager studentManager)
+        {
+            Console.WriteLine();
+            Console.WriteLine("ALL STUDENTS");
+            Console.WriteLine("----------------------------------------");
+
+            studentManager.DisplayAllStudents();
+        }
+
         private static void SearchStudentFromUserInput(StudentManager studentManager)
         {
             Console.WriteLine();
@@ -131,6 +137,109 @@ namespace StudentManagementSystem
             Console.WriteLine();
             Console.WriteLine("Student found:");
             student.DisplayStudentInformation();
+        }
+
+        private static void UpdateStudentFromUserInput(StudentManager studentManager)
+        {
+            Console.WriteLine();
+            Console.WriteLine("UPDATE STUDENT");
+            Console.WriteLine("----------------------------------------");
+
+            Console.Write("Enter Student ID to update: ");
+            int studentId = Convert.ToInt32(Console.ReadLine());
+
+            Student existingStudent = studentManager.SearchStudentById(studentId);
+
+            if (existingStudent == null)
+            {
+                Console.WriteLine("Student not found.");
+                return;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Current student information:");
+            existingStudent.DisplayStudentInformation();
+
+            Console.WriteLine();
+            Console.WriteLine("Enter new student information:");
+            Console.WriteLine("----------------------------------------");
+
+            Console.Write("New Full Name: ");
+            string fullName = Console.ReadLine();
+
+            Console.Write("New Age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("New Email: ");
+            string email = Console.ReadLine();
+
+            Console.Write("New Course: ");
+            string course = Console.ReadLine();
+
+            Console.Write("New Grade: ");
+            double grade = Convert.ToDouble(Console.ReadLine());
+
+            bool isUpdated = studentManager.UpdateStudent(
+                studentId,
+                fullName,
+                age,
+                email,
+                course,
+                grade
+            );
+
+            if (isUpdated)
+            {
+                Console.WriteLine("Student updated successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Student update failed.");
+            }
+        }
+
+        private static void DeleteStudentFromUserInput(StudentManager studentManager)
+        {
+            Console.WriteLine();
+            Console.WriteLine("DELETE STUDENT");
+            Console.WriteLine("----------------------------------------");
+
+            Console.Write("Enter Student ID to delete: ");
+            int studentId = Convert.ToInt32(Console.ReadLine());
+
+            Student student = studentManager.SearchStudentById(studentId);
+
+            if (student == null)
+            {
+                Console.WriteLine("Student not found.");
+                return;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Student selected for deletion:");
+            student.DisplayStudentInformation();
+
+            Console.WriteLine();
+            Console.Write("Are you sure you want to delete this student? (Y/N): ");
+            string confirmation = Console.ReadLine();
+
+            if (confirmation.ToUpper() == "Y")
+            {
+                bool isDeleted = studentManager.DeleteStudent(studentId);
+
+                if (isDeleted)
+                {
+                    Console.WriteLine("Student deleted successfully.");
+                }
+                else
+                {
+                    Console.WriteLine("Student deletion failed.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Delete cancelled.");
+            }
         }
     }
 }
