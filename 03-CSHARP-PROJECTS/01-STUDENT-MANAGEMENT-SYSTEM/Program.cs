@@ -41,8 +41,7 @@ namespace StudentManagementSystem
                         break;
 
                     case "3":
-                        Console.WriteLine();
-                        Console.WriteLine("Search Student feature coming soon.");
+                        SearchStudentFromUserInput(studentManager);
                         break;
 
                     case "4":
@@ -110,6 +109,28 @@ namespace StudentManagementSystem
             );
 
             studentManager.AddStudent(student);
+        }
+
+        private static void SearchStudentFromUserInput(StudentManager studentManager)
+        {
+            Console.WriteLine();
+            Console.WriteLine("SEARCH STUDENT");
+            Console.WriteLine("----------------------------------------");
+
+            Console.Write("Enter Student ID: ");
+            int studentId = Convert.ToInt32(Console.ReadLine());
+
+            Student student = studentManager.SearchStudentById(studentId);
+
+            if (student == null)
+            {
+                Console.WriteLine("Student not found.");
+                return;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Student found:");
+            student.DisplayStudentInformation();
         }
     }
 }
