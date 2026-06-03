@@ -1,4 +1,3 @@
-```csharp
 using System;
 
 namespace StudentManagementSystem
@@ -60,5 +59,4 @@ namespace StudentManagementSystem
 📍 From IRAN (Mexico)
 📅 Year: 2026
 🆔 ID: 250161
-*/
-```
+
