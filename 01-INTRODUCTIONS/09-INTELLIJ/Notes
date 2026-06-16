@@ -1,0 +1,357 @@
+# 09-INTELLIJ/Notes.md
+
+# 📝 IntelliJ IDEA Notes
+
+## What Is IntelliJ IDEA?
+
+IntelliJ IDEA is an Integrated Development Environment (IDE) developed by JetBrains.
+
+It helps programmers write, organize, test, debug, and maintain software more efficiently.
+
+Instead of using many separate tools, IntelliJ combines everything into one application.
+
+---
+
+## What Does IntelliJ IDEA Do?
+
+IntelliJ IDEA allows developers to:
+
+* Write code.
+* Detect errors while typing.
+* Run applications.
+* Debug programs.
+* Organize project files.
+* Use Git and GitHub.
+* Install plugins.
+* Navigate large projects easily.
+* Refactor code safely.
+
+---
+
+## What Is an IDE?
+
+IDE means:
+
+**Integrated Development Environment**
+
+An IDE combines several development tools into one place.
+
+### Main Components of an IDE
+
+* Source Code Editor
+* Compiler or Interpreter Support
+* Debugger
+* Terminal
+* Project Explorer
+* Build Tools
+* Version Control Integration
+
+Without an IDE, developers would need separate applications for each task.
+
+---
+
+## Who Created IntelliJ IDEA?
+
+IntelliJ IDEA was created by:
+
+**JetBrains**
+
+JetBrains is a software company founded in 2000.
+
+They are also the creators of:
+
+* Kotlin
+* PyCharm
+* WebStorm
+* Rider
+* CLion
+* DataGrip
+* PhpStorm
+
+---
+
+## IntelliJ IDEA Editions
+
+### Community Edition
+
+Features:
+
+* Free
+* Open Source
+* Java Support
+* Kotlin Support
+* Git Integration
+* Plugin Support
+
+Best for:
+
+* Students
+* Beginners
+* Learning projects
+* Personal projects
+
+---
+
+### Ultimate Edition
+
+Features:
+
+* Paid Version
+* Enterprise Tools
+* Spring Framework Support
+* Database Tools
+* Java EE Support
+* Advanced Web Development
+* Remote Development Features
+
+Best for:
+
+* Professional Developers
+* Enterprise Applications
+* Large Teams
+
+---
+
+## Languages Supported by IntelliJ IDEA
+
+Native Support:
+
+* Java
+* Kotlin
+* Groovy
+* Scala
+
+Additional Support Through Plugins:
+
+* Python
+* PHP
+* Rust
+* SQL
+* HTML
+* CSS
+* JavaScript
+* TypeScript
+
+---
+
+## Why Do Developers Love IntelliJ?
+
+Because it provides:
+
+### Smart Code Completion
+
+It predicts what developers are trying to write.
+
+Example:
+
+Typing:
+
+```text
+System.out.pr
+```
+
+IntelliJ suggests:
+
+```text
+System.out.println()
+```
+
+---
+
+### Error Detection
+
+Mistakes are highlighted immediately.
+
+Benefits:
+
+* Faster corrections.
+* Fewer bugs.
+* Better learning.
+
+---
+
+### Refactoring
+
+Refactoring means improving code without changing its behavior.
+
+Examples:
+
+* Rename variables.
+* Rename methods.
+* Move classes.
+* Extract methods.
+
+IntelliJ updates references automatically.
+
+---
+
+### Navigation
+
+Useful shortcuts include:
+
+* Go to Class.
+* Go to File.
+* Find Usages.
+* Search Everywhere.
+
+These tools save time in large projects.
+
+---
+
+## Basic IntelliJ Workflow
+
+Step 1:
+
+Create a Project.
+
+↓
+
+Step 2:
+
+Create Files.
+
+↓
+
+Step 3:
+
+Write Code.
+
+↓
+
+Step 4:
+
+Run the Program.
+
+↓
+
+Step 5:
+
+Fix Errors.
+
+↓
+
+Step 6:
+
+Debug Problems.
+
+↓
+
+Step 7:
+
+Commit Changes with Git.
+
+↓
+
+Step 8:
+
+Push to GitHub.
+
+---
+
+## IntelliJ Interface
+
+### Project Window
+
+Displays:
+
+* Folders
+* Files
+* Project Structure
+
+---
+
+### Editor Window
+
+Where code is written.
+
+Features:
+
+* Syntax Highlighting
+* Suggestions
+* Error Detection
+
+---
+
+### Toolbar
+
+Contains buttons such as:
+
+* Run
+* Debug
+* Build
+
+---
+
+### Terminal
+
+Allows execution of command-line commands without leaving IntelliJ.
+
+Examples:
+
+```text
+git status
+git add .
+git commit -m "Update project"
+```
+
+---
+
+### Problems Window
+
+Shows:
+
+* Errors
+* Warnings
+* Suggestions
+
+---
+
+## Git and GitHub Integration
+
+IntelliJ can connect directly to Git repositories.
+
+You can:
+
+* Clone repositories.
+* Commit changes.
+* Push to GitHub.
+* Pull updates.
+* Resolve merge conflicts.
+
+Without leaving the IDE.
+
+---
+
+## Advantages of IntelliJ IDEA
+
+* Beginner Friendly
+* Professional Grade
+* Excellent Performance
+* Strong Kotlin Support
+* Powerful Debugger
+* Rich Plugin Ecosystem
+* Widely Used in Industry
+
+---
+
+## Disadvantages of IntelliJ IDEA
+
+* Can consume significant memory.
+* Ultimate Edition is paid.
+* Large projects may require stronger hardware.
+
+---
+
+## Fun Fact
+
+JetBrains created Kotlin specifically to improve developer productivity, and IntelliJ IDEA became the official IDE recommended for Kotlin development.
+
+Today, millions of developers use IntelliJ IDEA around the world.
+
+---
+
+## Summary
+
+IntelliJ IDEA is much more than a code editor.
+
+It is a complete development environment that helps developers build software faster, make fewer mistakes, and work more efficiently.
