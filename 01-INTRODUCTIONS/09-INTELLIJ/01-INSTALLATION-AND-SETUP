@@ -1,0 +1,526 @@
+# 09-INTELLIJ/01-INSTALLATION-AND-SETUP/Notes.md
+
+# 🛠️ Installation and Setup Notes
+
+## Why Is Installation Important?
+
+Before we can build applications, we need to prepare our development environment correctly.
+
+A proper IntelliJ IDEA setup helps us:
+
+* Avoid common errors.
+* Improve performance.
+* Work more efficiently.
+* Use professional tools from the beginning.
+* Have a smoother learning experience.
+
+---
+
+# What Do I Need Before Installing IntelliJ IDEA?
+
+You need:
+
+* A computer running Windows, macOS, or Linux.
+* An internet connection.
+* Enough storage space.
+* Sufficient RAM.
+* Administrator permissions (recommended).
+
+---
+
+# Minimum System Requirements
+
+## Operating Systems
+
+IntelliJ IDEA supports:
+
+* Windows 10 or newer
+* macOS
+* Linux
+
+---
+
+## Processor
+
+Recommended:
+
+```text
+Modern dual-core CPU or better
+```
+
+Examples:
+
+* Intel Core i3
+* Intel Core i5
+* Intel Core i7
+* AMD Ryzen processors
+
+---
+
+## RAM Requirements
+
+### Minimum
+
+```text
+4 GB RAM
+```
+
+IntelliJ can run with 4 GB, but performance may suffer.
+
+---
+
+### Recommended
+
+```text
+8 GB RAM
+```
+
+Provides a much smoother experience.
+
+---
+
+### Professional Use
+
+```text
+16 GB RAM or more
+```
+
+Recommended for:
+
+* Large projects
+* Multiple applications open
+* Android development
+* Heavy multitasking
+
+---
+
+# Storage Requirements
+
+## Installation Size
+
+Approximate installation:
+
+```text
+2–3 GB
+```
+
+---
+
+## Recommended Free Space
+
+```text
+5–10 GB free SSD space
+```
+
+This allows room for:
+
+* Projects
+* Plugins
+* Updates
+* Cache files
+* SDKs
+
+---
+
+# SSD vs HDD
+
+## HDD
+
+Advantages:
+
+* Cheaper.
+
+Disadvantages:
+
+* Slower loading times.
+* Slower indexing.
+
+---
+
+## SSD
+
+Advantages:
+
+* Faster startup.
+* Faster project indexing.
+* Better overall performance.
+
+Disadvantages:
+
+* More expensive.
+
+---
+
+## Recommendation
+
+Use an SSD whenever possible.
+
+It dramatically improves the IntelliJ experience.
+
+---
+
+# Community Edition vs Ultimate Edition
+
+## Community Edition
+
+Price:
+
+```text
+FREE
+```
+
+Best for:
+
+* Students
+* Beginners
+* Learning Java
+* Learning Kotlin
+* Personal projects
+
+---
+
+## Ultimate Edition
+
+Price:
+
+```text
+Paid Subscription
+```
+
+Best for:
+
+* Professional developers
+* Enterprise applications
+* Spring projects
+* Advanced web development
+
+---
+
+# How to Install IntelliJ IDEA
+
+## Step 1
+
+Visit the JetBrains website.
+
+Download:
+
+```text
+IntelliJ IDEA Community Edition
+```
+
+---
+
+## Step 2
+
+Run the installer.
+
+Click:
+
+```text
+Next
+```
+
+until installation begins.
+
+---
+
+## Step 3
+
+Recommended Installation Options
+
+Enable:
+
+☑ Add "Open Folder as Project"
+
+☑ Create Desktop Shortcut
+
+☑ Add Launcher to PATH
+
+---
+
+## Step 4
+
+Finish installation.
+
+Restart the computer if necessary.
+
+---
+
+## Step 5
+
+Launch IntelliJ IDEA.
+
+You should see the Welcome Screen.
+
+---
+
+# First Startup
+
+During the first launch, IntelliJ may ask you to:
+
+* Import settings.
+* Select a theme.
+* Configure plugins.
+
+If you are a beginner:
+
+Choose:
+
+```text
+Do not import settings
+```
+
+and continue.
+
+---
+
+# Themes
+
+IntelliJ offers different appearances.
+
+## Dark Theme
+
+Advantages:
+
+* Easier on the eyes.
+* Popular among developers.
+* Comfortable during long sessions.
+
+---
+
+## Light Theme
+
+Advantages:
+
+* Cleaner appearance.
+* Better visibility in bright rooms.
+
+---
+
+## Recommendation
+
+Use whichever helps you stay productive.
+
+Most developers prefer Dark Mode.
+
+---
+
+# What Happens After Installation?
+
+IntelliJ automatically creates:
+
+* Project settings folders.
+* Configuration files.
+* Cache directories.
+* Plugin directories.
+
+This is normal.
+
+---
+
+# IntelliJ Memory Usage
+
+Many beginners ask:
+
+"Why does IntelliJ use so much RAM?"
+
+The answer is simple.
+
+IntelliJ continuously performs tasks such as:
+
+* Code analysis.
+* Error detection.
+* Code completion.
+* Project indexing.
+* Plugin execution.
+* Background scanning.
+
+These features make development faster but require memory.
+
+---
+
+# Typical Memory Usage
+
+Small Projects:
+
+```text
+500 MB – 1 GB RAM
+```
+
+---
+
+Medium Projects:
+
+```text
+1–2 GB RAM
+```
+
+---
+
+Large Projects:
+
+```text
+2–4+ GB RAM
+```
+
+---
+
+# Recommended Plugins (Extensions)
+
+Plugins extend IntelliJ's functionality.
+
+---
+
+## 1. Rainbow Brackets
+
+Purpose:
+
+Uses different colors for matching brackets.
+
+Benefits:
+
+* Easier reading.
+* Fewer mistakes.
+
+---
+
+## 2. .ignore
+
+Purpose:
+
+Generates .gitignore files.
+
+Benefits:
+
+* Simplifies Git configuration.
+
+---
+
+## 3. GitToolBox
+
+Purpose:
+
+Improves Git integration.
+
+Benefits:
+
+* Better Git information.
+* Faster workflow.
+
+---
+
+## 4. Key Promoter X
+
+Purpose:
+
+Teaches keyboard shortcuts.
+
+Benefits:
+
+* Improves productivity.
+* Encourages professional habits.
+
+---
+
+## 5. SonarLint
+
+Purpose:
+
+Detects code quality issues.
+
+Benefits:
+
+* Finds bugs early.
+* Suggests improvements.
+
+---
+
+## 6. CodeGlance
+
+Purpose:
+
+Displays a mini-map of your code.
+
+Benefits:
+
+* Easier navigation.
+
+---
+
+## 7. Presentation Assistant
+
+Purpose:
+
+Shows keyboard shortcuts on screen.
+
+Benefits:
+
+* Excellent for teachers.
+* Great for YouTube tutorials.
+* Useful when teaching others.
+
+---
+
+# Plugins Beginners Do NOT Need Yet
+
+Avoid installing too many plugins.
+
+You can skip:
+
+* Docker plugins
+* Kubernetes plugins
+* Spring assistants
+* Database tools
+* Remote development tools
+
+until you actually need them.
+
+---
+
+# Professional Setup Recommendations
+
+If you want a professional setup:
+
+Use:
+
+* IntelliJ Community Edition
+* Dark Theme
+* Git installed
+* GitHub account connected
+* Rainbow Brackets
+* Key Promoter X
+* SonarLint
+* Presentation Assistant
+
+This setup is lightweight, beginner-friendly, and suitable for teaching.
+
+---
+
+# Common Beginner Mistakes
+
+❌ Installing too many plugins.
+
+❌ Ignoring updates.
+
+❌ Using HDD when SSD is available.
+
+❌ Closing IntelliJ during indexing.
+
+❌ Skipping Git setup.
+
+❌ Forgetting to create backups.
+
+---
+
+# Final Thoughts
+
+Installing IntelliJ IDEA correctly is the first step toward becoming a productive developer.
+
+A well-configured environment saves time, reduces frustration, and allows you to focus on what truly matters:
+
+Learning how to build software.
+
+Remember:
+
+> Great programmers do not only write good code. They also build efficient environments that help them succeed.
+👤 Author Peyman Miyandashti 🎓 Polytechnic University of Baja California 💻 Information Technology Engineering & Digital Innovation 📍 From Mexico 📅 Year: 2026 🆔 ID: 250161
