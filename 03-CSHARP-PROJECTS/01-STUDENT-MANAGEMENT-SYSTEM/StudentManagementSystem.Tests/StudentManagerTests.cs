@@ -1,3 +1,4 @@
+using Xunit;
 using StudentManagementSystem;
 
 namespace StudentManagementSystem.Tests;
