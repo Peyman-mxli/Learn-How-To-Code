@@ -38,7 +38,7 @@ def csharp():
 def metadata():
     bad=("250161@upbc.edu.mx","mxli.peyman@gmail.com","+526865090453")
     for p in ROOT.rglob("*"):
-        if not p.is_file() or ".git" in p.parts or not txt(p): continue
+        if not p.is_file() or ".git" in p.parts or ".github" in p.parts or not txt(p): continue
         try: t=r(p)
         except: continue
         out=[]; ch=False
