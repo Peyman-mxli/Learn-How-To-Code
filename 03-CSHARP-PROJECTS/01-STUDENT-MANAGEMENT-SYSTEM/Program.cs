@@ -1,256 +1,268 @@
-using System;
+namespace StudentManagementSystem;
 
-namespace StudentManagementSystem
+public static class Program
 {
-    public class Program
+    public static void Main()
     {
-        public static void Main(string[] args)
+        var manager = new StudentManager();
+
+        while (true)
         {
-            StudentManager studentManager = new StudentManager();
+            PrintMenu();
+            string? choice = Console.ReadLine()?.Trim();
 
-            bool isRunning = true;
+            Console.WriteLine();
 
-            while (isRunning)
+            switch (choice)
             {
-                Console.Clear();
-
-                Console.WriteLine("========================================");
-                Console.WriteLine("     STUDENT MANAGEMENT SYSTEM");
-                Console.WriteLine("========================================");
-                Console.WriteLine();
-                Console.WriteLine("1. Add Student");
-                Console.WriteLine("2. View Students");
-                Console.WriteLine("3. Search Student");
-                Console.WriteLine("4. Update Student");
-                Console.WriteLine("5. Delete Student");
-                Console.WriteLine("6. Exit");
-                Console.WriteLine();
-                Console.Write("Choose an option: ");
-
-                string choice = Console.ReadLine();
-
-                switch (choice)
-                {
-                    case "1":
-                        AddStudentFromUserInput(studentManager);
-                        break;
-
-                    case "2":
-                        ViewAllStudents(studentManager);
-                        break;
-
-                    case "3":
-                        SearchStudentFromUserInput(studentManager);
-                        break;
-
-                    case "4":
-                        UpdateStudentFromUserInput(studentManager);
-                        break;
-
-                    case "5":
-                        DeleteStudentFromUserInput(studentManager);
-                        break;
-
-                    case "6":
-                        isRunning = false;
-                        Console.WriteLine();
-                        Console.WriteLine("Thank you for using Student Management System.");
-                        break;
-
-                    default:
-                        Console.WriteLine();
-                        Console.WriteLine("Invalid option. Please try again.");
-                        break;
-                }
-
-                if (isRunning)
-                {
-                    Console.WriteLine();
-                    Console.WriteLine("Press any key to continue...");
-                    Console.ReadKey();
-                }
+                case "1":
+                    AddStudent(manager);
+                    break;
+                case "2":
+                    ViewStudents(manager);
+                    break;
+                case "3":
+                    SearchStudent(manager);
+                    break;
+                case "4":
+                    UpdateStudent(manager);
+                    break;
+                case "5":
+                    DeleteStudent(manager);
+                    break;
+                case "6":
+                    Console.WriteLine("Thank you for using Student Management System.");
+                    return;
+                default:
+                    Console.WriteLine("Invalid option. Choose a number from 1 to 6.");
+                    break;
             }
+
+            Console.WriteLine();
+            Console.Write("Press Enter to continue...");
+            Console.ReadLine();
+            Console.Clear();
+        }
+    }
+
+    private static void PrintMenu()
+    {
+        Console.WriteLine("========================================");
+        Console.WriteLine("     STUDENT MANAGEMENT SYSTEM");
+        Console.WriteLine("========================================");
+        Console.WriteLine("1. Add Student");
+        Console.WriteLine("2. View All Students");
+        Console.WriteLine("3. Search Student");
+        Console.WriteLine("4. Update Student");
+        Console.WriteLine("5. Delete Student");
+        Console.WriteLine("6. Exit");
+        Console.Write("Choose an option: ");
+    }
+
+    private static void AddStudent(StudentManager manager)
+    {
+        Console.WriteLine("ADD STUDENT");
+        Console.WriteLine("----------------------------------------");
+
+        int id = ReadInt("Student ID", min: 1);
+        string name = ReadRequired("Full Name");
+        int age = ReadInt("Age", min: 1, max: 130);
+        string email = ReadEmail("Email");
+        string course = ReadRequired("Course");
+        double grade = ReadDouble("Grade", min: 0, max: 100);
+
+        try
+        {
+            var student = new Student(id, name, age, email, course, grade);
+            manager.AddStudent(student, out string message);
+            Console.WriteLine(message);
+        }
+        catch (ArgumentException ex)
+        {
+            Console.WriteLine($"Validation error: {ex.Message}");
+        }
+    }
+
+    private static void ViewStudents(StudentManager manager)
+    {
+        Console.WriteLine("ALL STUDENTS");
+        Console.WriteLine("----------------------------------------");
+
+        if (manager.Students.Count == 0)
+        {
+            Console.WriteLine("No students found.");
+            return;
         }
 
-        private static void AddStudentFromUserInput(StudentManager studentManager)
+        foreach (Student student in manager.Students)
+            Console.WriteLine(student);
+
+        Console.WriteLine($"Total: {manager.GetTotalStudents()}");
+    }
+
+    private static void SearchStudent(StudentManager manager)
+    {
+        Console.WriteLine("SEARCH STUDENT");
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("1. Search by ID");
+        Console.WriteLine("2. Search by name");
+        Console.Write("Choose: ");
+
+        string? searchChoice = Console.ReadLine()?.Trim();
+
+        if (searchChoice == "1")
         {
-            Console.WriteLine();
-            Console.WriteLine("ADD NEW STUDENT");
-            Console.WriteLine("----------------------------------------");
-
-            Console.Write("Student ID: ");
-            int studentId = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Full Name: ");
-            string fullName = Console.ReadLine();
-
-            Console.Write("Age: ");
-            int age = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Email: ");
-            string email = Console.ReadLine();
-
-            Console.Write("Course: ");
-            string course = Console.ReadLine();
-
-            Console.Write("Grade: ");
-            double grade = Convert.ToDouble(Console.ReadLine());
-
-            Student student = new Student(
-                studentId,
-                fullName,
-                age,
-                email,
-                course,
-                grade
-            );
-
-            studentManager.AddStudent(student);
+            int id = ReadInt("Student ID", min: 1);
+            Student? student = manager.SearchStudentById(id);
+            Console.WriteLine(student is null ? "Student not found." : student);
+            return;
         }
 
-        private static void ViewAllStudents(StudentManager studentManager)
+        if (searchChoice == "2")
         {
-            Console.WriteLine();
-            Console.WriteLine("ALL STUDENTS");
-            Console.WriteLine("----------------------------------------");
+            string name = ReadRequired("Name or partial name");
+            IReadOnlyList<Student> matches = manager.SearchStudentsByName(name);
 
-            studentManager.DisplayAllStudents();
-        }
-
-        private static void SearchStudentFromUserInput(StudentManager studentManager)
-        {
-            Console.WriteLine();
-            Console.WriteLine("SEARCH STUDENT");
-            Console.WriteLine("----------------------------------------");
-
-            Console.Write("Enter Student ID: ");
-            int studentId = Convert.ToInt32(Console.ReadLine());
-
-            Student student = studentManager.SearchStudentById(studentId);
-
-            if (student == null)
+            if (matches.Count == 0)
             {
-                Console.WriteLine("Student not found.");
+                Console.WriteLine("No matching students found.");
                 return;
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Student found:");
-            student.DisplayStudentInformation();
+            foreach (Student student in matches)
+                Console.WriteLine(student);
+
+            return;
         }
 
-        private static void UpdateStudentFromUserInput(StudentManager studentManager)
+        Console.WriteLine("Invalid search option.");
+    }
+
+    private static void UpdateStudent(StudentManager manager)
+    {
+        Console.WriteLine("UPDATE STUDENT");
+        Console.WriteLine("----------------------------------------");
+
+        int id = ReadInt("Student ID to update", min: 1);
+        Student? existing = manager.SearchStudentById(id);
+
+        if (existing is null)
         {
-            Console.WriteLine();
-            Console.WriteLine("UPDATE STUDENT");
-            Console.WriteLine("----------------------------------------");
-
-            Console.Write("Enter Student ID to update: ");
-            int studentId = Convert.ToInt32(Console.ReadLine());
-
-            Student existingStudent = studentManager.SearchStudentById(studentId);
-
-            if (existingStudent == null)
-            {
-                Console.WriteLine("Student not found.");
-                return;
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Current student information:");
-            existingStudent.DisplayStudentInformation();
-
-            Console.WriteLine();
-            Console.WriteLine("Enter new student information:");
-            Console.WriteLine("----------------------------------------");
-
-            Console.Write("New Full Name: ");
-            string fullName = Console.ReadLine();
-
-            Console.Write("New Age: ");
-            int age = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("New Email: ");
-            string email = Console.ReadLine();
-
-            Console.Write("New Course: ");
-            string course = Console.ReadLine();
-
-            Console.Write("New Grade: ");
-            double grade = Convert.ToDouble(Console.ReadLine());
-
-            bool isUpdated = studentManager.UpdateStudent(
-                studentId,
-                fullName,
-                age,
-                email,
-                course,
-                grade
-            );
-
-            if (isUpdated)
-            {
-                Console.WriteLine("Student updated successfully.");
-            }
-            else
-            {
-                Console.WriteLine("Student update failed.");
-            }
+            Console.WriteLine("Student not found.");
+            return;
         }
 
-        private static void DeleteStudentFromUserInput(StudentManager studentManager)
+        Console.WriteLine($"Current: {existing}");
+
+        string name = ReadRequired("New Full Name");
+        int age = ReadInt("New Age", min: 1, max: 130);
+        string email = ReadEmail("New Email");
+        string course = ReadRequired("New Course");
+        double grade = ReadDouble("New Grade", min: 0, max: 100);
+
+        manager.UpdateStudent(
+            id,
+            name,
+            age,
+            email,
+            course,
+            grade,
+            out string message);
+
+        Console.WriteLine(message);
+    }
+
+    private static void DeleteStudent(StudentManager manager)
+    {
+        Console.WriteLine("DELETE STUDENT");
+        Console.WriteLine("----------------------------------------");
+
+        int id = ReadInt("Student ID to delete", min: 1);
+        Student? student = manager.SearchStudentById(id);
+
+        if (student is null)
         {
-            Console.WriteLine();
-            Console.WriteLine("DELETE STUDENT");
-            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Student not found.");
+            return;
+        }
 
-            Console.Write("Enter Student ID to delete: ");
-            int studentId = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(student);
+        Console.Write("Delete this student? (Y/N): ");
+        string confirmation = Console.ReadLine()?.Trim() ?? "";
 
-            Student student = studentManager.SearchStudentById(studentId);
+        if (!confirmation.Equals("Y", StringComparison.OrdinalIgnoreCase))
+        {
+            Console.WriteLine("Delete cancelled.");
+            return;
+        }
 
-            if (student == null)
+        Console.WriteLine(
+            manager.DeleteStudent(id)
+                ? "Student deleted successfully."
+                : "Student deletion failed.");
+    }
+
+    private static string ReadRequired(string label)
+    {
+        while (true)
+        {
+            Console.Write($"{label}: ");
+            string value = Console.ReadLine()?.Trim() ?? "";
+
+            if (!string.IsNullOrWhiteSpace(value))
+                return value;
+
+            Console.WriteLine($"{label} cannot be empty.");
+        }
+    }
+
+    private static string ReadEmail(string label)
+    {
+        while (true)
+        {
+            string value = ReadRequired(label);
+
+            if (value.Contains('@') && value.Contains('.'))
+                return value;
+
+            Console.WriteLine("Enter a valid email address.");
+        }
+    }
+
+    private static int ReadInt(string label, int min, int? max = null)
+    {
+        while (true)
+        {
+            Console.Write($"{label}: ");
+            string? raw = Console.ReadLine();
+
+            if (int.TryParse(raw, out int value) &&
+                value >= min &&
+                (!max.HasValue || value <= max.Value))
             {
-                Console.WriteLine("Student not found.");
-                return;
+                return value;
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Student selected for deletion:");
-            student.DisplayStudentInformation();
+            string range = max.HasValue ? $"{min}-{max.Value}" : $">= {min}";
+            Console.WriteLine($"Enter a valid integer ({range}).");
+        }
+    }
 
-            Console.WriteLine();
-            Console.Write("Are you sure you want to delete this student? (Y/N): ");
-            string confirmation = Console.ReadLine();
+    private static double ReadDouble(string label, double min, double max)
+    {
+        while (true)
+        {
+            Console.Write($"{label}: ");
+            string? raw = Console.ReadLine();
 
-            if (confirmation.ToUpper() == "Y")
+            if (double.TryParse(raw, out double value) &&
+                value >= min &&
+                value <= max)
             {
-                bool isDeleted = studentManager.DeleteStudent(studentId);
+                return value;
+            }
 
-                if (isDeleted)
-                {
-                    Console.WriteLine("Student deleted successfully.");
-                }
-                else
-                {
-                    Console.WriteLine("Student deletion failed.");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Delete cancelled.");
-            }
+            Console.WriteLine($"Enter a number between {min} and {max}.");
         }
     }
 }
-
-/*
-👤 Author Peyman Miyandashti
-📨 250161@upbc.edu.mx // mxli.peyman@gmail.com
-📞 +526865090453
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
-🆔 ID: 250161
-*/

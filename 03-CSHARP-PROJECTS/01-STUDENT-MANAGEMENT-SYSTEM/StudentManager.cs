@@ -1,89 +1,80 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+namespace StudentManagementSystem;
 
-namespace StudentManagementSystem
+public sealed class StudentManager
 {
-    public class StudentManager
+    private readonly List<Student> _students = new();
+
+    public IReadOnlyList<Student> Students => _students.AsReadOnly();
+
+    public bool AddStudent(Student student, out string message)
     {
-        private List<Student> students = new List<Student>();
+        ArgumentNullException.ThrowIfNull(student);
 
-        public void AddStudent(Student student)
+        if (_students.Any(existing => existing.StudentId == student.StudentId))
         {
-            students.Add(student);
-            Console.WriteLine("Student added successfully.");
+            message = $"Student ID {student.StudentId} already exists.";
+            return false;
         }
 
-        public void DisplayAllStudents()
-        {
-            if (students.Count == 0)
-            {
-                Console.WriteLine("No students found.");
-                return;
-            }
+        _students.Add(student);
+        message = "Student added successfully.";
+        return true;
+    }
 
-            foreach (Student student in students)
-            {
-                student.DisplayStudentInformation();
-            }
+    public Student? SearchStudentById(int studentId)
+    {
+        return _students.FirstOrDefault(student => student.StudentId == studentId);
+    }
+
+    public IReadOnlyList<Student> SearchStudentsByName(string query)
+    {
+        if (string.IsNullOrWhiteSpace(query))
+            return Array.Empty<Student>();
+
+        return _students
+            .Where(student =>
+                student.FullName.Contains(
+                    query.Trim(),
+                    StringComparison.OrdinalIgnoreCase))
+            .ToList()
+            .AsReadOnly();
+    }
+
+    public bool UpdateStudent(
+        int studentId,
+        string fullName,
+        int age,
+        string email,
+        string course,
+        double grade,
+        out string message)
+    {
+        Student? student = SearchStudentById(studentId);
+
+        if (student is null)
+        {
+            message = "Student not found.";
+            return false;
         }
 
-        public Student SearchStudentById(int studentId)
+        try
         {
-            return students.FirstOrDefault(student => student.StudentId == studentId);
-        }
-
-        public bool UpdateStudent(
-            int studentId,
-            string fullName,
-            int age,
-            string email,
-            string course,
-            double grade)
-        {
-            Student student = SearchStudentById(studentId);
-
-            if (student == null)
-            {
-                return false;
-            }
-
-            student.FullName = fullName;
-            student.Age = age;
-            student.Email = email;
-            student.Course = course;
-            student.Grade = grade;
-
+            student.Update(fullName, age, email, course, grade);
+            message = "Student updated successfully.";
             return true;
         }
-
-        public bool DeleteStudent(int studentId)
+        catch (ArgumentException ex)
         {
-            Student student = SearchStudentById(studentId);
-
-            if (student == null)
-            {
-                return false;
-            }
-
-            students.Remove(student);
-            return true;
-        }
-
-        public int GetTotalStudents()
-        {
-            return students.Count;
+            message = ex.Message;
+            return false;
         }
     }
-}
 
-/*
-👤 Author Peyman Miyandashti
-📨 250161@upbc.edu.mx // mxli.peyman@gmail.com
-📞 +526865090453
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
-🆔 ID: 250161
-*/
+    public bool DeleteStudent(int studentId)
+    {
+        Student? student = SearchStudentById(studentId);
+        return student is not null && _students.Remove(student);
+    }
+
+    public int GetTotalStudents() => _students.Count;
+}
