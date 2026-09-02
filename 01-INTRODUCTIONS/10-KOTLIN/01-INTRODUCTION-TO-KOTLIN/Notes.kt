@@ -1,4 +1,3 @@
-```kotlin
 /*
  * File: 10-KOTLIN/01-INTRODUCTION-TO-KOTLIN/Notes.kt
  * Type: Notes
@@ -197,4 +196,3 @@ IMPORTANT THINGS TO REMEMBER
 /*
 END OF NOTES
 */
-```
