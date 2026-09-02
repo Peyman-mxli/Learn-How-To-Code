@@ -41,10 +41,30 @@ jobs:
 
       - name: Reject hard-coded application secrets
         run: |
-          bad_secret_lines="$(git grep -nE 'app\.secret_key\s*=\s*["'\'''][^$]' -- '*.py' || true)"
-          bad_admin_lines="$(git grep -nE 'ADMIN_VERIFY_CODE\s*=\s*["'\''']' -- '*.py' || true)"
-          if [ -n "$bad_secret_lines$bad_admin_lines" ]; then
-            echo "Possible hard-coded application secret found:"
-            printf '%s\n%s\n' "$bad_secret_lines" "$bad_admin_lines"
-            exit 1
-          fi
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          patterns = [
+              re.compile(r'app\.secret_key\s*=\s*["\'][^$][^"\']*["\']'),
+              re.compile(r'ADMIN_VERIFY_CODE\s*=\s*["\'][^"\']+["\']'),
+          ]
+
+          findings = []
+          for path in Path(".").rglob("*.py"):
+              if ".git" in path.parts:
+                  continue
+              try:
+                  text = path.read_text(encoding="utf-8")
+              except UnicodeDecodeError:
+                  continue
+              for line_number, line in enumerate(text.splitlines(), start=1):
+                  if any(pattern.search(line) for pattern in patterns):
+                      findings.append(f"{path}:{line_number}: {line.strip()}")
+
+          if findings:
+              print("Possible hard-coded application secret found:")
+              print("\n".join(findings))
+              sys.exit(1)
+          PY
