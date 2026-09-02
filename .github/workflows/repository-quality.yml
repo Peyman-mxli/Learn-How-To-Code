@@ -122,7 +122,7 @@ jobs:
                   if not (folder / name).exists():
                       problems.append(f"Missing Kotlin file: {folder / name}")
 
-          allowed_extensionless = {"LICENSE", ".gitignore"}
+          allowed_extensionless = {"LICENSE", ".gitignore", ".gitkeep"}
           for item in Path(".").rglob("*"):
               if not item.is_file() or ".git" in item.parts:
                   continue
