@@ -69,9 +69,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Install Kotlin compiler
         run: |
-          sudo apt-get update
-          sudo apt-get install -y kotlin
-          kotlinc -version
+          KOTLIN_VERSION=2.0.21
+          curl -fsSL -o /tmp/kotlin-compiler.zip "https://github.com/JetBrains/kotlin/releases/download/v${KOTLIN_VERSION}/kotlin-compiler-${KOTLIN_VERSION}.zip"
+          unzip -q /tmp/kotlin-compiler.zip -d /tmp/kotlin
+          echo "/tmp/kotlin/kotlinc/bin" >> "$GITHUB_PATH"
+          /tmp/kotlin/kotlinc/bin/kotlinc -version
       - name: Compile every Kotlin learning source file
         shell: bash
         run: |
