@@ -2,13 +2,11 @@ from animal import Animal
 
 
 class Perro(Animal):
-
     def __init__(self, nombre, edad, peso, dueno, codigo, raza):
         super().__init__(nombre, edad, peso, dueno, codigo)
         self._raza = raza
         self._adiestrado = False
 
-    # Metodo especial
     def adiestrar(self):
         self._adiestrado = True
         print(f"{self._nombre} ahora está adiestrado.")
@@ -19,7 +17,6 @@ class Perro(Animal):
         else:
             print(f"{self._nombre} es muy pequeño para pasear.")
 
-    # Polimorfismo
     def hacer_sonido(self):
         return f"{self._nombre} dice: ¡Guau guau!"
 
@@ -33,6 +30,4 @@ Dueño: {self._dueno}
 Raza: {self._raza}
 Adiestrado: {self._adiestrado}
 Vacunado: {self._vacunado}
-
 """
-print("HELLO FROM MAIN")
