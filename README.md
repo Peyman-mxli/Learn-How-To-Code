@@ -118,4 +118,4 @@ Mexico · 2026
 
 ## Automated quality checks
 
-GitHub Actions verifies Python project compilation, Calculator/Todo/UniTrack tests, the C# application build and xUnit tests, C# curriculum source hygiene, Kotlin module structure, Python filename conventions, repository hygiene, and hard-coded secret checks.
+GitHub Actions verifies the complete Python learning curriculum, Python project tests for Calculator, Todo, Vehicle, Library, Veterinary, Zoo, and UniTrack, the C# application build and xUnit tests, full C# curriculum syntax, Kotlin compiler validation, repository hygiene, public-metadata checks, and hard-coded secret checks.
