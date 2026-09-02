@@ -10,9 +10,9 @@ This section applies the concepts from `01-INTRODUCTIONS` in complete applicatio
 | 02 | [Todo App](./02-TODO-APP/) | CRUD-style operations and state management |
 | 03 | [Vehicle Management System](./03-VEHICLE-MANAGEMENT-SYSTEM/) | OOP, inheritance, abstraction, polymorphism |
 | 04 | [UniTrack](./04-UNITRACK/) | Flask, authentication, SQLite, attendance workflow |
-| 05 | [Biblioteca POO](./05-LIBRARY-OOP/) | Multi-module OOP library system |
-| 06 | [Veterinaria POO](./06-VETERINARY-OOP/) | Inheritance and polymorphism with animal models |
-| 07 | [Zoo POO](./07-ZOO-OOP/) | Abstract classes, caregivers, zoo management |
+| 05 | [Library OOP](./05-LIBRARY-OOP/) | Multi-module OOP library system |
+| 06 | [Veterinary OOP](./06-VETERINARY-OOP/) | Inheritance and polymorphism with animal models |
+| 07 | [Zoo OOP](./07-ZOO-OOP/) | Abstract classes, caregivers, zoo management |
 
 ## Project standards
 
@@ -43,3 +43,8 @@ Projects should include, when applicable:
 Information Technology Engineering & Digital Innovation  
 Polytechnic University of Baja California  
 Mexico · 2026
+
+
+## Automated validation
+
+Automated tests are included for the CLI Calculator, Todo App, UniTrack, and the C# Student Management System. GitHub Actions runs these checks on pushes and pull requests.
