@@ -125,7 +125,7 @@ def motor():
 def refs():
     d={"01-PROJECT-CLI-CALCULATOR":"01-CLI-CALCULATOR","03-VEHICLE-M-S":"03-VEHICLE-MANAGEMENT-SYSTEM","05-BIBLOTECA-POO":"05-LIBRARY-OOP","06-VETERINARIA-POO":"06-VETERINARY-OOP","07-zoo_poo":"07-ZOO-OOP","Static/":"static/","1.png":"student-management-system-console.png"}
     for p in ROOT.rglob("*"):
-        if not p.is_file() or ".git" in p.parts or not txt(p): continue
+        if not p.is_file() or ".git" in p.parts or ".github" in p.parts or not txt(p): continue
         try: t=r(p)
         except: continue
         n=t
