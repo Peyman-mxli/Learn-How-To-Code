@@ -1,0 +1,46 @@
+name: Repository Quality
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile Python projects
+        run: |
+          python -m compileall -q             02-PROJECTS/01-PROJECT-CLI-CALCULATOR             02-PROJECTS/02-TODO-APP             02-PROJECTS/05-BIBLOTECA-POO             02-PROJECTS/06-VETERINARIA-POO             02-PROJECTS/07-zoo_poo
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Build C# project
+        run: |
+          dotnet build             03-CSHARP-PROJECTS/01-STUDENT-MANAGEMENT-SYSTEM/StudentManagementSystem.csproj             --configuration Release
+
+      - name: Reject generated cache files
+        run: |
+          if find . -type f \( -name "*.pyc" -o -name "desktop.ini" \) | grep -q .; then
+            echo "Generated cache/OS files are committed."
+            find . -type f \( -name "*.pyc" -o -name "desktop.ini" \)
+            exit 1
+          fi
+
+      - name: Reject known placeholder secrets
+        run: |
+          if grep -RIn --exclude-dir=.git             -e 'supersecretkey'             -e 'UPBC2026'             .; then
+            echo "Known hard-coded secret pattern found."
+            exit 1
+          fi
