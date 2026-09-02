@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banners/02-assets.jpg" alt=".assets banner" width="100%">
+</p>
+
 # .assets
 
 I use this folder to keep the media and visual files that belong to this repository in one organized place.
