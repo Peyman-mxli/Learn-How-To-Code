@@ -1,106 +1,65 @@
-# Programming Foundations
+— Introductions, Setups & Foundations
+Welcome to the first module of my Python learning journey in 2025!
+This foundational module prepares me with everything I need before diving into real Python coding.
 
-A structured collection of beginner-friendly learning materials covering development environments, programming languages, version control, data structures, and algorithms.
+In this module, I focus on:
 
-This section is designed to build a reliable technical foundation before moving into larger software projects. Each topic combines explanations with practical examples, exercises, and—where available—solutions for self-assessment.
+Setting up my learning environment 🖥️
+Installing Python and essential tools 🧰
+Understanding how to run code locally and on GitHub 📦
+Grasping core foundational concepts before real programming begins
+📌 What’s Inside This Module
+This module includes essential setup steps and orientation files that make the rest of the curriculum smooth and enjoyable.
 
-## Learning objectives
+Typical files included in this module:
 
-By working through these materials, learners will be able to:
+Setup_Guide.md
+Instructions on installing Python, VS Code (or other editors), and configuring the environment.
 
-- configure professional development environments;
-- write, run, and debug programs;
-- use Git and GitHub for version control;
-- understand foundational Python, C#, and Kotlin concepts;
-- select and apply common data structures;
-- reason about basic searching and sorting algorithms; and
-- develop a consistent practice-and-review workflow.
+GitHub_Tutorial.md
+Step-by-step instructions for using Git & GitHub with your Python projects.
 
-## Learning path
+FOUNDATIONS_Notes.py
+Python scripts with basic examples to test your setup.
 
-| # | Topic | Focus |
-|---:|---|---|
-| 01 | [Visual Studio Code](./01-VSCODE/) | Installation, recommended extensions, and running Python in VS Code |
-| 02 | [Python](./02-PYTHON/) | Python setup, Jupyter, syntax, variables, control flow, functions, collections, OOP, and related fundamentals |
-| 03 | [GitHub](./03-GITHUB/) | Git installation, repositories, version control, and the VS Code–GitHub workflow |
-| 04 | [Unicode, Symbols & Emojis](./04-EMOJIS/) | Windows ALT codes, Unicode, emojis, and readable console interfaces |
-| 05 | [C#](./05-CSHARP/) | C# fundamentals, syntax, program structure, and .NET concepts |
-| 06 | [Visual Studio](./06-VISUALSTUDIO/) | Visual Studio setup and creation of modern .NET console applications |
-| 07 | [Data Structures](./07-DATA-STRUCTURES/) | Recursion, arrays, lists, queues, stacks, trees, and dictionaries in C# |
-| 08 | [Algorithms](./08-ALGORITHMS/) | Algorithmic thinking plus introductory searching and sorting algorithms |
-| 09 | [IntelliJ IDEA](./09-INTELLIJ/) | IDE installation, project workflows, debugging, terminal use, and Git integration |
-| 10 | [Kotlin](./10-KOTLIN/) | Kotlin setup, JVM fundamentals, syntax, null safety, collections, OOP, and project preparation |
+FOUNDATIONS_Examples.md
+Simple examples & workflows to confirm everything is working.
 
-## Recommended routes
+(If your module has other files you want included in this list, I can update this later😁.)
 
-### Python route
+🧠 Why This Module Matters
+Before writing Python code, I first learn:
 
-1. [Visual Studio Code](./01-VSCODE/)
-2. [Python](./02-PYTHON/)
-3. [GitHub](./03-GITHUB/)
-4. [Unicode, Symbols & Emojis](./04-EMOJIS/)
+How to install and verify Python on my computer 🧪
+How to use a code editor (VS Code / PyCharm / Nano / etc.)
+How to run Python files
+How to use Git and GitHub to track projects ✔️
+This foundation makes everything else easier and more professional as I build real programs.
 
-### C# and computer science route
+🧭 How to Study This Module
+Recommended order:
 
-1. [C#](./05-CSHARP/)
-2. [Visual Studio](./06-VISUALSTUDIO/)
-3. [Data Structures](./07-DATA-STRUCTURES/)
-4. [Algorithms](./08-ALGORITHMS/)
+📥 Follow the Setup_Guide.md to install everything
+💻 Open your editor and run the sample code in FOUNDATIONS_Notes.py
+🔁 Practice committing and pushing to GitHub using GitHub_Tutorial.md
+📄 Try examples in FOUNDATIONS_Examples.md
+🎯 Confirm your environment is ready for Module 02 — Loops
+Once I’m confident everything works, I can move on to the next module.
 
-### Kotlin route
 
-1. [GitHub](./03-GITHUB/)
-2. [IntelliJ IDEA](./09-INTELLIJ/)
-3. [Kotlin](./10-KOTLIN/)
 
-The tracks can also be studied independently. Beginners should complete the relevant editor or IDE setup before starting a programming-language module.
+👨‍💻 Notes & Tips
+If you get stuck:
 
-## How to use each module
+Leave a message for me 💬
+Double-check your Python and editor configurations
+Make sure Git is authenticated for pushing to GitHub
+Learning the development setup is just as important as learning the code itself!
 
-Most topic folders follow a practical learning sequence:
-
-1. Read the topic README for scope and prerequisites.
-2. Study the notes and reproduce important examples.
-3. Run the example programs locally.
-4. Complete the tasks without consulting the solutions.
-5. Compare your work with the provided solutions.
-6. Refactor your code for clarity and consistency.
-7. Record questions, mistakes, and lessons learned.
-8. Apply the concept in a small independent program.
-
-File names vary slightly between modules, but commonly include README, Notes, Examples, Tasks, and task solutions.
-
-## Prerequisites
-
-No prior professional programming experience is required. Depending on the selected learning route, install:
-
-- [Visual Studio Code](https://code.visualstudio.com/) for Python and general editing;
-- [Python](https://www.python.org/downloads/) and optionally Jupyter;
-- [Git](https://git-scm.com/downloads) with a GitHub account;
-- [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) with the **.NET desktop development** workload for C#;
-- [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/) for Kotlin; and
-- the appropriate current language runtime or SDK.
-
-Always verify installations from a terminal before beginning the exercises.
-
-## Study principles
-
-- Type the examples instead of only reading them.
-- Test small changes and observe their effects.
-- Read error messages carefully before searching for a solution.
-- Keep commits small and use descriptive commit messages.
-- Attempt every exercise independently before reviewing its solution.
-- Prefer consistent practice over rushing through the material.
-
-## Repository navigation
-
-- [Return to the repository home](../)
-- [Continue to projects](../02-PROJECTS/)
-- [Explore C# projects](../03-CSHARP-PROJECTS/)
-
-## Author
-
-**Peyman Miyandashti**  
-Information Technology Engineering & Digital Innovation  
-Polytechnic University of Baja California  
-Mexico · 2026
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
