@@ -47,4 +47,4 @@ Mexico · 2026
 
 ## Automated validation
 
-Automated tests are included for the CLI Calculator, Todo App, UniTrack, and the C# Student Management System. GitHub Actions runs these checks on pushes and pull requests.
+Automated tests are included for the CLI Calculator, Todo App, Vehicle Management System, Library OOP, Veterinary OOP, Zoo OOP, UniTrack, and the C# Student Management System. GitHub Actions runs these checks on pushes and pull requests.
