@@ -1,4 +1,4 @@
-# Project 06 — Veterinaria POO
+# Project 06 — Veterinary OOP
 
 A Python object-oriented veterinary-system demonstration using a shared animal model and specialized animal types.
 
@@ -15,7 +15,8 @@ A Python object-oriented veterinary-system demonstration using a shared animal m
 - polymorphism;
 - method specialization;
 - shared behavior through a base class;
-- collections of heterogeneous objects.
+- collections of heterogeneous objects;
+- automated behavior tests.
 
 ## Structure
 
@@ -26,6 +27,8 @@ A Python object-oriented veterinary-system demonstration using a shared animal m
 ├── gato.py
 ├── ave.py
 ├── main.py
+├── tests/
+│   └── test_veterinary.py
 └── README.md
 ```
 
@@ -33,6 +36,12 @@ A Python object-oriented veterinary-system demonstration using a shared animal m
 
 ```bash
 python main.py
+```
+
+## Test
+
+```bash
+python -m unittest discover -s tests -v
 ```
 
 The demonstration creates sample animals, prints their information, performs vaccination/consultation actions, calls type-specific services, and generates a final summary.
