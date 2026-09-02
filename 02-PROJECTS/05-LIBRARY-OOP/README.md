@@ -1,4 +1,4 @@
-# Project 05 — Biblioteca POO
+# Project 05 — Library OOP
 
 A Python object-oriented library-management exercise.
 
@@ -9,7 +9,9 @@ A Python object-oriented library-management exercise.
 - separation of concerns;
 - package/module organization;
 - searching collections;
-- state changes such as lending and returning books.
+- lending and returning state;
+- input validation and exception handling;
+- automated tests.
 
 ## Current structure
 
@@ -22,13 +24,31 @@ A Python object-oriented library-management exercise.
 ├── services/
 │   ├── __init__.py
 │   └── biblioteca.py
+├── tests/
+│   └── test_library.py
+├── info/
+│   └── poo.html
 └── README.md
 ```
+
+`info/poo.html` is supplementary OOP reference material. The executable application uses the modules under `models/` and `services/`.
+
+## Validation
+
+The current year is calculated dynamically with Python's `datetime` module, so year validation does not become outdated every January.
+
+Invalid titles, authors, publication years, and non-numeric console input are handled explicitly.
 
 ## Run
 
 ```bash
 python main.py
+```
+
+## Test
+
+```bash
+python -m unittest discover -s tests -v
 ```
 
 The project uses the Python standard library only.
