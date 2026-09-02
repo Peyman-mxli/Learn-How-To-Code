@@ -1,251 +1,224 @@
-from flask import Flask, render_template, request, redirect, url_for, session, jsonify
+from __future__ import annotations
+
+import os
 import sqlite3
 from datetime import datetime
-import os
+from pathlib import Path
+
+from flask import Flask, jsonify, redirect, render_template, request, session, url_for
+from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.utils import secure_filename
+
+
+BASE_DIR = Path(__file__).resolve().parent
+DATABASE_PATH = BASE_DIR / "unitrack.db"
+UPLOAD_FOLDER = BASE_DIR / "Static" / "uploads"
+UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
 
 app = Flask(__name__)
-app.secret_key = "supersecretkey"
+app.secret_key = os.environ.get("UNITRACK_SECRET_KEY", "dev-only-change-me")
 
-UPLOAD_FOLDER = "static/uploads"
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-
-# 🔐 ADMIN VERIFICATION CODE (Later we make this dynamic)
-ADMIN_VERIFY_CODE = "UPBC2026"
+ADMIN_VERIFY_CODE = os.environ.get("UNITRACK_ADMIN_CODE")
 
 
-# ---------------- HOME (INDEX PAGE) ----------------
+def get_connection() -> sqlite3.Connection:
+    conn = sqlite3.connect(DATABASE_PATH)
+    conn.row_factory = sqlite3.Row
+    return conn
+
+
+def init_db() -> None:
+    with get_connection() as conn:
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT UNIQUE NOT NULL,
+                nombre TEXT NOT NULL,
+                apellidos TEXT NOT NULL,
+                password TEXT NOT NULL,
+                foto TEXT,
+                rol TEXT NOT NULL,
+                estado TEXT DEFAULT 'Activo'
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS asistencia (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                check_in TEXT NOT NULL,
+                check_out TEXT,
+                FOREIGN KEY(user_id) REFERENCES users(id)
+            )
+            """
+        )
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
 
-# ---------------- DATABASE ----------------
-def init_db():
-    conn = sqlite3.connect("unitrack.db")
-    cursor = conn.cursor()
-
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            username TEXT UNIQUE NOT NULL,
-            nombre TEXT NOT NULL,
-            apellidos TEXT NOT NULL,
-            password TEXT NOT NULL,
-            foto TEXT,
-            rol TEXT NOT NULL,
-            estado TEXT DEFAULT 'Activo'
-        )
-    """)
-
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS asistencia (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            user_id INTEGER,
-            check_in TEXT,
-            check_out TEXT,
-            FOREIGN KEY(user_id) REFERENCES users(id)
-        )
-    """)
-
-    conn.commit()
-    conn.close()
-
-
-# ---------------- VALIDATE ADMIN CODE (AJAX) ----------------
 @app.route("/validate_admin_code", methods=["POST"])
 def validate_admin_code():
-    code = request.form.get("code")
-
-    if code == ADMIN_VERIFY_CODE:
-        return jsonify({"status": "valid"})
-    else:
-        return jsonify({"status": "invalid"})
+    submitted = request.form.get("code", "")
+    valid = bool(ADMIN_VERIFY_CODE) and submitted == ADMIN_VERIFY_CODE
+    return jsonify({"status": "valid" if valid else "invalid"})
 
 
-# ---------------- REGISTER ----------------
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    if request.method == "POST":
+    if request.method == "GET":
+        return render_template("register.html")
 
-        admin_code = request.form.get("admin_code")
+    username = request.form.get("username", "").strip()
+    nombre_paterno = request.form.get("nombre_paterno", "").strip()
+    nombre_materno = request.form.get("nombre_materno", "").strip()
+    apellido_paterno = request.form.get("apellido_paterno", "").strip()
+    apellido_materno = request.form.get("apellido_materno", "").strip()
+    password = request.form.get("password", "")
+    rol = request.form.get("rol", "").strip()
 
-        if admin_code != ADMIN_VERIFY_CODE:
-            return render_template("register.html",
-                                   mensaje="Código verificador de administrador es incorrecto ❌")
+    required = [username, nombre_paterno, apellido_paterno, password, rol]
+    if not all(required):
+        return render_template("register.html", mensaje="Faltan campos obligatorios ❌")
 
-        username = request.form.get("username")
+    if rol.lower() in {"administrativo", "admin", "administrador"}:
+        submitted_code = request.form.get("admin_code", "")
+        if not ADMIN_VERIFY_CODE or submitted_code != ADMIN_VERIFY_CODE:
+            return render_template(
+                "register.html",
+                mensaje="Código verificador de administrador incorrecto ❌",
+            )
 
-        # Combine names properly
-        nombre_paterno = request.form.get("nombre_paterno")
-        nombre_materno = request.form.get("nombre_materno")
-        apellido_paterno = request.form.get("apellido_paterno")
-        apellido_materno = request.form.get("apellido_materno")
+    nombre = " ".join(x for x in [nombre_paterno, nombre_materno] if x)
+    apellidos = " ".join(x for x in [apellido_paterno, apellido_materno] if x)
 
-        if not all([username, nombre_paterno, nombre_materno,
-                    apellido_paterno, apellido_materno]):
-            return render_template("register.html",
-                                   mensaje="Faltan campos obligatorios ❌")
+    foto_filename = None
+    foto_file = request.files.get("foto")
+    if foto_file and foto_file.filename:
+        foto_filename = secure_filename(foto_file.filename)
+        if foto_filename:
+            foto_file.save(UPLOAD_FOLDER / foto_filename)
 
-        nombre = f"{nombre_paterno} {nombre_materno}"
-        apellidos = f"{apellido_paterno} {apellido_materno}"
+    password_hash = generate_password_hash(password)
 
-        password = request.form.get("password")
-        rol = request.form.get("rol")
-
-        foto_file = request.files.get("foto")
-        foto_filename = None
-
-        if foto_file and foto_file.filename != "":
-            foto_filename = foto_file.filename
-            foto_path = os.path.join(UPLOAD_FOLDER, foto_filename)
-            foto_file.save(foto_path)
-
-        conn = sqlite3.connect("unitrack.db")
-        cursor = conn.cursor()
-
-        try:
-            cursor.execute("""
+    try:
+        with get_connection() as conn:
+            conn.execute(
+                """
                 INSERT INTO users (username, nombre, apellidos, password, foto, rol)
                 VALUES (?, ?, ?, ?, ?, ?)
-            """, (username, nombre, apellidos, password, foto_filename, rol))
+                """,
+                (username, nombre, apellidos, password_hash, foto_filename, rol),
+            )
+    except sqlite3.IntegrityError:
+        return render_template("register.html", mensaje="Usuario ya registrado ❌")
 
-            conn.commit()
+    return redirect(url_for("login"))
 
-        except sqlite3.IntegrityError:
-            conn.close()
-            return render_template("register.html",
-                                   mensaje="Usuario ya registrado ❌")
 
-        conn.close()
-        return redirect(url_for("login"))
-
-    return render_template("register.html")
-# ---------------- LOGIN ----------------
 @app.route("/login", methods=["GET", "POST"])
 def login():
-    if request.method == "POST":
+    if request.method == "GET":
+        return render_template("login.html")
 
-        username = request.form.get("username")
-        password = request.form.get("password")
+    username = request.form.get("username", "").strip()
+    password = request.form.get("password", "")
 
-        conn = sqlite3.connect("unitrack.db")
-        cursor = conn.cursor()
+    with get_connection() as conn:
+        user = conn.execute(
+            "SELECT * FROM users WHERE username = ?",
+            (username,),
+        ).fetchone()
 
-        cursor.execute(
-            "SELECT * FROM users WHERE username=? AND password=?",
-            (username, password)
-        )
+    if user and check_password_hash(user["password"], password):
+        session.clear()
+        session["user_id"] = user["id"]
+        session["rol"] = user["rol"]
 
-        user = cursor.fetchone()
-        conn.close()
+        if user["rol"].lower() in {"alumno", "estudiante"}:
+            return redirect(url_for("dashboard_alumno"))
+        return redirect(url_for("index"))
 
-        if user:
-            session["user_id"] = user[0]
-            session["rol"] = user[6]
-
-            if user[6] == "Alumno":
-                return redirect(url_for("dashboard_alumno"))
-            else:
-                return redirect(url_for("index"))
-
-        return render_template("login.html",
-                               mensaje="Credenciales inválidas ❌")
-
-    return render_template("login.html")
+    return render_template("login.html", mensaje="Credenciales inválidas ❌")
 
 
-# ---------------- DASHBOARD ALUMNO ----------------
 @app.route("/dashboard_alumno")
 def dashboard_alumno():
     if "user_id" not in session:
         return redirect(url_for("login"))
 
-    conn = sqlite3.connect("unitrack.db")
-    cursor = conn.cursor()
+    with get_connection() as conn:
+        user = conn.execute(
+            "SELECT * FROM users WHERE id = ?",
+            (session["user_id"],),
+        ).fetchone()
+        asistencia = conn.execute(
+            """
+            SELECT * FROM asistencia
+            WHERE user_id = ?
+            ORDER BY id DESC
+            LIMIT 1
+            """,
+            (session["user_id"],),
+        ).fetchone()
 
-    cursor.execute("SELECT * FROM users WHERE id=?",
-                   (session["user_id"],))
-    user = cursor.fetchone()
-
-    cursor.execute("""
-        SELECT * FROM asistencia
-        WHERE user_id=?
-        ORDER BY id DESC LIMIT 1
-    """, (session["user_id"],))
-
-    asistencia = cursor.fetchone()
-
-    conn.close()
-
-    return render_template("dashboard_alumno.html",
-                           user=user,
-                           asistencia=asistencia)
+    return render_template("dashboard_alumno.html", user=user, asistencia=asistencia)
 
 
-# ---------------- CHECK IN ----------------
 @app.route("/check_in")
 def check_in():
     if "user_id" not in session:
         return redirect(url_for("login"))
 
-    conn = sqlite3.connect("unitrack.db")
-    cursor = conn.cursor()
+    with get_connection() as conn:
+        existing = conn.execute(
+            """
+            SELECT 1 FROM asistencia
+            WHERE user_id = ? AND check_out IS NULL
+            """,
+            (session["user_id"],),
+        ).fetchone()
 
-    cursor.execute("""
-        SELECT * FROM asistencia
-        WHERE user_id=? AND check_out IS NULL
-    """, (session["user_id"],))
+        if not existing:
+            now = datetime.now().isoformat(timespec="seconds")
+            conn.execute(
+                "INSERT INTO asistencia (user_id, check_in) VALUES (?, ?)",
+                (session["user_id"], now),
+            )
 
-    existing = cursor.fetchone()
-
-    if not existing:
-        now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-
-        cursor.execute("""
-            INSERT INTO asistencia (user_id, check_in)
-            VALUES (?, ?)
-        """, (session["user_id"], now))
-
-        conn.commit()
-
-    conn.close()
     return redirect(url_for("dashboard_alumno"))
 
 
-# ---------------- CHECK OUT ----------------
 @app.route("/check_out")
 def check_out():
     if "user_id" not in session:
         return redirect(url_for("login"))
 
-    conn = sqlite3.connect("unitrack.db")
-    cursor = conn.cursor()
-
-    now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-
-    cursor.execute("""
-        UPDATE asistencia
-        SET check_out=?
-        WHERE user_id=? AND check_out IS NULL
-    """, (now, session["user_id"]))
-
-    conn.commit()
-    conn.close()
+    now = datetime.now().isoformat(timespec="seconds")
+    with get_connection() as conn:
+        conn.execute(
+            """
+            UPDATE asistencia
+            SET check_out = ?
+            WHERE user_id = ? AND check_out IS NULL
+            """,
+            (now, session["user_id"]),
+        )
 
     return redirect(url_for("dashboard_alumno"))
 
 
-# ---------------- FORGOT PASSWORD ----------------
 @app.route("/forgot_password", methods=["GET", "POST"])
 def forgot_password():
     if request.method == "POST":
-        email = request.form.get("email")
-        return "Código enviado al correo (simulado)."
-
+        return "Password recovery is not implemented in this educational version."
     return render_template("forgot_password.html")
 
 
-# ---------------- LOGOUT ----------------
 @app.route("/logout")
 def logout():
     session.clear()
@@ -254,4 +227,5 @@ def logout():
 
 if __name__ == "__main__":
     init_db()
-    app.run(debug=True)
+    debug = os.environ.get("FLASK_DEBUG", "0") == "1"
+    app.run(debug=debug)

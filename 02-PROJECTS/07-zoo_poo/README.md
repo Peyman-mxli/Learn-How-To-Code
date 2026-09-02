@@ -1,90 +1,41 @@
-🦁 ZooPOO — Sistema de Gestión de Zoológico (POO)
-📚 Descripción del Proyecto
+# Project 07 — Zoo POO
 
-Este proyecto implementa un Sistema de Gestión de Zoológico utilizando los cuatro pilares fundamentales de la Programación Orientada a Objetos (POO) en Python:
+A Python zoo-management exercise demonstrating the four core object-oriented programming ideas: abstraction, encapsulation, inheritance, and polymorphism.
 
-Abstracción
-Encapsulamiento
-Herencia
-Polimorfismo
+## Model
 
-El sistema permite registrar animales, gestionar cuidadores, realizar revisiones médicas, ejecutar un tour virtual y generar reportes generales.
+- `Animal` — abstract base class
+- `Mamifero`
+- `Ave`
+- `Reptil`
+- `Cuidador`
+- `Zoologico`
 
-🎯 Objetivo
+## Demonstrated behavior
 
-Desarrollar una aplicación orientada a objetos que modele el funcionamiento básico de un zoológico municipal, demostrando buenas prácticas de diseño y programación.
+- register animals and caregivers;
+- update animal health through controlled methods;
+- execute polymorphic sound/feeding behavior;
+- run a virtual tour;
+- generate a general zoo report.
 
-🧠 Conceptos de POO Aplicados
-🔷 Abstracción
+## Run
 
-La clase Animal es abstracta, por lo tanto no puede ser instanciada directamente.
+```bash
+python main.py
+```
 
-🔒 Encapsulamiento
+## Test ideas
 
-El atributo _estado_salud es privado y solo puede modificarse mediante el método:
+- confirm that the abstract `Animal` class cannot be instantiated;
+- reject invalid health states;
+- verify that mixed animal collections work with polymorphic methods;
+- verify caregiver and zoo registration behavior.
 
-actualizar_salud()
+## Author
 
-o a través de un Cuidador.
+**Peyman Miyandashti**  
+Information Technology Engineering & Digital Innovation  
+Polytechnic University of Baja California  
+Mexico · 2026
 
-🧬 Herencia
-
-Las clases:
-
-Mamifero
-Ave
-Reptil
-
-heredan de la clase base Animal.
-
-🎭 Polimorfismo
-
-Los métodos:
-
-hacer_sonido()
-tipo_alimentacion()
-
-se implementan de forma diferente en cada tipo de animal.
-
-📁 Estructura del Proyecto
-zoo_poo/
-│
-├── animal.py
-├── mamifero.py
-├── ave.py
-├── reptil.py
-├── cuidador.py
-├── zoologico.py
-├── main.py
-│
-└── diagram/
-    ├── classes.drawio
-    ├── objects.drawio
-    ├── combined.drawio
-    └── use_case.drawio
-▶️ Cómo Ejecutar el Proyecto
-
-Abrir terminal (PowerShell) dentro de la carpeta zoo_poo y ejecutar:
-
-py main.py
-
-El sistema mostrará:
-
-Registro de animales
-Actualización de estado de salud
-Demostración de polimorfismo
-Tour virtual del zoológico
-Reporte general
-🧪 Casos de Prueba
-Intentar crear un Animal() directamente → debe generar error (clase abstracta)
-Intentar actualizar salud con estado inválido → debe mostrar mensaje
-El tour virtual debe funcionar con cualquier combinación de animales
-
-=============================================================================
-Author
-👤 Peyman Miyandashti 
-🎓 Polytechnic University of Baja California 
-💻 Information Technology Engineering & Digital Innovation 
-📍 Mexico 
-📅 2026 
-🆔 250161.
