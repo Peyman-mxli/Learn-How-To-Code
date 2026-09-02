@@ -30,7 +30,7 @@ def csharp():
     for p in (ROOT/"01-INTRODUCTIONS").rglob("*.cs"):
         t=r(p); out=[]
         for line in t.splitlines():
-            if line.strip().lower() in {fence,fence+"csharp",fence+"cs"}: continue
+            if line.strip().startswith(fence): continue
             out.append(re.sub(r"^(\s*)#\s*/\*",r"\1/*",line))
         n="\n".join(out)
         if n!=t: w(p,n)
