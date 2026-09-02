@@ -27,7 +27,8 @@ Learn-How-To-Code/
 │   ├── 07-DATA-STRUCTURES/
 │   ├── 08-ALGORITHMS/
 │   ├── 09-INTELLIJ/
-│   └── 10-KOTLIN/
+│   ├── 10-KOTLIN/
+│   └── 11-HTML/
 ├── 02-PROJECTS/
 │   ├── 01-CLI-CALCULATOR/
 │   ├── 02-TODO-APP/
@@ -66,6 +67,13 @@ Start here:
 1. [IntelliJ IDEA](./01-INTRODUCTIONS/09-INTELLIJ/)
 2. [Kotlin](./01-INTRODUCTIONS/10-KOTLIN/)
 
+### Web Foundations
+
+1. [VS Code](./01-INTRODUCTIONS/01-VSCODE/)
+2. [HTML](./01-INTRODUCTIONS/11-HTML/)
+3. CSS (next planned track)
+4. JavaScript (after CSS fundamentals)
+
 ## Current coverage
 
 The repository now includes structured material for:
@@ -73,6 +81,7 @@ The repository now includes structured material for:
 - Python fundamentals through testing/debugging;
 - C# fundamentals through professional architecture topics;
 - Kotlin fundamentals through project/next-step modules;
+- HTML fundamentals through semantic structure, accessibility, forms, media, metadata, validation, security/privacy foundations, and capstone projects;
 - Git branches, merging, pull requests, conflicts, issues, and Actions;
 - linked lists, hash sets, heaps, priority queues, trees, dictionaries, and graphs;
 - searching, sorting, Big-O, recursion, two pointers, sliding windows, greedy algorithms, graph algorithms, and dynamic programming;
@@ -118,4 +127,4 @@ Mexico · 2026
 
 ## Automated quality checks
 
-GitHub Actions verifies the complete Python learning curriculum, Python project tests for Calculator, Todo, Vehicle, Library, Veterinary, Zoo, and UniTrack, the C# application build and xUnit tests, full C# curriculum syntax, Kotlin compiler validation, repository hygiene, public-metadata checks, and hard-coded secret checks.
+GitHub Actions verifies the complete Python learning curriculum, Python project tests for Calculator, Todo, Vehicle, Library, Veterinary, Zoo, and UniTrack, the C# application build and xUnit tests, full C# curriculum syntax, Kotlin compiler validation, HTML curriculum quality validation, repository hygiene, public-metadata checks, and hard-coded secret checks.
