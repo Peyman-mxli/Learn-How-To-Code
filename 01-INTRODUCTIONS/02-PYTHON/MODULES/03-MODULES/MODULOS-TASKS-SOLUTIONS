@@ -1,0 +1,141 @@
+"""
+📘 Module — Python Modules
+
+====================================================
+MODULES — TASK SOLUTIONS
+====================================================
+
+This file contains clean, correct, and professional
+solutions for all MODULES tasks.
+
+Rules followed:
+✔ Proper module importing
+✔ Clear execution
+✔ Professional formatting
+✔ Rank 1 → Rank 5 progression
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+# Task 1 Solution
+import math
+print("Value of PI:", math.pi)
+
+
+# Task 2 Solution
+import random
+print("Random number (1–5):", random.randint(1, 5))
+
+
+# Task 3 Solution
+import datetime
+print("Current Year:", datetime.datetime.now().year)
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+
+# Task 4 Solution
+import math
+print("Square root of 81:", math.sqrt(81))
+print("3 raised to power 4:", math.pow(3, 4))
+
+
+# Task 5 Solution
+import random
+roles = ["Admin", "User", "Guest"]
+print("Random Role:", random.choice(roles))
+
+
+# Task 6 Solution
+import datetime
+now = datetime.datetime.now()
+print("Current Date:", now.date())
+print("Current Time:", now.time())
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+
+# Task 7 Solution
+import greetings
+greetings.say_hello("Peyman")
+
+
+# Task 8 Solution
+import calculator
+print("Addition:", calculator.add(5, 3))
+print("Multiplication:", calculator.multiply(4, 6))
+
+
+# Task 9 Solution
+import math as m
+print("Square root of 144:", m.sqrt(144))
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+
+# Task 10 Solution
+import user_info
+user_info.display_name("Peyman Miyandashti")
+user_info.display_program("Information Technology Engineering")
+user_info.display_status("Active")
+
+
+# Task 11 Solution
+from random import randint
+print("Random number (50–100):", randint(50, 100))
+
+
+# Task 12 Solution
+import datetime
+today = datetime.date.today()
+print(f"System Check Performed On: {today}")
+
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+
+# Task 13 Solution
+import system_utils
+system_utils.print_system_status()
+system_utils.print_system_version()
+
+
+# Task 14 Solution
+import requests
+response = requests.get("https://api.github.com")
+print("HTTP Status Code:", response.status_code)
+
+
+# Task 15 Solution
+import math
+import greetings
+import requests
+
+print("Using built-in module (math):", math.sqrt(25))
+greetings.welcome_message()
+
+api_response = requests.get("https://api.github.com")
+print("API Status:", api_response.status_code)
+
+
+# ====================================================
+# END OF SOLUTIONS — MODULES
+# ====================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

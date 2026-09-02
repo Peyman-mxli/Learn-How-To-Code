@@ -1,0 +1,327 @@
+"""
+📘 Module — Functions — (Advanced Concepts)
+
+📁 AdvancedFunctions-Tasks-Solutions
+
+Topic: Python Functions — Defaults, Arguments, Lambda, Scope, Closures
+
+This file contains SOLUTIONS for all tasks in AdvancedFunctions_Tasks.py.
+
+Review notes:
+- Focus on correct syntax and patterns
+- Observe flexibility of function arguments
+- Understand scope and closures carefully
+"""
+
+# ==================================================
+# 1️⃣ Default Arguments — Solutions
+# ==================================================
+
+# Rank 1
+def greet(name="User"):
+    print(f"Hello {name}")
+
+greet()
+greet("Peyman")
+
+# Rank 2
+def power(base, exponent=2):
+    return base ** exponent
+
+print(power(3))
+print(power(3, 3))
+
+# Rank 3
+def calculate_salary(salary, bonus=0):
+    return salary + bonus
+
+print(calculate_salary(1000))
+print(calculate_salary(1000, 200))
+
+# Rank 4
+def send_email(to, subject="No Subject", urgent=False):
+    print(to, subject, urgent)
+
+send_email("user@mail.com")
+send_email("user@mail.com", "Hello", True)
+
+# Rank 5
+def create_user(username, role="user", active=True):
+    return {
+        "username": username,
+        "role": role,
+        "active": active
+    }
+
+print(create_user("peyman"))
+print(create_user("admin", role="admin", active=False))
+
+
+# ==================================================
+# 2️⃣ Keyword Arguments — Solutions
+# ==================================================
+
+# Rank 1
+def show(a, b):
+    print(a, b)
+
+show(a=1, b=2)
+
+# Rank 2
+def profile(name, age, country):
+    print(name, age, country)
+
+profile(name="Peyman", age=43, country="Mexico")
+
+# Rank 3
+def order(item, quantity, price):
+    print(item, quantity, price)
+
+order(item="Book", quantity=2, price=10)
+
+# Rank 4
+def connect(host, port, secure):
+    print(host, port, secure)
+
+connect(port=443, host="localhost", secure=True)
+
+# Rank 5
+def config(debug=False, version="1.0"):
+    print(debug, version)
+
+config(version="2.0", debug=True)
+
+
+# ==================================================
+# 3️⃣ *args — Solutions
+# ==================================================
+
+# Rank 1
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(1, 2, 3))
+
+# Rank 2
+def max_value(*args):
+    return max(args)
+
+print(max_value(10, 20, 5))
+
+# Rank 3
+def print_all(*args):
+    for value in args:
+        print(value)
+
+print_all("A", "B", "C")
+
+# Rank 4
+def average(*args):
+    if len(args) == 0:
+        return 0
+    return sum(args) / len(args)
+
+print(average(10, 20, 30))
+print(average())
+
+# Rank 5
+def logger(*messages):
+    for i, msg in enumerate(messages, start=1):
+        print(f"{i}: {msg}")
+
+logger("Start", "Processing", "Done")
+
+
+# ==================================================
+# 4️⃣ **kwargs — Solutions
+# ==================================================
+
+# Rank 1
+def show_info(**kwargs):
+    for k, v in kwargs.items():
+        print(k, v)
+
+show_info(name="Peyman", age=43)
+
+# Rank 2
+def build_user(**kwargs):
+    return kwargs
+
+print(build_user(name="Peyman", role="admin"))
+
+# Rank 3
+def settings(**kwargs):
+    if kwargs.get("debug"):
+        print("Debug mode ON")
+    else:
+        print("Debug mode OFF")
+
+settings(debug=True)
+settings()
+
+# Rank 4
+def validate_user(**kwargs):
+    if "name" not in kwargs or "email" not in kwargs:
+        raise ValueError("Missing required fields")
+    return kwargs
+
+try:
+    print(validate_user(name="Peyman", email="p@mail.com"))
+    print(validate_user(name="Peyman"))
+except ValueError as e:
+    print(e)
+
+# Rank 5
+def report(**kwargs):
+    for k, v in kwargs.items():
+        print(f"{k}: {v}")
+
+report(cpu="80%", ram="16GB")
+
+
+# ==================================================
+# 5️⃣ Lambda Functions — Solutions
+# ==================================================
+
+# Rank 1
+double = lambda x: x * 2
+print(double(5))
+
+# Rank 2
+add = lambda a, b: a + b
+print(add(3, 4))
+
+# Rank 3
+names = ["Ali", "Peyman", "Arlette"]
+names_sorted = sorted(names, key=lambda x: len(x))
+print(names_sorted)
+
+# Rank 4
+nums = [1, 2, 3, 4, 5]
+evens = list(filter(lambda x: x % 2 == 0, nums))
+print(evens)
+
+# Rank 5
+nums = [1, 2, 3]
+squared = list(map(lambda x: x * x, nums))
+print(squared)
+
+
+# ==================================================
+# 6️⃣ Scope — Solutions
+# ==================================================
+
+# Rank 1
+def local_scope():
+    x = 10
+    print(x)
+
+local_scope()
+
+# Rank 2
+x = 50
+def show_global():
+    print(x)
+
+show_global()
+
+# Rank 3
+counter = 0
+def modify_global():
+    global counter
+    counter += 1
+
+modify_global()
+print(counter)
+
+# Rank 4
+def outer():
+    y = 20
+    def inner():
+        print(y)
+    inner()
+
+outer()
+
+# Rank 5
+def outer_nonlocal():
+    z = 0
+    def inner():
+        nonlocal z
+        z += 1
+        return z
+    return inner
+
+func = outer_nonlocal()
+print(func())
+print(func())
+
+
+# ==================================================
+# 7️⃣ Closures — Solutions
+# ==================================================
+
+# Rank 1
+def outer_func():
+    msg = "Hello"
+    def inner():
+        return msg
+    return inner
+
+f = outer_func()
+print(f())
+
+# Rank 2
+def multiplier(n):
+    def multiply(x):
+        return x * n
+    return multiply
+
+double = multiplier(2)
+print(double(5))
+
+# Rank 3
+def counter():
+    count = 0
+    def increment():
+        nonlocal count
+        count += 1
+        return count
+    return increment
+
+c = counter()
+print(c())
+print(c())
+
+# Rank 4
+def role_checker(role):
+    def check(user_role):
+        return user_role == role
+    return check
+
+is_admin = role_checker("admin")
+print(is_admin("admin"))
+
+# Rank 5
+def logger(prefix):
+    def log(message):
+        print(f"[{prefix}] {message}")
+    return log
+
+error_log = logger("ERROR")
+error_log("File not found")
+
+
+# ==================================================
+# End of AdvancedFunctions-Tasks-Solutions
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

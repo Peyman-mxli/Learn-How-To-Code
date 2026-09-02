@@ -1,0 +1,89 @@
+📘 Module — Exception Handling — (finally)
+
+"""
+ 📁Tasks FILES
+
+Topic: Exception Handling — finally
+
+Instructions:
+- These tasks are ordered from Rank 1 (Beginner) to Rank 5 (Advanced).
+- Do NOT write solutions in this file.
+- Try to solve each task before checking the solutions file.
+- Focus on understanding WHEN and WHY `finally` executes.
+"""
+# ==================================================
+# Rank 1 — Understanding guaranteed execution
+# ==================================================
+# Task:
+# Write a try/finally block that prints:
+# - "Start"
+# - "End"
+#
+# There should be NO except block.
+# Prove that "End" prints even if nothing fails.
+
+# TODO: Write your code here
+# ==================================================
+# Rank 2 — finally with handled exception
+# ==================================================
+# Task:
+# Create a try block that divides two numbers.
+# - Catch ZeroDivisionError
+# - Print a custom error message
+# - Use finally to print "Operation finished"
+
+# TODO: Write your code here
+# ==================================================
+# Rank 3 — finally with return
+# ==================================================
+# Task:
+# Create a function called `calculate()` that:
+# - Returns a value from inside try
+# - Uses finally to print "Cleanup before return"
+#
+# Call the function and observe the output order.
+
+# TODO: Write your code here
+# ==================================================
+# Rank 4 — finally inside a loop
+# ==================================================
+# Task:
+# Create a for loop from 0 to 4.
+# Inside the loop:
+# - Use try/finally
+# - Break the loop when the value is 2
+# - Print the loop value
+# - Use finally to print "Loop cleanup"
+#
+# Observe how many times finally runs.
+
+# TODO: Write your code here
+# ==================================================
+# Rank 5 — Real-world resource cleanup (Advanced)
+# ==================================================
+# Task:
+# Simulate file handling WITHOUT using `with`.
+#
+# Requirements:
+# - Open a file called "task_file.txt"
+# - Write some text to it
+# - Use try/finally to ensure the file is closed
+# - Print a message confirming the file is closed
+#
+# BONUS:
+# - Add an intentional error before closing the file
+# - Confirm finally still runs
+
+# TODO: Write your code here
+# ==================================================
+# End of Finally_Tasks.py
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

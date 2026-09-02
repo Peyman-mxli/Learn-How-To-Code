@@ -1,0 +1,374 @@
+# 09-INTELLIJ/Tasks_Solutions.md
+
+# ✅ IntelliJ IDEA Task Solutions
+
+These are sample solutions for the activities in `Tasks.md`.
+
+Remember: some answers may vary depending on your experience and computer setup.
+
+---
+
+# Task 1: Understanding IntelliJ IDEA
+
+## Questions and Answers
+
+### 1. What does IDE stand for?
+
+**Answer:**
+
+Integrated Development Environment.
+
+---
+
+### 2. Who created IntelliJ IDEA?
+
+**Answer:**
+
+JetBrains.
+
+---
+
+### 3. Is IntelliJ IDEA a programming language?
+
+**Answer:**
+
+No.
+
+IntelliJ IDEA is an IDE (software used to develop applications).
+
+---
+
+### 4. Name two reasons why developers use IntelliJ IDEA.
+
+**Possible Answers:**
+
+* Smart code completion.
+* Error detection.
+* Debugging tools.
+* Git integration.
+* Plugin support.
+* Refactoring capabilities.
+
+---
+
+### 5. Which edition of IntelliJ IDEA is free?
+
+**Answer:**
+
+IntelliJ IDEA Community Edition.
+
+---
+
+# Task 2: Community vs Ultimate
+
+## Sample Comparison
+
+| Feature             | Community Edition      | Ultimate Edition        |
+| ------------------- | ---------------------- | ----------------------- |
+| Price               | Free                   | Paid                    |
+| Open Source         | Yes                    | No                      |
+| Java Support        | Yes                    | Yes                     |
+| Kotlin Support      | Yes                    | Yes                     |
+| Git Integration     | Yes                    | Yes                     |
+| Spring Support      | No                     | Yes                     |
+| Database Tools      | No                     | Yes                     |
+| Enterprise Features | No                     | Yes                     |
+| Best For            | Students and Beginners | Professional Developers |
+
+---
+
+## Reflection
+
+### Which edition would you choose as a beginner?
+
+**Sample Answer:**
+
+I would choose Community Edition because it is free and provides everything I need to learn programming.
+
+---
+
+# Task 3: Supported Languages
+
+## Sample Answers
+
+Languages supported by IntelliJ IDEA include:
+
+* Java
+* Kotlin
+* Groovy
+* Scala
+* JavaScript
+* HTML
+* CSS
+* TypeScript
+* SQL
+* Python (through plugins)
+
+---
+
+## Bonus
+
+### Which language will you learn in the next module?
+
+**Answer:**
+
+Kotlin.
+
+---
+
+# Task 4: Install IntelliJ IDEA
+
+## Sample Completion
+
+✔ Downloaded IntelliJ IDEA Community Edition.
+
+✔ Installed IntelliJ IDEA.
+
+✔ Opened the Welcome Screen.
+
+✔ Captured a screenshot.
+
+---
+
+## Evidence
+
+Screenshots will vary by student.
+
+---
+
+# Task 5: Explore the Interface
+
+## Identification
+
+### Project Window
+
+Displays folders and files.
+
+---
+
+### Editor
+
+Where code is written.
+
+---
+
+### Toolbar
+
+Contains Run, Debug, and Build actions.
+
+---
+
+### Terminal
+
+Executes command-line instructions.
+
+---
+
+### Run Window
+
+Displays program output.
+
+---
+
+## Reflection
+
+### Which area will you use the most?
+
+**Sample Answer:**
+
+The Editor, because that is where I will spend most of my time writing code.
+
+---
+
+# Task 6: Create Your First Project
+
+## Sample Completion
+
+Project Name:
+
+```text
+MyFirstIntelliJProject
+```
+
+Located successfully:
+
+✔ src folder
+
+✔ External Libraries
+
+✔ Project structure
+
+---
+
+## Evidence
+
+Screenshots may vary.
+
+---
+
+# Task 7: Use the Terminal
+
+## Commands
+
+```text
+git status
+```
+
+### What does git status show?
+
+**Answer:**
+
+It shows the current state of the Git repository, including modified, staged, and untracked files.
+
+---
+
+```text
+git --version
+```
+
+### What version of Git is installed?
+
+**Sample Answer:**
+
+Git version 2.xx.x
+
+(The exact version depends on your computer.)
+
+---
+
+# Task 8: Learn Keyboard Shortcuts
+
+## Matching Answers
+
+| Action            | Shortcut       |
+| ----------------- | -------------- |
+| Run Program       | Shift + F10    |
+| Debug Program     | Shift + F9     |
+| Search Everywhere | Double Shift   |
+| Rename Safely     | Shift + F6     |
+| Format Code       | Ctrl + Alt + L |
+
+---
+
+## Reflection
+
+### Which shortcut will save the most time?
+
+**Sample Answer:**
+
+Double Shift because it helps me quickly find anything inside IntelliJ.
+
+---
+
+# Task 9: Install a Plugin
+
+## Sample Answers
+
+### What plugin did you choose?
+
+Rainbow Brackets.
+
+---
+
+### What problem does it solve?
+
+It makes matching brackets easier to identify by using different colors.
+
+---
+
+### Would you install it?
+
+Yes.
+
+It improves readability and reduces mistakes.
+
+---
+
+# Task 10: Reflection Activity
+
+## Sample Answers
+
+### 1. Before this module, had you ever used IntelliJ IDEA?
+
+No.
+
+---
+
+### 2. What surprised you the most?
+
+How many tools are integrated into a single application.
+
+---
+
+### 3. What feature do you find most useful?
+
+Smart code completion.
+
+---
+
+### 4. What part do you still find confusing?
+
+Debugging.
+
+---
+
+### 5. How confident do you feel using IntelliJ IDEA now?
+
+Sample Answer:
+
+```text
+4 / 5
+```
+
+I understand the basics and can navigate the IDE confidently.
+
+---
+
+# Challenge Task
+
+## Example: PyCharm
+
+### What is its purpose?
+
+PyCharm is an IDE designed specifically for Python development.
+
+---
+
+### Who uses it?
+
+Python developers, students, data scientists, and web developers.
+
+---
+
+### How is it different from IntelliJ IDEA?
+
+PyCharm focuses on Python, while IntelliJ IDEA supports multiple languages and broader development needs.
+
+---
+
+# Final Review
+
+If you can answer "Yes" to these questions, you are ready to continue.
+
+* Yes, I know what IntelliJ IDEA is.
+* Yes, I understand its purpose.
+* Yes, I know the difference between Community and Ultimate editions.
+* Yes, I know what languages it supports.
+* Yes, I can install IntelliJ IDEA.
+* Yes, I can navigate the interface.
+* Yes, I can create projects.
+* Yes, I can use the terminal.
+* Yes, I know important shortcuts.
+* Yes, I understand basic Git integration.
+
+---
+
+# Congratulations 🎉
+
+You have successfully completed the **09-INTELLIJ** module.
+
+You now understand the IDE that millions of developers use every day, and you are ready to begin the next module:
+
+➡️ **10-KOTLIN**
+
+The next step is learning how to use IntelliJ IDEA to write real Kotlin programs.

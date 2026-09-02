@@ -1,3 +1,4 @@
+```csharp
 /*
 📘 Module — Basic Data Types: Double (double)
 Practice Tasks
@@ -45,6 +46,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 1.2
 //
 // Create a double variable called height.
@@ -56,6 +59,8 @@ In this module I will:
 // Print the value.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 1.3
@@ -73,6 +78,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 1.4
 //
 // Create a double variable called weight.
@@ -84,6 +91,8 @@ In this module I will:
 // Print the value.
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -112,6 +121,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 2.2
 //
 // Create:
@@ -129,6 +140,8 @@ In this module I will:
 // 74.50
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 2.3
@@ -149,6 +162,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 2.4
 //
 // Create:
@@ -165,6 +180,8 @@ In this module I will:
 // 25.0
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -186,6 +203,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.2
 //
 // Create:
@@ -203,6 +222,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.3
 //
 // Create:
@@ -216,6 +237,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.4
 //
 // Create:
@@ -225,6 +248,8 @@ In this module I will:
 // Print the value.
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -247,6 +272,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 4.2
 //
 // Create:
@@ -261,6 +288,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 4.3
 //
 // Create:
@@ -271,6 +300,8 @@ In this module I will:
 // Print both values.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 4.4
@@ -284,6 +315,8 @@ In this module I will:
 // Completion Rate: 87.5%
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -307,6 +340,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 5.2
 //
 // Create a shopping cart.
@@ -323,6 +358,8 @@ In this module I will:
 // Total Cost: <value>
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 5.3
@@ -343,6 +380,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 5.4
 //
 // Create a grade calculator.
@@ -360,6 +399,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 /*
 👤 Author
 
@@ -368,4 +409,6 @@ Peyman Miyandashti
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
+🆔 ID: 250161
 */
+```

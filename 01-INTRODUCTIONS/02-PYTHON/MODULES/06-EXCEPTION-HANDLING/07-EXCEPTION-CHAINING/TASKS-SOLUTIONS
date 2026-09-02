@@ -1,0 +1,84 @@
+"""
+📘 Module —  Exception Chaining — (raise ... from ...)
+
+
+Topic: Exception Handling — Exception Chaining (raise ... from ...)
+
+This file contains COMPLETE SOLUTIONS for:
+ExceptionChaining_Tasks.py (Rank 1 → Rank 5)
+
+Study tips:
+- Run each section separately if needed
+- Read the chained traceback carefully
+- Notice how the original exception is preserved or suppressed
+"""
+# ==================================================
+# Rank 1 — Basic chaining (Solution)
+# ==================================================
+print("\nRank 1 Solution")
+
+try:
+    int("123a")
+except ValueError as e:
+    raise RuntimeError("Invalid integer conversion") from e
+# ==================================================
+# Rank 2 — Built-in to custom exception (Solution)
+# ==================================================
+print("\nRank 2 Solution")
+
+class InputError(Exception):
+    pass
+
+try:
+    float("abc")
+except ValueError as e:
+    raise InputError("Float conversion failed") from e
+# ==================================================
+# Rank 3 — Function-level chaining (Solution)
+# ==================================================
+print("\nRank 3 Solution")
+
+def load_age(data):
+    try:
+        return int(data)
+    except ValueError as e:
+        raise RuntimeError("Invalid age data") from e
+
+try:
+    load_age("ageX")
+except RuntimeError as e:
+    print("Caught error:", e)
+# ==================================================
+# Rank 4 — File + conversion chaining (Solution)
+# ==================================================
+print("\nRank 4 Solution")
+
+class FileDataError(Exception):
+    pass
+
+try:
+    with open("age.txt") as file:
+        age = int(file.read())
+except Exception as e:
+    raise FileDataError("Failed to load age") from e
+# ==================================================
+# Rank 5 — Context control (advanced) (Solution)
+# ==================================================
+print("\nRank 5 Solution")
+
+try:
+    int("XYZ")
+except ValueError:
+    raise RuntimeError("Invalid numeric input") from None
+# ==================================================
+# End of ExceptionChaining-Tasks-Solutions
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

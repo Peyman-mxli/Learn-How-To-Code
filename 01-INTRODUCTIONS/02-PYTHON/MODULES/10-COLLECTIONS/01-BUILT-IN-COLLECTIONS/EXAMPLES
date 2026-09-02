@@ -1,0 +1,156 @@
+📘 Module — Built-in Collections
+
+"""
+====================================================
+📘 PYTHON BUILT-IN COLLECTIONS
+📁 PRACTICAL & REAL-WORLD EXAMPLES
+====================================================
+
+This file contains professional, real-world examples
+demonstrating how Python built-in collections are used.
+
+Collections covered:
+- list
+- tuple
+- str
+- range
+- set
+
+Each collection includes THREE practical examples
+to reinforce understanding and real usage.
+"""
+
+# ====================================================
+# LIST EXAMPLES
+# ====================================================
+"""
+LISTS are ordered and mutable collections.
+Used when data needs to change over time.
+"""
+
+# Example 1: Student grades list
+grades = [85, 90, 78, 92]
+grades.append(88)
+print("Grades:", grades)
+
+# Example 2: Task management system
+tasks = ["Login", "View Dashboard", "Logout"]
+tasks.remove("View Dashboard")
+print("Remaining tasks:", tasks)
+
+# Example 3: Shopping cart
+cart = ["Laptop", "Mouse", "Keyboard"]
+cart[1] = "Wireless Mouse"
+print("Shopping cart:", cart)
+
+
+# ====================================================
+# TUPLE EXAMPLES
+# ====================================================
+"""
+TUPLES are ordered and immutable collections.
+Used for fixed, unchangeable data.
+"""
+
+# Example 1: Geographic coordinates
+location = (32.5149, -117.0382)
+print("Location:", location)
+
+# Example 2: User profile record
+user_profile = ("Peyman", 43, "IT Engineering")
+print("User profile:", user_profile)
+
+# Example 3: RGB color values
+rgb_color = (255, 0, 0)
+print("RGB Color:", rgb_color)
+
+
+# ====================================================
+# STRING EXAMPLES
+# ====================================================
+"""
+STRINGS are immutable sequences of characters.
+Used for text, messages, and user input.
+"""
+
+# Example 1: Welcome message
+message = "Welcome to the system"
+print(message)
+
+# Example 2: Username validation
+username = "admin_user"
+print("Username length:", len(username))
+
+# Example 3: File path handling
+file_name = "report_2026.pdf"
+print("File extension:", file_name[-3:])
+
+
+# ====================================================
+# RANGE EXAMPLES
+# ====================================================
+"""
+RANGE represents an immutable sequence of numbers.
+Used mainly for iteration and counting.
+"""
+
+# Example 1: Looping through numbers
+for number in range(1, 6):
+    print("Number:", number)
+
+# Example 2: Generate even numbers
+even_numbers = list(range(2, 11, 2))
+print("Even numbers:", even_numbers)
+
+# Example 3: Index-based iteration
+names = ["Peyman", "Arlette", "Carlos"]
+for i in range(len(names)):
+    print("Index", i, ":", names[i])
+
+
+# ====================================================
+# SET EXAMPLES
+# ====================================================
+"""
+SETS store unordered collections of unique values.
+Used for uniqueness and fast membership checks.
+"""
+
+# Example 1: Remove duplicate values
+numbers = [1, 2, 2, 3, 4, 4]
+unique_numbers = set(numbers)
+print("Unique numbers:", unique_numbers)
+
+# Example 2: Skill comparison
+skills_user1 = {"Python", "Networking", "Security"}
+skills_user2 = {"Python", "Databases"}
+common_skills = skills_user1 & skills_user2
+print("Common skills:", common_skills)
+
+# Example 3: Access validation
+authorized_users = {"admin", "manager", "auditor"}
+print("Is admin authorized?", "admin" in authorized_users)
+
+
+# ====================================================
+# END OF EXAMPLES — BUILT-IN COLLECTIONS
+# ====================================================
+
+"""
+Next Step:
+BUILT-IN COLLECTIONS — TASKS
+"""
+
+
+# ===========================================================================
+# 👤 Author
+# ===========================================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+
+# 🏁 End of Notes
+# ===========================================================================

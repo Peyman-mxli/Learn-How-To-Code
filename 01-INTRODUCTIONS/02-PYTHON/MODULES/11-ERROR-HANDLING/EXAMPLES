@@ -1,0 +1,255 @@
+"""
+📘 Module — Error Handling (try / except)
+
+📁 Error_Handling_Examples
+
+This file demonstrates practical and real-world
+examples of Python error handling.
+
+Each example reflects clean and professional usage.
+"""
+
+# ======================================================
+# 1. BASIC try / except
+# ======================================================
+
+# Example 1: Division error
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("❌ Cannot divide by zero")
+
+
+# Example 2: Invalid conversion
+try:
+    number = int("abc")
+except ValueError:
+    print("❌ Invalid number format")
+
+
+# Example 3: Index error
+try:
+    numbers = [1, 2, 3]
+    print(numbers[5])
+except IndexError:
+    print("❌ Index out of range")
+
+
+# ======================================================
+# 2. MULTIPLE except BLOCKS
+# ======================================================
+
+# Example 1
+try:
+    value = int("10")
+    result = value / 0
+except ValueError:
+    print("❌ Conversion error")
+except ZeroDivisionError:
+    print("❌ Division by zero")
+
+
+# Example 2
+try:
+    data = [1, 2, 3]
+    print(data["one"])
+except TypeError:
+    print("❌ Invalid index type")
+except Exception:
+    print("❌ General error")
+
+
+# Example 3
+try:
+    print(undefined_variable)
+except NameError:
+    print("❌ Variable not defined")
+
+
+# ======================================================
+# 3. try / except / else
+# ======================================================
+
+# Example 1
+try:
+    age = int("25")
+except ValueError:
+    print("❌ Invalid age")
+else:
+    print("✅ Age accepted:", age)
+
+
+# Example 2
+try:
+    total = 100 / 4
+except ZeroDivisionError:
+    print("❌ Calculation error")
+else:
+    print("✅ Result:", total)
+
+
+# Example 3
+try:
+    name = "Peyman"
+except Exception:
+    print("❌ Unexpected error")
+else:
+    print("✅ Name:", name)
+
+
+# ======================================================
+# 4. finally BLOCK
+# ======================================================
+
+# Example 1
+try:
+    file = open("sample.txt", "r")
+except FileNotFoundError:
+    print("❌ File not found")
+finally:
+    print("📁 File operation completed")
+
+
+# Example 2
+try:
+    result = 10 / 2
+except ZeroDivisionError:
+    print("❌ Math error")
+finally:
+    print("🧹 Cleanup done")
+
+
+# Example 3
+try:
+    print("Processing...")
+finally:
+    print("🔒 Resource released")
+
+
+# ======================================================
+# 5. GENERAL Exception
+# ======================================================
+
+# Example 1
+try:
+    x = int("hello")
+except Exception as error:
+    print("❌ Error:", error)
+
+
+# Example 2
+try:
+    print(5 / 0)
+except Exception:
+    print("❌ Something went wrong")
+
+
+# Example 3
+try:
+    data = None
+    data.append(5)
+except Exception as e:
+    print("❌ Runtime error:", e)
+
+
+# ======================================================
+# 6. RAISING EXCEPTIONS
+# ======================================================
+
+# Example 1
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+    print("✅ Age is valid")
+
+try:
+    check_age(-5)
+except ValueError as e:
+    print("❌", e)
+
+
+# Example 2
+def withdraw(balance, amount):
+    if amount > balance:
+        raise Exception("Insufficient funds")
+    print("✅ Withdrawal successful")
+
+try:
+    withdraw(100, 150)
+except Exception as e:
+    print("❌", e)
+
+
+# Example 3
+def login(username):
+    if username == "":
+        raise ValueError("Username cannot be empty")
+    print("✅ Login successful")
+
+try:
+    login("")
+except ValueError as e:
+    print("❌", e)
+
+
+# ======================================================
+# 7. CUSTOM EXCEPTIONS
+# ======================================================
+
+# Example 1
+class InvalidScoreError(Exception):
+    pass
+
+def submit_score(score):
+    if score < 0 or score > 100:
+        raise InvalidScoreError("Score must be between 0 and 100")
+    print("✅ Score submitted")
+
+try:
+    submit_score(120)
+except InvalidScoreError as e:
+    print("❌", e)
+
+
+# Example 2
+class LoginError(Exception):
+    pass
+
+def authenticate(password):
+    if password != "admin":
+        raise LoginError("Authentication failed")
+    print("✅ Access granted")
+
+try:
+    authenticate("1234")
+except LoginError as e:
+    print("❌", e)
+
+
+# Example 3
+class PaymentError(Exception):
+    pass
+
+def process_payment(amount):
+    if amount <= 0:
+        raise PaymentError("Invalid payment amount")
+    print("✅ Payment processed")
+
+try:
+    process_payment(-50)
+except PaymentError as e:
+    print("❌", e)
+
+
+# ======================================================
+# END OF ERROR HANDLING — EXAMPLES
+# ======================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

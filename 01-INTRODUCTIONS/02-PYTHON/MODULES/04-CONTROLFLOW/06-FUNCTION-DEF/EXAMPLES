@@ -1,0 +1,121 @@
+"""
+📘 Module — Functions — def (Function Definition)
+
+====================================================
+FUNCTIONS — DEF (PRACTICAL EXAMPLES)
+====================================================
+
+This file contains professional, real-world examples
+demonstrating how to DEFINE and USE functions in Python
+using the `def` keyword.
+
+❗ These examples focus ONLY on function definition,
+parameters, execution flow, and structure.
+The `return` keyword is intentionally NOT used here.
+"""
+# ====================================================
+# EXAMPLE 1: USER REGISTRATION MESSAGE
+# ====================================================
+"""
+Scenario:
+A system needs to display a welcome message when a new
+user registers.
+"""
+
+def welcome_user(username):
+    print("================================")
+    print("Welcome to the system,", username)
+    print("Your account has been created.")
+    print("================================")
+
+welcome_user("Peyman")
+# ====================================================
+# EXAMPLE 2: SYSTEM STATUS REPORT
+# ====================================================
+"""
+Scenario:
+An application displays its current system status.
+"""
+
+def system_status(cpu, memory, disk):
+    print("----- SYSTEM STATUS -----")
+    print("CPU Usage:", cpu, "%")
+    print("Memory Usage:", memory, "%")
+    print("Disk Usage:", disk, "%")
+    print("-------------------------")
+
+system_status(35, 62, 78)
+# ====================================================
+# EXAMPLE 3: LOGIN VALIDATION PROCESS
+# ====================================================
+"""
+Scenario:
+A login system validates user credentials and prints
+status messages.
+"""
+
+def validate_login(username, password):
+    print("Validating credentials...")
+    print("Username:", username)
+    print("Password length:", len(password))
+    print("Login process completed")
+
+validate_login("admin", "secure123")
+# ====================================================
+# EXAMPLE 4: ONLINE STORE ORDER SUMMARY
+# ====================================================
+"""
+Scenario:
+An e-commerce system prints an order summary.
+"""
+
+def order_summary(customer, product, quantity):
+    print("------ ORDER SUMMARY ------")
+    print("Customer:", customer)
+    print("Product:", product)
+    print("Quantity:", quantity)
+    print("Order recorded successfully")
+    print("---------------------------")
+
+order_summary("Arlette", "Laptop", 2)
+# ====================================================
+# EXAMPLE 5: STUDENT ATTENDANCE SYSTEM
+# ====================================================
+"""
+Scenario:
+A university system logs student attendance.
+"""
+
+def mark_attendance(student_name, subject):
+    print("Student:", student_name)
+    print("Subject:", subject)
+    print("Status: Present")
+
+mark_attendance("Peyman Miyandashti", "Python Programming")
+# ====================================================
+# EXAMPLE 6: SECURITY ALERT NOTIFICATION
+# ====================================================
+"""
+Scenario:
+A security system triggers an alert.
+"""
+
+def security_alert(zone, level):
+    print("!!! SECURITY ALERT !!!")
+    print("Zone:", zone)
+    print("Alert Level:", level)
+    print("Immediate action required")
+
+security_alert("Server Room", "HIGH")
+# ====================================================
+# END OF EXAMPLES — def
+# ====================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

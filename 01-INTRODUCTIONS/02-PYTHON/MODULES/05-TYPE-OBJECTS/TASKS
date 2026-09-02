@@ -1,0 +1,115 @@
+"""
+📘 Module — Type Objects —(type, isinstance, id)
+
+📝 Tasks File (Rank 1 → Rank 5)
+
+Instructions:
+- Read each task carefully.
+- Write your solution below each task.
+- Focus on reasoning about types, objects, and identity.
+- Do NOT look at the solutions until all tasks are completed.
+"""
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Understanding basic types
+
+# Task 1:
+# Create three variables:
+# - an integer
+# - a string
+# - a boolean
+# Print the value and type of each variable.
+
+# Task 2:
+# Assign a value to a variable and print its type.
+# Reassign a value of a different type to the same variable
+# and print the new type.
+
+# Task 3:
+# Use type() to check whether a variable contains a float.
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Comparing and checking types
+
+# Task 4:
+# Create two variables with the same integer value.
+# Print their ids and observe whether they are the same.
+
+# Task 5:
+# Create two variables with the same string value.
+# Compare them using:
+# - ==
+# - is
+# Print the results.
+
+# Task 6:
+# Use isinstance() to check if a variable is either
+# an integer or a float.
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Reasoning about object references
+
+# Task 7:
+# Create a list and assign it to another variable.
+# Modify the list through one variable and print both variables.
+
+# Task 8:
+# Create a variable and store its id.
+# Reassign the variable to a new value and print the new id.
+# Observe the difference.
+
+# Task 9:
+# Write a function that prints the type of its argument
+# only if the argument is NOT a string.
+# ===========================================================================
+# 🔴 Rank 4 — Advanced
+# ===========================================================================
+# Identity and safe type handling
+
+# Task 10:
+# Write a program that checks whether two variables
+# reference the same object using 'is'.
+
+# Task 11:
+# Write a function that accepts one parameter.
+# If the parameter is a number (int or float),
+# return its square.
+# Otherwise, return an error message.
+
+# Task 12:
+# Write a program that demonstrates the difference
+# between value equality and identity.
+# ===========================================================================
+# 🔵 Rank 5 — Professional
+# ===========================================================================
+# Defensive and real-world type reasoning
+
+# Task 13:
+# Write a function that accepts any input and:
+# - prints its value
+# - prints its type
+# - prints its id
+
+# Task 14:
+# Write a function that safely adds two values.
+# Only allow numeric types.
+# Use isinstance() for validation.
+
+# Task 15:
+# Write a program that processes a list containing
+# mixed data types and prints only the numeric values.
+# ===========================================================================
+# 🏁 End of Tasks
+# ===========================================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

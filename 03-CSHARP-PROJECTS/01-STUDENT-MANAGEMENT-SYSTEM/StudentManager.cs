@@ -1,80 +1,89 @@
-namespace StudentManagementSystem;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
-public sealed class StudentManager
+namespace StudentManagementSystem
 {
-    private readonly List<Student> _students = new();
-
-    public IReadOnlyList<Student> Students => _students.AsReadOnly();
-
-    public bool AddStudent(Student student, out string message)
+    public class StudentManager
     {
-        ArgumentNullException.ThrowIfNull(student);
+        private List<Student> students = new List<Student>();
 
-        if (_students.Any(existing => existing.StudentId == student.StudentId))
+        public void AddStudent(Student student)
         {
-            message = $"Student ID {student.StudentId} already exists.";
-            return false;
+            students.Add(student);
+            Console.WriteLine("Student added successfully.");
         }
 
-        _students.Add(student);
-        message = "Student added successfully.";
-        return true;
-    }
-
-    public Student? SearchStudentById(int studentId)
-    {
-        return _students.FirstOrDefault(student => student.StudentId == studentId);
-    }
-
-    public IReadOnlyList<Student> SearchStudentsByName(string query)
-    {
-        if (string.IsNullOrWhiteSpace(query))
-            return Array.Empty<Student>();
-
-        return _students
-            .Where(student =>
-                student.FullName.Contains(
-                    query.Trim(),
-                    StringComparison.OrdinalIgnoreCase))
-            .ToList()
-            .AsReadOnly();
-    }
-
-    public bool UpdateStudent(
-        int studentId,
-        string fullName,
-        int age,
-        string email,
-        string course,
-        double grade,
-        out string message)
-    {
-        Student? student = SearchStudentById(studentId);
-
-        if (student is null)
+        public void DisplayAllStudents()
         {
-            message = "Student not found.";
-            return false;
+            if (students.Count == 0)
+            {
+                Console.WriteLine("No students found.");
+                return;
+            }
+
+            foreach (Student student in students)
+            {
+                student.DisplayStudentInformation();
+            }
         }
 
-        try
+        public Student SearchStudentById(int studentId)
         {
-            student.Update(fullName, age, email, course, grade);
-            message = "Student updated successfully.";
+            return students.FirstOrDefault(student => student.StudentId == studentId);
+        }
+
+        public bool UpdateStudent(
+            int studentId,
+            string fullName,
+            int age,
+            string email,
+            string course,
+            double grade)
+        {
+            Student student = SearchStudentById(studentId);
+
+            if (student == null)
+            {
+                return false;
+            }
+
+            student.FullName = fullName;
+            student.Age = age;
+            student.Email = email;
+            student.Course = course;
+            student.Grade = grade;
+
             return true;
         }
-        catch (ArgumentException ex)
+
+        public bool DeleteStudent(int studentId)
         {
-            message = ex.Message;
-            return false;
+            Student student = SearchStudentById(studentId);
+
+            if (student == null)
+            {
+                return false;
+            }
+
+            students.Remove(student);
+            return true;
+        }
+
+        public int GetTotalStudents()
+        {
+            return students.Count;
         }
     }
-
-    public bool DeleteStudent(int studentId)
-    {
-        Student? student = SearchStudentById(studentId);
-        return student is not null && _students.Remove(student);
-    }
-
-    public int GetTotalStudents() => _students.Count;
 }
+
+/*
+👤 Author Peyman Miyandashti
+📨 250161@upbc.edu.mx // mxli.peyman@gmail.com
+📞 +526865090453
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+*/

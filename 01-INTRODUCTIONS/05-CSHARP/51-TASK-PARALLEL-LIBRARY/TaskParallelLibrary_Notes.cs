@@ -1,3 +1,4 @@
+```csharp
 /*
     ============================================================
     MODULE: 51 - TASK PARALLEL LIBRARY (TPL)
@@ -443,8 +444,12 @@
 
 /*
 👤 Author Peyman Miyandashti
+📨 250161@upbc.edu.mx // mxli.peyman@gmail.com
+📞 +526865090453
 🎓 Polytechnic University of Baja California
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
+🆔 ID: 250161
 */
+```

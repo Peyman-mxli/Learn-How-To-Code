@@ -1,0 +1,155 @@
+"""
+📘 Module — Functions — return(Output & Control Flow)
+
+====================================================
+FUNCTIONS — RETURN
+PROFESSIONAL EXAMPLES
+====================================================
+
+This file demonstrates real-world usage of the `return`
+statement in Python functions.
+
+Focus:
+✔ Returning values
+✔ Reusability
+✔ Clean logic
+✔ Professional scenarios
+
+No future-topic references included.
+"""
+# ====================================================
+# EXAMPLE 1: USER AUTHENTICATION CHECK
+# ====================================================
+"""
+Scenario:
+A system checks whether a user can log in.
+The function returns True or False instead of printing.
+"""
+
+def authenticate_user(username, password):
+    if username == "admin" and password == "secure123":
+        return True
+    return False
+
+is_authenticated = authenticate_user("admin", "secure123")
+print("Authenticated:", is_authenticated)
+
+# ====================================================
+# EXAMPLE 2: ORDER TOTAL CALCULATION
+# ====================================================
+"""
+Scenario:
+An online store calculates the total cost of an order.
+The result must be reusable by other parts of the system.
+"""
+
+def calculate_order_total(price, quantity):
+    return price * quantity
+
+total = calculate_order_total(249.99, 3)
+print("Order Total:", total)
+
+# ====================================================
+# EXAMPLE 3: STUDENT GRADE EVALUATION
+# ====================================================
+"""
+Scenario:
+A university system evaluates a student's grade
+based on their score.
+"""
+
+def evaluate_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
+grade = evaluate_grade(85)
+print("Final Grade:", grade)
+
+# ====================================================
+# EXAMPLE 4: INPUT VALIDATION (EARLY RETURN)
+# ====================================================
+"""
+Scenario:
+A system validates user input before processing it.
+Early return avoids unnecessary computation.
+"""
+
+def validate_quantity(quantity):
+    if quantity <= 0:
+        return "Invalid quantity"
+    return "Quantity accepted"
+
+status = validate_quantity(5)
+print("Validation Status:", status)
+
+# ====================================================
+# EXAMPLE 5: MULTIPLE RETURN VALUES (USER PROFILE)
+# ====================================================
+"""
+Scenario:
+A system retrieves multiple pieces of user information
+from a single function call.
+"""
+
+def get_user_profile():
+    name = "Peyman Miyandashti"
+    age = 43
+    program = "Information Technology Engineering"
+    return name, age, program
+
+user_name, user_age, user_program = get_user_profile()
+print(user_name, user_age, user_program)
+
+# ====================================================
+# EXAMPLE 6: FUNCTION COMPOSITION
+# ====================================================
+"""
+Scenario:
+Returned values are reused inside other function calls.
+"""
+
+def calculate_tax(amount):
+    return amount * 0.16
+
+def calculate_final_price(amount):
+    return amount + calculate_tax(amount)
+
+final_price = calculate_final_price(1000)
+print("Final Price:", final_price)
+# ====================================================
+# EXAMPLE 7: BOOLEAN RETURN FOR DECISION MAKING
+# ====================================================
+"""
+Scenario:
+A security system checks access permissions.
+"""
+
+def has_access(role):
+    if role == "admin":
+        return True
+    return False
+
+if has_access("admin"):
+    print("Access granted")
+else:
+    print("Access denied")
+# ====================================================
+# END OF EXAMPLES — RETURN
+# ====================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

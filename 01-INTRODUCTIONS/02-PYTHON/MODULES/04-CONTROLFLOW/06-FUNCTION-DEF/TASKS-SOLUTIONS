@@ -1,0 +1,138 @@
+"""
+📘 Module — Functions — def (Function Definition)
+
+====================================================
+FUNCTIONS — DEF (TASK SOLUTIONS)
+====================================================
+This file contains clean and correct solutions
+for all Functions — def tasks.
+
+Rules followed:
+✔ Only function definitions using `def`
+✔ No return statements
+✔ Professional formatting
+✔ Clear and readable output
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+# Task 1 Solution
+def say_hello():
+    print("Hello, welcome to Python programming!")
+
+say_hello()
+
+
+# Task 2 Solution
+def print_name():
+    print("Peyman Miyandashti")
+
+print_name()
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+# Task 3 Solution
+def greet_user(name):
+    print(f"Hello {name}, have a great day!")
+
+greet_user("Peyman")
+
+
+# Task 4 Solution
+def show_age(age):
+    print(f"Your age is {age} years old")
+
+show_age(43)
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+# Task 5 Solution
+def employee_info(name, department, position):
+    print("Employee Information")
+    print("Name:", name)
+    print("Department:", department)
+    print("Position:", position)
+
+employee_info("Arlette Chong", "Education", "Teacher")
+
+
+# Task 6 Solution
+def system_health(cpu_usage, memory_usage):
+    print("System Health Report")
+    print("CPU Usage:", cpu_usage, "%")
+    print("Memory Usage:", memory_usage, "%")
+
+system_health(42, 68)
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+# Task 7 Solution
+def login_audit(username, ip_address, device):
+    print("LOGIN AUDIT LOG")
+    print("User:", username)
+    print("IP Address:", ip_address)
+    print("Device:", device)
+    print("----------------------")
+
+login_audit("admin", "192.168.1.10", "Laptop")
+login_audit("user01", "192.168.1.15", "Mobile")
+
+
+# Task 8 Solution
+def order_invoice(customer_name, product_name, quantity, price_per_unit):
+    print("INVOICE")
+    print("Customer:", customer_name)
+    print("Product:", product_name)
+    print("Quantity:", quantity)
+    print("Price per unit:", price_per_unit)
+
+order_invoice("Peyman", "Monitor", 2, 250)
+
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+# Task 9 Solution
+def incident_report(incident_id, severity, description, reported_by):
+    print("INCIDENT REPORT")
+    print("ID:", incident_id)
+    print("Severity:", severity)
+    print("Description:", description)
+    print("Reported By:", reported_by)
+
+incident_report("INC-1023", "High", "Server outage", "System Monitor")
+
+
+# Task 10 Solution
+def university_enrollment(student_name, student_id, program, semester):
+    print("ENROLLMENT CONFIRMATION")
+    print("Student Name:", student_name)
+    print("Student ID:", student_id)
+    print("Program:", program)
+    print("Semester:", semester)
+
+university_enrollment(
+    "Peyman Miyandashti",
+    "250161",
+    "Information Technology Engineering & Digital Innovation",
+    "Fall 2026"
+)
+# ====================================================
+# END OF SOLUTIONS — def
+# ====================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

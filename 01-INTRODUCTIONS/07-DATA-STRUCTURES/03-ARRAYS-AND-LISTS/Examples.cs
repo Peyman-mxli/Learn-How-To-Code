@@ -1,3 +1,4 @@
+```csharp
 /*
  * ============================================================
  * File: Examples.cs
@@ -268,3 +269,4 @@ namespace ArraysAndListsExamples
         }
     }
 }
+```

@@ -266,14 +266,12 @@ fun main() {
 
 ## Study Workflow
 
-1. Read `README.md`.
-2. Study `Notes.kt`.
-3. Run `Examples.kt`.
-4. Read the written exercise brief in `Tasks.md`.
-5. Write code in `Tasks.kt`.
-6. Compare your work with `Tasks_Solutions.kt`.
-
-`Tasks.md` contains the human-readable exercise instructions, while `Tasks.kt` is the coding workspace. They are intentionally both present.
+1. Read the README.
+2. Study the Notes.
+3. Review the Examples.
+4. Complete the Tasks.
+5. Check the Solutions.
+6. Practice independently.
 
 ---
 

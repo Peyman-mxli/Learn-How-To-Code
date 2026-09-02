@@ -1,0 +1,277 @@
+# 09-INTELLIJ/Tasks.md
+
+# 🧩 IntelliJ IDEA Tasks
+
+These tasks are designed to help you practice using IntelliJ IDEA and become comfortable with its interface and features before moving on to Kotlin programming.
+
+---
+
+# Task 1: Understanding IntelliJ IDEA
+
+## Objective
+
+Verify that you understand the purpose of IntelliJ IDEA.
+
+### Questions
+
+1. What does IDE stand for?
+2. Who created IntelliJ IDEA?
+3. Is IntelliJ IDEA a programming language?
+4. Name two reasons why developers use IntelliJ IDEA.
+5. Which edition of IntelliJ IDEA is free?
+
+---
+
+# Task 2: Community vs Ultimate
+
+## Objective
+
+Differentiate between the two IntelliJ editions.
+
+### Instructions
+
+Create a comparison table showing:
+
+* Price
+* Target Users
+* Supported Features
+* Enterprise Support
+* Best Use Cases
+
+### Reflection
+
+Which edition would you choose as a beginner, and why?
+
+---
+
+# Task 3: Supported Languages
+
+## Objective
+
+Identify languages supported by IntelliJ IDEA.
+
+### Instructions
+
+Write down at least five programming languages that IntelliJ can support.
+
+Example format:
+
+```text
+Language 1:
+Language 2:
+Language 3:
+Language 4:
+Language 5:
+```
+
+### Bonus
+
+Which language will you learn in the next module?
+
+---
+
+# Task 4: Install IntelliJ IDEA
+
+## Objective
+
+Install IntelliJ IDEA Community Edition.
+
+### Instructions
+
+1. Download IntelliJ IDEA Community Edition.
+2. Install it on your computer.
+3. Open IntelliJ IDEA.
+4. Take a screenshot of the Welcome Screen.
+
+### Evidence
+
+Paste your screenshot into your study notes.
+
+---
+
+# Task 5: Explore the Interface
+
+## Objective
+
+Become familiar with the IntelliJ layout.
+
+### Instructions
+
+Open IntelliJ IDEA and identify the following areas:
+
+* Project Window
+* Editor
+* Toolbar
+* Terminal
+* Run Window
+
+### Reflection
+
+Which area do you think you will use the most?
+
+Why?
+
+---
+
+# Task 6: Create Your First Project
+
+## Objective
+
+Learn how to create a project.
+
+### Instructions
+
+Create a project named:
+
+```text
+MyFirstIntelliJProject
+```
+
+### Requirements
+
+* Create the project successfully.
+* Locate the src folder.
+* Locate the External Libraries section.
+
+### Evidence
+
+Take a screenshot of the completed project structure.
+
+---
+
+# Task 7: Use the Terminal
+
+## Objective
+
+Practice using the built-in terminal.
+
+### Instructions
+
+Open the IntelliJ Terminal and execute these commands:
+
+```text
+git status
+```
+
+```text
+git --version
+```
+
+### Questions
+
+1. What does git status show?
+2. What version of Git is installed on your computer?
+
+---
+
+# Task 8: Learn Keyboard Shortcuts
+
+## Objective
+
+Memorize important IntelliJ shortcuts.
+
+### Match the Shortcut
+
+Write the correct shortcut beside each action.
+
+Actions:
+
+* Run Program
+* Debug Program
+* Search Everywhere
+* Rename Safely
+* Format Code
+
+### Reflection
+
+Which shortcut do you think will save you the most time?
+
+---
+
+# Task 9: Install a Plugin
+
+## Objective
+
+Understand IntelliJ's plugin system.
+
+### Instructions
+
+1. Open Plugins.
+2. Search for a plugin.
+3. Read its description.
+
+### Questions
+
+* What plugin did you choose?
+* What problem does it solve?
+* Would you install it? Why or why not?
+
+---
+
+# Task 10: Reflection Activity
+
+## Objective
+
+Reflect on your learning.
+
+Answer the following questions honestly.
+
+1. Before this module, had you ever used IntelliJ IDEA?
+2. What surprised you the most about IntelliJ?
+3. What feature do you find most useful?
+4. What part do you still find confusing?
+5. How confident do you feel using IntelliJ IDEA now?
+
+Use the following scale:
+
+```text
+1 = Not confident
+2 = Slightly confident
+3 = Moderately confident
+4 = Confident
+5 = Very confident
+```
+
+My confidence level:
+
+```text
+____ / 5
+```
+
+---
+
+# Challenge Task
+
+Research another JetBrains IDE.
+
+Examples:
+
+* PyCharm
+* Rider
+* WebStorm
+* CLion
+* PhpStorm
+* DataGrip
+
+Answer:
+
+* What is its purpose?
+* Who uses it?
+* How is it different from IntelliJ IDEA?
+
+---
+
+# Completion Checklist
+
+* [ ] I understand what IntelliJ IDEA is.
+* [ ] I know the difference between Community and Ultimate.
+* [ ] I know which languages IntelliJ supports.
+* [ ] I installed IntelliJ IDEA.
+* [ ] I explored the interface.
+* [ ] I created a project.
+* [ ] I used the terminal.
+* [ ] I learned important shortcuts.
+* [ ] I explored plugins.
+* [ ] I reflected on my learning.
+
+Congratulations! You have completed the practice activities for the IntelliJ IDEA module and are ready for the solutions and the next step toward learning Kotlin.

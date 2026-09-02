@@ -1,0 +1,126 @@
+"""
+📘 Module — Control Flow — While-loops
+📁 Examples File
+
+This file contains practical examples demonstrating how `while` loops
+are used in real Python programs.
+
+Run this file:
+    python While_Loops_Examples.py
+Modify values and observe how loop behavior changes.
+"""
+# ===========================================================================
+# 🧪 Example 1: Basic Counter Loop
+# ===========================================================================
+counter = 1
+
+while counter <= 5:
+    print("Counter:", counter)
+    counter += 1
+# ===========================================================================
+# 🧪 Example 2: Countdown Loop
+# ===========================================================================
+countdown = 5
+
+while countdown > 0:
+    print("Countdown:", countdown)
+    countdown -= 1
+
+print("Liftoff!")
+# ===========================================================================
+# 🧪 Example 3: Infinite Loop with break
+# ===========================================================================
+number = 1
+
+while True:
+    print("Number:", number)
+    if number == 3:
+        break
+    number += 1
+# ===========================================================================
+# 🧪 Example 4: Skipping an Iteration (continue)
+# ===========================================================================
+num = 0
+
+while num < 6:
+    num += 1
+    if num == 4:
+        continue
+    print("Current value:", num)
+# ===========================================================================
+# 🧪 Example 5: Accumulating Values
+# ===========================================================================
+total = 0
+i = 1
+
+while i <= 5:
+    total += i
+    i += 1
+
+print("Total sum:", total)
+# ===========================================================================
+# 🧪 Example 6: Using a Flag Variable
+# ===========================================================================
+running = True
+attempts = 0
+
+while running:
+    attempts += 1
+    print("Attempt:", attempts)
+
+    if attempts == 3:
+        running = False
+# ===========================================================================
+# 🧪 Example 7: User Input Loop (Safe Example)
+# ===========================================================================
+# Commented to avoid blocking execution
+# user_input = ""
+# while user_input.lower() != "exit":
+#     user_input = input("Type 'exit' to stop: ")
+#     print("You typed:", user_input)
+# ===========================================================================
+# 🧪 Example 8: Validation Loop
+# ===========================================================================
+value = -1
+
+while value <= 0:
+    value += 1
+    print("Validated value:", value)
+# ===========================================================================
+# 🧪 Example 9: while Loop with else
+# ===========================================================================
+x = 1
+
+while x <= 3:
+    print("x =", x)
+    x += 1
+else:
+    print("Loop completed successfully")
+# ===========================================================================
+# 🧪 Example 10: Processing a List with while
+# ===========================================================================
+
+items = ["Python", "Java", "C++"]
+index = 0
+
+while index < len(items):
+    print("Item:", items[index])
+    index += 1
+# ===========================================================================
+# 🧠 Summary
+# ===========================================================================
+print("\nSummary:")
+print("- while loops run while a condition is True")
+print("- break exits the loop")
+print("- continue skips the current iteration")
+print("- flags help manage complex loop logic")
+print("- always ensure the condition updates")
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

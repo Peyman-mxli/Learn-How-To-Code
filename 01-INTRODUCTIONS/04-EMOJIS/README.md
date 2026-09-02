@@ -1,47 +1,95 @@
-# Unicode, Symbols, ALT Codes, and Emojis
+In this module, I learn how **ALT codes** work in Windows and how **special characters and emojis** can be printed and used in Python programs 🐍.
 
-This module explains special characters, Windows ALT input, Unicode, and emojis in console programs.
+ALT codes allow me to type characters that are not easily accessible
+on the keyboard, such as:
+- box-drawing characters ║ ═ ─
+- arrows ➜ ➤ ➡
+- math symbols ± × ÷
+- currency symbols € ¥ $
+- special letters ñ ü ç
+- emojis 😀 🔥 ✅ 🎯
 
-## Learning objectives
+These characters are especially useful for:
+- 🖥️ console user interfaces
+- 📐 ASCII / text-based layouts
+- 📊 terminal dashboards
+- 📋 menus and separators
+- 🎓 educational tools and visual output
 
-By the end of this module, I can:
+By the end of this module, I should feel comfortable:
+- understanding what ALT codes are
+- knowing when ALT codes work (Windows + numeric keypad)
+- printing special characters in Python
+- using emojis in Python programs
+- organizing characters by category
+- building clean, readable, and expressive console output
 
-- explain the difference between ALT input and Unicode;
-- print Unicode characters and emojis in Python;
-- build readable console separators, menus, and tables;
-- recognize terminal/font limitations;
-- design console output without sacrificing accessibility.
+---
 
-## Important distinction
+## 🎯 Key Learning Objectives
 
-**ALT codes** are a Windows input method. **Unicode** is the character standard used by Python strings.
+By completing this module, I will be able to:
+- Explain how ALT codes work on Windows 🪟
+- Print special characters in Python 🐍
+- Use emojis safely in console programs 😀
+- Build text-based tables and UI elements 📊
+- Organize symbols by purpose 🧠
+- Improve readability and user experience ✨
 
-Python can store the character directly:
+---
 
+## 📂 Module File Structure
+
+- `ALT_Codes_Notes.py`  
+  📘 Concepts, explanations, rules, and references.
+
+- `ALT_Codes_Examples.py`  
+  🧪 Practical examples using special characters and emojis.
+
+- `ALT_Codes_Tasks.py`  
+  📝 Exercises from beginner to professional level.
+
+- `ALT_Codes_Tasks_Solutions.py`  
+  ✅ Clean, readable, and professional solutions.
+
+---
+
+## 🏆 Exercise Difficulty Framework (Ranking System)
+
+**Rank 1 — Beginner** 🟢  
+Understanding ALT codes and basic characters.
+
+**Rank 2 — Easy** 🔵  
+Printing symbols and simple layouts.
+
+**Rank 3 — Intermediate** 🟡  
+Building tables and grouped output.
+
+**Rank 4 — Advanced** 🟠  
+Reusable layouts and helper functions.
+
+**Rank 5 — Professional** 🔴  
+Designing clean console UI components.
+
+---
+
+## 😀 Emojis in Python (Very Important Section)
+
+### 🔹 Can Python Print Emojis?
+✅ **Yes!**  
+Python fully supports emojis because Python strings use **Unicode**.
+
+### 🔹 Simple Emoji Example
 ```python
-print("Status: ✅ Complete")
-print("Arrow: →")
-print("Box: ╔══╗")
-```
+print("Hello World 😀")
+print("Python is awesome 🐍🔥")
 
-The exact ALT-number sequence used to type a symbol can vary by Windows code page and application, so application code should not depend on ALT numbers.
+✍️ ##Author##
 
-## Module files
-
-- `ALT-CODES-NOTES.py` — concise notes plus small demonstrations
-- `ALT-CODES-EXAMPLES.py` — runnable Unicode console examples
-- `TASKS.py` — exercises
-- `TASK-SOLUTION.py` — reference solutions
-
-Run an example:
-
-```bash
-python ALT-CODES-EXAMPLES.py
-```
-
-## Author
-
-**Peyman Miyandashti**  
-Information Technology Engineering & Digital Innovation  
-Polytechnic University of Baja California  
-Mexico · 2026
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161

@@ -1,43 +1,36 @@
-# Git and GitHub
+🐙 GitHub — Installation & Beginner Guide
+Welcome 👋
+This section explains what GitHub is, how to install Git, how to create a GitHub account, and how GitHub works with Visual Studio Code.
 
-Git is a distributed version-control system. GitHub is a hosting and collaboration platform built around Git repositories.
+GitHub is an essential tool for saving, sharing, and tracking your code.
 
-## Learning path
+📌 What Is GitHub?
+GitHub is an online platform used to:
 
-| # | Topic |
-|---:|---|
-| 01 | [Git Basics](./01-GIT-BASICS/) |
-| 02 | [Clone, Add, Commit, Push](./02-CLONE-ADD-COMMIT-PUSH/) |
-| 03 | [Branches](./03-BRANCHES/) |
-| 04 | [Merging](./04-MERGING/) |
-| 05 | [Merge Conflicts](./05-MERGE-CONFLICTS/) |
-| 06 | [Pull Requests](./06-PULL-REQUESTS/) |
-| 07 | [.gitignore](./07-GITIGNORE/) |
-| 08 | [Undo and Restore](./08-UNDO-AND-RESTORE/) |
-| 09 | [GitHub Issues](./09-GITHUB-ISSUES/) |
-| 10 | [GitHub Actions Introduction](./10-GITHUB-ACTIONS-INTRO/) |
+Store code in repositories
+Track changes in your projects
+Collaborate with other developers
+Backup your work safely in the cloud
+GitHub uses Git, which is a version control system.
 
-## Git vs GitHub
+⚠️ Git ≠ GitHub
 
-- **Git** tracks changes locally and supports branching, merging, and history.
-- **GitHub** hosts Git repositories and adds collaboration features such as pull requests, issues, code review, and Actions.
+Git → tool installed on your computer
+GitHub → website that hosts Git repositories
+🧠 Why Use GitHub?
+GitHub allows you to:
 
-## Basic workflow
-
-```bash
-git clone <repository-url>
-git status
-git add .
-git commit -m "Describe the change"
-git push
-```
-
-Always inspect `git status` before committing and avoid committing secrets, environment files, generated caches, or private credentials.
-
-## Author
-
-**Peyman Miyandashti**  
-Information Technology Engineering & Digital Innovation  
-Polytechnic University of Baja California  
-Mexico · 2026
+Keep history of your code
+Undo mistakes easily
+Share your projects
+Build a professional portfolio
+Work from different computers
+Almost all professional developers use GitHub.
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
 

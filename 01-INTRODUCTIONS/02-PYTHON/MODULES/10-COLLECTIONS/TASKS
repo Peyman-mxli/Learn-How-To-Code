@@ -1,0 +1,168 @@
+"""
+📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
+
+
+📁 Collections-Tasks
+
+Topic: Python Collections — Lists, Tuples, Sets, Dictionaries
+
+This file contains PRACTICE TASKS to help you master
+Python collections from basic to professional level.
+
+Instructions:
+- Complete tasks from Rank 1 to Rank 5
+- Think about structure and performance
+- Do NOT check solutions until all tasks are completed
+"""
+
+# ==================================================
+# 1️⃣ LIST — Tasks
+# ==================================================
+
+# Rank 1
+# Create a list containing three programming languages and print it.
+
+# Rank 2
+# Add two new items to the list and remove one existing item.
+
+# Rank 3
+# Given a list of numbers, calculate the average manually (without using sum()).
+
+# Rank 4
+# Given a list of names, create a new list containing only names longer than 4 characters.
+
+# Rank 5
+# Given a list of integers, remove duplicates while preserving the original order.
+
+
+# ==================================================
+# 2️⃣ TUPLE — Tasks
+# ==================================================
+
+# Rank 1
+# Create a tuple with three colors and print each value using indexing.
+
+# Rank 2
+# Unpack a tuple containing (username, age, country) into variables.
+
+# Rank 3
+# Convert a tuple of numbers into a list, modify it, and convert it back to a tuple.
+
+# Rank 4
+# Create a function that returns multiple values using a tuple.
+
+# Rank 5
+# Use a tuple as a dictionary key to store coordinates and their descriptions.
+
+
+# ==================================================
+# 3️⃣ SET — Tasks
+# ==================================================
+
+# Rank 1
+# Create a set of numbers and print it.
+
+# Rank 2
+# Add two elements to the set and remove one element.
+
+# Rank 3
+# Given a list with duplicate values, convert it to a set to remove duplicates.
+
+# Rank 4
+# Given two sets of permissions, find:
+# - common permissions
+# - permissions only in the first set
+
+# Rank 5
+# Given two large datasets (sets), determine whether one is a subset of the other.
+
+
+# ==================================================
+# 4️⃣ DICTIONARY — Tasks
+# ==================================================
+
+# Rank 1
+# Create a dictionary representing a user with name and age.
+
+# Rank 2
+# Add a new key-value pair and update an existing value.
+
+# Rank 3
+# Iterate through the dictionary and print keys and values separately.
+
+# Rank 4
+# Safely retrieve a value using .get() and handle missing keys.
+
+# Rank 5
+# Create a function that validates a dictionary must contain:
+# name, email, and role.
+# Raise an error if any are missing.
+
+
+# ==================================================
+# 5️⃣ NESTED COLLECTIONS — Tasks
+# ==================================================
+
+# Rank 1
+# Create a list of dictionaries representing two users.
+
+# Rank 2
+# Access and print a specific value from a nested structure.
+
+# Rank 3
+# Loop through a list of dictionaries and print formatted output.
+
+# Rank 4
+# Given a dictionary containing a list of students, add a new student safely.
+
+# Rank 5
+# Design a nested data structure representing:
+# - A course
+# - Instructor
+# - Enrolled students
+# Then write logic to display all information cleanly.
+
+
+# ==================================================
+# 6️⃣ COLLECTION SELECTION — Tasks (Professional)
+# ==================================================
+
+# Rank 1
+# Choose the correct collection to store fixed configuration values.
+
+# Rank 2
+# Choose the best collection for removing duplicates and explain why (comment).
+
+# Rank 3
+# Convert between list, set, and tuple appropriately.
+
+# Rank 4
+# Given a scenario (user permissions system), choose and implement the best data structure.
+
+# Rank 5
+# Refactor a list-based lookup system into a dictionary-based one for performance.
+
+
+# ==================================================
+# 🧠 PROFESSIONAL CHALLENGE (OPTIONAL)
+# ==================================================
+
+# BONUS
+# Create a small in-memory data system using collections that supports:
+# - Adding users
+# - Removing users
+# - Searching users efficiently
+
+
+# ==================================================
+# End of Collections-Tasks
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

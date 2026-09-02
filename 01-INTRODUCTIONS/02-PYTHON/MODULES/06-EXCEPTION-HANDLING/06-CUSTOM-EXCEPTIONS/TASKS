@@ -1,0 +1,77 @@
+📘 Module —  Custom Exceptions — (Class-Based)
+"""
+📁 CustomExceptions-Tasks
+
+Topic: Exception Handling — Custom Exceptions (Class-Based)
+
+This file contains PRACTICE TASKS to help you master creating,
+raising, and handling custom (user-defined) exceptions.
+
+Instructions:
+- Complete tasks from Rank 1 to Rank 5
+- Define custom exception classes where required
+- Do NOT check the solutions until you finish all tasks
+"""
+
+# ==================================================
+# Rank 1 — Create a Simple Custom Exception
+# ==================================================
+# Task:
+# Create a custom exception called EmptyStringError.
+# Raise it if a variable `text` is an empty string.
+# Catch the exception and print a meaningful message.
+
+
+# ==================================================
+# Rank 2 — Age Validation
+# ==================================================
+# Task:
+# Create a custom exception called AgeTooLowError.
+# Ask the user to enter their age.
+# Raise the exception if age is below 18.
+# Catch the custom exception and print the error message.
+
+
+# ==================================================
+# Rank 3 — Positive Number Checker
+# ==================================================
+# Task:
+# Create a custom exception called NotPositiveNumberError.
+# Ask the user to enter a number.
+# Raise the exception if the number is zero or negative.
+# Catch ValueError and the custom exception separately.
+
+
+# ==================================================
+# Rank 4 — Password Validation Function
+# ==================================================
+# Task:
+# Create a custom exception called PasswordTooShortError.
+# Write a function check_password(password).
+# Raise the exception if the password length is less than 6.
+# Use try / except to handle the custom exception.
+
+
+# ==================================================
+# Rank 5 — Custom Exception Hierarchy
+# ==================================================
+# Task:
+# Create a base exception called AppError.
+# Create a child exception called LoginError(AppError).
+# Raise LoginError with a custom message.
+# Catch LoginError specifically, then AppError generally.
+
+
+# ==================================================
+# End of CustomExceptions-Tasks
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

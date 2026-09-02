@@ -1,0 +1,169 @@
+"""
+📘 Module — Basic Data Types: Float(flo)
+📝 Tasks File
+
+This file contains practice tasks designed to help me understand and master
+floating-point numbers in Python. The tasks progress from basic usage to
+more realistic, professional-level scenarios.
+
+Important rules:
+- I must attempt each task on my own.
+- I should write clean and readable Python code.
+- I should avoid looking at the solutions until I finish the tasks.
+"""
+
+
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Focus: creating and using float values
+
+
+# Task 1.1
+# Create a float variable called price and assign it a decimal value.
+# Print the value and its type.
+
+
+# Task 1.2
+# Create two float numbers and print their sum.
+
+
+# Task 1.3
+# Convert an integer to a float and print the result.
+
+
+# Task 1.4
+# Create a float variable called temperature and print it with a message.
+
+
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Focus: basic arithmetic and rounding
+
+
+# Task 2.1
+# Create two float numbers.
+# Perform addition, subtraction, multiplication, and division.
+# Print each result.
+
+
+# Task 2.2
+# Divide two integers and store the result in a variable.
+# Print the value and its type.
+
+
+# Task 2.3
+# Use the round() function to round a float to:
+# - 0 decimal places
+# - 2 decimal places
+
+
+# Task 2.4
+# Convert a string representing a decimal number into a float.
+
+
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Focus: precision, comparisons, and practical usage
+
+
+# Task 3.1
+# Add 0.1 and 0.2 and print the result.
+# Check if the result is equal to 0.3 and print the Boolean result.
+
+
+# Task 3.2
+# Compare two float values using a tolerance (small difference).
+# Print whether they are considered equal.
+
+
+# Task 3.3
+# Ask the user for a radius (float).
+# Calculate and print the area of a circle.
+
+
+# Task 3.4
+# Ask the user for two float numbers.
+# Print which one is larger.
+
+
+# ===========================================================================
+# 🔵 Rank 4 — Advanced
+# ===========================================================================
+# Focus: realistic calculations and formatted output
+
+
+# Task 4.1
+# Ask the user for a product price (float).
+# Ask for a tax rate (float).
+# Calculate and print:
+# - tax amount
+# - total price
+
+
+# Task 4.2
+# Ask the user for a distance (km) and time (hours).
+# Calculate and print the average speed.
+
+
+# Task 4.3
+# Ask the user for a float number.
+# If the number is greater than 0, print "Positive".
+# If it is less than 0, print "Negative".
+# Otherwise, print "Zero".
+
+
+# Task 4.4
+# Ask the user for a float value.
+# Print the value formatted to exactly 2 decimal places.
+
+
+# ===========================================================================
+# 🔴 Rank 5 — Professional
+# ===========================================================================
+# Focus: reusable functions, clean logic, and best practices
+
+
+# Task 5.1
+# Write a function called calculate_total(price, tax_rate).
+# The function should return the total price including tax.
+
+
+# Task 5.2
+# Write a function called is_close(a, b).
+# The function should return True if two floats are close enough
+# using a small tolerance value.
+
+
+# Task 5.3
+# Write a function that converts Celsius to Fahrenheit.
+# Formula: F = (C * 9/5) + 32
+
+
+# Task 5.4
+# Write a small program that simulates a bank balance:
+# - Start with a float balance
+# - Apply a deposit and a withdrawal
+# - Print the final balance formatted to 2 decimals
+
+
+# Task 5.5
+# Refactor repeated float calculations into reusable functions
+# to improve readability and maintainability.
+
+
+# ===========================================================================
+# 🏁 End of Tasks
+# ===========================================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

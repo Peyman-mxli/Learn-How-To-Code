@@ -1,0 +1,80 @@
+"""
+📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
+
+📁 Exception Hierarchy — Task Solutions
+
+This file contains the correct solutions for all tasks
+in the Exception Hierarchy module.
+"""
+
+# --------------------------------------------------
+# Rank 1 — Beginner (Solution)
+# --------------------------------------------------
+# Task 1:
+try:
+    number = int("abc")
+except ValueError:
+    print("Task 1: Caught ValueError")
+
+
+# --------------------------------------------------
+# Rank 2 — Easy (Solution)
+# --------------------------------------------------
+# Task 2:
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Task 2: Caught ZeroDivisionError")
+
+
+# --------------------------------------------------
+# Rank 3 — Intermediate (Solution)
+# --------------------------------------------------
+# Task 3:
+try:
+    items = [1, 2, 3]
+    print(items[5])
+except Exception as e:
+    print("Task 3: Caught exception type:", type(e).__name__)
+
+
+# --------------------------------------------------
+# Rank 4 — Advanced (Solution)
+# --------------------------------------------------
+# Task 4:
+try:
+    value = 5 / 0
+except ArithmeticError:
+    print("Task 4: Caught ArithmeticError (ZeroDivisionError child)")
+
+
+# --------------------------------------------------
+# Rank 5 — Professional (Solution)
+# --------------------------------------------------
+# Task 5:
+try:
+    x = int("100")
+    y = 10 / 0
+    z = [][1]
+except ValueError:
+    print("Task 5: ValueError occurred")
+except ZeroDivisionError:
+    print("Task 5: ZeroDivisionError occurred")
+except IndexError:
+    print("Task 5: IndexError occurred")
+except Exception:
+    print("Task 5: Unknown exception occurred")
+
+
+# --------------------------------------------------
+# End of Solutions
+# --------------------------------------------------
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

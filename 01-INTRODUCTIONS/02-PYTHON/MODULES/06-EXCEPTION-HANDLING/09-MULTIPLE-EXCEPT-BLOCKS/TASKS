@@ -1,0 +1,83 @@
+"""
+📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
+
+
+📁 Multiple-Except-Blocks — Tasks
+
+This file contains PRACTICE TASKS to help you master
+handling multiple exceptions using separate except blocks.
+
+Instructions:
+- Complete tasks from Rank 1 to Rank 5
+- Use proper exception handling structure
+- Do NOT check solutions until all tasks are completed
+"""
+
+# ==================================================
+# 🔹 Rank 1 — Basic ZeroDivision Handling
+# ==================================================
+# Task:
+# Write a program that:
+# - Asks the user to enter a number
+# - Prints the result of 10 divided by that number
+# - Handles ZeroDivisionError if the number is 0
+
+
+# ==================================================
+# 🔹 Rank 2 — Add ValueError Handling
+# ==================================================
+# Task:
+# Extend Rank 1:
+# - Handle ValueError if the user enters non-numeric input
+# - Print a clear message for invalid input
+
+
+# ==================================================
+# 🔹 Rank 3 — File Handling with Exception
+# ==================================================
+# Task:
+# Write a program that:
+# - Opens a file named "info.txt"
+# - Reads and prints its content
+# - Handles FileNotFoundError if the file does not exist
+
+
+# ==================================================
+# 🔹 Rank 4 — Multiple Except + else Block
+# ==================================================
+# Task:
+# Write a program that:
+# - Takes user input and converts it to an integer
+# - Divides 50 by the number
+# - Uses multiple except blocks to handle:
+#     • ValueError
+#     • ZeroDivisionError
+# - Uses an else block to print the result only if no exception occurs
+
+
+# ==================================================
+# 🔹 Rank 5 — Full Exception Handling Flow
+# ==================================================
+# Task:
+# Write a program that:
+# - Takes two numbers as input
+# - Divides the first number by the second
+# - Uses multiple except blocks to handle:
+#     • ValueError
+#     • ZeroDivisionError
+#     • Generic Exception (catch any unexpected error)
+# - Uses finally to print: "End of program"
+
+
+# ==================================================
+# End of Multiple-Except-Blocks — Tasks
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

@@ -1,0 +1,339 @@
+"""
+📘 Module — Error Handling (try / except)
+
+📁 ERROR HANDLING — THEORY & NOTES
+
+Error handling allows programs to detect, manage,
+and recover from runtime errors without crashing.
+
+It is a fundamental skill for writing safe,
+stable, and professional Python applications.
+"""
+
+# ======================================================
+# 1. WHAT IS AN ERROR?
+# ======================================================
+"""
+WHAT IT IS:
+An error is a problem that occurs during program execution
+that interrupts the normal flow of a program.
+
+WHY WE USE IT:
+Understanding errors helps developers identify problems,
+debug code, and build more reliable systems.
+
+WHEN TO USE:
+Whenever working with user input, files, APIs, or any
+external system where failure is possible.
+
+IMPORTANT:
+Without handling errors, Python stops execution immediately.
+"""
+
+# ======================================================
+# 2. ERROR VS EXCEPTION
+# ======================================================
+"""
+WHAT IT IS:
+An exception is a specific type of runtime error in Python.
+
+WHY WE USE IT:
+Exceptions provide a structured way to detect and handle errors.
+
+WHEN TO USE:
+When dealing with operations that may fail during execution.
+
+IMPORTANT:
+Common exceptions include:
+- ZeroDivisionError
+- ValueError
+- TypeError
+- FileNotFoundError
+- IndexError
+"""
+
+# ======================================================
+# 3. WHY ERROR HANDLING IS NECESSARY
+# ======================================================
+"""
+WHAT IT IS:
+Error handling is the process of managing runtime errors safely.
+
+WHY WE USE IT:
+- Prevent program crashes
+- Protect data
+- Improve user experience
+- Maintain system stability
+
+WHEN TO USE:
+In all real-world applications:
+- User interfaces
+- APIs
+- File systems
+- Automation scripts
+"""
+
+# ======================================================
+# 4. TRY / EXCEPT STRUCTURE
+# ======================================================
+"""
+WHAT IT IS:
+A try/except block catches and handles exceptions.
+
+WHY WE USE IT:
+To prevent crashes and control program flow when errors occur.
+
+WHEN TO USE:
+Whenever running code that may fail (input, files, math, etc.).
+
+IMPORTANT:
+Only code inside the try block is protected.
+"""
+
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+
+# ======================================================
+# 5. EXECUTION FLOW
+# ======================================================
+"""
+WHAT IT IS:
+Defines how Python processes try/except blocks.
+
+WHY WE USE IT:
+To understand how and when exceptions are handled.
+
+WHEN TO USE:
+When debugging or designing robust systems.
+
+IMPORTANT:
+Flow:
+1. Enter try
+2. If no error → skip except
+3. If error → jump to except
+4. Continue execution
+"""
+
+# ======================================================
+# 6. SPECIFIC EXCEPTIONS
+# ======================================================
+"""
+WHAT IT IS:
+Handling specific error types instead of generic ones.
+
+WHY WE USE IT:
+- Better control
+- Clear debugging
+- Safer programs
+
+WHEN TO USE:
+Always prefer specific exceptions over generic ones.
+
+IMPORTANT:
+Avoid using bare except.
+"""
+
+# ======================================================
+# 7. MULTIPLE EXCEPT BLOCKS
+# ======================================================
+"""
+WHAT IT IS:
+Using multiple except blocks for different errors.
+
+WHY WE USE IT:
+To handle different failure cases differently.
+
+WHEN TO USE:
+When a block of code can raise multiple exception types.
+
+IMPORTANT:
+Python checks from top to bottom.
+"""
+
+# ======================================================
+# 8. ELSE BLOCK
+# ======================================================
+"""
+WHAT IT IS:
+A block that runs only if no exception occurs.
+
+WHY WE USE IT:
+To separate success logic from error handling.
+
+WHEN TO USE:
+When you want clean and readable flow control.
+
+IMPORTANT:
+Runs only if try succeeds.
+"""
+
+# ======================================================
+# 9. FINALLY BLOCK
+# ======================================================
+"""
+WHAT IT IS:
+A block that always executes.
+
+WHY WE USE IT:
+To ensure cleanup operations are performed.
+
+WHEN TO USE:
+- Closing files
+- Releasing resources
+- Cleaning up connections
+
+IMPORTANT:
+Runs regardless of errors.
+"""
+
+# ======================================================
+# 10. BUILT-IN EXCEPTIONS
+# ======================================================
+"""
+WHAT IT IS:
+Predefined exception classes in Python.
+
+WHY WE USE IT:
+To handle common runtime problems.
+
+WHEN TO USE:
+When dealing with known failure scenarios.
+
+IMPORTANT:
+Examples:
+- ValueError
+- TypeError
+- ZeroDivisionError
+- IndexError
+- KeyError
+- FileNotFoundError
+"""
+
+# ======================================================
+# 11. Exception BASE CLASS
+# ======================================================
+"""
+WHAT IT IS:
+The parent class of all standard exceptions.
+
+WHY WE USE IT:
+To catch multiple exceptions at once.
+
+WHEN TO USE:
+Only when necessary.
+
+IMPORTANT:
+Avoid overusing it—it can hide bugs.
+"""
+
+# ======================================================
+# 12. RAISING EXCEPTIONS
+# ======================================================
+"""
+WHAT IT IS:
+Manually triggering an exception using raise.
+
+WHY WE USE IT:
+- Enforce rules
+- Validate data
+- Stop invalid execution
+
+WHEN TO USE:
+When a condition must not be allowed.
+"""
+
+if False:
+    raise ValueError("Invalid condition")
+
+
+# ======================================================
+# 13. CUSTOM EXCEPTIONS
+# ======================================================
+"""
+WHAT IT IS:
+User-defined exception classes.
+
+WHY WE USE IT:
+To create meaningful and domain-specific errors.
+
+WHEN TO USE:
+In larger or professional systems.
+
+IMPORTANT:
+Created by inheriting from Exception.
+"""
+
+class CustomError(Exception):
+    pass
+
+
+# ======================================================
+# 14. VALIDATION VS ERROR HANDLING
+# ======================================================
+"""
+WHAT IT IS:
+Two complementary approaches to handling issues.
+
+WHY WE USE IT:
+- Validation prevents errors
+- Error handling manages them
+
+WHEN TO USE:
+Use both together in professional code.
+"""
+
+# ======================================================
+# 15. COMMON MISTAKES
+# ======================================================
+"""
+WHAT IT IS:
+Frequent beginner errors.
+
+WHY WE USE IT:
+To avoid bad practices.
+
+WHEN TO USE:
+During learning and code review.
+
+IMPORTANT:
+- Do not use bare except
+- Do not ignore errors
+- Do not misuse exceptions for logic
+"""
+
+# ======================================================
+# 16. BEST PRACTICES
+# ======================================================
+"""
+WHAT IT IS:
+Guidelines for professional error handling.
+
+WHY WE USE IT:
+To write clean, safe, and maintainable code.
+
+WHEN TO USE:
+Always.
+
+IMPORTANT:
+✔ Catch specific exceptions
+✔ Keep try blocks small
+✔ Provide clear messages
+✔ Use finally for cleanup
+✔ Do not overuse exceptions
+"""
+
+# ======================================================
+# END OF ERROR HANDLING — NOTES
+# ======================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

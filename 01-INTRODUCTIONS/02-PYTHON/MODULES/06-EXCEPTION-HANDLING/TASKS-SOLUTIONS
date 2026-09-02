@@ -1,0 +1,165 @@
+"""
+📘 Module — Exception-Handling-in-Python
+
+📁 TASKS-SOLUTIONS Rank 1 → Rank 5
+
+This file contains one possible correct solution for each task.
+Focus on clarity, correctness, and best practices.
+"""
+# ===========================================================================
+# 🟢 Rank 1 — Beginner
+# ===========================================================================
+# Task 1 Solution
+try:
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    print("Result:", a / b)
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero")
+except ValueError:
+    print("Error: Invalid input")
+
+# Task 2 Solution
+try:
+    value = int("123a")
+except ValueError:
+    print("Error: Conversion failed")
+
+# Task 3 Solution
+numbers = [1, 2, 3]
+
+try:
+    print(numbers[5])
+except IndexError:
+    print("Error: Index out of range")
+# ===========================================================================
+# 🟡 Rank 2 — Easy
+# ===========================================================================
+# Task 4 Solution
+try:
+    number = int(input("Enter an integer: "))
+    print("Valid number")
+except ValueError:
+    print("Invalid number")
+
+# Task 5 Solution
+try:
+    with open("info.txt", "r") as file:
+        print(file.read())
+except FileNotFoundError:
+    print("Error: File not found")
+
+# Task 6 Solution
+values = ["10", "x", "5", None, "20"]
+converted = []
+
+for v in values:
+    try:
+        converted.append(int(v))
+    except (ValueError, TypeError):
+        continue
+
+print(converted)
+
+# ===========================================================================
+# 🟠 Rank 3 — Intermediate
+# ===========================================================================
+# Task 7 Solution
+def safe_divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Second number cannot be zero")
+    return a / b
+
+# Task 8 Solution
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("Conversion failed")
+else:
+    print("Success:", num)
+
+
+# Task 9 Solution
+data = [5, "a", 10, None, 3]
+total = 0
+
+for item in data:
+    try:
+        total += item
+    except TypeError:
+        continue
+
+print("Total:", total)
+
+# ===========================================================================
+# 🔴 Rank 4 — Advanced
+# ===========================================================================
+# Task 10 Solution
+while True:
+    user_input = input("Enter an integer or 'q' to quit: ")
+
+    if user_input.lower() == "q":
+        break
+
+    try:
+        print("Valid:", int(user_input))
+    except ValueError:
+        print("Invalid input")
+
+# Task 11 Solution
+def withdraw(balance, amount):
+    if amount > balance:
+        raise ValueError("Insufficient balance")
+    return balance - amount
+
+
+# Task 12 Solution
+try:
+    result = 10 / 2
+finally:
+    print("Execution finished")
+
+# ===========================================================================
+# 🟣 Rank 5 — Professional
+# ===========================================================================
+# Task 13 Solution
+def validate_age(age):
+    if not isinstance(age, int) or age <= 0:
+        raise ValueError("Age must be a positive integer")
+    return age
+
+# Task 14 Solution
+files = ["a.txt", "b.txt", "c.txt"]
+
+for file_name in files:
+    try:
+        with open(file_name, "r") as file:
+            print(file.read())
+    except FileNotFoundError:
+        print(f"Missing file: {file_name}")
+
+# Task 15 Solution
+def calculator(a, b, operator):
+    try:
+        if operator == "+":
+            return a + b
+        elif operator == "-":
+            return a - b
+        elif operator == "*":
+            return a * b
+        elif operator == "/":
+            return a / b
+        else:
+            raise ValueError("Invalid operator")
+    except ZeroDivisionError:
+        return "Error: Division by zero"
+print(calculator(10, 0, "/"))
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

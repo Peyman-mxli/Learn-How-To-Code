@@ -1,3 +1,4 @@
+```csharp
 /*
 📘 Module — Basic Data Types: Boolean (bool)
 Practice Tasks
@@ -45,6 +46,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 1.2
 //
 // Create a boolean variable called isOnline.
@@ -56,6 +59,8 @@ In this module I will:
 // Print the value.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 1.3
@@ -73,6 +78,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 1.4
 //
 // Create a boolean variable called isAdmin.
@@ -84,6 +91,8 @@ In this module I will:
 // Print the value.
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -109,6 +118,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 2.2
 //
 // Create a comparison:
@@ -124,6 +135,8 @@ In this module I will:
 // False
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 2.3
@@ -143,6 +156,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 2.4
 //
 // Create a comparison:
@@ -158,6 +173,8 @@ In this module I will:
 // True
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -186,6 +203,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.2
 //
 // Create:
@@ -206,6 +225,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.3
 //
 // Create:
@@ -223,6 +244,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.4
 //
 // Create:
@@ -236,6 +259,8 @@ In this module I will:
 // Print the result.
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -258,6 +283,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 4.2
 //
 // Create:
@@ -274,6 +301,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 4.3
 //
 // Create:
@@ -288,6 +317,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 4.4
 //
 // Create:
@@ -300,6 +331,8 @@ In this module I will:
 // Print the result.
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -323,6 +356,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 5.2
 //
 // Create a login validation system.
@@ -342,6 +377,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 5.3
 //
 // Create a shop access system.
@@ -359,6 +396,8 @@ In this module I will:
 // Print the result.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 5.4
@@ -388,6 +427,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 /*
 👤 Author
 
@@ -396,4 +437,6 @@ Peyman Miyandashti
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
+🆔 ID: 250161
 */
+```

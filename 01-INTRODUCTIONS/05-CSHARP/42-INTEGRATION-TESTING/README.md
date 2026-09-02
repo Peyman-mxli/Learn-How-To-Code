@@ -79,6 +79,9 @@ I recommend studying this module in the following order:
 
 👤 Author Peyman Miyandashti
 
+📨 250161@upbc.edu.mx // mxli.peyman@gmail.com
+
+📞 +526865090453
 
 🎓 Polytechnic University of Baja California
 
@@ -87,3 +90,5 @@ I recommend studying this module in the following order:
 📍 From IRAN (Mexico)
 
 📅 Year: 2026
+
+🆔 ID: 250161

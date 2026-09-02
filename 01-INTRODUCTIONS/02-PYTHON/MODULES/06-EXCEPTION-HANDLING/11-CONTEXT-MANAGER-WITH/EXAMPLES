@@ -1,0 +1,91 @@
+"""
+📘 Module — Context Managers — (The with Statement)
+
+📁 ContextManagers-Examples
+
+Topic: Exception Handling — Context Managers (with Statement)
+
+This file contains RUNNABLE EXAMPLES demonstrating how to use
+context managers in Python for safe and automatic resource management.
+
+How to use this file:
+- Run it with: python ContextManagers_Examples.py
+- Read the comment before each example
+- Observe how resources are handled automatically
+"""
+
+# ==================================================
+# Example 1 — File writing with context manager
+# ==================================================
+print("\nExample 1 — Writing to a file safely")
+
+with open("example.txt", "w") as file:
+    file.write("Hello, Context Manager!")
+
+print("File written and automatically closed")
+
+
+# ==================================================
+# Example 2 — File reading with context manager
+# ==================================================
+print("\nExample 2 — Reading a file safely")
+
+with open("example.txt", "r") as file:
+    content = file.read()
+    print("File content:", content)
+
+
+# ==================================================
+# Example 3 — Custom context manager (class-based)
+# ==================================================
+print("\nExample 3 — Custom context manager")
+
+class DatabaseConnection:
+    def __enter__(self):
+        print("Connecting to database")
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Closing database connection")
+
+with DatabaseConnection() as db:
+    print("Using database")
+
+
+# ==================================================
+# Example 4 — Exception safety with context manager
+# ==================================================
+print("\nExample 4 — Exception handling with context manager")
+
+try:
+    with open("non_existing.txt", "r") as file:
+        pass
+except FileNotFoundError:
+    print("Handled safely: file does not exist")
+
+
+# ==================================================
+# Example 5 — Multiple context managers
+# ==================================================
+print("\nExample 5 — Using multiple context managers")
+
+with open("file1.txt", "w") as f1, open("file2.txt", "w") as f2:
+    f1.write("File 1 content")
+    f2.write("File 2 content")
+
+print("Both files handled safely")
+
+
+# ==================================================
+# End of ContextManagers-Examples
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

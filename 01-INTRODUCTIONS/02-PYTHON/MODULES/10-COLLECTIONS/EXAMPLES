@@ -1,0 +1,180 @@
+"""
+📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
+
+📁 Collections-Examples
+
+Topic: Python Collections — Lists, Tuples, Sets, Dictionaries
+
+This file demonstrates real-world, practical usage of Python collections.
+Each example reflects production-level usage patterns.
+"""
+
+# ==================================================
+# 1. LIST — Examples
+# ==================================================
+# Lists are used for ordered and dynamic data storage.
+#
+# Example 1: Managing users
+users = ["Peyman", "Arlette", "Ali"]
+
+users.append("Sara")
+users.remove("Ali")
+
+for user in users:
+    print(f"User: {user}")
+
+
+# Example 2: Processing numeric data
+grades = [85, 90, 78, 92]
+
+average = sum(grades) / len(grades)
+print(f"Average grade: {average}")
+
+grades.sort()
+print("Sorted grades:", grades)
+
+
+# ==================================================
+# 2. TUPLE — Examples
+# ==================================================
+# Tuples are used for fixed and immutable data.
+#
+# Example 1: Configuration values
+DATABASE_CONFIG = ("localhost", 5432, "admin")
+
+host, port, username = DATABASE_CONFIG
+
+print(host, port, username)
+
+
+# Example 2: Function returning multiple values
+def get_coordinates():
+    return (10.5, 20.3)
+
+x, y = get_coordinates()
+print(x, y)
+
+
+# ==================================================
+# 3. SET — Examples
+# ==================================================
+# Sets ensure uniqueness and fast lookup.
+#
+# Example 1: Remove duplicates
+emails = ["a@mail.com", "b@mail.com", "a@mail.com"]
+
+unique_emails = set(emails)
+print(unique_emails)
+
+
+# Example 2: Compare permissions
+admin = {"read", "write", "delete"}
+user = {"read"}
+
+common = admin.intersection(user)
+print(common)
+
+
+# ==================================================
+# 4. DICTIONARY — Examples
+# ==================================================
+# Dictionaries store key-value data.
+#
+# Example 1: User profile
+user_profile = {
+    "username": "peyman",
+    "age": 43,
+    "country": "Mexico"
+}
+
+user_profile["age"] = 44
+print(user_profile)
+
+
+# Example 2: Application settings
+settings = {
+    "theme": "dark",
+    "debug": False
+}
+
+print(settings.get("debug", False))
+
+
+# ==================================================
+# 5. NESTED COLLECTIONS — Examples
+# ==================================================
+# Nested collections represent complex data.
+#
+# Example 1: List of dictionaries
+users = [
+    {"name": "Peyman", "role": "admin"},
+    {"name": "Arlette", "role": "user"}
+]
+
+for u in users:
+    print(u["name"], u["role"])
+
+
+# Example 2: Dictionary with list
+classroom = {
+    "teacher": "Arlette",
+    "students": ["Peyman", "Ali"]
+}
+
+for s in classroom["students"]:
+    print(s)
+
+
+# ==================================================
+# 6. MUTABILITY — Examples
+# ==================================================
+# Lists are mutable, tuples are not.
+#
+# Example 1: Mutable list
+scores = [10, 20]
+
+def add_score(data):
+    data.append(30)
+
+add_score(scores)
+print(scores)
+
+
+# Example 2: Immutable tuple
+config = (1920, 1080)
+
+def change(config):
+    return (config[0], 720)
+
+print(config)
+print(change(config))
+
+
+# ==================================================
+# 7. PERFORMANCE — Examples
+# ==================================================
+# Sets and dicts are fast for lookups.
+#
+# Example 1: Set lookup
+allowed = {"peyman", "admin"}
+print("peyman" in allowed)
+
+
+# Example 2: Dictionary lookup
+roles = {"peyman": "admin"}
+
+print(roles.get("peyman"))
+
+
+# ==================================================
+# End of Collections-Examples
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

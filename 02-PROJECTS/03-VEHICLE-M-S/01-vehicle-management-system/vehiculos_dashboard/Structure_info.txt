@@ -1,0 +1,27 @@
+vehiculos_dashboard
+│
+├── main.py
+│
+├── app
+│   ├── __init__.py
+│   │
+│   ├── modelos
+│   │   ├── __init__.py
+│   │   ├── vehiculo.py
+│   │   └── coche.py
+│   │
+│   └── servicios
+│       └── motor.py
+│
+├── templates
+│   └── index.html
+│
+└── static
+    │
+    ├── css
+    │   └── styles.css
+    │
+    ├── js
+    │   └── app.js
+    │
+    └── img

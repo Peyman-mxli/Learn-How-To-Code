@@ -1,0 +1,118 @@
+📘 Module —  Custom Exceptions — (Class-Based)
+"""
+CustomExceptions-Notes
+
+Topic: Exception Handling — Custom Exceptions (Class-Based)
+
+This file contains STUDY NOTES explaining how and why to create
+custom (user-defined) exceptions in Python using classes.
+
+These notes focus on concepts, rules, and best practices.
+"""
+# ==================================================
+# 1. What Is a Custom Exception?
+# ==================================================
+# A custom exception is a user-defined error type.
+# It is created by defining a new class that inherits from Exception.
+#
+# Custom exceptions allow programs to represent specific error cases
+# related to business logic or application rules.
+# ==================================================
+# 2. Why Use Custom Exceptions?
+# ==================================================
+# Built-in exceptions (ValueError, TypeError, etc.) are generic.
+# In real applications, generic errors may not explain the problem well.
+#
+# Custom exceptions:
+# - Make code easier to read
+# - Improve debugging
+# - Help separate logic errors from system errors
+# ==================================================
+# 3. Basic Custom Exception Structure
+# ==================================================
+# class MyCustomError(Exception):
+#     pass
+#
+# Rules:
+# - Must inherit from Exception (directly or indirectly)
+# - Class name usually ends with 'Error'
+# ==================================================
+# 4. Raising Custom Exceptions
+# ==================================================
+# Custom exceptions are raised using the raise keyword.
+#
+# Example:
+# class AgeTooLowError(Exception):
+#     pass
+#
+# if age < 18:
+#     raise AgeTooLowError("User must be at least 18")
+# ==================================================
+# 5. Catching Custom Exceptions
+# ==================================================
+# Custom exceptions are caught the same way as built-in ones.
+#
+# Example:
+# try:
+#     check_age(age)
+# except AgeTooLowError as e:
+#     print(e)
+# ==================================================
+# 6. Adding Custom Messages
+# ==================================================
+# Custom exceptions can accept messages or additional data.
+#
+# Example:
+# class LoginError(Exception):
+#     def __init__(self, message):
+#         super().__init__(message)
+# ==================================================
+# 7. Custom Exception Hierarchies
+# ==================================================
+# You can create a base custom exception and extend it.
+#
+# Example:
+# class AppError(Exception):
+#     pass
+#
+# class ValidationError(AppError):
+#     pass
+# ==================================================
+# 8. When to Use Custom Exceptions
+# ==================================================
+# Use custom exceptions for:
+# - Validation rules
+# - Business logic constraints
+# - Domain-specific errors
+#
+# Avoid using them for:
+# - Simple scripts
+# - System-level failures (IOError, MemoryError)
+# ==================================================
+# 9. Best Practices
+# ==================================================
+# ✅ Keep exception names clear and descriptive
+# ✅ Catch custom exceptions explicitly
+# ✅ Use custom exceptions with raise
+# ❌ Do not overuse them
+# ❌ Do not silence important system exceptions
+# ==================================================
+# 10. Key Takeaway
+# ==================================================
+# Custom exceptions make Python programs cleaner,
+# more expressive, and more professional.
+# They are essential for large-scale applications.
+
+
+# ==================================================
+# End of CustomExceptions-Notes
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

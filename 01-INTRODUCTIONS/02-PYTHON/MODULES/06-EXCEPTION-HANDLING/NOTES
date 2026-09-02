@@ -1,0 +1,191 @@
+📘 Module — Exception-Handling-in-Python
+
+
+Exception handling allows a Python program to detect, manage, and recover
+from runtime errors without crashing.
+
+Instead of stopping execution when an error occurs, Python provides tools to:
+- Handle predictable problems
+- Protect critical code
+- Provide meaningful feedback
+- Ensure proper resource cleanup
+
+This module covers exception handling from fundamentals to advanced usage.
+===========================================================================
+⚠️ 1. What is an Exception?
+===========================================================================
+An exception is an error that occurs during program execution.
+Example:
+
+print(10 / 2) # ✅ works
+
+print(10 / 0) # ❌ ZeroDivisionError
+Common built-in exceptions:
+- ValueError
+- TypeError
+- ZeroDivisionError
+- IndexError
+- KeyError
+- FileNotFoundError
+===========================================================================
+🛠️ 2. Basic try / except
+===========================================================================
+Prevent program crashes by handling errors.
+
+try:
+number = int("abc")
+except ValueError:
+print("Conversion failed")
+
+Flow:
+try → run risky code
+except → handle specific error
+===========================================================================
+🎯 3. Handling Multiple Exceptions
+===========================================================================
+
+try:
+x = int("10")
+result = 10 / x
+except ValueError:
+print("Invalid number")
+except ZeroDivisionError:
+print("Cannot divide by zero")
+
+Always catch specific exceptions for clarity and safety.
+===========================================================================
+🧠 4. Capturing Exception Details
+===========================================================================
+
+try:
+x = int("abc")
+except ValueError as error:
+print("Error message:", error)
+
+"error" contains useful debugging information.
+===========================================================================
+🔄 5. else Block
+===========================================================================
+Runs ONLY if no exception occurs.
+
+try:
+x = int("5")
+except ValueError:
+print("Error")
+else:
+print("Success:", x)
+
+Useful for separating success logic from error handling.
+===========================================================================
+🧹 6. finally Block
+===========================================================================
+Always runs, whether an exception occurs or not.
+
+try:
+file = open("data.txt", "w")
+file.write("Hello")
+finally:
+file.close()
+print("File closed")
+
+Typically used for cleanup:
+- closing files
+- releasing resources
+- closing database connections
+===========================================================================
+🚨 7. raise — Manual Exceptions
+===========================================================================
+Used to trigger an error intentionally.
+
+def withdraw(balance, amount):
+if amount > balance:
+raise ValueError("Insufficient funds")
+return balance - amount
+
+try:
+withdraw(100, 150)
+except ValueError as e:
+print("Error:", e)
+
+===========================================================================
+🛡️ 8. assert — Debugging Checks
+===========================================================================
+Used for internal sanity checks (debugging).
+
+def divide(a, b):
+assert b != 0, "b must not be zero"
+return a / b
+
+divide(10, 0) → AssertionError
+Note:
+assert is mainly for development, not production error handling.
+===========================================================================
+🧩 9. Common Exception Patterns
+===========================================================================
+Pattern 1: Safe user input
+
+try:
+age = int(input("Enter age: "))
+except ValueError:
+print("Please enter a valid number")
+
+Pattern 2: File handling
+
+try:
+with open("file.txt") as f:
+data = f.read()
+except FileNotFoundError:
+print("File not found")
+
+Pattern 3: Defensive coding
+
+def get_item(lst, index):
+try:
+return lst[index]
+except IndexError:
+return None
+
+===========================================================================
+❌ 10. Bad Practices (Avoid These)
+===========================================================================
+❌ Catching all exceptions blindly
+
+try:
+x = int("abc")
+except:
+pass # hides real problems
+
+❌ Ignoring errors
+This makes debugging very difficult
+❌ Overusing exceptions instead of logic
+Don't use exceptions for normal control flow
+===========================================================================
+✅ 11. Best Practices
+===========================================================================
+✔ Catch specific exceptions
+✔ Keep try blocks small and focused
+✔ Use else for success logic
+✔ Use finally for cleanup
+✔ Use raise for critical errors
+✔ Write clear and helpful error messages
+✔ Never silently ignore exceptions
+===========================================================================
+🧠 12. Summary
+===========================================================================
+In this module, I learned:
+- What exceptions are and why they occur
+- How to use try and except safely
+- How to handle multiple and specific exceptions
+- How else and finally control execution flow
+- How to raise custom errors
+- How assert helps during debugging
+- How to write robust and production-ready code
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

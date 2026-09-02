@@ -1,0 +1,79 @@
+📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
+
+🔹 What Are Multiple except Blocks?
+
+In Python, a try block can raise different types of exceptions.
+Using multiple except blocks allows us to handle each error type differently.
+
+This is more professional, safe, and readable than catching all errors at once.
+
+🔹 Basic Syntax
+try:
+    # risky code
+except ValueError:
+    # handle ValueError
+except TypeError:
+    # handle TypeError
+except ZeroDivisionError:
+    # handle ZeroDivisionError
+
+
+Python checks except blocks top to bottom and executes the first match.
+
+🔹 Order Matters ⚠️
+
+Specific exceptions must come before generic ones.
+
+❌ Wrong:
+
+try:
+    x = int("abc")
+except Exception:
+    print("Generic error")
+except ValueError:
+    print("Value error")
+
+
+✅ Correct:
+
+try:
+    x = int("abc")
+except ValueError:
+    print("Value error")
+except Exception:
+    print("Generic error")
+
+🔹 Catching Multiple Exceptions in One Block
+try:
+    x = int(input("Enter number: "))
+    y = 10 / x
+except (ValueError, ZeroDivisionError):
+    print("Invalid input or division by zero")
+
+🔹 Using else and finally
+try:
+    x = int(input("Enter number: "))
+    result = 10 / x
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+else:
+    print("Result:", result)
+finally:
+    print("Execution finished")
+
+🔹 Best Practices
+
+✔ Catch specific exceptions
+✔ Keep handlers simple and clear
+✔ Avoid empty except blocks
+✔ Use finally for cleanup
+✔ Never hide real errors
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

@@ -1,0 +1,238 @@
+📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
+"""
+====================================================
+📘 OBJECT-ORIENTED PROGRAMMING (OOP)
+📁 TASK SOLUTIONS (RANK 1 → RANK 5)
+====================================================
+This file contains clean, correct, and professional
+solutions for all OOP tasks.
+
+Rules followed:
+✔ Proper class design
+✔ Use of __init__, attributes, and methods
+✔ Encapsulation, inheritance, polymorphism, abstraction
+✔ Readable and maintainable code
+"""
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+
+# Task 1 Solution
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+person = Person("Peyman")
+print(person.name)
+
+
+# Task 2 Solution
+class Car:
+    def __init__(self, brand, year):
+        self.brand = brand
+        self.year = year
+
+car = Car("Toyota", 2024)
+print(car.brand, car.year)
+
+
+# Task 3 Solution
+class Book:
+    def __init__(self, title):
+        self.title = title
+
+book = Book("Python Fundamentals")
+print(book.title)
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+
+# Task 4 Solution
+class Student:
+    def __init__(self, name, student_id):
+        self.name = name
+        self.student_id = student_id
+
+student = Student("Peyman", "250161")
+print(student.name, student.student_id)
+
+
+# Task 5 Solution
+class Account:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def show_balance(self):
+        print("Balance:", self.balance)
+
+account = Account("Peyman", 5000)
+account.show_balance()
+
+
+# Task 6 Solution
+class Device:
+    def power_on(self):
+        print("Device is powered on")
+
+device = Device()
+device.power_on()
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+
+# Task 7 Solution
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # Private attribute
+
+    def get_balance(self):
+        return self.__balance
+
+bank = BankAccount(3000)
+print("Balance:", bank.get_balance())
+
+
+# Task 8 Solution
+class Employee:
+    def work(self):
+        print("Employee working")
+
+class Manager(Employee):
+    def manage(self):
+        print("Manager managing")
+
+manager = Manager()
+manager.work()
+manager.manage()
+
+
+# Task 9 Solution
+class Dog:
+    def speak(self):
+        print("Dog barks")
+
+class Cat:
+    def speak(self):
+        print("Cat meows")
+
+animals = [Dog(), Cat()]
+for animal in animals:
+    animal.speak()
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+
+# Task 10 Solution
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Square(Shape):
+    def area(self):
+        print("Area of square calculated")
+
+square = Square()
+square.area()
+
+# Task 11 Solution
+class Payment:
+    def pay(self):
+        print("Processing payment")
+
+class Cash(Payment):
+    def pay(self):
+        print("Paid with cash")
+
+class Card(Payment):
+    def pay(self):
+        print("Paid with card")
+
+payments = [Cash(), Card()]
+for p in payments:
+    p.pay()
+
+
+# Task 12 Solution
+class User:
+    def __init__(self, username):
+        self.username = username
+
+class Admin(User):
+    def access_panel(self):
+        print("Admin panel accessed")
+
+admin = Admin("admin")
+admin.access_panel()
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+# Task 13 Solution
+class UserAuth:
+    def __init__(self, username, password):
+        self.username = username
+        self.__password = password
+
+    def login(self, password):
+        if password == self.__password:
+            print("Login successful")
+        else:
+            print("Login failed")
+
+auth = UserAuth("admin", "1234")
+auth.login("1234")
+
+# Task 14 Solution
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+class Order:
+    def __init__(self, product, quantity):
+        self.product = product
+        self.quantity = quantity
+
+    def show_order(self):
+        print("Product:", self.product.name)
+        print("Quantity:", self.quantity)
+
+product = Product("Laptop", 1200)
+order = Order(product, 2)
+order.show_order()
+
+# Task 15 Solution
+from abc import ABC, abstractmethod
+
+class Notification(ABC):
+    @abstractmethod
+    def send(self):
+        pass
+
+class Email(Notification):
+    def send(self):
+        print("Email notification sent")
+
+class SMS(Notification):
+    def send(self):
+        print("SMS notification sent")
+
+notifications = [Email(), SMS()]
+for notify in notifications:
+    notify.send()
+# ====================================================
+# END OF SOLUTIONS — OOP
+# ====================================================
+# 👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+# ===================================================

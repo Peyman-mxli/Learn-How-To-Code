@@ -1,50 +1,120 @@
-# Projects
+# 🧵 PROJECTS
 
-This section applies the concepts from `01-INTRODUCTIONS` in complete applications. The projects progress from small command-line programs to object-oriented systems and a Flask web application.
+=======================================
 
-## Project index
+## ✨ Overview
 
-| # | Project | Main focus |
-|---:|---|---|
-| 01 | [CLI Calculator](./01-CLI-CALCULATOR/) | Functions, input validation, control flow |
-| 02 | [Todo App](./02-TODO-APP/) | CRUD-style operations and state management |
-| 03 | [Vehicle Management System](./03-VEHICLE-MANAGEMENT-SYSTEM/) | OOP, inheritance, abstraction, polymorphism |
-| 04 | [UniTrack](./04-UNITRACK/) | Flask, authentication, SQLite, attendance workflow |
-| 05 | [Library OOP](./05-LIBRARY-OOP/) | Multi-module OOP library system |
-| 06 | [Veterinary OOP](./06-VETERINARY-OOP/) | Inheritance and polymorphism with animal models |
-| 07 | [Zoo OOP](./07-ZOO-OOP/) | Abstract classes, caregivers, zoo management |
+=============================================================================
 
-## Project standards
+The **Projects** section contains real-world applications designed to apply and reinforce programming concepts learned throughout the repository.
 
-Projects should include, when applicable:
+Each project is structured professionally and simulates real development workflows, including modular code design, dependency management, and documentation.
 
-- a clear `README.md`;
-- a conventional entry point such as `main.py` or `app.py`;
-- `requirements.txt` for external Python dependencies;
-- `.gitignore` rules for virtual environments, caches, databases, and secrets;
-- input validation and explicit error handling;
-- no hard-coded production secrets or passwords;
-- no committed `__pycache__` or `.pyc` files; and
-- reproducible run instructions.
+=============================================================================
 
-## Recommended workflow
+## ⭕ Objectives
 
-1. Create a virtual environment.
-2. Install dependencies.
-3. Run the project.
-4. Test normal and invalid input.
-5. Read and refactor the code.
-6. Add tests for reusable functions.
-7. Commit changes with a descriptive message.
+=============================================================================
 
-## Author
+* Apply theoretical knowledge in real projects
+* Build problem-solving skills
+* Develop clean and maintainable code
+* Simulate real-world development environments
+* Strengthen portfolio with practical applications
 
-**Peyman Miyandashti**  
-Information Technology Engineering & Digital Innovation  
-Polytechnic University of Baja California  
-Mexico · 2026
+=============================================================================
 
+## ⭕ Why It Matters
 
-## Automated validation
+=============================================================================
 
-Automated tests are included for the CLI Calculator, Todo App, Vehicle Management System, Library OOP, Veterinary OOP, Zoo OOP, UniTrack, and the C# Student Management System. GitHub Actions runs these checks on pushes and pull requests.
+Projects are the most critical part of learning programming. They demonstrate your ability to transform knowledge into working solutions and are essential for building a strong professional portfolio.
+
+=============================================================================
+
+## ⭕ Project Structure
+
+=============================================================================
+
+```plaintext id="projects-tree"
+PROJECTS/
+│
+├── 01-CLI-CALCULATOR/
+│   ├── README.md
+│   ├── main.py
+│   └── requirements.txt
+│
+├── 02-TODO-APP/
+│   ├── README.md
+│   ├── main.py
+│   └── requirements.txt
+│
+└── ...
+```
+
+=============================================================================
+
+## ⭕ Project Standards
+
+=============================================================================
+
+Each project follows a consistent and professional structure:
+
+* README.md → Project documentation
+* main.py → Entry point of the application
+* requirements.txt → Dependencies (if needed)
+
+Optional advanced structure:
+
+* modules/ → Core logic separation
+* utils/ → Helper functions
+* data/ → Data storage (JSON, files, etc.)
+
+=============================================================================
+
+## ⭕ Technologies Used
+
+=============================================================================
+
+* Python
+* HTML / CSS
+* JavaScript
+* C#
+* Git & GitHub
+
+=============================================================================
+
+## ⭕ What You Will Learn
+
+=============================================================================
+
+* Building complete applications from scratch
+* Structuring real-world projects
+* Writing clean and maintainable code
+* Debugging and testing
+* Managing dependencies with pip
+
+=============================================================================
+
+## ⭕ Professional Impact
+
+=============================================================================
+
+This section is designed to prepare you for real software development environments. Completing these projects demonstrates:
+
+* Practical coding ability
+* Project organization skills
+* Readiness for internships or junior developer roles
+
+=============================================================================
+
+## ⭕ Author
+
+=============================================================================
+
+👤 Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 Mexico
+📅 2026
+🆔 250161

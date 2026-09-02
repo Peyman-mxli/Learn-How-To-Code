@@ -1,3 +1,4 @@
+```kotlin
 /*
  * File: 10-KOTLIN/01-INTRODUCTION-TO-KOTLIN/Examples.kt
  * Type: Examples
@@ -200,3 +201,4 @@ Keep practicing Kotlin every day.
 /*
 END OF EXAMPLES
 */
+```

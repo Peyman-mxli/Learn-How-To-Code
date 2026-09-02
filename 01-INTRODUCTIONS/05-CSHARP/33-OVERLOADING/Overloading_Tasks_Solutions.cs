@@ -592,6 +592,7 @@ namespace OverloadingTasksSolutions
             registration.Register("peyman");
             registration.Register("peyman", "peyman@email.com");
             registration.Register("peyman", "peyman@email.com", "12345");
+            registration.Register("peyman", "peyman@email.com", "12345", "+526865090453");
 
             Product product = new Product("Laptop", 1200.50m, 1);
             Customer customer = new Customer("Peyman", "peyman@email.com");
@@ -619,8 +620,11 @@ namespace OverloadingTasksSolutions
 
 /*
 👤 Author Peyman Miyandashti
+📨 [250161@upbc.edu.mx](mailto:250161@upbc.edu.mx) // [mxli.peyman@gmail.com](mailto:mxli.peyman@gmail.com)
+📞 +526865090453
 🎓 Polytechnic University of Baja California
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
+🆔 ID: 250161
 */

@@ -1,0 +1,79 @@
+"""
+📘 Module — Context Managers — (The with Statement)
+
+📁 ContextManagers-Tasks-Solutions
+
+Topic: Exception Handling — Context Managers (with Statement)
+
+This file contains SOLUTIONS for all tasks in ContextManagers_Tasks.py.
+
+Review notes:
+- Observe how 'with' simplifies resource management
+- Notice how __enter__ and __exit__ are implemented
+- Understand how context managers ensure cleanup
+"""
+
+# ==================================================
+# Rank 1 — Read/Write File Using 'with' (Solution)
+# ==================================================
+with open("task.txt", "w") as f:
+    f.write("Context Manager Task")
+
+print("File written successfully")
+
+
+# ==================================================
+# Rank 2 — Read File Using 'with' (Solution)
+# ==================================================
+with open("task.txt", "r") as f:
+    content = f.read()
+    print("File content:", content)
+
+
+# ==================================================
+# Rank 3 — Simple Custom Context Manager (Solution)
+# ==================================================
+class MyContext:
+    def __enter__(self):
+        print("Start")
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("End")
+
+
+# ==================================================
+# Rank 4 — Using Custom Context Manager (Solution)
+# ==================================================
+with MyContext():
+    print("Inside context")
+
+
+# ==================================================
+# Rank 5 — Logging Context Manager (Solution)
+# ==================================================
+class LoggerContext:
+    def __enter__(self):
+        print("Process started")
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Process ended")
+
+
+with LoggerContext():
+    print("Running process")
+
+
+# ==================================================
+# End of ContextManagers-Tasks-Solutions
+# ==================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

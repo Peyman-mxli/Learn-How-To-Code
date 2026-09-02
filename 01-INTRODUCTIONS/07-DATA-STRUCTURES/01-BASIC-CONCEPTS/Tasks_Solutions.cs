@@ -1,3 +1,4 @@
+```csharp
 /*
  * ============================================================
  * File: Tasks_Solutions.cs
@@ -481,3 +482,4 @@ namespace DataStructuresBasicConceptsTaskSolutions
         }
     }
 }
+```

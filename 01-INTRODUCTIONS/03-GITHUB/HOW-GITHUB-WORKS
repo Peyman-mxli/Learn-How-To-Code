@@ -1,0 +1,214 @@
+# 🔀 How Git Works — Commits, Branches & Pull Requests
+
+This guide explains **how Git and GitHub track changes** using:
+- Commits
+- Branches
+- Pull Requests
+
+These concepts are essential for **professional software development**.
+
+---
+
+## 🧠 Big Picture (Simple Explanation)
+
+Think of GitHub like a **timeline of your project**:
+- Every change is saved
+- You can go back in time
+- You can experiment safely
+- You can collaborate with others
+
+Git achieves this using **commits**, **branches**, and **pull requests**.
+
+---
+
+## 📌 What Is a Commit?
+
+A **commit** is a **saved snapshot** of your project at a specific moment.
+
+Each commit:
+- Records what changed
+- Has a message explaining the change
+- Is permanent in the project history
+
+### 🔹 Example
+```bash
+
+git commit -m "Add variables module notes"
+This means:
+
+“I saved my work and described what I changed.”
+
+---
+
+🧠 When Should You Commit?
+
+You should commit when:
+
+A task is finished
+
+A feature works
+
+You fixed a bug
+
+You want a restore point
+
+📌 Commit often, but with meaning.
+
+---
+
+🌿 What Is a Branch?
+
+A branch is a separate line of development.
+
+Think of branches like:
+
+Parallel versions of your project
+
+Safe spaces to experiment
+
+Independent work areas
+
+The default branch is usually called: main
+
+---
+
+🔹 Why Use Branches?
+
+Branches allow you to:
+
+Test new ideas safely
+
+Work without breaking main code
+
+Develop features independently
+
+---
+
+🔹Creating a Branch
+git branch new-feature
+git checkout new-feature
+
+Or in one command: git checkout -b new-feature
+Now you are working outside main.
+---
+
+🔁 What Is a Pull Request (PR)?
+
+A Pull Request is a request to:
+
+“Please merge my changes into the main branch.”
+
+Pull requests are created on GitHub, not in the terminal.
+
+They allow:
+
+Code review
+
+Discussion
+
+Approval before merging
+
+---
+🔹 Pull Request Workflow
+
+-Create a branch
+
+-Make changes
+
+-Commit changes
+
+-Push branch to GitHub
+
+-Open a Pull Request
+
+-Review & merge
+
+---
+
+🧩 How Everything Works Together
+🧠 Simple Flow Example
+
+main branch
+   |
+   |--- create branch (feature-x)
+            |
+            |--- commit changes
+            |
+            |--- push to GitHub
+            |
+            |--- open pull request
+            |
+            |--- merge into main
+
+
+🛠️ Common Git Commands (Summary)
+
+Action	                     Command
+Check status	             git status
+Add files                   git add .
+Commit	             git commit -m "message"
+Create branch	          git checkout -b name
+Switch branch	           git checkout name
+Push	                       git push
+Pull updates	               git pull
+
+---
+
+❌ Common Beginner Mistakes
+
+-❌ Working directly on main
+
+-❌ Forgetting to commit
+
+-❌ Bad commit messages
+
+-❌ Not pushing branch before PR
+
+-❌ Making one huge commit
+
+---
+
+✅ Best Practices (Professional Tips)
+
+✔️ Use clear commit messages
+✔️ One feature per branch
+✔️ Small, focused commits
+✔️ Pull before pushing
+✔️ Keep main clean and stable
+
+---
+
+🎯 What You Should Understand Now
+
+After this section, you should understand:
+
+✔️ What a commit is
+
+✔️ Why branches exist
+
+✔️ How pull requests work
+
+✔️ Basic Git workflow
+
+You are now using GitHub like a professional 🚀
+
+---
+
+
+## 🧭 Recommended Folder Tree
+
+01-introductions-setups-FOUNDATIONS/
+└── github/
+├── README.md
+└── how-git-works/
+└── README.md
+
+---
+
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161

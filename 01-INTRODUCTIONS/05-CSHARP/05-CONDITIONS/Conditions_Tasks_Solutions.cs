@@ -10,6 +10,7 @@ static void Main(string[] args)
 // Rank 1 Beginner 🌱
 // ==================================================
 
+```
         // Task 1
         int age = 20;
 
@@ -407,6 +408,7 @@ static void Main(string[] args)
         Console.ReadKey();
     }
 }
+```
 
 }
 
@@ -416,4 +418,5 @@ static void Main(string[] args)
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
+🆔 ID: 250161
 */

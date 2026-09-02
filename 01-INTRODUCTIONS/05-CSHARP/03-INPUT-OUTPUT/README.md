@@ -94,3 +94,5 @@ After completing Input & Output, I will continue with:
 **04 - Operators**
 
 Where I learn how to perform calculations and compare values.
+
+👤 Author Peyman Miyandashti 🎓 Polytechnic University of Baja California 💻 Information Technology Engineering & Digital Innovation 📍 From IRAN (Mexico) 📅 Year: 2026 🆔 ID: 250161

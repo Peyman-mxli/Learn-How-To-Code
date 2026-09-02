@@ -1,0 +1,138 @@
+📘 Module — TESTING & DEBUGGING (PYTHON)
+"""
+📘 TESTING & DEBUGGING — PYTHON
+📁 TASK SOLUTIONS (RANK 1 → RANK 5)
+
+This file contains clean, correct, and professional
+solutions for all Testing & Debugging tasks.
+
+Rules followed:
+✔ Proper error handling
+✔ Correct logic implementation
+✔ Use of try/except and assertions
+✔ Readable and maintainable code
+"""
+
+====================================================
+🟢 RANK 1 — VERY EASY
+====================================================
+Task 1 Solution
+
+def say_hello():
+print("Hello World")
+
+say_hello()
+
+Task 2 Solution
+
+def add_numbers(a, b):
+return a + b
+
+result = add_numbers(5, 7)
+print("Result:", result)
+
+====================================================
+🟡 RANK 2 — EASY
+====================================================
+Task 3 Solution
+
+def divide(a, b):
+try:
+return a / b
+except ZeroDivisionError:
+return "Error: Cannot divide by zero"
+
+print(divide(10, 2))
+print(divide(10, 0))
+
+Task 4 Solution
+
+def calculate_average(a, b):
+return (a + b) / 2
+
+print("Average:", calculate_average(10, 20))
+
+====================================================
+🟠 RANK 3 — INTERMEDIATE
+====================================================
+Task 5 Solution
+
+def is_even(number):
+return number % 2 == 0
+
+print(is_even(4))
+print(is_even(7))
+
+Task 6 Solution
+
+def calculate_total(price, quantity):
+print("Price:", price)
+print("Quantity:", quantity)
+total = price * quantity
+print("Calculated total:", total)
+return total
+
+calculate_total(50, 3)
+
+====================================================
+🔵 RANK 4 — ADVANCED
+====================================================
+Task 7 Solution
+
+def convert_to_int(value):
+try:
+return int(value)
+except ValueError:
+return "Error: Invalid integer value"
+
+print(convert_to_int("123"))
+print(convert_to_int("abc"))
+
+Task 8 Solution
+
+def calculate_invoice(price, quantity):
+assert price > 0, "Price must be greater than zero"
+assert quantity > 0, "Quantity must be positive"
+return price * quantity
+
+print(calculate_invoice(100, 2))
+
+====================================================
+🔴 RANK 5 — PROFESSIONAL
+====================================================
+Task 9 Solution
+
+def get_percentage(value, total):
+try:
+if total == 0:
+return "Error: Total cannot be zero"
+return (value / total) * 100
+except TypeError:
+return "Error: Invalid data types"
+
+print(get_percentage(50, 200))
+print(get_percentage(50, 0))
+
+Task 10 Solution
+
+def get_max_value(numbers):
+if not numbers:
+return "Error: List is empty"
+return max(numbers)
+
+print(get_max_value([3, 7, 2, 9]))
+print(get_max_value([]))
+
+====================================================
+END OF SOLUTIONS — TESTING & DEBUGGING
+====================================================
+👤 Author
+====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+
+====================================================

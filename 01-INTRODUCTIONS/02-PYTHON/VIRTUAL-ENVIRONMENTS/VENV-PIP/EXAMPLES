@@ -1,0 +1,189 @@
+📘 Module — VIRTUAL ENVIRONMENTS & PIP
+"""
+====================================================
+📘 VIRTUAL ENVIRONMENTS & pip
+📁 PRACTICAL EXAMPLES
+====================================================
+
+This file demonstrates real-world usage of:
+
+✔ Virtual Environments
+✔ pip package management
+✔ requirements.txt workflows
+
+⚠️ NOTE:
+Most virtual environment actions are executed
+in the TERMINAL, not inside Python code.
+
+This file documents professional workflows
+using structured examples.
+"""
+
+# ====================================================
+# EXAMPLE 1: CREATING A VIRTUAL ENVIRONMENT
+# ====================================================
+"""
+Scenario:
+A developer starts a new Python project and needs
+an isolated environment.
+
+Terminal Commands:
+
+1️⃣ Navigate to project folder
+2️⃣ Create virtual environment
+
+$ python -m venv venv
+
+Result:
+✔ A directory named `venv` is created
+✔ Python interpreter is copied
+✔ Environment is ready
+"""
+
+# ====================================================
+# EXAMPLE 2: ACTIVATING & DEACTIVATING ENVIRONMENT
+# ====================================================
+"""
+Scenario:
+The developer activates the environment to
+begin installing packages.
+
+Windows:
+$ venv\\Scripts\\activate
+
+macOS / Linux:
+$ source venv/bin/activate
+
+Terminal Output:
+(venv) appears before the command prompt
+
+Deactivation:
+$ deactivate
+"""
+
+# ====================================================
+# EXAMPLE 3: INSTALLING PACKAGES WITH pip
+# ====================================================
+"""
+Scenario:
+The project requires external libraries.
+
+Terminal Commands:
+
+$ pip install requests
+$ pip install numpy
+$ pip install pandas
+
+Result:
+✔ Packages installed inside venv
+✔ Global Python remains untouched
+"""
+
+# ====================================================
+# EXAMPLE 4: VERIFYING INSTALLED PACKAGES
+# ====================================================
+"""
+Scenario:
+The developer checks installed dependencies.
+
+Terminal Command:
+$ pip list
+
+Result:
+✔ Displays all packages inside venv
+✔ Shows exact versions
+"""
+
+# ====================================================
+# EXAMPLE 5: USING INSTALLED PACKAGES
+# ====================================================
+"""
+Scenario:
+A script uses packages installed in the virtual environment.
+"""
+
+import requests
+
+response = requests.get("https://api.github.com")
+print("Status Code:", response.status_code)
+
+# ====================================================
+# EXAMPLE 6: FREEZING DEPENDENCIES
+# ====================================================
+"""
+Scenario:
+The project needs to be shared with a team.
+
+Terminal Command:
+$ pip freeze > requirements.txt
+
+Result:
+✔ requirements.txt created
+✔ Exact package versions saved
+"""
+
+# ====================================================
+# EXAMPLE 7: INSTALLING FROM requirements.txt
+# ====================================================
+"""
+Scenario:
+Another developer clones the project.
+
+Terminal Commands:
+
+$ python -m venv venv
+$ source venv/bin/activate   # or venv\\Scripts\\activate
+$ pip install -r requirements.txt
+
+Result:
+✔ Environment recreated
+✔ Same dependencies installed
+"""
+
+# ====================================================
+# EXAMPLE 8: UPGRADING & REMOVING PACKAGES
+# ====================================================
+"""
+Scenario:
+A package needs maintenance.
+
+Upgrade:
+$ pip install --upgrade requests
+
+Remove:
+$ pip uninstall requests
+"""
+
+# ====================================================
+# EXAMPLE 9: PROFESSIONAL PROJECT WORKFLOW
+# ====================================================
+"""
+Standard Professional Workflow:
+
+1️⃣ Create project folder
+2️⃣ Create virtual environment
+3️⃣ Activate environment
+4️⃣ Install dependencies
+5️⃣ Develop application
+6️⃣ Freeze dependencies
+7️⃣ Share project
+
+This workflow is used in:
+✔ Industry
+✔ Startups
+✔ Universities
+✔ Open-source projects
+"""
+
+# ====================================================
+# END OF EXAMPLES — VIRTUAL ENVIRONMENTS & pip
+# ====================================================
+#👤 Author
+# ====================================================
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+# ====================================================

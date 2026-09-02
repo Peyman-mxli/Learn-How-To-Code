@@ -1,0 +1,176 @@
+"""
+📘 Module — Functions — def (Function Definition)
+
+====================================================
+FUNCTIONS — DEF (TASKS)
+====================================================
+
+These tasks focus ONLY on defining functions using `def`.
+
+❗ Rules for this file:
+- Do NOT use `return`
+- Use print() for output
+- Focus on function structure, parameters, and execution
+- Follow Rank 1 → Rank 5 difficulty
+
+====================================================
+"""
+
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+"""
+Task 1:
+Create a function named `say_hello` that prints:
+"Hello, welcome to Python programming!"
+
+Call the function once.
+"""
+
+# Your code here
+
+
+"""
+Task 2:
+Create a function named `print_name` that prints your name.
+
+Call the function.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
+"""
+Task 3:
+Create a function named `greet_user` that accepts one parameter `name`
+and prints:
+"Hello <name>, have a great day!"
+
+Call the function with your name.
+"""
+
+# Your code here
+
+
+"""
+Task 4:
+Create a function named `show_age` that accepts an age
+and prints:
+"Your age is <age> years old"
+
+Call the function.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
+"""
+Task 5:
+Create a function named `employee_info` that accepts:
+- name
+- department
+- position
+
+Print all information in a clean format.
+
+Call the function.
+"""
+
+# Your code here
+
+
+"""
+Task 6:
+Create a function named `system_health` that accepts:
+- cpu_usage
+- memory_usage
+
+Print a formatted system health report.
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
+"""
+Task 7:
+Create a function named `login_audit` that accepts:
+- username
+- ip_address
+- device
+
+Print a professional login audit log.
+
+Call the function twice with different users.
+"""
+
+# Your code here
+
+
+"""
+Task 8:
+Create a function named `order_invoice` that accepts:
+- customer_name
+- product_name
+- quantity
+- price_per_unit
+
+Print a detailed invoice.
+(Do NOT calculate totals — only display data.)
+"""
+
+# Your code here
+
+
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
+"""
+Task 9:
+Create a function named `incident_report` that accepts:
+- incident_id
+- severity
+- description
+- reported_by
+
+Print a professional incident report similar to
+real IT systems.
+"""
+
+# Your code here
+
+
+"""
+Task 10:
+Create a function named `university_enrollment` that accepts:
+- student_name
+- student_id
+- program
+- semester
+
+Print a clean enrollment confirmation message.
+
+Call the function with realistic data.
+"""
+
+# Your code here
+# ====================================================
+# END OF TASKS — def
+# ====================================================
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

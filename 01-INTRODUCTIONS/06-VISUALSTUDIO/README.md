@@ -166,4 +166,7 @@ You learned:
 🎓 Polytechnic University of Baja California 
 💻 Information Technology Engineering & Digital Innovation 
 📍 From Mexico 
-📅 Year: 2026
+📅 Year: 2026 
+🆔 ID: 250161
+
+

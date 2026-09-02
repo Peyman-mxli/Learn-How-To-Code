@@ -1,3 +1,4 @@
+```csharp
 /*
 📘 Module — Basic Data Types: Integer (int)
 Practice Tasks
@@ -45,6 +46,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 1.2
 //
 // Create an integer variable called level.
@@ -56,6 +59,8 @@ In this module I will:
 // Print the value.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 1.3
@@ -73,6 +78,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 1.4
 //
 // Create an integer variable called inventorySlots.
@@ -84,6 +91,8 @@ In this module I will:
 // Print the value.
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -112,6 +121,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 2.2
 //
 // Create:
@@ -129,6 +140,8 @@ In this module I will:
 // 75
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 2.3
@@ -149,6 +162,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 2.4
 //
 // Create:
@@ -163,6 +178,8 @@ In this module I will:
 // Gold Per Player: 25
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -190,6 +207,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.2
 //
 // Create:
@@ -207,6 +226,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.3
 //
 // Create:
@@ -222,6 +243,8 @@ In this module I will:
 // 9
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 3.4
@@ -243,6 +266,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // ===========================================================================
 // 🟠 Rank 4 → Advanced
 // Real-world examples.
@@ -260,6 +285,8 @@ In this module I will:
 // Print all values.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 4.2
@@ -280,6 +307,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 4.3
 //
 // Create:
@@ -296,6 +325,8 @@ In this module I will:
 // 550
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 4.4
@@ -315,6 +346,8 @@ In this module I will:
 // 750
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -337,6 +370,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 5.2
 //
 // Create a shop purchase example.
@@ -355,6 +390,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 5.3
 //
 // Create a guild example.
@@ -369,6 +406,8 @@ In this module I will:
 // Print the result.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 5.4
@@ -387,6 +426,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 /*
 👤 Author
 
@@ -395,4 +436,6 @@ Peyman Miyandashti
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
+🆔 ID: 250161
 */
+```

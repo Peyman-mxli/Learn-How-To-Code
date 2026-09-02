@@ -1,3 +1,4 @@
+```csharp
 /*
 📘 Module — Basic Data Types: String (string)
 Practice Tasks
@@ -46,6 +47,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 1.2
 //
 // Create a string variable called firstName.
@@ -53,6 +56,8 @@ In this module I will:
 // Print it.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 1.3
@@ -66,6 +71,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 1.4
 //
 // Create a string variable called message.
@@ -76,6 +83,8 @@ In this module I will:
 // Print it.
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -102,6 +111,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 2.2
 //
 // Create:
@@ -115,6 +126,8 @@ In this module I will:
 // Use string interpolation.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 2.3
@@ -132,6 +145,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 2.4
 //
 // Create:
@@ -145,6 +160,8 @@ In this module I will:
 // Use string interpolation.
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -166,6 +183,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.2
 //
 // Create:
@@ -179,6 +198,8 @@ In this module I will:
 // CSha
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 3.3
@@ -198,6 +219,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 3.4
 //
 // Create:
@@ -215,6 +238,8 @@ In this module I will:
 // True
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -241,6 +266,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 4.2
 //
 // Create:
@@ -253,6 +280,8 @@ In this module I will:
 // Print both results.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 4.3
@@ -272,6 +301,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 4.4
 //
 // Create:
@@ -288,6 +319,8 @@ In this module I will:
 // novaplayer
 //
 // Write your code below:
+
+
 
 
 // ===========================================================================
@@ -317,6 +350,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 5.2
 //
 // Create a product message.
@@ -333,6 +368,8 @@ In this module I will:
 // Use string interpolation.
 //
 // Write your code below:
+
+
 
 
 // 🔹 Task 5.3
@@ -353,6 +390,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 // 🔹 Task 5.4
 //
 // Create:
@@ -368,6 +407,8 @@ In this module I will:
 // Write your code below:
 
 
+
+
 /*
 👤 Author
 
@@ -376,4 +417,6 @@ Peyman Miyandashti
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
+🆔 ID: 250161
 */
+```

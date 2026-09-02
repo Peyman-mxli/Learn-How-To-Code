@@ -1,0 +1,79 @@
+"""
+📘 Module — Context Managers — (The with Statement)
+
+📁 ContextManagers-Tasks
+
+Topic: Exception Handling — Context Managers (with Statement)
+
+This file contains PRACTICE TASKS to help you master using
+context managers for safe and automatic resource management.
+
+Instructions:
+- Complete tasks from Rank 1 to Rank 5
+- Use the 'with' statement where required
+- Implement __enter__ and __exit__ for custom context managers
+- Do NOT check solutions until all tasks are completed
+"""
+
+# ==================================================
+# Rank 1 — Read a File Using 'with'
+# ==================================================
+# Task:
+# Use the 'with' statement to open a file named "sample.txt".
+# Read its content and print it.
+# Ensure the file is automatically closed.
+
+
+# ==================================================
+# Rank 2 — Write to a File Using 'with'
+# ==================================================
+# Task:
+# Use the 'with' statement to open a file named "output.txt".
+# Write a message into the file.
+# Confirm that the file is properly closed after writing.
+
+
+# ==================================================
+# Rank 3 — Simple Custom Context Manager
+# ==================================================
+# Task:
+# Create a class called SimpleContextManager.
+# Implement __enter__ and __exit__ methods.
+# Print a message when entering and exiting the context.
+# Use it with the 'with' statement.
+
+
+# ==================================================
+# Rank 4 — Resource Management with __enter__ / __exit__
+# ==================================================
+# Task:
+# Create a class called FileHandler.
+# In __enter__, open a file and return it.
+# In __exit__, close the file and print a message.
+# Use this class with 'with' to write data to a file.
+
+
+# ==================================================
+# Rank 5 — Logging Context Manager
+# ==================================================
+# Task:
+# Create a class called ProcessLogger.
+# When entering the context, print "Process started".
+# When exiting, print "Process ended".
+# Also display if an exception occurred (use exc_type).
+# Use the context manager with a block of code.
+
+
+# ==================================================
+# End of ContextManagers-Tasks
+# ==================================================
+
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From Mexico
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------

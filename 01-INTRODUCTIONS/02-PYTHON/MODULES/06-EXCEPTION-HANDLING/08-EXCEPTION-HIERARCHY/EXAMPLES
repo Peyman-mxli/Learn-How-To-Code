@@ -1,0 +1,127 @@
+"""
+📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
+
+📁 Exception Hierarchy — Examples
+
+This file demonstrates how Python exception hierarchy works in practice.
+Each example shows how different exceptions are raised and how
+specific and generic exception handling behaves.
+"""
+
+# --------------------------------------------------
+# Example 1: ValueError (Specific Exception)
+# --------------------------------------------------
+try:
+    value = int("abc")
+except ValueError:
+    print("Example 1: Caught ValueError")
+
+
+# --------------------------------------------------
+# Example 2: TypeError (Wrong Data Type)
+# --------------------------------------------------
+try:
+    result = "5" + 5
+except TypeError:
+    print("Example 2: Caught TypeError")
+
+
+# --------------------------------------------------
+# Example 3: ZeroDivisionError (ArithmeticError child)
+# --------------------------------------------------
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Example 3: Caught ZeroDivisionError")
+
+
+# --------------------------------------------------
+# Example 4: IndexError (LookupError child)
+# --------------------------------------------------
+try:
+    numbers = [1, 2, 3]
+    print(numbers[10])
+except IndexError:
+    print("Example 4: Caught IndexError")
+
+
+# --------------------------------------------------
+# Example 5: KeyError (LookupError child)
+# --------------------------------------------------
+try:
+    data = {"name": "Python"}
+    print(data["version"])
+except KeyError:
+    print("Example 5: Caught KeyError")
+
+
+# --------------------------------------------------
+# Example 6: Catching Parent Exception (Exception)
+# --------------------------------------------------
+# Catching Exception will also catch all child exceptions
+try:
+    number = int("xyz")
+except Exception as e:
+    print("Example 6: Caught exception:", type(e).__name__)
+
+
+# --------------------------------------------------
+# Example 7: Demonstrating Exception Inheritance
+# --------------------------------------------------
+# ZeroDivisionError is a child of ArithmeticError
+try:
+    result = 5 / 0
+except ArithmeticError:
+    print("Example 7: Caught ArithmeticError (child: ZeroDivisionError)")
+
+
+# --------------------------------------------------
+# Example 8: Avoid Catching BaseException
+# --------------------------------------------------
+# BaseException includes system-level exceptions
+try:
+    raise KeyboardInterrupt
+except KeyboardInterrupt:
+    print("Example 8: KeyboardInterrupt caught safely")
+
+# BAD PRACTICE (DO NOT USE):
+# except BaseException:
+#     print("This catches system-exit events!")
+
+
+# --------------------------------------------------
+# Example 9: Checking Exception Type
+# --------------------------------------------------
+try:
+    my_list = []
+    my_list[1]
+except Exception as e:
+    print("Example 9: Exception type is", type(e).__name__)
+
+
+# --------------------------------------------------
+# Example 10: Best Practice Example
+# --------------------------------------------------
+try:
+    x = int("100")
+    y = 10 / 0
+except ValueError:
+    print("Example 10: ValueError occurred")
+except ZeroDivisionError:
+    print("Example 10: ZeroDivisionError occurred")
+except Exception:
+    print("Example 10: Unknown exception occurred")
+
+
+# --------------------------------------------------
+# End of Examples
+# --------------------------------------------------
+-----------------------------------------------------------------------
+👤 Author
+Peyman Miyandashti
+🎓 Polytechnic University of Baja California
+💻 Information Technology Engineering & Digital Innovation
+📍 From IRAN (Mexico)
+📅 Year: 2026
+🆔 ID: 250161
+-----------------------------------------------------------------------
