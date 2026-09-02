@@ -1,162 +1,23 @@
-# 📘 Module — TESTING & DEBUGGING (PYTHON)
 """
-# 📘 TESTING & DEBUGGING — PYTHON
-# 📁 TASKS (RANK 1 → RANK 5)
-
-These tasks help you practice Testing and Debugging
-from basic error fixing to professional-level problem solving.
-
-Rules:
-❗ Do NOT include solutions here
-❗ Focus on identifying and fixing issues
-❗ Write clean, testable, and reliable code
+Module — Testing & Debugging — Practice Tasks
 """
 
-# ====================================================
-# 🟢 RANK 1 — VERY EASY
-# ====================================================
+# Rank 1
+# Task 1: Fix a syntax error in a simple function.
+# Task 2: Change a function so it returns a result instead of only printing.
 
-"""
-Task 1:
-Fix the syntax error so the function
-prints "Hello World".
-"""
+# Rank 2
+# Task 3: Prevent division by zero from crashing a function.
+# Task 4: Fix an incorrect average formula.
 
-def say_hello()
-print("Hello World")
-Your code here
+# Rank 3
+# Task 5: Fix a logic bug in an even-number check.
+# Task 6: Add temporary debug output for price, quantity, and total.
 
-"""
-Task 2:
-Modify the function so it returns the result
-instead of only printing it.
-"""
+# Rank 4
+# Task 7: Use try/except when converting text to int.
+# Task 8: Add assertions for positive quantity and price.
 
-def add_numbers(a, b):
-print(a + b)
-
-Your code here
-# ====================================================
-# 🟡 RANK 2 — EASY
-# ====================================================
-
-"""
-Task 3:
-Prevent the function from crashing when dividing by zero.
-"""
-
-def divide(a, b):
-return a / b
-
-Your code here
-
-"""
-Task 4:
-Fix the logic error so the function returns
-the correct average of two numbers.
-"""
-
-def calculate_average(a, b):
-return a + b / 2
-
-Your code here
-# ====================================================
-# 🟠 RANK 3 — INTERMEDIATE
-# ====================================================
-
-"""
-Task 5:
-Fix the logic bug so the function correctly
-checks if a number is even.
-"""
-
-def is_even(number):
-if number % 2 == 1:
-return True
-return False
-
-Your code here
-
-"""
-Task 6:
-Add print debugging statements to show:
-
-price
-
-quantity
-
-total
-"""
-
-def calculate_total(price, quantity):
-total = price * quantity
-return total
-
-Your code here
-# ====================================================
-# 🔵 RANK 4 — ADVANCED
-# ====================================================
-
-"""
-Task 7:
-Use try/except to safely convert a value to an integer.
-Return a meaningful message if conversion fails.
-"""
-
-def convert_to_int(value):
-return int(value)
-
-Your code here
-
-"""
-Task 8:
-Add assertions to validate:
-✔ quantity must be positive
-✔ price must be greater than zero
-"""
-
-def calculate_invoice(price, quantity):
-return price * quantity
-
-Your code here
-# ====================================================
-# 🔴 RANK 5 — PROFESSIONAL
-# ====================================================
-
-"""
-Task 9:
-Refactor the function to:
-✔ Handle division by zero
-✔ Handle invalid inputs
-✔ Return meaningful error messages
-✔ Be safe and testable
-"""
-
-def get_percentage(value, total):
-return (value / total) * 100
-
-Your code here
-
-"""
-Task 10:
-Create a function that:
-✔ Takes a list of numbers
-✔ Returns the highest value
-✔ Handles empty lists safely
-✔ Is easy to debug and test
-"""
-
-Your code here
-# ====================================================
-# END OF TASKS — TESTING & DEBUGGING
-# ====================================================
-# 👤 Author
-# ====================================================
-
-# Peyman Miyandashti
-# 🎓 Polytechnic University of Baja California
-# 💻 Information Technology Engineering & Digital Innovation
-# 📍 From IRAN (Mexico)
-# 📅 Year: 2026
-
-# ====================================================
+# Rank 5
+# Task 9: Refactor percentage calculation to handle bad inputs safely.
+# Task 10: Create a function that returns the largest number and handles an empty list.
