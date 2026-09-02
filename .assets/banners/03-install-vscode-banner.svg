@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">Install Visual Studio Code</title>
+  <desc id="desc">Professional purple banner for the Visual Studio Code installation guide in the Learn-How-To-Code repository.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120B24"/>
+      <stop offset="45%" stop-color="#24103F"/>
+      <stop offset="100%" stop-color="#0B1020"/>
+    </linearGradient>
+
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="55%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+
+    <linearGradient id="bluePurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="60%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="500" rx="28" fill="url(#bg)"/>
+  <rect width="1600" height="500" rx="28" fill="url(#grid)"/>
+
+  <!-- decorative glow -->
+  <circle cx="1320" cy="110" r="190" fill="#7C3AED" opacity="0.10"/>
+  <circle cx="1440" cy="395" r="170" fill="#8B5CF6" opacity="0.08"/>
+  <circle cx="180" cy="420" r="150" fill="#6D28D9" opacity="0.07"/>
+
+  <!-- top accent -->
+  <rect x="70" y="54" width="10" height="62" rx="5" fill="url(#purple)"/>
+  <text x="104" y="78" fill="#C4B5FD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">
+    LEARN-HOW-TO-CODE
+  </text>
+  <text x="104" y="108" fill="#8F8AA3" font-family="Segoe UI, Arial, sans-serif" font-size="18">
+    01-INTRODUCTIONS  /  01-VSCODE  /  INSTALL-VSCODE
+  </text>
+
+  <!-- main title -->
+  <text x="90" y="225" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="74" font-weight="800">
+    INSTALL
+  </text>
+  <text x="90" y="307" fill="url(#bluePurple)" font-family="Segoe UI, Arial, sans-serif" font-size="74" font-weight="800" filter="url(#glow)">
+    VISUAL STUDIO CODE
+  </text>
+
+  <text x="94" y="357" fill="#D8D3E4" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="500">
+    A beginner-friendly Windows installation guide — download, configure, install, and launch.
+  </text>
+
+  <!-- topic pills -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="92" y="395" width="145" height="44" rx="22" fill="#7C3AED"/>
+    <text x="124" y="423" fill="#FFFFFF">DOWNLOAD</text>
+
+    <rect x="250" y="395" width="125" height="44" rx="22" fill="#8B5CF6"/>
+    <text x="285" y="423" fill="#FFFFFF">SETUP</text>
+
+    <rect x="388" y="395" width="140" height="44" rx="22" fill="#6D28D9"/>
+    <text x="424" y="423" fill="#FFFFFF">INSTALL</text>
+
+    <rect x="541" y="395" width="135" height="44" rx="22" fill="#7C3AED"/>
+    <text x="580" y="423" fill="#FFFFFF">LAUNCH</text>
+  </g>
+
+  <!-- right side stylized editor / VS Code inspired icon -->
+  <g transform="translate(1110,110)">
+    <rect x="0" y="0" width="360" height="270" rx="28" fill="#111827" stroke="#7C3AED" stroke-width="3"/>
+    <rect x="0" y="0" width="360" height="48" rx="28" fill="#1B1730"/>
+    <circle cx="28" cy="24" r="7" fill="#8B5CF6"/>
+    <circle cx="52" cy="24" r="7" fill="#7C3AED"/>
+    <circle cx="76" cy="24" r="7" fill="#6D28D9"/>
+
+    <rect x="26" y="78" width="145" height="12" rx="6" fill="#8B5CF6" opacity="0.75"/>
+    <rect x="26" y="105" width="105" height="10" rx="5" fill="#C4B5FD" opacity="0.55"/>
+    <rect x="26" y="132" width="180" height="10" rx="5" fill="#C4B5FD" opacity="0.35"/>
+    <rect x="26" y="159" width="130" height="10" rx="5" fill="#C4B5FD" opacity="0.45"/>
+    <rect x="26" y="186" width="165" height="10" rx="5" fill="#C4B5FD" opacity="0.28"/>
+
+    <!-- stylized code-editor ribbon mark -->
+    <g transform="translate(225,82)">
+      <path d="M30 42 L92 0 L122 18 L122 130 L92 148 L30 106 L0 122 L0 26 Z"
+            fill="none" stroke="url(#bluePurple)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M31 42 L92 98" fill="none" stroke="#38BDF8" stroke-width="16" stroke-linecap="round" opacity="0.9"/>
+      <path d="M31 106 L92 50" fill="none" stroke="#8B5CF6" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+    </g>
+  </g>
+
+  <!-- bottom-right label -->
+  <text x="1460" y="452" text-anchor="end" fill="#A78BFA" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">
+    Peyman-mxli • 2026
+  </text>
+</svg>
