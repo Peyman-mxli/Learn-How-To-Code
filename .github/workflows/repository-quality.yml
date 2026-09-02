@@ -78,14 +78,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          count=0
-          while IFS= read -r -d "" file; do
-            echo "Checking $file"
-            output="/tmp/kotlin-check-$count.jar"
-            kotlinc "$file" -d "$output"
-            rm -f "$output"
-            count=$((count + 1))
-          done < <(find 01-INTRODUCTIONS/10-KOTLIN -type f -name "*.kt" -print0 | sort -z)
+          find 01-INTRODUCTIONS/10-KOTLIN -type f -name "*.kt" -print0 |
+            sort -z |
+            xargs -0 -n1 -P4 bash -c '
+              file="$1"
+              echo "Checking $file"
+              output="$(mktemp --suffix=.jar /tmp/kotlin-check-XXXXXX)"
+              kotlinc "$file" -d "$output"
+              rm -f "$output"
+            ' _
+          count="$(find 01-INTRODUCTIONS/10-KOTLIN -type f -name "*.kt" | wc -l)"
           echo "Compiled $count Kotlin files successfully."
 
   curriculum-hygiene:
