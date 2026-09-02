@@ -39,9 +39,12 @@ jobs:
             exit 1
           fi
 
-      - name: Reject known placeholder secrets
+      - name: Reject hard-coded application secrets
         run: |
-          if grep -RIn --exclude-dir=.git             -e 'supersecretkey'             -e 'UPBC2026'             .; then
-            echo "Known hard-coded secret pattern found."
+          bad_secret_lines="$(git grep -nE 'app\.secret_key\s*=\s*["'\'''][^$]' -- '*.py' || true)"
+          bad_admin_lines="$(git grep -nE 'ADMIN_VERIFY_CODE\s*=\s*["'\''']' -- '*.py' || true)"
+          if [ -n "$bad_secret_lines$bad_admin_lines" ]; then
+            echo "Possible hard-coded application secret found:"
+            printf '%s\n%s\n' "$bad_secret_lines" "$bad_admin_lines"
             exit 1
           fi
