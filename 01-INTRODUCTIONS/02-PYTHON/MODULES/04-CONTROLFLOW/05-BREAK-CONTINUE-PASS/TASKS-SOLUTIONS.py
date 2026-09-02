@@ -104,8 +104,12 @@ while True:
 
 
 # Task 11:
+# Intentional pass demonstration: this branch is syntactically complete
+# even when no runtime action is required.
 for i in range(5):
-    pass  # TODO: implement retry logic here in the future
+    if i < 4:
+        continue
+    pass
 
 
 # Task 12:
