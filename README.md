@@ -114,3 +114,8 @@ This repository is an active learning portfolio. Existing modules can be refacto
 Information Technology Engineering & Digital Innovation  
 Polytechnic University of Baja California  
 Mexico · 2026
+
+
+## Automated quality checks
+
+GitHub Actions verifies Python project compilation, Calculator/Todo/UniTrack tests, the C# application build and xUnit tests, C# curriculum source hygiene, Kotlin module structure, Python filename conventions, repository hygiene, and hard-coded secret checks.
