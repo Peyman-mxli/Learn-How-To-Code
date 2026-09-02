@@ -15,6 +15,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Compile full Python learning curriculum
+        run: python -m compileall -q 01-INTRODUCTIONS/02-PYTHON
+
       - name: Compile Python projects
         run: |
           python -m compileall -q \
@@ -39,6 +42,18 @@ jobs:
       - name: Run vehicle tests
         working-directory: 02-PROJECTS/03-VEHICLE-MANAGEMENT-SYSTEM
         run: python -m unittest discover -s tests -v
+      - name: Run library tests
+        working-directory: 02-PROJECTS/05-LIBRARY-OOP
+        run: python -m unittest discover -s tests -v
+
+      - name: Run veterinary tests
+        working-directory: 02-PROJECTS/06-VETERINARY-OOP
+        run: python -m unittest discover -s tests -v
+
+      - name: Run zoo tests
+        working-directory: 02-PROJECTS/07-ZOO-OOP
+        run: python -m unittest discover -s tests -v
+
       - name: Install UniTrack dependencies
         run: pip install -r 02-PROJECTS/04-UNITRACK/requirements.txt
       - name: Run UniTrack smoke tests
