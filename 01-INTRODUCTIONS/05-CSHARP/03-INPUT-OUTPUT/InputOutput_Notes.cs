@@ -1,6 +1,6 @@
 using System;
 
-# /*
+/*
 
 03 - INPUT & OUTPUT
 InputOutput_Notes.cs
@@ -398,5 +398,4 @@ C# developer.
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

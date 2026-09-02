@@ -1,4 +1,3 @@
-```csharp
 /*
  * ============================================================
  * File: Notes.cs
@@ -404,4 +403,3 @@ namespace DataStructuresNotes
      * foundation for learning advanced data structures.
      */
 }
-```

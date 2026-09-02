@@ -1,6 +1,6 @@
 using System;
 
-# /*
+/*
 
 09 - CLASSES & OBJECTS
 ClassesObjects_Notes.cs
@@ -212,12 +212,10 @@ class Player
 {
 public string playerName;
 
-```
 public void DisplayName()
 {
     Console.WriteLine(playerName);
 }
-```
 
 }
 
@@ -401,5 +399,4 @@ almost every modern C# application.
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

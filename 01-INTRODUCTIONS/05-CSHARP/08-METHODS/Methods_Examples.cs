@@ -10,7 +10,6 @@ static void Main(string[] args)
 // Example 1 - Simple Void Method
 // ==================================================
 
-```
         SayHello();
 
         // ==================================================
@@ -259,7 +258,6 @@ static void Main(string[] args)
         Console.WriteLine("------------------------------");
     }
 }
-```
 
 }
 
@@ -269,5 +267,4 @@ static void Main(string[] args)
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

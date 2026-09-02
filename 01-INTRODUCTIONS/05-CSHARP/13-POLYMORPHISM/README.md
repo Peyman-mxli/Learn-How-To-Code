@@ -167,10 +167,7 @@ Before moving to the next module, I should be able to:
 **Next Module:** 14-ABSTRACTION 
 
 👤 Author Peyman Miyandashti
-📨 250161@upbc.edu.mx //  mxli.peyman@gmail.com
-📞 +526865090453
 🎓 Polytechnic University of Baja California
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
-🆔 ID: 250161

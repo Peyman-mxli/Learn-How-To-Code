@@ -1,4 +1,3 @@
-```csharp
 /*
  * ============================================================
  * File: Notes.cs
@@ -214,4 +213,3 @@ namespace RecursionNotes
      *   recursion examples.
      */
 }
-```

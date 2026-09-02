@@ -10,7 +10,6 @@ static void Main(string[] args)
 // Example 1 - Default Constructor
 // ==================================================
 
-```
         Player player1 = new Player();
 
         player1.DisplayPlayer();
@@ -504,7 +503,6 @@ class Character
             level);
     }
 }
-```
 
 }
 
@@ -514,5 +512,4 @@ class Character
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

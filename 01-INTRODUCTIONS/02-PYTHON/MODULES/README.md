@@ -37,10 +37,10 @@ The loop lessons are included inside Module 04:
 A complete lesson normally contains:
 
 - README.md — scope, objectives, prerequisites, and navigation;
-- NOTES — detailed explanations and annotated code;
-- EXAMPLES — focused programs to run and modify;
-- TASKS — exercises arranged by difficulty; and
-- TASKS-SOLUTIONS — reference solutions to review after attempting the tasks.
+- NOTES.py.py.py.py.py.py.py.py.py — detailed explanations and annotated code;
+- EXAMPLES.py.py.py.py.py.py.py.py.py — focused programs to run and modify;
+- TASKS.py.py.py.py.py.py.py.py.py — exercises arranged by difficulty; and
+- TASKS.py.py.py.py.py.py.py.py.py-SOLUTIONS — reference solutions to review after attempting the tasks.
 
 Some parent folders act as indexes and link to smaller lessons rather than duplicating every file type.
 

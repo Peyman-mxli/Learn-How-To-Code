@@ -176,9 +176,7 @@ Before moving to the next module, I should be able to:
 **Next Module:** 19-DELEGATES 🚀
 
 👤 Author Peyman Miyandashti
-📨 [250161@upbc.edu.mx](mailto:250161@upbc.edu.mx) // [mxli.peyman@gmail.com](mailto:mxli.peyman@gmail.com)
 🎓 Polytechnic University of Baja California
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
-🆔 ID: 250161

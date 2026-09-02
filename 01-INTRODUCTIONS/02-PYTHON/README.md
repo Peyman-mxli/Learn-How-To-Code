@@ -34,10 +34,10 @@ With CPython, compilation to bytecode happens automatically. You do not normally
 
 ## Setup files
 
-- [Installing Python](./INSTALLING-PYTHON)
-- [Python environment](./PYTHON-ENVIRONMENT)
+- [Installing Python](./INSTALLING-PYTHON.md)
+- [Python environment](./PYTHON-ENVIRONMENT.md)
 - [Virtual environments](./VIRTUAL-ENVIRONMENTS/)
-- [Jupyter installation](./JUPYTER-INSTALLATION)
+- [Jupyter installation](./JUPYTER-INSTALLATION.md)
 - [Learning modules](./MODULES/)
 
 ## Learning modules
@@ -62,4 +62,3 @@ See [MODULES/README.md](./MODULES/README.md) for the complete sequence.
 Information Technology Engineering & Digital Innovation  
 Polytechnic University of Baja California  
 Mexico · 2026
-

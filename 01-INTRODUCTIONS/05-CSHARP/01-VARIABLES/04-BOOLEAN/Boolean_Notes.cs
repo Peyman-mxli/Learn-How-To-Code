@@ -1,4 +1,3 @@
-```csharp
 /*
 📘 Module — Basic Data Types: Boolean (bool)
 Professional Notes
@@ -417,6 +416,4 @@ Peyman Miyandashti
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */
-```

@@ -1,4 +1,3 @@
-```csharp
 /*
  * ============================================================
  * File: Tasks.cs
@@ -342,4 +341,3 @@ namespace DataStructuresBasicConceptsTasks
      * Write your answers clearly and justify your choices.
      */
 }
-```

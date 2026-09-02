@@ -29,13 +29,13 @@ Learn-How-To-Code/
 │   ├── 09-INTELLIJ/
 │   └── 10-KOTLIN/
 ├── 02-PROJECTS/
-│   ├── 01-PROJECT-CLI-CALCULATOR/
+│   ├── 01-CLI-CALCULATOR/
 │   ├── 02-TODO-APP/
-│   ├── 03-VEHICLE-M-S/
+│   ├── 03-VEHICLE-MANAGEMENT-SYSTEM/
 │   ├── 04-UNITRACK/
-│   ├── 05-BIBLOTECA-POO/
-│   ├── 06-VETERINARIA-POO/
-│   └── 07-zoo_poo/
+│   ├── 05-LIBRARY-OOP/
+│   ├── 06-VETERINARY-OOP/
+│   └── 07-ZOO-OOP/
 ├── 03-CSHARP-PROJECTS/
 │   └── 01-STUDENT-MANAGEMENT-SYSTEM/
 ├── LICENSE

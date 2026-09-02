@@ -65,4 +65,3 @@ Peyman Miyandashti
 💻 Information Technology Engineering & Digital Innovation
 📍 From Mexico
 📅 Year: 2025
-🆔 ID: 250161

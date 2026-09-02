@@ -6,13 +6,13 @@ This section applies the concepts from `01-INTRODUCTIONS` in complete applicatio
 
 | # | Project | Main focus |
 |---:|---|---|
-| 01 | [CLI Calculator](./01-PROJECT-CLI-CALCULATOR/) | Functions, input validation, control flow |
+| 01 | [CLI Calculator](./01-CLI-CALCULATOR/) | Functions, input validation, control flow |
 | 02 | [Todo App](./02-TODO-APP/) | CRUD-style operations and state management |
-| 03 | [Vehicle Management System](./03-VEHICLE-M-S/) | OOP, inheritance, abstraction, polymorphism |
+| 03 | [Vehicle Management System](./03-VEHICLE-MANAGEMENT-SYSTEM/) | OOP, inheritance, abstraction, polymorphism |
 | 04 | [UniTrack](./04-UNITRACK/) | Flask, authentication, SQLite, attendance workflow |
-| 05 | [Biblioteca POO](./05-BIBLOTECA-POO/) | Multi-module OOP library system |
-| 06 | [Veterinaria POO](./06-VETERINARIA-POO/) | Inheritance and polymorphism with animal models |
-| 07 | [Zoo POO](./07-zoo_poo/) | Abstract classes, caregivers, zoo management |
+| 05 | [Biblioteca POO](./05-LIBRARY-OOP/) | Multi-module OOP library system |
+| 06 | [Veterinaria POO](./06-VETERINARY-OOP/) | Inheritance and polymorphism with animal models |
+| 07 | [Zoo POO](./07-ZOO-OOP/) | Abstract classes, caregivers, zoo management |
 
 ## Project standards
 
@@ -43,4 +43,3 @@ Projects should include, when applicable:
 Information Technology Engineering & Digital Innovation  
 Polytechnic University of Baja California  
 Mexico · 2026
-

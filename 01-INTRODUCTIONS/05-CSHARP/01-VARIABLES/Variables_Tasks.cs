@@ -1,4 +1,3 @@
-```csharp
 /*
 📘 Module — Variables in C#
 Practice Tasks
@@ -47,8 +46,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 1.2
 //
 // Create a variable called age.
@@ -60,8 +57,6 @@ In this module I will:
 // 43
 //
 // Write your code below:
-
-
 
 
 // 🔹 Task 1.3
@@ -77,8 +72,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 1.4
 //
 // Create a variable called isStudent.
@@ -86,8 +79,6 @@ In this module I will:
 // Print the value.
 //
 // Write your code below:
-
-
 
 
 // ===========================================================================
@@ -110,8 +101,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 2.2
 //
 // Create:
@@ -122,8 +111,6 @@ In this module I will:
 // Print both values.
 //
 // Write your code below:
-
-
 
 
 // 🔹 Task 2.3
@@ -141,8 +128,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 2.4
 //
 // Create:
@@ -156,8 +141,6 @@ In this module I will:
 // Level: 10
 //
 // Write your code below:
-
-
 
 
 // ===========================================================================
@@ -181,8 +164,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 3.2
 //
 // Create:
@@ -202,8 +183,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 3.3
 //
 // Create:
@@ -219,8 +198,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 3.4
 //
 // Create:
@@ -234,8 +211,6 @@ In this module I will:
 // Print the result.
 //
 // Write your code below:
-
-
 
 
 // ===========================================================================
@@ -263,8 +238,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 4.2
 //
 // Create variables for:
@@ -275,8 +248,6 @@ In this module I will:
 // Print both values.
 //
 // Write your code below:
-
-
 
 
 // 🔹 Task 4.3
@@ -294,8 +265,6 @@ In this module I will:
 // 150
 //
 // Write your code below:
-
-
 
 
 // 🔹 Task 4.4
@@ -318,8 +287,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // ===========================================================================
 // 🔴 Rank 5 → Professional
 // Production-style thinking.
@@ -340,8 +307,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 // 🔹 Task 5.2
 //
 // Create meaningful variable names for:
@@ -353,8 +318,6 @@ In this module I will:
 // Assign values and print them.
 //
 // Write your code below:
-
-
 
 
 // 🔹 Task 5.3
@@ -369,8 +332,6 @@ In this module I will:
 // Print all values using clear formatting.
 //
 // Write your code below:
-
-
 
 
 // 🔹 Task 5.4
@@ -389,8 +350,6 @@ In this module I will:
 // Write your code below:
 
 
-
-
 /*
 👤 Author
 
@@ -399,6 +358,4 @@ Peyman Miyandashti
 💻 Information Technology Engineering & Digital Innovation
 📍 From IRAN (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */
-```

@@ -10,7 +10,6 @@ static void Main(string[] args)
 // Example 1 - Addition
 // ==================================================
 
-```
         int addition = 10 + 5;
 
         Console.WriteLine("10 + 5 = " + addition);
@@ -227,7 +226,6 @@ static void Main(string[] args)
         Console.ReadKey();
     }
 }
-```
 
 }
 
@@ -237,5 +235,4 @@ static void Main(string[] args)
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

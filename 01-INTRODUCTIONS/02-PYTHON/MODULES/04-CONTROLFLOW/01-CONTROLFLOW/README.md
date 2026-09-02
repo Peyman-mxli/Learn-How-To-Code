@@ -33,10 +33,10 @@ After completing this lesson, learners will be able to:
 
 ## Lesson materials
 
-- [NOTES](./NOTES) provides the complete conceptual overview and annotated examples.
-- [EXAMPLES](./EXAMPLES) contains focused programs for experimentation.
-- [TASKS](./TASKS) contains 15 exercises across five difficulty levels.
-- [TASKS-SOLUTIONS](./TASKS-SOLUTIONS) provides reference implementations for review.
+- [NOTES.py](./NOTES.py) provides the complete conceptual overview and annotated examples.
+- [EXAMPLES.py](./EXAMPLES.py) contains focused programs for experimentation.
+- [TASKS.py](./TASKS.py) contains 15 exercises across five difficulty levels.
+- [TASKS.py-SOLUTIONS](./TASKS.py-SOLUTIONS) provides reference implementations for review.
 
 ## Dedicated lessons
 
@@ -57,11 +57,11 @@ Continue through the control-flow sequence for deeper practice:
 
 ## Recommended workflow
 
-1. Read NOTES and run each section separately.
+1. Read NOTES.py and run each section separately.
 2. Change conditions and inputs to explore alternative paths.
-3. Run EXAMPLES from top to bottom.
-4. Complete TASKS without consulting the solutions.
-5. Review TASKS-SOLUTIONS and compare approaches.
+3. Run EXAMPLES.py from top to bottom.
+4. Complete TASKS.py without consulting the solutions.
+5. Review TASKS.py-SOLUTIONS and compare approaches.
 6. Revisit the dedicated lesson for any concept that remains unclear.
 
 ## Navigation

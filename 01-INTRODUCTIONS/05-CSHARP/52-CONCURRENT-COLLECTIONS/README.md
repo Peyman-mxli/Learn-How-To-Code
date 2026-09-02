@@ -136,9 +136,6 @@ Experiment by running multiple tasks that add and remove data from the same coll
 
 👤 Author Peyman Miyandashti
 
-📨 [250161@upbc.edu.mx](mailto:250161@upbc.edu.mx) // [mxli.peyman@gmail.com](mailto:mxli.peyman@gmail.com)
-
-📞 +526865090453
 
 🎓 Polytechnic University of Baja California
 
@@ -147,5 +144,3 @@ Experiment by running multiple tasks that add and remove data from the same coll
 📍 From IRAN (Mexico)
 
 📅 Year: 2026
-
-🆔 ID: 250161

@@ -79,13 +79,13 @@ The Kotlin track now runs from IntelliJ setup and language introduction through 
 
 ```text
 02-PROJECTS/
-├── 01-PROJECT-CLI-CALCULATOR/
+├── 01-CLI-CALCULATOR/
 ├── 02-TODO-APP/
-├── 03-VEHICLE-M-S/
+├── 03-VEHICLE-MANAGEMENT-SYSTEM/
 ├── 04-UNITRACK/
-├── 05-BIBLOTECA-POO/
-├── 06-VETERINARIA-POO/
-└── 07-zoo_poo/
+├── 05-LIBRARY-OOP/
+├── 06-VETERINARY-OOP/
+└── 07-ZOO-OOP/
 ```
 
 These projects apply Python, OOP, Flask, persistence, validation, and software-organization concepts.

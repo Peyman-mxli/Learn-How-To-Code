@@ -12,7 +12,6 @@ static void Main(string[] args)
 // Rank 3 Intermediate ⚙️
 // ==================================================
 
-```
         Player player1 = new Player();
 
         player1.playerName = "Peyman";
@@ -217,7 +216,6 @@ class Quest
         Console.WriteLine("Reward Gold: " + rewardGold);
     }
 }
-```
 
 }
 
@@ -227,5 +225,4 @@ class Quest
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

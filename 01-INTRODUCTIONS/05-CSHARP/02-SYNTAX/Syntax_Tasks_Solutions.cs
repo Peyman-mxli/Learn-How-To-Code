@@ -10,7 +10,6 @@ static void Main(string[] args)
 // Rank 1 Beginner 🌱
 // ==================================================
 
-```
         // Task 1
         Console.WriteLine("Peyman");
 
@@ -217,7 +216,6 @@ static void Main(string[] args)
         Console.ReadKey();
     }
 }
-```
 
 }
 
@@ -227,5 +225,4 @@ static void Main(string[] args)
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

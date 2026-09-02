@@ -1,4 +1,4 @@
-# /*
+/*
 
 09 - CLASSES & OBJECTS
 ClassesObjects_Tasks.cs
@@ -209,5 +209,4 @@ End of Tasks
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

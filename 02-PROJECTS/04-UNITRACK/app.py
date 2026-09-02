@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import secrets
 import sqlite3
 from datetime import datetime
 from pathlib import Path
@@ -12,11 +13,11 @@ from werkzeug.utils import secure_filename
 
 BASE_DIR = Path(__file__).resolve().parent
 DATABASE_PATH = BASE_DIR / "unitrack.db"
-UPLOAD_FOLDER = BASE_DIR / "Static" / "uploads"
+UPLOAD_FOLDER = BASE_DIR / "static" / "uploads"
 UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("UNITRACK_SECRET_KEY", "dev-only-change-me")
+app.secret_key = os.environ.get("UNITRACK_SECRET_KEY") or secrets.token_hex(32)
 
 ADMIN_VERIFY_CODE = os.environ.get("UNITRACK_ADMIN_CODE")
 

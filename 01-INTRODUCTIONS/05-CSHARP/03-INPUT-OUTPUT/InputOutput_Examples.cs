@@ -10,7 +10,6 @@ static void Main(string[] args)
 // Example 1 - Console.WriteLine()
 // ==================================================
 
-```
         Console.WriteLine("Hello World!");
         Console.WriteLine("Welcome to C#.");
         Console.WriteLine("Learning Input and Output.");
@@ -149,7 +148,6 @@ static void Main(string[] args)
         Console.ReadKey();
     }
 }
-```
 
 }
 
@@ -159,5 +157,4 @@ static void Main(string[] args)
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

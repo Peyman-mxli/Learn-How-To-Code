@@ -1,6 +1,6 @@
 using System;
 
-# /*
+/*
 
 06 - LOOPS
 Loops_Notes.cs
@@ -245,9 +245,7 @@ if (i == 5)
 break;
 }
 
-```
 Console.WriteLine(i);
-```
 
 }
 
@@ -269,9 +267,7 @@ if (i == 3)
 continue;
 }
 
-```
 Console.WriteLine(i);
-```
 
 }
 
@@ -448,5 +444,4 @@ programs cleaner, smarter, and more powerful.
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

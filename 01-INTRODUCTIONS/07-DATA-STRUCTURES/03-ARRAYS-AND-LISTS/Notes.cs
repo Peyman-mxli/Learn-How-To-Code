@@ -1,4 +1,3 @@
-```csharp
 /*
  * ============================================================
  * File: Notes.cs
@@ -310,4 +309,3 @@ namespace ArraysAndListsNotes
      *   on the problem being solved.
      */
 }
-```

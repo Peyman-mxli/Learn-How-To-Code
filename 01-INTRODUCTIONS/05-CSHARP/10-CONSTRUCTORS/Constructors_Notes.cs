@@ -1,6 +1,6 @@
 using System;
 
-# /*
+/*
 
 10 - CONSTRUCTORS
 Constructors_Notes.cs
@@ -64,9 +64,7 @@ class Player
 public Player()
 {
 
-```
 }
-```
 
 }
 
@@ -125,13 +123,11 @@ class Player
 public string playerName;
 public int level;
 
-```
 public Player()
 {
     playerName = "Unknown";
     level = 1;
 }
-```
 
 }
 
@@ -147,12 +143,10 @@ class Player
 {
 public string playerName;
 
-```
 public Player(string name)
 {
     playerName = name;
 }
-```
 
 }
 
@@ -172,7 +166,6 @@ public string playerName;
 public int level;
 public int health;
 
-```
 public Player(string name,
               int playerLevel,
               int playerHealth)
@@ -181,7 +174,6 @@ public Player(string name,
     level = playerLevel;
     health = playerHealth;
 }
-```
 
 }
 
@@ -219,14 +211,12 @@ class Player
 public Player()
 {
 
-```
 }
 
 public Player(string name)
 {
 
 }
-```
 
 }
 
@@ -255,12 +245,10 @@ class Student
 {
 public string studentName;
 
-```
 public Student(string name)
 {
     studentName = name;
 }
-```
 
 }
 
@@ -277,12 +265,10 @@ class Car
 {
 public string brand;
 
-```
 public Car(string carBrand)
 {
     brand = carBrand;
 }
-```
 
 }
 
@@ -295,7 +281,6 @@ class BankAccount
 public string ownerName;
 public double balance;
 
-```
 public BankAccount(
     string owner,
     double startingBalance)
@@ -303,7 +288,6 @@ public BankAccount(
     ownerName = owner;
     balance = startingBalance;
 }
-```
 
 }
 
@@ -316,7 +300,6 @@ class Enemy
 public string enemyName;
 public int health;
 
-```
 public Enemy(
     string name,
     int hp)
@@ -324,7 +307,6 @@ public Enemy(
     enemyName = name;
     health = hp;
 }
-```
 
 }
 
@@ -345,12 +327,10 @@ class Player
 {
 public string playerName;
 
-```
 public Player(string playerName)
 {
     this.playerName = playerName;
 }
-```
 
 }
 
@@ -460,5 +440,4 @@ Object-Oriented Programming.
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */

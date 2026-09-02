@@ -1,6 +1,6 @@
 using System;
 
-# /*
+/*
 
 04 - OPERATORS
 Operators_Notes.cs
@@ -601,5 +601,4 @@ fundamental concepts in C# programming.
 💻 Information Technology Engineering & Digital Innovation
 📍 From Iran (Mexico)
 📅 Year: 2026
-🆔 ID: 250161
 */
