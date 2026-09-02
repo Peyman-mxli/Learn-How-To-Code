@@ -1,17 +1,13 @@
+import java.io.File
+
 /*
 Files — Reference Solution
 
-A valid solution should:
-- compile successfully;
-- demonstrate java.io.File, reading/writing text, paths and exceptions;
-- use clear names and Kotlin conventions;
-- handle the task's requested edge case.
-
-Compare your solution for correctness and readability rather than exact text.
+This example writes text to a file and reads it back.
 */
 
 fun main() {
-    import java.io.File
-    File("notes.txt").writeText("Hello Kotlin")
-    println(File("notes.txt").readText())
+    val file = File("notes.txt")
+    file.writeText("Hello Kotlin")
+    println(file.readText())
 }
