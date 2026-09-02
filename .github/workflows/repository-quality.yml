@@ -30,11 +30,12 @@ jobs:
         run: |
           dotnet build             03-CSHARP-PROJECTS/01-STUDENT-MANAGEMENT-SYSTEM/StudentManagementSystem.csproj             --configuration Release
 
-      - name: Reject generated cache files
+      - name: Reject tracked generated cache files
         run: |
-          if find . -type f \( -name "*.pyc" -o -name "desktop.ini" \) | grep -q .; then
-            echo "Generated cache/OS files are committed."
-            find . -type f \( -name "*.pyc" -o -name "desktop.ini" \)
+          tracked_bad_files="$(git ls-files | grep -E '(^|/)(__pycache__/|.*\.pyc$|desktop\.ini$)' || true)"
+          if [ -n "$tracked_bad_files" ]; then
+            echo "Generated cache/OS files are tracked:"
+            echo "$tracked_bad_files"
             exit 1
           fi
 
