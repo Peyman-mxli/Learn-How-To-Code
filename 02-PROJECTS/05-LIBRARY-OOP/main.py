@@ -2,53 +2,74 @@ from models.libro import Libro
 from services.biblioteca import Biblioteca
 
 
-# Crear libros
-libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", 1967)
-libro2 = Libro("Don Quijote", "Miguel de Cervantes", 1605)
-libro3 = Libro("El Principito", "Antoine de Saint-Exupéry", 1943)
-
-# Crear biblioteca
-bib = Biblioteca("Biblioteca Central")
-
-# Agregar libros
-bib.agregar_libro(libro1)
-bib.agregar_libro(libro2)
-bib.agregar_libro(libro3)
+def pedir_texto(prompt: str) -> str:
+    """Solicita texto no vacío."""
+    while True:
+        value = input(prompt).strip()
+        if value:
+            return value
+        print("❌ Este campo no puede estar vacío.")
 
 
-print("\n📚 Sistema de préstamo de biblioteca\n")
+def pedir_año(prompt: str) -> int:
+    """Solicita un año entero válido."""
+    while True:
+        raw = input(prompt).strip()
+        try:
+            return int(raw)
+        except ValueError:
+            print("❌ Ingrese un año válido usando solo números.")
 
-while True:
 
-    print("----- NUEVO PRÉSTAMO -----")
+def crear_biblioteca_demo() -> Biblioteca:
+    biblioteca = Biblioteca("Biblioteca Central")
 
-    nombre = input("Ingrese nombre: ")
-    apellido = input("Ingrese apellido: ")
+    for libro in (
+        Libro("Cien años de soledad", "Gabriel García Márquez", 1967),
+        Libro("Don Quijote", "Miguel de Cervantes", 1605),
+        Libro("El Principito", "Antoine de Saint-Exupéry", 1943),
+    ):
+        biblioteca.agregar_libro(libro)
 
-    titulo = input("Ingrese título del libro: ")
-    autor = input("Ingrese autor del libro: ")
-    año = int(input("Ingrese año de publicación: "))
+    return biblioteca
 
-    libro = bib.buscar_por_titulo(titulo)
 
-    if libro:
+def procesar_prestamo(biblioteca: Biblioteca) -> None:
+    nombre = pedir_texto("Ingrese nombre: ")
+    apellido = pedir_texto("Ingrese apellido: ")
+    titulo = pedir_texto("Ingrese título del libro: ")
+    autor = pedir_texto("Ingrese autor del libro: ")
+    año = pedir_año("Ingrese año de publicación: ")
 
-        if libro.autor.lower() == autor.lower() and libro.año_publicacion == año:
+    libro = biblioteca.buscar_por_titulo(titulo)
 
-            if libro.disponible:
-                print(f"\n📖 Libro encontrado para {nombre} {apellido}")
-                libro.prestar()
-            else:
-                print("\n❌ El libro ya está prestado.")
-
-        else:
-            print("\n❌ Los datos del libro no coinciden.")
-
-    else:
+    if libro is None:
         print("\n❌ Libro no encontrado en la biblioteca.")
+        return
 
-    repetir = input("\n¿Desea hacer otro préstamo? (s/n): ")
+    if libro.autor.casefold() != autor.casefold() or libro.año_publicacion != año:
+        print("\n❌ Los datos del libro no coinciden.")
+        return
 
-    if repetir.lower() != "s":
-        print("\n👋 Fin del sistema de préstamos.")
-        break
+    if libro.prestar():
+        print(f"\n📖 Libro prestado correctamente a {nombre} {apellido}.")
+    else:
+        print("\n❌ El libro ya está prestado.")
+
+
+def main() -> None:
+    biblioteca = crear_biblioteca_demo()
+    print("\n📚 Sistema de préstamo de biblioteca\n")
+
+    while True:
+        print("----- NUEVO PRÉSTAMO -----")
+        procesar_prestamo(biblioteca)
+
+        repetir = input("\n¿Desea hacer otro préstamo? (s/n): ").strip().lower()
+        if repetir != "s":
+            print("\n👋 Fin del sistema de préstamos.")
+            break
+
+
+if __name__ == "__main__":
+    main()
