@@ -1,6 +1,6 @@
 # Project 07 — Zoo OOP
 
-A Python zoo-management exercise demonstrating the four core object-oriented programming ideas: abstraction, encapsulation, inheritance, and polymorphism.
+A Python zoo-management exercise demonstrating abstraction, encapsulation, inheritance, and polymorphism.
 
 ## Model
 
@@ -17,12 +17,19 @@ A Python zoo-management exercise demonstrating the four core object-oriented pro
 - update animal health through controlled methods;
 - execute polymorphic sound/feeding behavior;
 - run a virtual tour;
-- generate a general zoo report.
+- generate a general zoo report;
+- validate expected behavior with automated tests.
 
 ## Run
 
 ```bash
 python main.py
+```
+
+## Test
+
+```bash
+python -m unittest discover -s tests -v
 ```
 
 ## UML diagram
@@ -33,12 +40,15 @@ The editable diagrams.net source is available at:
 
 Open it with diagrams.net / draw.io to inspect or modify the class diagram.
 
-## Test ideas
+## Automated test coverage
 
-- confirm that the abstract `Animal` class cannot be instantiated;
-- reject invalid health states;
-- verify that mixed animal collections work with polymorphic methods;
-- verify caregiver and zoo registration behavior.
+The tests verify that:
+
+- the abstract `Animal` class cannot be instantiated;
+- invalid health states are rejected;
+- valid health states are stored;
+- mixed animal collections support polymorphic behavior;
+- caregiver and animal registration work.
 
 ## Author
 
@@ -46,4 +56,3 @@ Open it with diagrams.net / draw.io to inspect or modify the class diagram.
 Information Technology Engineering & Digital Innovation  
 Polytechnic University of Baja California  
 Mexico · 2026
-
