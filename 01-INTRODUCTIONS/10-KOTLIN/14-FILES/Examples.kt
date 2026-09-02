@@ -1,5 +1,7 @@
+import java.io.File
+
 fun main() {
-    import java.io.File
-    File("notes.txt").writeText("Hello Kotlin")
-    println(File("notes.txt").readText())
+    val file = File("notes.txt")
+    file.writeText("Hello Kotlin")
+    println(file.readText())
 }
