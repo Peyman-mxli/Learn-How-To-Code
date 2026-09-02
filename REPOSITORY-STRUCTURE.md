@@ -5,8 +5,12 @@ This document reflects the current organization of **Learn-How-To-Code**.
 ```text
 Learn-How-To-Code/
 ├── .github/
-│   └── workflows/
-│       └── repository-quality.yml
+│   ├── workflows/
+│   │   └── repository-quality.yml
+│   └── tools/
+│       └── CSharpSyntaxValidator/
+│           ├── CSharpSyntaxValidator.csproj
+│           └── Program.cs
 ├── 01-INTRODUCTIONS/
 │   ├── 01-VSCODE/
 │   ├── 02-PYTHON/
@@ -75,4 +79,4 @@ obj/
 
 ## Automated validation
 
-`.github/workflows/repository-quality.yml` runs automated compilation, tests, and repository-hygiene checks on pushes and pull requests.
+`.github/workflows/repository-quality.yml` runs full Python curriculum compilation, Python project tests, C# build/syntax validation, Kotlin compilation, and repository-hygiene/security checks on pushes and pull requests.
