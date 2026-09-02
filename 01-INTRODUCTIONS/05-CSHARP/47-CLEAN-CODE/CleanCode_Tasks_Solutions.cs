@@ -205,7 +205,7 @@ namespace CleanCodeTasksSolutions
             Customer customer =
                 new Customer(
                     "Peyman",
-                    "Miyandashti",
+                    "Miyandashti"
                 );
 
             customer.DisplayCustomerInformation();
