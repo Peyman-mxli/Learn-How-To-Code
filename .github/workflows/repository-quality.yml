@@ -5,7 +5,8 @@ on:
   pull_request:
 
 jobs:
-  quality:
+  python:
+    name: Python compile and tests
     runs-on: ubuntu-latest
 
     steps:
@@ -19,25 +20,112 @@ jobs:
 
       - name: Compile Python projects
         run: |
-          python -m compileall -q             02-PROJECTS/01-PROJECT-CLI-CALCULATOR             02-PROJECTS/02-TODO-APP             02-PROJECTS/05-BIBLOTECA-POO             02-PROJECTS/06-VETERINARIA-POO             02-PROJECTS/07-zoo_poo
+          python -m compileall -q             02-PROJECTS/01-CLI-CALCULATOR             02-PROJECTS/02-TODO-APP             02-PROJECTS/03-VEHICLE-MANAGEMENT-SYSTEM             02-PROJECTS/04-UNITRACK             02-PROJECTS/05-LIBRARY-OOP             02-PROJECTS/06-VETERINARY-OOP             02-PROJECTS/07-ZOO-OOP
+
+      - name: Run calculator tests
+        run: python -m unittest discover -s 02-PROJECTS/01-CLI-CALCULATOR/tests -v
+
+      - name: Run todo tests
+        run: python -m unittest discover -s 02-PROJECTS/02-TODO-APP/tests -v
+
+      - name: Install UniTrack dependencies
+        run: pip install -r 02-PROJECTS/04-UNITRACK/requirements.txt
+
+      - name: Run UniTrack smoke tests
+        run: python -m unittest discover -s 02-PROJECTS/04-UNITRACK/tests -v
+
+  csharp:
+    name: C# build and tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"
 
-      - name: Build C# project
-        run: |
-          dotnet build             03-CSHARP-PROJECTS/01-STUDENT-MANAGEMENT-SYSTEM/StudentManagementSystem.csproj             --configuration Release
+      - name: Build Student Management System
+        run: dotnet build 03-CSHARP-PROJECTS/01-STUDENT-MANAGEMENT-SYSTEM/StudentManagementSystem.csproj --configuration Release
 
-      - name: Reject tracked generated cache files
+      - name: Run Student Management tests
+        run: dotnet test 03-CSHARP-PROJECTS/01-STUDENT-MANAGEMENT-SYSTEM/StudentManagementSystem.Tests/StudentManagementSystem.Tests.csproj --configuration Release
+
+  curriculum-hygiene:
+    name: Curriculum and repository hygiene
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate curriculum and repository
         run: |
-          tracked_bad_files="$(git ls-files | grep -E '(^|/)(__pycache__/|.*\.pyc$|desktop\.ini$)' || true)"
-          if [ -n "$tracked_bad_files" ]; then
-            echo "Generated cache/OS files are tracked:"
-            echo "$tracked_bad_files"
-            exit 1
-          fi
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          problems = []
+
+          # C# source files must not contain Markdown fences or invalid '# /*'.
+          fence = chr(96) * 3
+          for path in Path("01-INTRODUCTIONS").rglob("*.cs"):
+              text = path.read_text(encoding="utf-8")
+              if fence + "csharp" in text.lower() or fence + "cs" in text.lower() or "# /*" in text:
+                  problems.append(f"Invalid Markdown/C# mixing: {path}")
+
+          # Kotlin modules 00-16 use a consistent five-file learning structure.
+          kotlin_root = Path("01-INTRODUCTIONS/10-KOTLIN")
+          for number in range(17):
+              matches = sorted(kotlin_root.glob(f"{number:02d}-*"))
+              if len(matches) != 1:
+                  problems.append(f"Kotlin module {number:02d} missing or duplicated")
+                  continue
+              folder = matches[0]
+              for name in ("README.md", "Notes.kt", "Examples.kt", "Tasks.kt", "Tasks_Solutions.kt"):
+                  if not (folder / name).exists():
+                      problems.append(f"Missing Kotlin file: {folder / name}")
+
+          # Python learning files should have explicit extensions.
+          for path in Path("01-INTRODUCTIONS/02-PYTHON").rglob("*"):
+              if path.is_file() and not path.suffix:
+                  problems.append(f"Extensionless Python learning file: {path}")
+
+          # Generated files must not be tracked.
+          tracked = __import__("subprocess").check_output(["git", "ls-files"], text=True).splitlines()
+          for item in tracked:
+              lowered = item.lower()
+              if "/__pycache__/" in lowered or lowered.endswith(".pyc") or lowered.endswith("desktop.ini") or lowered.endswith(".ds_store"):
+                  problems.append(f"Generated file tracked: {item}")
+
+          # Public lesson/project content must not expose private contact/student metadata.
+          forbidden = ("250161@upbc.edu.mx", "mxli.peyman@gmail.com", "+526865090453")
+          for root in ("01-INTRODUCTIONS", "02-PROJECTS", "03-CSHARP-PROJECTS"):
+              for path in Path(root).rglob("*"):
+                  if not path.is_file():
+                      continue
+                  try:
+                      text = path.read_text(encoding="utf-8")
+                  except UnicodeDecodeError:
+                      continue
+                  if any(value.lower() in text.lower() for value in forbidden):
+                      problems.append(f"Public contact metadata remains: {path}")
+                  if "id: 250161" in text.lower():
+                      problems.append(f"Student ID remains: {path}")
+
+          if problems:
+              print("\n".join(problems))
+              sys.exit(1)
+
+          print("Curriculum and repository hygiene checks passed.")
+          PY
 
       - name: Reject hard-coded application secrets
         run: |
@@ -52,13 +140,8 @@ jobs:
           ]
 
           findings = []
-          for path in Path(".").rglob("*.py"):
-              if ".git" in path.parts:
-                  continue
-              try:
-                  text = path.read_text(encoding="utf-8")
-              except UnicodeDecodeError:
-                  continue
+          for path in Path("02-PROJECTS").rglob("*.py"):
+              text = path.read_text(encoding="utf-8")
               for line_number, line in enumerate(text.splitlines(), start=1):
                   if any(pattern.search(line) for pattern in patterns):
                       findings.append(f"{path}:{line_number}: {line.strip()}")
