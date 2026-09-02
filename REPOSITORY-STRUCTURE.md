@@ -8,10 +8,9 @@ Learn-How-To-Code/
 │   ├── workflows/
 │   │   └── repository-quality.yml
 │   └── tools/
-│       ├── CSharpSyntaxValidator/
-│       │   ├── CSharpSyntaxValidator.csproj
-│       │   └── Program.cs
-│       └── html_quality_check.py
+│       └── CSharpSyntaxValidator/
+│           ├── CSharpSyntaxValidator.csproj
+│           └── Program.cs
 ├── 01-INTRODUCTIONS/
 │   ├── 01-VSCODE/
 │   ├── 02-PYTHON/
@@ -22,8 +21,7 @@ Learn-How-To-Code/
 │   ├── 07-DATA-STRUCTURES/
 │   ├── 08-ALGORITHMS/
 │   ├── 09-INTELLIJ/
-│   ├── 10-KOTLIN/
-│   └── 11-HTML/
+│   └── 10-KOTLIN/
 ├── 02-PROJECTS/
 │   ├── 01-CLI-CALCULATOR/
 │   ├── 02-TODO-APP/
@@ -57,7 +55,6 @@ Learn-How-To-Code/
 - C# source: `.cs`
 - Kotlin source: `.kt`
 - documentation: `.md`
-- HTML documents: `.html`
 - diagrams.net source: `.drawio`
 - Python dependencies: `requirements.txt`
 
@@ -82,4 +79,4 @@ obj/
 
 ## Automated validation
 
-`.github/workflows/repository-quality.yml` runs full Python curriculum compilation, Python project tests, C# build/syntax validation, Kotlin compilation, HTML curriculum validation, and repository-hygiene/security checks on pushes and pull requests.
+`.github/workflows/repository-quality.yml` runs full Python curriculum compilation, Python project tests, C# build/syntax validation, Kotlin compilation, and repository-hygiene/security checks on pushes and pull requests.
