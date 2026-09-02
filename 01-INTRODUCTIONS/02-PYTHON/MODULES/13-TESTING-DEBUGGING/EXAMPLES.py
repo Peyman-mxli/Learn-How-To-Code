@@ -1,389 +1,71 @@
-# 📘 Module — TESTING & DEBUGGING (PYTHON)
 """
-# 📘 TESTING & DEBUGGING — PYTHON
-# 📁 PRACTICAL EXAMPLES
+Module — Testing & Debugging
 
-This file demonstrates real-world usage of
-Testing and Debugging techniques in Python.
-
-Each section contains clear, professional examples
-showing how to detect, analyze, and fix errors.
+Clean runnable examples of syntax fixes, runtime error handling,
+logic correction, assertions, and small manual tests.
 """
 
-# ====================================================
-# 1️⃣ SYNTAX ERRORS
-# ====================================================
-# Example 1: Missing Colon
-# ❌ Incorrect
-if x == 5
-print("Hello")
-# ✅ Correct
-
-x = 5
-if x == 5:
-print("Hello")
-
-Example 2: Indentation Error
-# ❌ Incorrect
-def greet():
-print("Hi")
-# ✅ Correct
-
-def greet():
-print("Hi")
-
-greet()
-
-Example 3: Misspelled Keyword
-# ❌ Incorrect
-pritn("Hello")
-# ✅ Correct
-
-print("Hello")
-
-# ====================================================
-# 2️⃣ RUNTIME ERRORS (EXCEPTIONS)
-# ====================================================
-Example 1: Division by Zero
-
-def divide(a, b):
-return a / b
-
-divide(10, 0) # ❌ Error
-# ✅ Safe Version
 
 def safe_divide(a, b):
-if b == 0:
-return "Cannot divide by zero"
-return a / b
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
 
-print(safe_divide(10, 2))
-
-Example 2: Type Error
-
-def add_numbers(a, b):
-return a + b
-
-print(add_numbers(5, "10")) # ❌ Error
-# ✅ Fixed
-
-print(add_numbers(5, 10))
-
-Example 3: Index Error
-
-def get_item(lst, index):
-return lst[index]
-
-print(get_item([1, 2, 3], 5)) # ❌ Error
-# ✅ Safe Version
-
-def safe_get_item(lst, index):
-if index < len(lst):
-return lst[index]
-return "Index out of range"
-
-print(safe_get_item([1, 2, 3], 1))
-
-# ====================================================
-# 3️⃣ LOGIC ERRORS
-# ====================================================
-Example 1: Wrong Discount Calculation
-
-def wrong_discount(price):
-return price - 10 # ❌ Incorrect logic
-
-# ✅ Correct
 
 def correct_discount(price):
-return price * 0.90
+    return price * 0.90
 
-print(correct_discount(100))
-
-Example 2: Incorrect Average
-
-def wrong_average(numbers):
-return sum(numbers) / 10 # ❌ Wrong divisor
-
-# ✅ Correct
 
 def correct_average(numbers):
-return sum(numbers) / len(numbers)
+    if not numbers:
+        raise ValueError("numbers cannot be empty")
+    return sum(numbers) / len(numbers)
 
-print(correct_average([10, 20, 30]))
-
-Example 3: Incorrect Condition
 
 def is_adult(age):
-return age > 18 # ❌ Excludes 18
+    return age >= 18
 
-# ✅ Correct
 
-def is_adult_fixed(age):
-return age >= 18
+def safe_get_item(items, index):
+    if 0 <= index < len(items):
+        return items[index]
+    return None
 
-print(is_adult_fixed(18))
-
-# ====================================================
-# 4️⃣ PRINT DEBUGGING
-# ====================================================
-Example 1: Inspect Variables
 
 def calculate_total(price, quantity):
-print("Price:", price)
-print("Quantity:", quantity)
-total = price * quantity
-print("Total:", total)
-return total
+    return price * quantity
 
-calculate_total(10, 3)
-
-Example 2: Track Execution Flow
-
-def process_data(data):
-print("Start")
-print("Data:", data)
-result = data * 2
-print("Result:", result)
-print("End")
-return result
-
-process_data(5)
-
-Example 3: Debug Loop
-
-def debug_loop():
-for i in range(3):
-print("Iteration:", i)
-
-debug_loop()
-
-# ====================================================
-# 5️⃣ STEP-BY-STEP DEBUGGING
-# ====================================================
-Example 1: Average Calculation
-
-def calculate_average(numbers):
-total = sum(numbers)
-count = len(numbers)
-average = total / count
-return average
-
-print(calculate_average([10, 20, 30]))
-
-Example 2: Multi-step Function
-
-def compute_area(length, width):
-area = length * width
-return area
-
-print(compute_area(5, 4))
-
-Example 3: Data Processing
-
-def process_numbers(numbers):
-total = sum(numbers)
-return total
-
-print(process_numbers([1, 2, 3]))
-
-# ====================================================
-# 6️⃣ ASSERTIONS
-# ====================================================
-Example 1: Basic Assertion
 
 def withdraw(balance, amount):
-assert amount >= 0, "Amount must be positive"
-assert amount <= balance, "Insufficient funds"
-return balance - amount
+    assert amount >= 0, "Amount must be positive"
+    assert amount <= balance, "Insufficient funds"
+    return balance - amount
 
-print(withdraw(1000, 200))
-
-Example 2: Input Validation
-
-def set_age(age):
-assert age > 0, "Age must be positive"
-return age
-
-print(set_age(25))
-
-Example 3: Range Check
-
-def set_score(score):
-assert 0 <= score <= 100, "Invalid score"
-return score
-
-print(set_score(90))
-
-# ====================================================
-# 7️⃣ MANUAL TESTING
-# ====================================================
-Example 1: Addition Tests
-
-def add(a, b):
-return a + b
-
-print(add(2, 3))
-print(add(-1, 1))
-print(add(0, 0))
-
-Example 2: String Test
-
-def greet(name):
-return "Hello " + name
-
-print(greet("Peyman"))
-
-Example 3: Boolean Test
-
-def is_positive(n):
-return n > 0
-
-print(is_positive(5))
-print(is_positive(-3))
-
-# ====================================================
-# 8️⃣ EDGE CASE TESTING
-# ====================================================
-Example 1: Empty List
-
-def get_first(items):
-if not items:
-return None
-return items[0]
-
-print(get_first([1, 2, 3]))
-print(get_first([]))
-
-Example 2: Zero Input
-
-def multiply(a, b):
-return a * b
-
-print(multiply(0, 5))
-
-Example 3: Negative Numbers
-
-print(multiply(-2, 3))
-
-# ====================================================
-# 9️⃣ TRY / EXCEPT DEBUGGING
-# ====================================================
-Example 1: Convert Input
 
 def to_int(value):
-try:
-return int(value)
-except ValueError:
-return "Invalid input"
+    try:
+        return int(value)
+    except ValueError:
+        return None
 
-print(to_int("123"))
-print(to_int("abc"))
 
-Example 2: Safe Division
+def add(a, b):
+    return a + b
 
-def safe_div(a, b):
-try:
-return a / b
-except ZeroDivisionError:
-return "Cannot divide by zero"
 
-print(safe_div(10, 0))
+def main():
+    print("safe_divide:", safe_divide(10, 2))
+    print("safe_divide zero:", safe_divide(10, 0))
+    print("discount:", correct_discount(100))
+    print("average:", correct_average([10, 20, 30]))
+    print("adult:", is_adult(18))
+    print("item:", safe_get_item([1, 2, 3], 1))
+    print("total:", calculate_total(10, 3))
+    print("withdraw:", withdraw(1000, 200))
+    print("to_int valid:", to_int("123"))
+    print("to_int invalid:", to_int("abc"))
+    print("add:", add(2, 3))
 
-Example 3: File Handling Simulation
 
-def read_data(data):
-try:
-return data[0]
-except Exception:
-return "Error reading data"
-
-print(read_data([]))
-
-# ====================================================
-# 🔟 FUNCTION COMPOSITION TESTING
-# ====================================================
-Example 1
-
-def square(x):
-return x * x
-
-def cube(x):
-return square(x) * x
-
-print(cube(3))
-
-Example 2
-
-def double(x):
-return x * 2
-
-def quadruple(x):
-return double(double(x))
-
-print(quadruple(2))
-
-Example 3
-
-def increment(x):
-return x + 1
-
-print(increment(square(2)))
-
-# ====================================================
-# 1️⃣1️⃣ TESTING ASSUMPTIONS
-# ====================================================
-Example 1
-
-def is_even(n):
-return n % 2 == 0
-
-print(is_even(4))
-print(is_even(7))
-
-Example 2
-
-def is_positive(n):
-return n > 0
-
-print(is_positive(10))
-
-Example 3
-
-print(is_positive(-5))
-
-# ====================================================
-# 1️⃣2️⃣ CLEAN & TESTABLE CODE
-# ====================================================
-Example 1
-
-def calculate_tax(amount, rate):
-return amount * rate
-
-print(calculate_tax(100, 0.15))
-
-Example 2
-
-def calculate_total(price, quantity):
-return price * quantity
-
-print(calculate_total(10, 2))
-
-Example 3
-
-def apply_discount(price, discount):
-return price * (1 - discount)
-
-print(apply_discount(100, 0.1))
-
-# ====================================================
-# END OF EXAMPLES — TESTING & DEBUGGING
-# ====================================================
-# 👤 Author
-# ====================================================
-# Peyman Miyandashti
-# 🎓 Polytechnic University of Baja California
-# 💻 Information Technology Engineering & Digital Innovation
-# 📍 From IRAN (Mexico)
-# 📅 Year: 2026
-
-# ====================================================
+if __name__ == "__main__":
+    main()
