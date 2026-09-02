@@ -1,41 +1,46 @@
+from datetime import date
+
+
 class Libro:
     """Representa un libro en la biblioteca."""
 
     def __init__(self, titulo: str, autor: str, año_publicacion: int):
+        titulo = titulo.strip()
+        autor = autor.strip()
+        current_year = date.today().year
 
-        if not titulo or titulo.strip() == "":
-            print("❌ Error: el título no puede estar vacío.")
-
-        if not autor or autor.strip() == "":
-            print("❌ Error: el autor no puede estar vacío.")
-
-        if año_publicacion < 1000 or año_publicacion > 2025:
-            print(f"❌ Error: el año {año_publicacion} no es válido (1000–2025).")
+        if not titulo:
+            raise ValueError("El título no puede estar vacío.")
+        if not autor:
+            raise ValueError("El autor no puede estar vacío.")
+        if not isinstance(año_publicacion, int):
+            raise TypeError("El año de publicación debe ser un número entero.")
+        if año_publicacion < 1000 or año_publicacion > current_year:
+            raise ValueError(
+                f"El año {año_publicacion} no es válido (1000–{current_year})."
+            )
 
         self.titulo = titulo
         self.autor = autor
         self.año_publicacion = año_publicacion
         self.disponible = True
 
-    def prestar(self):
-        if self.disponible:
-            self.disponible = False
-            print(f'✓ El libro "{self.titulo}" ha sido prestado.')
-        else:
-            print(f'✗ El libro "{self.titulo}" ya está prestado.')
+    def prestar(self) -> bool:
+        if not self.disponible:
+            return False
+        self.disponible = False
+        return True
 
-    def devolver(self):
+    def devolver(self) -> None:
         self.disponible = True
-        print(f'✓ El libro "{self.titulo}" ha sido devuelto.')
 
-    def mostrar_info(self):
+    def mostrar_info(self) -> None:
         estado = "Disponible" if self.disponible else "Prestado"
-
         print(f"📖 Título : {self.titulo}")
         print(f"✍️ Autor  : {self.autor}")
         print(f"📅 Año    : {self.año_publicacion}")
         print(f"📌 Estado : {estado}")
         print()
 
-    def es_clasico(self):
-        return (2025 - self.año_publicacion) > 50
+    def es_clasico(self, años: int = 50) -> bool:
+        return (date.today().year - self.año_publicacion) > años
