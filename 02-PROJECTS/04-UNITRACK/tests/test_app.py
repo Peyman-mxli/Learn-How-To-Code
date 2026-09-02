@@ -13,6 +13,8 @@ class UniTrackSmokeTests(unittest.TestCase):
     def setUp(self):
         self.tempdir = tempfile.TemporaryDirectory()
         module.DATABASE_PATH = Path(self.tempdir.name) / "unitrack-test.db"
+        module.app.template_folder = str(MODULE_PATH.parent / "templates")
+        module.app.static_folder = str(MODULE_PATH.parent / "static")
         module.app.config.update(TESTING=True, SECRET_KEY="test-secret")
         module.init_db()
         self.client = module.app.test_client()
