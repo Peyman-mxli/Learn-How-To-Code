@@ -83,3 +83,16 @@ Information Technology Engineering & Digital Innovation
 Polytechnic University of Baja California  
 Mexico · 2026
 
+
+
+## Automated tests
+
+The project includes an xUnit test project covering duplicate-ID rejection, case-insensitive name search, and deletion behavior.
+
+Run:
+
+```bash
+dotnet test StudentManagementSystem.Tests/StudentManagementSystem.Tests.csproj
+```
+
+![Student Management System console](./student-management-system-console.png)
