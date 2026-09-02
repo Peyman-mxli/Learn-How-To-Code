@@ -1,16 +1,16 @@
 """
-📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
+# 📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
 
 
-📁 Multiple-Except-Blocks — Tasks
+# 📁 Multiple-Except-Blocks — Tasks
 
 This file contains PRACTICE TASKS to help you master
 handling multiple exceptions using separate except blocks.
 
 Instructions:
-- Complete tasks from Rank 1 to Rank 5
-- Use proper exception handling structure
-- Do NOT check solutions until all tasks are completed
+# - Complete tasks from Rank 1 to Rank 5
+# - Use proper exception handling structure
+# - Do NOT check solutions until all tasks are completed
 """
 
 # ==================================================
@@ -72,11 +72,11 @@ Instructions:
 # ==================================================
 # End of Multiple-Except-Blocks — Tasks
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 """
-📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
+# 📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
 
-📁 Collections-Tasks-Solutions
+# 📁 Collections-Tasks-Solutions
 
 Topic: Python Collections — Lists, Tuples, Sets, Dictionaries
 
@@ -257,11 +257,11 @@ print("Fast lookup:", users_dict.get("peyman"))
 # ==================================================
 # End of Collections-Tasks-Solutions
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

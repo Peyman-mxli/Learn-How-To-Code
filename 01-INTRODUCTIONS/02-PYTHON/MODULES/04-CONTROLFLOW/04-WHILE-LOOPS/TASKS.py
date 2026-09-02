@@ -1,11 +1,11 @@
 """
-📘 Module — Control Flow — While-loops
-📁 Tasks File (Rank 1 → Rank 5)
+# 📘 Module — Control Flow — While-loops
+# 📁 Tasks File (Rank 1 → Rank 5)
 Instructions:
-- Read each task carefully.
-- Solve the tasks in THIS file.
-- Do NOT open the solutions until you have tried seriously.
-- Focus on correctness and readability.
+# - Read each task carefully.
+# - Solve the tasks in THIS file.
+# - Do NOT open the solutions until you have tried seriously.
+# - Focus on correctness and readability.
 """
 # ===========================================================================
 # 🟢 Rank 1 — Beginner
@@ -112,11 +112,11 @@ items = ["Python", "Java", "C++"]
 # ===========================================================================
 # After finishing, compare your work with:
 # While_Loops_Tasks_Solutions.py
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

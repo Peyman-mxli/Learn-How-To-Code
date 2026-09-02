@@ -1,5 +1,5 @@
 """
-📘 Module — Control Flow — For-loops
+# 📘 Module — Control Flow — For-loops
 Professional Notes
 
 A for loop allows us to iterate over items in a sequence (iterable)
@@ -107,11 +107,11 @@ else:
 # - How to loop through dictionaries
 # - How and when to use for-else
 # - Best practices for professional Python code
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

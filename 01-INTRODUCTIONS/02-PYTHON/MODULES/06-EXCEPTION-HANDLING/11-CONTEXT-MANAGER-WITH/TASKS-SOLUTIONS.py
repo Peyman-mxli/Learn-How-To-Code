@@ -1,16 +1,16 @@
 """
-📘 Module — Context Managers — (The with Statement)
+# 📘 Module — Context Managers — (The with Statement)
 
-📁 ContextManagers-Tasks-Solutions
+# 📁 ContextManagers-Tasks-Solutions
 
 Topic: Exception Handling — Context Managers (with Statement)
 
 This file contains SOLUTIONS for all tasks in ContextManagers_Tasks.py.
 
 Review notes:
-- Observe how 'with' simplifies resource management
-- Notice how __enter__ and __exit__ are implemented
-- Understand how context managers ensure cleanup
+# - Observe how 'with' simplifies resource management
+# - Notice how __enter__ and __exit__ are implemented
+# - Understand how context managers ensure cleanup
 """
 
 # ==================================================
@@ -68,11 +68,11 @@ with LoggerContext():
 # ==================================================
 # End of ContextManagers-Tasks-Solutions
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

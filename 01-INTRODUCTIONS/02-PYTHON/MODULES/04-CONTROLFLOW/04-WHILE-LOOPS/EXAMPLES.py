@@ -1,6 +1,6 @@
 """
-📘 Module — Control Flow — While-loops
-📁 Examples File
+# 📘 Module — Control Flow — While-loops
+# 📁 Examples File
 
 This file contains practical examples demonstrating how `while` loops
 are used in real Python programs.
@@ -115,11 +115,11 @@ print("- break exits the loop")
 print("- continue skips the current iteration")
 print("- flags help manage complex loop logic")
 print("- always ensure the condition updates")
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

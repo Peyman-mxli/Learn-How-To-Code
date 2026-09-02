@@ -1,12 +1,12 @@
 """
-📘 Module — Python Syntax
+# 📘 Module — Python Syntax
 📝 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Read each task carefully.
-- Write your solution below each task.
-- Focus on correct syntax, indentation, and readability.
-- Do NOT look at the solutions until you finish all tasks.
+# - Read each task carefully.
+# - Write your solution below each task.
+# - Focus on correct syntax, indentation, and readability.
+# - Do NOT look at the solutions until you finish all tasks.
 """
 
 
@@ -122,11 +122,11 @@ Instructions:
 # 🏁 End of Tasks
 # ===========================================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

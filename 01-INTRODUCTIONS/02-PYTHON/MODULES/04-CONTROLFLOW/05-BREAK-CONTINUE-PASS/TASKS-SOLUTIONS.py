@@ -1,7 +1,7 @@
 """
-📘 Module — Control Flow — break / continue / pass
+# 📘 Module — Control Flow — break / continue / pass
 
-📁 Tasks Solutions File (Rank 1 → Rank 5)
+# 📁 Tasks Solutions File (Rank 1 → Rank 5)
 
 This file contains one possible correct and clean solution
 for each task in Loop_Control_Tasks.py.
@@ -161,11 +161,11 @@ for password in passwords:
     if any(char.isdigit() for char in password):
         print("Valid password found:", password)
         break
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,6 +1,6 @@
-📘 Module —  Custom Exceptions — (Class-Based)
+# 📘 Module —  Custom Exceptions — (Class-Based)
 """
-📁 CustomExceptions-Tasks
+# 📁 CustomExceptions-Tasks
 
 Topic: Exception Handling — Custom Exceptions (Class-Based)
 
@@ -8,9 +8,9 @@ This file contains PRACTICE TASKS to help you master creating,
 raising, and handling custom (user-defined) exceptions.
 
 Instructions:
-- Complete tasks from Rank 1 to Rank 5
-- Define custom exception classes where required
-- Do NOT check the solutions until you finish all tasks
+# - Complete tasks from Rank 1 to Rank 5
+# - Define custom exception classes where required
+# - Do NOT check the solutions until you finish all tasks
 """
 
 # ==================================================
@@ -66,11 +66,11 @@ Instructions:
 # End of CustomExceptions-Tasks
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

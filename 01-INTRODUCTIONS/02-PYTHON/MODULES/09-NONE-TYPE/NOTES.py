@@ -1,15 +1,15 @@
 """
-📘 Module — NoneType— (None)
+# 📘 Module — NoneType— (None)
 
 
 In Python, None represents the absence of a value.
 It is a real object with its own type: NoneType.
 
 None is commonly used to indicate:
-- no result
-- no value yet
-- optional data
-- default or placeholder values
+# - no result
+# - no value yet
+# - optional data
+# - default or placeholder values
 """
 
 
@@ -126,11 +126,11 @@ print(None == "")
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
 
 # 🏁 End of Notes
 # ===========================================================================

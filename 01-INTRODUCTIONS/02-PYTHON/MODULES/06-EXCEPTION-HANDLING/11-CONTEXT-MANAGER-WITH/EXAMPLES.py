@@ -1,7 +1,7 @@
 """
-📘 Module — Context Managers — (The with Statement)
+# 📘 Module — Context Managers — (The with Statement)
 
-📁 ContextManagers-Examples
+# 📁 ContextManagers-Examples
 
 Topic: Exception Handling — Context Managers (with Statement)
 
@@ -9,9 +9,9 @@ This file contains RUNNABLE EXAMPLES demonstrating how to use
 context managers in Python for safe and automatic resource management.
 
 How to use this file:
-- Run it with: python ContextManagers_Examples.py
-- Read the comment before each example
-- Observe how resources are handled automatically
+# - Run it with: python ContextManagers_Examples.py
+# - Read the comment before each example
+# - Observe how resources are handled automatically
 """
 
 # ==================================================
@@ -80,11 +80,11 @@ print("Both files handled safely")
 # End of ContextManagers-Examples
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,24 +1,24 @@
 """
-📘 Module — Functions — return(Output & Control Flow)
+# 📘 Module — Functions — return(Output & Control Flow)
 
-====================================================
+# ====================================================
 FUNCTIONS — RETURN (TASKS)
-====================================================
+# ====================================================
 This file contains structured practice tasks focused
 EXCLUSIVELY on using the `return` statement in Python.
 
 🎯 Scope of this file:
-- Understanding how `return` works
-- Returning values from functions
-- Using returned values
-- Execution flow with return
-- No advanced topics mixed in
+# - Understanding how `return` works
+# - Returning values from functions
+# - Using returned values
+# - Execution flow with return
+# - No advanced topics mixed in
 
 ❗ Rules for this file:
-- Every function MUST use `return`
-- Do NOT use print() unless explicitly stated
-- Focus on logic, outputs, and reusability
-- Follow Rank 1 → Rank 5 difficulty progression
+# - Every function MUST use `return`
+# - Do NOT use print() unless explicitly stated
+# - Focus on logic, outputs, and reusability
+# - Follow Rank 1 → Rank 5 difficulty progression
 # ====================================================
 # 🟢 RANK 1 — VERY EASY
 # ====================================================
@@ -84,10 +84,10 @@ Task 6:
 Create a function named `grade_evaluator` that accepts
 a numeric score and returns:
 
-- "Excellent" for scores >= 90
-- "Good" for scores >= 75
-- "Pass" for scores >= 60
-- "Fail" otherwise
+# - "Excellent" for scores >= 90
+# - "Good" for scores >= 75
+# - "Pass" for scores >= 60
+# - "Fail" otherwise
 """
 
 # Your code here
@@ -101,8 +101,8 @@ Create a function named `validate_username` that accepts
 a username string.
 
 Rules:
-- If the username is empty, return "Invalid"
-- Otherwise, return "Valid"
+# - If the username is empty, return "Invalid"
+# - Otherwise, return "Valid"
 
 Print the returned result.
 """
@@ -112,8 +112,8 @@ Print the returned result.
 """
 Task 8:
 Create a function named `login_status` that accepts:
-- username
-- password_length
+# - username
+# - password_length
 
 If password_length < 8, return "Weak Password"
 Otherwise, return "Login Accepted"
@@ -126,13 +126,13 @@ Otherwise, return "Login Accepted"
 """
 Task 9:
 Create a function named `employee_bonus` that accepts:
-- salary
-- performance_score
+# - salary
+# - performance_score
 
 Rules:
-- If performance_score >= 90, return salary * 0.20
-- If performance_score >= 75, return salary * 0.10
-- Otherwise, return 0
+# - If performance_score >= 90, return salary * 0.20
+# - If performance_score >= 75, return salary * 0.10
+# - Otherwise, return 0
 
 Store the returned bonus and print it.
 """
@@ -142,12 +142,12 @@ Store the returned bonus and print it.
 """
 Task 10:
 Create a function named `system_access_level` that accepts:
-- role (string)
+# - role (string)
 
 Rules:
-- "admin" → return "Full Access"
-- "user" → return "Limited Access"
-- Any other role → return "No Access"
+# - "admin" → return "Full Access"
+# - "user" → return "Limited Access"
+# - Any other role → return "No Access"
 
 Print the returned access level.
 """
@@ -156,11 +156,11 @@ Print the returned access level.
 # ====================================================
 # END OF TASKS — RETURN
 # ====================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

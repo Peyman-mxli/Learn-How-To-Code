@@ -1,9 +1,9 @@
-📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
+# 📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
 """
-====================================================
-📘 OBJECT-ORIENTED PROGRAMMING (OOP)
-📁 TASK SOLUTIONS (RANK 1 → RANK 5)
-====================================================
+# ====================================================
+# 📘 OBJECT-ORIENTED PROGRAMMING (OOP)
+# 📁 TASK SOLUTIONS (RANK 1 → RANK 5)
+# ====================================================
 This file contains clean, correct, and professional
 solutions for all OOP tasks.
 
@@ -229,9 +229,9 @@ for notify in notifications:
 # ====================================================
 # 👤 Author
 # ====================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 # ===================================================

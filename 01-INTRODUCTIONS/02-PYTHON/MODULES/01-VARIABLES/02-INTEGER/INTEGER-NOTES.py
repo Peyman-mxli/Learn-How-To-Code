@@ -1,5 +1,5 @@
 """
-📘 Module — Basic Data Types: Integer (int)
+# 📘 Module — Basic Data Types: Integer (int)
 
 This file explains how Python integers work at a deep and practical level.
 Integers are used in almost every Python program—counters, IDs, math,
@@ -182,9 +182,9 @@ print("Readable large integer:", large)
 
 
 # ===========================================================================
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026

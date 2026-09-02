@@ -1,24 +1,24 @@
 """
-📘 Module — Basic Data Types: String (str): Practice Tasks
------------------------------------
+# 📘 Module — Basic Data Types: String (str): Practice Tasks
+# -----------------------------------
 
 This file contains guided practice tasks for Python string variables.
 
 In this module I will:
-- Create and print basic string variables.
-- Concatenate strings and format messages with f-strings.
-- Use indexing and slicing to access parts of a string.
-- Apply common string methods (lower, upper, strip, replace, split, join).
-- Search inside strings and validate user input.
-- Build small, realistic text-processing utilities.
+# - Create and print basic string variables.
+# - Concatenate strings and format messages with f-strings.
+# - Use indexing and slicing to access parts of a string.
+# - Apply common string methods (lower, upper, strip, replace, split, join).
+# - Search inside strings and validate user input.
+# - Build small, realistic text-processing utilities.
 
-📘 How to use this file:
-- Work through the tasks from Rank 1 to Rank 5.
-- Write your solutions directly under each task description.
-- Do NOT look at the solutions file until you have tried the task honestly.
+# 📘 How to use this file:
+# - Work through the tasks from Rank 1 to Rank 5.
+# - Write your solutions directly under each task description.
+# - Do NOT look at the solutions file until you have tried the task honestly.
 
-📂 There is a separate file:
-- String_Tasks_Solutions.py  → contains one possible solution for each task.
+# 📂 There is a separate file:
+# - String_Tasks_Solutions.py  → contains one possible solution for each task.
 """
 
 
@@ -330,12 +330,12 @@ In this module I will:
 #
 # Write your code below:
 
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
 
 # 🏁 End of Notes

@@ -1,10 +1,10 @@
 """
-📘 Module — Functions — return(Output & Control Flow)
+# 📘 Module — Functions — return(Output & Control Flow)
 
-====================================================
+# ====================================================
 FUNCTIONS — RETURN
 THEORY & PROFESSIONAL NOTES
-====================================================
+# ====================================================
 
 This file provides a deep, structured, and professional
 explanation of the `return` statement in Python.
@@ -23,9 +23,9 @@ back to the caller and control program execution flow.
 • End the execution of the function immediately
 
 Once `return` is executed:
-- The function stops running
-- The returned value is passed back
-- Control goes back to the calling code
+# - The function stops running
+# - The returned value is passed back
+# - Control goes back to the calling code
 """
 
 def example_basic():
@@ -56,14 +56,14 @@ def calculate_sum(a, b):
 # ====================================================
 """
 print():
-- Displays information to the console
-- Does NOT send data back
-- Used for user output
+# - Displays information to the console
+# - Does NOT send data back
+# - Used for user output
 
 return:
-- Sends data back to the caller
-- Allows further processing
-- Used for program logic
+# - Sends data back to the caller
+# - Allows further processing
+# - Used for program logic
 """
 
 def print_result():
@@ -219,11 +219,11 @@ def calculate_total(price, quantity):
 # ====================================================
 # END OF NOTES — RETURN
 # ====================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

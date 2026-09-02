@@ -1,7 +1,7 @@
 """
-📘 Module —  Exception Handling — The except Statement
+# 📘 Module —  Exception Handling — The except Statement
 
-📁 Notes FILE
+# 📁 Notes FILE
 
 The except block defines how Python responds when an error occurs
 inside a try block. It is responsible for handling runtime exceptions.
@@ -109,11 +109,11 @@ except Exception:
 # - Why generic except is risky
 # - How except affects program flow
 # - Professional exception handling patterns
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

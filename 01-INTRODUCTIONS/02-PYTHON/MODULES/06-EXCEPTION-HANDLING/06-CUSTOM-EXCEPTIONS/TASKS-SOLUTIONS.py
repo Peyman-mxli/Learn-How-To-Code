@@ -1,16 +1,16 @@
-📘 Module —  Custom Exceptions — (Class-Based)
+# 📘 Module —  Custom Exceptions — (Class-Based)
 
 """
-📁 CustomExceptions-Tasks-Solutions
+# 📁 CustomExceptions-Tasks-Solutions
 
 Topic: Exception Handling — Custom Exceptions (Class-Based)
 
 This file contains SOLUTIONS for all tasks in CustomExceptions_Tasks.py.
 
 Review notes:
-- Pay attention to how custom exceptions are defined
-- Notice where `raise` is used
-- Observe how specific exceptions are caught
+# - Pay attention to how custom exceptions are defined
+# - Notice where `raise` is used
+# - Observe how specific exceptions are caught
 """
 
 # ==================================================
@@ -104,11 +104,11 @@ except AppError:
 # End of CustomExceptions-Tasks-Solutions
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

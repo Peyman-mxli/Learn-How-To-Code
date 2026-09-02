@@ -1,8 +1,8 @@
 """
-📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
+# 📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
 
 
-📁 LoggingVsExceptions-Notes
+# 📁 LoggingVsExceptions-Notes
 
 Topic: Exception Handling — Logging vs Exceptions (Algorithm Thinking)
 
@@ -10,9 +10,9 @@ This file explains the difference between logging and exceptions
 using a step-by-step algorithm approach.
 
 Goal:
-- Understand WHEN to raise exceptions
-- Understand WHEN to use logging
-- Apply correct decision flow in real programs
+# - Understand WHEN to raise exceptions
+# - Understand WHEN to use logging
+# - Apply correct decision flow in real programs
 """
 
 # ==================================================
@@ -121,11 +121,11 @@ logging.critical("Critical message")
 # ==================================================
 # End of LoggingVsExceptions-Notes
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

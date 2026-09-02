@@ -1,5 +1,5 @@
 """
-📘 Module — Python Syntax
+# 📘 Module — Python Syntax
 ✅ Tasks Solutions File (Rank 1 → Rank 5)
 
 This file contains one possible set of correct solutions.
@@ -156,11 +156,11 @@ else:
 # 🏁 End of Solutions
 # ===========================================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

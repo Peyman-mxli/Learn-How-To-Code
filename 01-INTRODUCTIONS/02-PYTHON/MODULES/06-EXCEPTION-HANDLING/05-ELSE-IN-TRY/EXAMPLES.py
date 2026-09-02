@@ -1,4 +1,4 @@
-📘 Module — Exception Handling — (try / else)
+# 📘 Module — Exception Handling — (try / else)
 
 """
 Try-Else-Examples
@@ -9,9 +9,9 @@ This file contains runnable examples demonstrating how the `else`
 block works with `try` and `except`.
 
 How to use this file:
-- Run it with: python Try_Else_Examples.py
-- Read the comment before each example
-- Observe when `else` runs and when it is skipped
+# - Run it with: python Try_Else_Examples.py
+# - Read the comment before each example
+# - Observe when `else` runs and when it is skipped
 """
 
 # ==================================================
@@ -94,11 +94,11 @@ else:
 # ==================================================
 # End of Try-Else-Examples
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

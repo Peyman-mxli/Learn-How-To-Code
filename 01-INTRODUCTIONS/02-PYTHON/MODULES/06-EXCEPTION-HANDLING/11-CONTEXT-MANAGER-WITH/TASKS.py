@@ -1,7 +1,7 @@
 """
-📘 Module — Context Managers — (The with Statement)
+# 📘 Module — Context Managers — (The with Statement)
 
-📁 ContextManagers-Tasks
+# 📁 ContextManagers-Tasks
 
 Topic: Exception Handling — Context Managers (with Statement)
 
@@ -9,10 +9,10 @@ This file contains PRACTICE TASKS to help you master using
 context managers for safe and automatic resource management.
 
 Instructions:
-- Complete tasks from Rank 1 to Rank 5
-- Use the 'with' statement where required
-- Implement __enter__ and __exit__ for custom context managers
-- Do NOT check solutions until all tasks are completed
+# - Complete tasks from Rank 1 to Rank 5
+# - Use the 'with' statement where required
+# - Implement __enter__ and __exit__ for custom context managers
+# - Do NOT check solutions until all tasks are completed
 """
 
 # ==================================================
@@ -68,11 +68,11 @@ Instructions:
 # End of ContextManagers-Tasks
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

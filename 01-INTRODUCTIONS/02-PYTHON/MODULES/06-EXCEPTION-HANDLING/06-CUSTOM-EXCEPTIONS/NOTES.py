@@ -1,4 +1,4 @@
-📘 Module —  Custom Exceptions — (Class-Based)
+# 📘 Module —  Custom Exceptions — (Class-Based)
 """
 CustomExceptions-Notes
 
@@ -107,11 +107,11 @@ These notes focus on concepts, rules, and best practices.
 # ==================================================
 # End of CustomExceptions-Notes
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

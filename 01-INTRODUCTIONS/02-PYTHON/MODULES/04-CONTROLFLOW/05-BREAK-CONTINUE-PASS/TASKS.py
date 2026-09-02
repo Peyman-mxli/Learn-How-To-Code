@@ -1,12 +1,12 @@
 """
-📘 Module — Control Flow — break / continue / pass
+# 📘 Module — Control Flow — break / continue / pass
 
-📁 Tasks File (Rank 1 → Rank 5)
+# 📁 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Solve each task using for or while loops.
-- Use break, continue, or pass where appropriate.
-- Do NOT open the solutions until you have tried seriously.
+# - Solve each task using for or while loops.
+# - Use break, continue, or pass where appropriate.
+# - Do NOT open the solutions until you have tried seriously.
 """
 # ===========================================================================
 # 🟢 Rank 1 — Beginner
@@ -126,11 +126,11 @@ passwords = ["abc", "password", "admin", "pass123", "root"]
 # ===========================================================================
 # When ready, compare with:
 # Loop_Control_Tasks_Solutions.py
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,13 +1,13 @@
 """
-📘 Module — Type Objects —(type, isinstance, id)
+# 📘 Module — Type Objects —(type, isinstance, id)
 
 📝 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Read each task carefully.
-- Write your solution below each task.
-- Focus on reasoning about types, objects, and identity.
-- Do NOT look at the solutions until all tasks are completed.
+# - Read each task carefully.
+# - Write your solution below each task.
+# - Focus on reasoning about types, objects, and identity.
+# - Do NOT look at the solutions until all tasks are completed.
 """
 # ===========================================================================
 # 🟢 Rank 1 — Beginner
@@ -104,11 +104,11 @@ Instructions:
 # ===========================================================================
 # 🏁 End of Tasks
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

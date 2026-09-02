@@ -1,11 +1,11 @@
 """
-📘 Module — Control Flow in Python
+# 📘 Module — Control Flow in Python
 
 Control flow defines how a Python program executes:
-- which code runs
-- when it runs
-- how often it runs
-- how errors and special conditions are handled
+# - which code runs
+# - when it runs
+# - how often it runs
+# - how errors and special conditions are handled
 
 This file provides a structured overview of Python control flow,
 with explanations, examples, and best practices.
@@ -223,11 +223,11 @@ print(message)
 # - How functions control flow with return, yield, and raise
 # - How pattern matching improves readability
 # - How comprehensions and ternary expressions simplify logic
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

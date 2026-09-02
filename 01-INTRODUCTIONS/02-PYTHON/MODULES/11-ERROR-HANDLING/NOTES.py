@@ -1,7 +1,7 @@
 """
-📘 Module — Error Handling (try / except)
+# 📘 Module — Error Handling (try / except)
 
-📁 ERROR HANDLING — THEORY & NOTES
+# 📁 ERROR HANDLING — THEORY & NOTES
 
 Error handling allows programs to detect, manage,
 and recover from runtime errors without crashing.
@@ -45,11 +45,11 @@ When dealing with operations that may fail during execution.
 
 IMPORTANT:
 Common exceptions include:
-- ZeroDivisionError
-- ValueError
-- TypeError
-- FileNotFoundError
-- IndexError
+# - ZeroDivisionError
+# - ValueError
+# - TypeError
+# - FileNotFoundError
+# - IndexError
 """
 
 # ======================================================
@@ -60,17 +60,17 @@ WHAT IT IS:
 Error handling is the process of managing runtime errors safely.
 
 WHY WE USE IT:
-- Prevent program crashes
-- Protect data
-- Improve user experience
-- Maintain system stability
+# - Prevent program crashes
+# - Protect data
+# - Improve user experience
+# - Maintain system stability
 
 WHEN TO USE:
 In all real-world applications:
-- User interfaces
-- APIs
-- File systems
-- Automation scripts
+# - User interfaces
+# - APIs
+# - File systems
+# - Automation scripts
 """
 
 # ======================================================
@@ -125,9 +125,9 @@ WHAT IT IS:
 Handling specific error types instead of generic ones.
 
 WHY WE USE IT:
-- Better control
-- Clear debugging
-- Safer programs
+# - Better control
+# - Clear debugging
+# - Safer programs
 
 WHEN TO USE:
 Always prefer specific exceptions over generic ones.
@@ -181,9 +181,9 @@ WHY WE USE IT:
 To ensure cleanup operations are performed.
 
 WHEN TO USE:
-- Closing files
-- Releasing resources
-- Cleaning up connections
+# - Closing files
+# - Releasing resources
+# - Cleaning up connections
 
 IMPORTANT:
 Runs regardless of errors.
@@ -204,12 +204,12 @@ When dealing with known failure scenarios.
 
 IMPORTANT:
 Examples:
-- ValueError
-- TypeError
-- ZeroDivisionError
-- IndexError
-- KeyError
-- FileNotFoundError
+# - ValueError
+# - TypeError
+# - ZeroDivisionError
+# - IndexError
+# - KeyError
+# - FileNotFoundError
 """
 
 # ======================================================
@@ -237,9 +237,9 @@ WHAT IT IS:
 Manually triggering an exception using raise.
 
 WHY WE USE IT:
-- Enforce rules
-- Validate data
-- Stop invalid execution
+# - Enforce rules
+# - Validate data
+# - Stop invalid execution
 
 WHEN TO USE:
 When a condition must not be allowed.
@@ -278,8 +278,8 @@ WHAT IT IS:
 Two complementary approaches to handling issues.
 
 WHY WE USE IT:
-- Validation prevents errors
-- Error handling manages them
+# - Validation prevents errors
+# - Error handling manages them
 
 WHEN TO USE:
 Use both together in professional code.
@@ -299,9 +299,9 @@ WHEN TO USE:
 During learning and code review.
 
 IMPORTANT:
-- Do not use bare except
-- Do not ignore errors
-- Do not misuse exceptions for logic
+# - Do not use bare except
+# - Do not ignore errors
+# - Do not misuse exceptions for logic
 """
 
 # ======================================================
@@ -328,11 +328,11 @@ IMPORTANT:
 # ======================================================
 # END OF ERROR HANDLING — NOTES
 # ======================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

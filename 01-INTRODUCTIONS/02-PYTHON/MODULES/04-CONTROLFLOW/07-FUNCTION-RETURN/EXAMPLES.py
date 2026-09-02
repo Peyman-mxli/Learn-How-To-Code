@@ -1,10 +1,10 @@
 """
-📘 Module — Functions — return(Output & Control Flow)
+# 📘 Module — Functions — return(Output & Control Flow)
 
-====================================================
+# ====================================================
 FUNCTIONS — RETURN
 PROFESSIONAL EXAMPLES
-====================================================
+# ====================================================
 
 This file demonstrates real-world usage of the `return`
 statement in Python functions.
@@ -144,11 +144,11 @@ else:
 # ====================================================
 # END OF EXAMPLES — RETURN
 # ====================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

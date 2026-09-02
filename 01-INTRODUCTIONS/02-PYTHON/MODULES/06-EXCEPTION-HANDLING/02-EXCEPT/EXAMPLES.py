@@ -1,7 +1,7 @@
 """
-📘 Module —  Exception Handling — The except Statement
+# 📘 Module —  Exception Handling — The except Statement
 
-📁 Examples File
+# 📁 Examples File
 
 This file demonstrates how the except block handles errors
 raised inside try blocks.
@@ -106,11 +106,11 @@ for v in values:
 # - Capturing exception objects
 # - except ordering
 # - Error handling inside loops
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,7 +1,7 @@
-📘 Module — TESTING & DEBUGGING (PYTHON)
+# 📘 Module — TESTING & DEBUGGING (PYTHON)
 """
-📘 TESTING & DEBUGGING — PYTHON
-📁 TASK SOLUTIONS (RANK 1 → RANK 5)
+# 📘 TESTING & DEBUGGING — PYTHON
+# 📁 TASK SOLUTIONS (RANK 1 → RANK 5)
 
 This file contains clean, correct, and professional
 solutions for all Testing & Debugging tasks.
@@ -13,10 +13,10 @@ Rules followed:
 ✔ Readable and maintainable code
 """
 
-====================================================
-🟢 RANK 1 — VERY EASY
-====================================================
-Task 1 Solution
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
+# Task 1 Solution
 
 def say_hello():
 print("Hello World")
@@ -31,9 +31,9 @@ return a + b
 result = add_numbers(5, 7)
 print("Result:", result)
 
-====================================================
-🟡 RANK 2 — EASY
-====================================================
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
 Task 3 Solution
 
 def divide(a, b):
@@ -52,9 +52,9 @@ return (a + b) / 2
 
 print("Average:", calculate_average(10, 20))
 
-====================================================
-🟠 RANK 3 — INTERMEDIATE
-====================================================
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
 Task 5 Solution
 
 def is_even(number):
@@ -74,9 +74,9 @@ return total
 
 calculate_total(50, 3)
 
-====================================================
-🔵 RANK 4 — ADVANCED
-====================================================
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
 Task 7 Solution
 
 def convert_to_int(value):
@@ -97,9 +97,9 @@ return price * quantity
 
 print(calculate_invoice(100, 2))
 
-====================================================
-🔴 RANK 5 — PROFESSIONAL
-====================================================
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
 Task 9 Solution
 
 def get_percentage(value, total):
@@ -123,15 +123,15 @@ return max(numbers)
 print(get_max_value([3, 7, 2, 9]))
 print(get_max_value([]))
 
-====================================================
-END OF SOLUTIONS — TESTING & DEBUGGING
-====================================================
-👤 Author
-====================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# ====================================================
+# END OF SOLUTIONS — TESTING & DEBUGGING
+# ====================================================
+# 👤 Author
+# ====================================================
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
-====================================================
+# ====================================================

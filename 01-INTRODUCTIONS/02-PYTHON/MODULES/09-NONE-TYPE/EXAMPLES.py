@@ -1,15 +1,15 @@
 """
-📘 Module — NoneType— (None)
+# 📘 Module — NoneType— (None)
 
-📂 Examples File
+# 📂 Examples File
 
 This file contains practical, runnable examples that demonstrate how
 None is used in real Python programs.
 
 How to use this file:
-- Run it with:  python NoneType_Examples.py
-- Read the comments before each example
-- Modify values to observe different behaviors
+# - Run it with:  python NoneType_Examples.py
+# - Read the comments before each example
+# - Modify values to observe different behaviors
 """
 
 
@@ -118,11 +118,11 @@ print(load_config("config.json"))
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-👤 Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
+# 👤 Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
 
 # 🏁 End of Examples
 # ===========================================================================

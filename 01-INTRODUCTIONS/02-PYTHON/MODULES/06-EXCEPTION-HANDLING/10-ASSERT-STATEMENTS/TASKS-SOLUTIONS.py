@@ -1,6 +1,6 @@
-📘 Module — Assert Statements — (Debugging & Validation)
+# 📘 Module — Assert Statements — (Debugging & Validation)
 """
-📁 AssertStatements-Tasks-Solutions
+# 📁 AssertStatements-Tasks-Solutions
 
 Topic: Exception Handling — Assert Statements
 
@@ -15,27 +15,27 @@ Notice where custom messages improve clarity
 Understand that assertions protect internal logic
 """
 
-==================================================
-Rank 1 — Positive Number Assertion (Solution)
-==================================================
+# ==================================================
+# Rank 1 — Positive Number Assertion (Solution)
+# ==================================================
 
 number = 5
 
 assert number > 0
 print("Number is valid")
 
-==================================================
-Rank 2 — Non-Empty String Check (Solution)
-==================================================
+# ==================================================
+# Rank 2 — Non-Empty String Check (Solution)
+# ==================================================
 
 text = "Python"
 
 assert len(text) > 0
 print("Text is valid")
 
-==================================================
-Rank 3 — List Validation Function (Solution)
-==================================================
+# ==================================================
+# Rank 3 — List Validation Function (Solution)
+# ==================================================
 
 def first_element(lst):
 assert len(lst) > 0, "List cannot be empty"
@@ -43,9 +43,9 @@ return lst[0]
 
 print("First element:", first_element([1, 2, 3]))
 
-==================================================
-Rank 4 — Function Preconditions (Solution)
-==================================================
+# ==================================================
+# Rank 4 — Function Preconditions (Solution)
+# ==================================================
 
 def divide(a, b):
 assert isinstance(a, (int, float)), "a must be a number"
@@ -55,9 +55,9 @@ return a / b
 
 print("Division result:", divide(10, 2))
 
-==================================================
-Rank 5 — Protect Internal Logic (Solution)
-==================================================
+# ==================================================
+# Rank 5 — Protect Internal Logic (Solution)
+# ==================================================
 
 def process_score(score):
 assert 0 <= score <= 100, "Score must be between 0 and 100"
@@ -67,14 +67,14 @@ return "Fail"
 
 print("Result:", process_score(75))
 
-==================================================
+# ==================================================
 End of AssertStatements-Tasks-Solutions
-==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# ==================================================
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

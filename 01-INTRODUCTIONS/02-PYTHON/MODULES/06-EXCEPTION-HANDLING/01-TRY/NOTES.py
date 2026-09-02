@@ -1,6 +1,6 @@
 """
-📘 Module — Exception Handling — The try Statement
-📁 NOTES FILE 
+# 📘 Module — Exception Handling — The try Statement
+# 📁 NOTES FILE 
 The try statement is used to wrap code that may raise runtime errors.
 It allows Python to attempt execution safely without crashing immediately.
 """ 
@@ -82,7 +82,7 @@ except:
 # TypeError
 # IndexError
 # FileNotFoundError
-======================================================================
+# ======================================================================
 # 🔹 8. try Without except (Not Useful Alone)
 # ===========================================================================
 # A try block must be followed by except, else, or finally.
@@ -103,11 +103,11 @@ except:
 # - When to use try
 # - What happens when errors occur
 # - Why try is the foundation of exception handling
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 """
-📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
+# 📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
 
-📁 Collections-Examples
+# 📁 Collections-Examples
 
 Topic: Python Collections — Lists, Tuples, Sets, Dictionaries
 
@@ -169,11 +169,11 @@ print(roles.get("peyman"))
 # ==================================================
 # End of Collections-Examples
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

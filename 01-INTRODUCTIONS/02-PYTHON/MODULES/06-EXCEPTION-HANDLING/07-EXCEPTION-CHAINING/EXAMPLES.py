@@ -1,5 +1,5 @@
 """
-📘 Module —  Exception Chaining — (raise ... from ...)
+# 📘 Module —  Exception Chaining — (raise ... from ...)
 
 
 Topic: Exception Handling — Exception Chaining (raise ... from ...)
@@ -8,9 +8,9 @@ This file contains RUNNABLE EXAMPLES demonstrating how exception
 chaining works using `raise ... from ...`.
 
 How to use this file:
-- Run it with: python ExceptionChaining_Examples.py
-- Read the comment before each example
-- Observe how the original exception is preserved
+# - Run it with: python ExceptionChaining_Examples.py
+# - Read the comment before each example
+# - Observe how the original exception is preserved
 """
 
 # ==================================================
@@ -91,11 +91,11 @@ except ValueError as e:
 # ==================================================
 # End of Exception-Chaining-Examples
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

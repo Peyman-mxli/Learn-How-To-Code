@@ -1,5 +1,5 @@
 """
-📘 Module — Basic Data Types: Float(flo)
+# 📘 Module — Basic Data Types: Float(flo)
 This file explains how floating-point numbers (floats) work in Python.
 Use it as a reference while you practice with the exercises.
 """
@@ -239,11 +239,11 @@ print()
 # - Compare floats using a tolerance instead of strict equality.
 # - Use common functions from the math module with float values.
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

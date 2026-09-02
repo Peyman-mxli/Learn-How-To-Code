@@ -1,7 +1,7 @@
 """
-📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
+# 📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
 
-📁 Exception Hierarchy — Task Solutions
+# 📁 Exception Hierarchy — Task Solutions
 
 This file contains the correct solutions for all tasks
 in the Exception Hierarchy module.
@@ -69,11 +69,11 @@ except Exception:
 # --------------------------------------------------
 # End of Solutions
 # --------------------------------------------------
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

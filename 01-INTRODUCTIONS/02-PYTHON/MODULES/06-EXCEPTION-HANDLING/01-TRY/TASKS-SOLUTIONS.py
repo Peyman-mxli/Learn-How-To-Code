@@ -1,7 +1,7 @@
 """
-📘 Module — Exception Handling — The try Statement
+# 📘 Module — Exception Handling — The try Statement
 
-📁 Tasks Solutions (Rank 1 → Rank 5)
+# 📁 Tasks Solutions (Rank 1 → Rank 5)
 
 These solutions demonstrate correct placement and usage of try blocks.
 Generic except is used intentionally for learning purposes.
@@ -166,11 +166,11 @@ try:
     print("Square:", value ** 2)
 except:
     print("Unexpected input error")
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

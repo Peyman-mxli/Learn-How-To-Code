@@ -1,5 +1,5 @@
 """
-📘 Module — Control Flow — For-loops
+# 📘 Module — Control Flow — For-loops
 Tasks Solutions (Rank 1 → Rank 5)
 These are one possible set of correct solutions.
 Your solution may look different and still be valid.
@@ -140,11 +140,11 @@ else:
 # ✔ These solutions prioritize clarity and correctness
 # ✔ Alternative solutions are valid if they work correctly
 # ✔ Review your own code and refactor when needed
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

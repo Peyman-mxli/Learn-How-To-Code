@@ -1,16 +1,16 @@
 """
-📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
+# 📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
 
-📁 Exception Hierarchy — Notes
+# 📁 Exception Hierarchy — Notes
 
 In Python, exceptions are not random errors.
 They are organized in a class hierarchy where all exceptions
 inherit from a common base class.
 
 Understanding this hierarchy allows us to:
-- Catch errors correctly
-- Avoid hiding critical system signals
-- Write clean and professional error-handling code
+# - Catch errors correctly
+# - Avoid hiding critical system signals
+# - Write clean and professional error-handling code
 """
 
 # --------------------------------------------------
@@ -147,13 +147,13 @@ except Exception as e:
 # --------------------------------------------------
 # End of Notes
 # --------------------------------------------------
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------
 
 

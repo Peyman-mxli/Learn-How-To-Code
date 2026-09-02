@@ -1,5 +1,5 @@
 """
-📘 Module — Basic Data Types: Boolean(bool)
+# 📘 Module — Basic Data Types: Boolean(bool)
 
 Booleans represent truth values in Python. They are the foundation of
 decision-making in programs and control how code behaves.
@@ -177,11 +177,11 @@ print(is_even(7))
 # - How to write clean, readable conditional logic
 # - Best practices for professional Boolean usage
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

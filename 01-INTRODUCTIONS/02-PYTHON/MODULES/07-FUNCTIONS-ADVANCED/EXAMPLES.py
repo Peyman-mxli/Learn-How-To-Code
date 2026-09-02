@@ -1,7 +1,7 @@
 """
-📘 Module — Functions — (Advanced Concepts)
+# 📘 Module — Functions — (Advanced Concepts)
 
-📁 AdvancedFunctions-Notes
+# 📁 AdvancedFunctions-Notes
 
 Topic: Python Functions — Defaults, Arguments, Lambda, Scope, Closures
 
@@ -9,10 +9,10 @@ This file contains STUDY NOTES explaining advanced function
 features in Python with structured concepts and best practices.
 
 Focus:
-- Function flexibility
-- Code readability
-- Reusability
-- Real-world usage patterns
+# - Function flexibility
+# - Code readability
+# - Reusability
+# - Real-world usage patterns
 """
 # ==================================================
 # 1. Default Arguments
@@ -198,11 +198,11 @@ Focus:
 # ==================================================
 # End of AdvancedFunctions-Notes
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

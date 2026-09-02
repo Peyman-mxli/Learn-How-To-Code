@@ -1,7 +1,7 @@
-📘 Module — Exception Handling — (try / else)
+# 📘 Module — Exception Handling — (try / else)
 
 """
-📁 Notes
+# 📁 Notes
 Topic: Exception Handling — try / else
 This file contains STUDY NOTES explaining the purpose and behavior
 of the `else` block in Python exception handling.
@@ -96,11 +96,11 @@ These notes focus on concepts, rules, and best practices
 # ==================================================
 # End of Try-Else-Notes
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

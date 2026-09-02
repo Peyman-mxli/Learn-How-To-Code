@@ -1,13 +1,13 @@
 """
-📘 Module — Basic Data Types: String (str)
+# 📘 Module — Basic Data Types: String (str)
 : Practice Task Solutions
---------------------------------------------
+# --------------------------------------------
 
 This file contains clean, readable solutions to all tasks in
 String_Tasks.py. Multiple answers are always possible; these show
 simple and professional approaches.
 
-⚠️ IMPORTANT:
+# ⚠️ IMPORTANT:
 Only read these solutions AFTER attempting the tasks yourself!
 """
 
@@ -178,9 +178,9 @@ def to_sentence(words: list[str]) -> str:
 print(to_sentence(["python", "is", "fun"]))
 
 
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026

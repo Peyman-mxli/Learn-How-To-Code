@@ -1,9 +1,9 @@
 """
-📘 Module — Python Modules
+# 📘 Module — Python Modules
 
-====================================================
+# ====================================================
 MODULES — THEORY & PROFESSIONAL NOTES
-====================================================
+# ====================================================
 
 This file provides a complete, structured, and professional
 explanation of MODULES in Python.
@@ -12,12 +12,12 @@ Modules are the foundation of code organization,
 reusability, and scalable software development.
 
 This file focuses on:
-- What modules are
-- Why modules exist
-- Types of modules
-- How importing works
-- How Python finds modules
-- Best practices for professional projects
+# - What modules are
+# - Why modules exist
+# - Types of modules
+# - How importing works
+# - How Python finds modules
+# - Best practices for professional projects
 """
 
 # ====================================================
@@ -27,10 +27,10 @@ This file focuses on:
 A module is a Python file (.py) that contains reusable code.
 
 A module can include:
-- Functions
-- Variables
-- Classes
-- Executable statements
+# - Functions
+# - Variables
+# - Classes
+# - Executable statements
 
 Every Python file is automatically a module.
 
@@ -67,9 +67,9 @@ Modular programming means breaking a program
 into smaller, independent, logical parts (modules).
 
 Each module:
-- Handles one responsibility
-- Can be developed independently
-- Can be reused in other projects
+# - Handles one responsibility
+# - Can be developed independently
+# - Can be reused in other projects
 
 This is a core software engineering principle.
 """
@@ -88,10 +88,10 @@ Python supports three main types of modules:
 Built-in modules come with Python by default.
 
 They provide ready-made functionality such as:
-- Mathematics
-- File handling
-- Dates and time
-- Operating system interaction
+# - Mathematics
+# - File handling
+# - Dates and time
+# - Operating system interaction
 
 Examples:
 math, random, datetime, os, sys
@@ -118,10 +118,10 @@ This is how large applications are structured.
 Third-party modules are developed by the community.
 
 They extend Python’s capabilities for:
-- Data science
-- Web development
-- AI
-- Cybersecurity
+# - Data science
+# - Web development
+# - AI
+# - Cybersecurity
 
 Installed using tools like pip.
 """
@@ -194,8 +194,8 @@ If not found, ImportError is raised.
 Every module has a built-in variable called __name__.
 
 When a file is:
-- Run directly → __name__ == "__main__"
-- Imported      → __name__ == module name
+# - Run directly → __name__ == "__main__"
+# - Imported      → __name__ == module name
 
 This allows modules to behave differently
 when imported versus executed directly.
@@ -219,11 +219,11 @@ This prevents unwanted execution on import.
 # ====================================================
 """
 Module:
-- A single .py file
+# - A single .py file
 
 Package:
-- A directory containing multiple modules
-- Used for large systems
+# - A directory containing multiple modules
+# - Used for large systems
 
 Packages are built on top of modules.
 """
@@ -265,11 +265,11 @@ Packages are built on top of modules.
 # ====================================================
 # END OF NOTES — MODULES
 # ====================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,4 +1,4 @@
-📘 Module — Exception Handling — (raise)
+# 📘 Module — Exception Handling — (raise)
 
 """
  📁  Tasks FILE
@@ -6,10 +6,10 @@
 Topic: Exception Handling — raise (manual exception control)
 
 Instructions:
-- Tasks are ordered from Rank 1 (Beginner) to Rank 5 (Advanced).
-- Do NOT write solutions in this file.
-- Focus on WHEN to use `raise` and WHICH exception to raise.
-- Try each task before checking the solutions file.
+# - Tasks are ordered from Rank 1 (Beginner) to Rank 5 (Advanced).
+# - Do NOT write solutions in this file.
+# - Focus on WHEN to use `raise` and WHICH exception to raise.
+# - Try each task before checking the solutions file.
 """
 # ==================================================
 # Rank 1 — Basic manual raise
@@ -74,11 +74,11 @@ Instructions:
 # ==================================================
 # End of Raise-Tasks
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

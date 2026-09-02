@@ -1,19 +1,19 @@
 """
-📘 Module — Functions — def (Function Definition)
+# 📘 Module — Functions — def (Function Definition)
 
-====================================================
+# ====================================================
 FUNCTIONS — DEF (FUNCTION DEFINITION)
-====================================================
+# ====================================================
 
 This notes file explains how functions are DEFINED in Python
 using the `def` keyword.
 
 This module focuses strictly on:
-- What a function is
-- Why functions exist
-- How to define a function
-- How parameters work
-- How function calls execute code
+# - What a function is
+# - Why functions exist
+# - How to define a function
+# - How parameters work
+# - How function calls execute code
 
 ❗ The `return` statement is intentionally NOT covered here.
 It is treated as a separate professional topic.
@@ -29,10 +29,10 @@ Instead of writing the same code multiple times, we define it once
 and reuse it whenever needed.
 
 Think of a function as:
-- A machine
-- It receives input (parameters)
-- It performs operations
-- It executes code when called
+# - A machine
+# - It receives input (parameters)
+# - It performs operations
+# - It executes code when called
 
 Functions help transform scripts into structured programs.
 """
@@ -73,11 +73,11 @@ def function_name(parameters):
     function body
 
 Key rules:
-- `def` starts the function definition
-- Function name must follow naming rules
-- Parentheses () hold parameters
-- Colon (:) starts the function block
-- Indentation defines the function body
+# - `def` starts the function definition
+# - Function name must follow naming rules
+# - Parentheses () hold parameters
+# - Colon (:) starts the function block
+# - Indentation defines the function body
 """
 
 def example_function():
@@ -96,14 +96,14 @@ Function names must follow Python identifier rules:
 ✔ Should use snake_case (professional standard)
 
 Good examples:
-- calculate_total
-- print_report
-- get_user_input
+# - calculate_total
+# - print_report
+# - get_user_input
 
 Bad examples:
-- 1function
-- my Function
-- def
+# - 1function
+# - my Function
+# - def
 """
 
 def calculate_sum():
@@ -128,10 +128,10 @@ def greet_user(name):
 # ====================================================
 """
 Parameter:
-- Variable defined in the function definition
+# - Variable defined in the function definition
 
 Argument:
-- Actual value passed when calling the function
+# - Actual value passed when calling the function
 """
 
 def show_age(age):     # age is a parameter
@@ -222,9 +222,9 @@ def show_welcome_message():
 Professional software is built using many small functions.
 
 Each function should:
-- Do ONE job
-- Be easy to read
-- Be easy to test
+# - Do ONE job
+# - Be easy to read
+# - Be easy to test
 """
 
 def validate_login():
@@ -242,17 +242,17 @@ Next Module:
 FUNCTIONS — RETURN
 
 That module will cover:
-- return keyword
-- returning values
-- multiple returns
-- early exits
-- function outputs
+# - return keyword
+# - returning values
+# - multiple returns
+# - early exits
+# - function outputs
 """
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 """
-📘 Module — Type Objects —(type, isinstance, id)
+# 📘 Module — Type Objects —(type, isinstance, id)
 
-📂 Examples File
+# 📂 Examples File
 
 This file contains practical examples that demonstrate how Python
 handles objects, types, identity, and dynamic typing.
@@ -129,11 +129,11 @@ print(add_numbers("5", 3))
 # ===========================================================================
 # 🏁 End of Examples
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

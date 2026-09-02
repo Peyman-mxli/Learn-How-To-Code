@@ -1,5 +1,5 @@
 """
-📘 Module —  Exception Chaining — (raise ... from ...)
+# 📘 Module —  Exception Chaining — (raise ... from ...)
 
 
 Topic: Exception Handling — Exception Chaining (raise ... from ...)
@@ -8,9 +8,9 @@ This file contains COMPLETE SOLUTIONS for:
 ExceptionChaining_Tasks.py (Rank 1 → Rank 5)
 
 Study tips:
-- Run each section separately if needed
-- Read the chained traceback carefully
-- Notice how the original exception is preserved or suppressed
+# - Run each section separately if needed
+# - Read the chained traceback carefully
+# - Notice how the original exception is preserved or suppressed
 """
 # ==================================================
 # Rank 1 — Basic chaining (Solution)
@@ -73,11 +73,11 @@ except ValueError:
 # ==================================================
 # End of ExceptionChaining-Tasks-Solutions
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

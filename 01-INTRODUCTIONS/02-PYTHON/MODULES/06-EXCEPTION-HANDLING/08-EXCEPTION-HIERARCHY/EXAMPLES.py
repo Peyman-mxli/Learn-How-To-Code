@@ -1,7 +1,7 @@
 """
-📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
+# 📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
 
-📁 Exception Hierarchy — Examples
+# 📁 Exception Hierarchy — Examples
 
 This file demonstrates how Python exception hierarchy works in practice.
 Each example shows how different exceptions are raised and how
@@ -116,11 +116,11 @@ except Exception:
 # --------------------------------------------------
 # End of Examples
 # --------------------------------------------------
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

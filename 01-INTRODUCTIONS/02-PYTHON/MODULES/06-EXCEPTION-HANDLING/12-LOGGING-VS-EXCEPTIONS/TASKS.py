@@ -1,7 +1,7 @@
 """
-📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
+# 📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
 
-📁 LoggingVsExceptions-Tasks
+# 📁 LoggingVsExceptions-Tasks
 
 Topic: Exception Handling — Logging vs Exceptions
 
@@ -9,10 +9,10 @@ This file contains PRACTICE TASKS to help you master when to use
 logging and when to raise exceptions in Python programs.
 
 Instructions:
-- Complete tasks from Rank 1 to Rank 5
-- Use appropriate logging levels
-- Raise exceptions only when necessary
-- Do NOT check solutions until all tasks are completed
+# - Complete tasks from Rank 1 to Rank 5
+# - Use appropriate logging levels
+# - Raise exceptions only when necessary
+# - Do NOT check solutions until all tasks are completed
 """
 
 # ==================================================
@@ -78,11 +78,11 @@ Instructions:
 # End of LoggingVsExceptions-Tasks
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

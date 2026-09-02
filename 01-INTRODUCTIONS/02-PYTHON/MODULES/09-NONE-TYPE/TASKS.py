@@ -1,13 +1,13 @@
 """
-📘 Module — NoneType— (None)
+# 📘 Module — NoneType— (None)
 
 📝 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Read each task carefully.
-- Write your solution directly under each task.
-- Do NOT look at the solutions file until you have tried seriously.
-- Focus on clarity, correctness, and Python best practices.
+# - Read each task carefully.
+# - Write your solution directly under each task.
+# - Do NOT look at the solutions file until you have tried seriously.
+# - Focus on clarity, correctness, and Python best practices.
 """
 
 
@@ -117,11 +117,11 @@ Instructions:
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
 
 # 🏁 End of Notes

@@ -1,24 +1,24 @@
 """
-📘 Module — Basic Data Types: Integer (int)
-📂: Practice Tasks
-------------------------------------
+# 📘 Module — Basic Data Types: Integer (int)
+# 📂: Practice Tasks
+# ------------------------------------
 
 This file contains guided practice tasks focused on Python's integer type.
 
 In this module I will:
-- Create and update integer variables.
-- Use integer arithmetic operators (+, -, *, //, %, **).
-- Convert between strings and integers with int().
-- Combine integers with input() and simple validation.
-- Apply integers in small, realistic problems (counters, scores, prices).
+# - Create and update integer variables.
+# - Use integer arithmetic operators (+, -, *, //, %, **).
+# - Convert between strings and integers with int().
+# - Combine integers with input() and simple validation.
+# - Apply integers in small, realistic problems (counters, scores, prices).
 
-📘 How to use this file:
-- Work through the tasks from Rank 1 to Rank 5.
-- Write your solutions directly under each task description.
-- Do NOT look at the solutions file until you have tried the task honestly.
+# 📘 How to use this file:
+# - Work through the tasks from Rank 1 to Rank 5.
+# - Write your solutions directly under each task description.
+# - Do NOT look at the solutions file until you have tried the task honestly.
 
-📂 There is a separate file:
-- Integer_Tasks_Solutions.py  → contains one possible solution for each task.
+# 📂 There is a separate file:
+# - Integer_Tasks_Solutions.py  → contains one possible solution for each task.
 """
 
 
@@ -322,9 +322,9 @@ In this module I will:
 
 
 # ===========================================================================
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026

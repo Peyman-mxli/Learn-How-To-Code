@@ -1,5 +1,5 @@
 """
-📘 Module — Basic Data Types: Float(flo)
+# 📘 Module — Basic Data Types: Float(flo)
 📝 Tasks File
 
 This file contains practice tasks designed to help me understand and master
@@ -7,9 +7,9 @@ floating-point numbers in Python. The tasks progress from basic usage to
 more realistic, professional-level scenarios.
 
 Important rules:
-- I must attempt each task on my own.
-- I should write clean and readable Python code.
-- I should avoid looking at the solutions until I finish the tasks.
+# - I must attempt each task on my own.
+# - I should write clean and readable Python code.
+# - I should avoid looking at the solutions until I finish the tasks.
 """
 
 
@@ -158,11 +158,11 @@ Important rules:
 # 🏁 End of Tasks
 # ===========================================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

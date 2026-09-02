@@ -1,7 +1,7 @@
-📘 Module — Assert Statements — (Defensive Debugging in Python)
+# 📘 Module — Assert Statements — (Defensive Debugging in Python)
 
 """
-📁 Assert0Statements-Examples
+# 📁 Assert0Statements-Examples
 
 Topic: Exception Handling — Assert Statements
 
@@ -17,9 +17,9 @@ Read the comment before each example
 Observe how assertions catch logical errors early
 """
 
-==================================================
-Example 1 — Simple assertion
-==================================================
+# ==================================================
+# Example 1 — Simple assertion
+# ==================================================
 
 print("\nExample 1 — Simple assertion")
 
@@ -28,9 +28,9 @@ age = 18
 assert age >= 0
 print("Age is valid")
 
-==================================================
-Example 2 — Assertion with message
-==================================================
+# ==================================================
+# Example 2 — Assertion with message
+# ==================================================
 
 print("\nExample 2 — Assertion with custom message")
 
@@ -41,9 +41,9 @@ assert temperature >= -273.15, "Temperature below absolute zero!"
 except AssertionError as e:
 print("Assertion error:", e)
 
-==================================================
-Example 3 — Assertion inside a function
-==================================================
+# ==================================================
+# Example 3 — Assertion inside a function
+# ==================================================
 
 print("\nExample 3 — Assertion inside a function")
 
@@ -57,9 +57,9 @@ print("Average:", result)
 except AssertionError as e:
 print("Assertion error:", e)
 
-==================================================
-Example 4 — Assertion for internal logic
-==================================================
+# ==================================================
+# Example 4 — Assertion for internal logic
+# ==================================================
 
 print("\nExample 4 — Assertion for internal logic")
 
@@ -74,14 +74,14 @@ print("Remaining balance:", remaining)
 except AssertionError as e:
 print("Assertion error:", e)
 
-==================================================
+# ==================================================
 End of Assert-Statements-Examples
-==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# ==================================================
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

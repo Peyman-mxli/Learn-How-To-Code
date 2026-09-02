@@ -1,7 +1,7 @@
-📘 Module — Exception Handling — (raise)
+# 📘 Module — Exception Handling — (raise)
 
 """
-📁 Tasks_Solutions FILE
+# 📁 Tasks_Solutions FILE
 
 Topic: Exception Handling — raise (manual exception control)
 
@@ -76,11 +76,11 @@ finally:
 # ==================================================
 # End of Raise-Tasks-Solutions
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

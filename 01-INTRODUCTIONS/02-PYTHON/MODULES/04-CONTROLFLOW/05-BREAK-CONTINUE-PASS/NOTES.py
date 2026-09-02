@@ -1,5 +1,5 @@
 """
-📘 Module — Control Flow — break / continue / pass
+# 📘 Module — Control Flow — break / continue / pass
 Loop control statements allow us to alter the execution flow
 inside for and while loops.
 """
@@ -101,11 +101,11 @@ for n in numbers:
 # - How continue skips iterations
 # - Why pass exists and when to use it
 # - How to control loop flow cleanly
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

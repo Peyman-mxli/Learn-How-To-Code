@@ -1,21 +1,21 @@
 """
-📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
+# 📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
 
-📁 PYTHON COLLECTIONS — THEORY & NOTES
+# 📁 PYTHON COLLECTIONS — THEORY & NOTES
 
 Python collections are core data structures used to store,
 organize, and manipulate data efficiently.
 
 They are fundamental in real-world applications such as:
-- Software systems
-- Data processing
-- APIs and web applications
-- Automation and scripting
+# - Software systems
+# - Data processing
+# - APIs and web applications
+# - Automation and scripting
 
 This module explains each collection clearly:
-- What it is
-- Why it exists
-- When and how to use it
+# - What it is
+# - Why it exists
+# - When and how to use it
 """
 
 # ======================================================
@@ -27,15 +27,15 @@ A list is an ordered and mutable collection of elements.
 It can store multiple values of different data types.
 
 WHY WE USE IT:
-- Store sequences of data
-- Modify data dynamically
-- Iterate over elements
-- Collect and manage results
+# - Store sequences of data
+# - Modify data dynamically
+# - Iterate over elements
+# - Collect and manage results
 
 WHEN TO USE:
-- When order matters
-- When data changes over time
-- When duplicates are allowed
+# - When order matters
+# - When data changes over time
+# - When duplicates are allowed
 
 IMPORTANT:
 Lists are flexible but can be slower than sets/dicts for lookups.
@@ -52,14 +52,14 @@ WHAT IT IS:
 A tuple is an ordered and immutable collection of elements.
 
 WHY WE USE IT:
-- Protect data from modification
-- Represent fixed data
-- Improve performance for read-only data
+# - Protect data from modification
+# - Represent fixed data
+# - Improve performance for read-only data
 
 WHEN TO USE:
-- Coordinates (x, y)
-- Fixed configurations
-- Function return values
+# - Coordinates (x, y)
+# - Fixed configurations
+# - Function return values
 
 IMPORTANT:
 Tuples cannot be modified after creation.
@@ -75,14 +75,14 @@ WHAT IT IS:
 A set is an unordered collection of unique elements.
 
 WHY WE USE IT:
-- Remove duplicates
-- Fast membership checking
-- Perform set operations
+# - Remove duplicates
+# - Fast membership checking
+# - Perform set operations
 
 WHEN TO USE:
-- Ensuring uniqueness
-- Comparing datasets
-- Fast lookups
+# - Ensuring uniqueness
+# - Comparing datasets
+# - Fast lookups
 
 IMPORTANT:
 Sets do not maintain order.
@@ -99,14 +99,14 @@ WHAT IT IS:
 A dictionary stores data as key-value pairs.
 
 WHY WE USE IT:
-- Fast data retrieval
-- Structured data storage
-- Represent real-world entities
+# - Fast data retrieval
+# - Structured data storage
+# - Represent real-world entities
 
 WHEN TO USE:
-- User profiles
-- Configuration data
-- JSON-like structures
+# - User profiles
+# - Configuration data
+# - JSON-like structures
 
 IMPORTANT:
 Keys must be unique and immutable.
@@ -122,13 +122,13 @@ WHAT IT IS:
 Collections that contain other collections.
 
 WHY WE USE IT:
-- Represent complex data
-- Work with APIs and JSON
-- Model real-world systems
+# - Represent complex data
+# - Work with APIs and JSON
+# - Model real-world systems
 
 WHEN TO USE:
-- Hierarchical data
-- Structured datasets
+# - Hierarchical data
+# - Structured datasets
 
 IMPORTANT:
 Deep nesting reduces readability.
@@ -147,21 +147,21 @@ WHAT IT IS:
 Mutability defines whether a collection can be changed.
 
 MUTABLE:
-- List
-- Set
-- Dictionary
+# - List
+# - Set
+# - Dictionary
 
 IMMUTABLE:
-- Tuple
+# - Tuple
 
 WHY WE USE IT:
-- Control data changes
-- Improve safety
-- Prevent bugs
+# - Control data changes
+# - Improve safety
+# - Prevent bugs
 
 WHEN TO USE:
-- Use immutable when data must not change
-- Use mutable when flexibility is needed
+# - Use immutable when data must not change
+# - Use mutable when flexibility is needed
 """
 
 # ======================================================
@@ -172,12 +172,12 @@ WHAT IT IS:
 Different collections have different performance costs.
 
 WHY WE USE IT:
-- Optimize speed
-- Handle large datasets
+# - Optimize speed
+# - Handle large datasets
 
 WHEN TO USE:
-- Use dict/set for fast lookups
-- Use list for ordered iteration
+# - Use dict/set for fast lookups
+# - Use list for ordered iteration
 
 IMPORTANT:
 Choosing the right structure improves scalability.
@@ -198,11 +198,11 @@ Choosing the right structure improves scalability.
 # ======================================================
 # END OF COLLECTIONS — NOTES
 # ======================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

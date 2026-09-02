@@ -1,5 +1,5 @@
 """
-📘 Module — Python Syntax
+# 📘 Module — Python Syntax
 
 Syntax is the set of rules that defines how Python code must be written.
 Correct syntax allows Python to understand and execute instructions.
@@ -171,11 +171,11 @@ print("Loop finished")
 # ===========================================================================
 
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,9 +1,9 @@
-📘 Module — Built-in Collections
+# 📘 Module — Built-in Collections
 """
-====================================================
-📘 PYTHON BUILT-IN COLLECTIONS
-📁 THEORY & PROFESSIONAL NOTES
-====================================================
+# ====================================================
+# 📘 PYTHON BUILT-IN COLLECTIONS
+# 📁 THEORY & PROFESSIONAL NOTES
+# ====================================================
 
 This file provides a complete, structured, and professional
 explanation of Python’s core built-in collection types.
@@ -13,11 +13,11 @@ organize, and manage multiple values efficiently in
 real-world Python applications.
 
 Collections covered in this file:
-- list
-- tuple
-- str
-- range
-- set
+# - list
+# - tuple
+# - str
+# - range
+# - set
 """
 
 # ====================================================
@@ -223,22 +223,22 @@ PRACTICES:
 
 """
 Next Topics:
-- LISTS — Detailed Notes, Examples, Tasks
-- TUPLES — Detailed Notes, Examples, Tasks
-- STRINGS — Detailed Notes, Examples, Tasks
-- RANGE — Detailed Notes, Examples, Tasks
-- SETS — Detailed Notes, Examples, Tasks
+# - LISTS — Detailed Notes, Examples, Tasks
+# - TUPLES — Detailed Notes, Examples, Tasks
+# - STRINGS — Detailed Notes, Examples, Tasks
+# - RANGE — Detailed Notes, Examples, Tasks
+# - SETS — Detailed Notes, Examples, Tasks
 """
 
 
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
 # 🏁 End of Notes
 # ===========================================================================

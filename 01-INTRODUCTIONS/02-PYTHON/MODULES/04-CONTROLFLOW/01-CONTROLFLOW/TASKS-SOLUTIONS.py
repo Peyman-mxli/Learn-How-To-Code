@@ -1,5 +1,5 @@
 """
-📘 Module — Control Flow in Python
+# 📘 Module — Control Flow in Python
 ✅ Tasks Solutions (Rank 1 → Rank 5)
 
 This file contains one possible set of clean, correct, and professional
@@ -153,11 +153,11 @@ print(squares)
 temperature = 30
 status = "Hot" if temperature > 25 else "Cool"
 print(status)
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

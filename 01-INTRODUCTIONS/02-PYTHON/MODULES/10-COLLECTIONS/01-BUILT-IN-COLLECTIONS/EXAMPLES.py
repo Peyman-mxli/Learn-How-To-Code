@@ -1,20 +1,20 @@
-📘 Module — Built-in Collections
+# 📘 Module — Built-in Collections
 
 """
-====================================================
-📘 PYTHON BUILT-IN COLLECTIONS
-📁 PRACTICAL & REAL-WORLD EXAMPLES
-====================================================
+# ====================================================
+# 📘 PYTHON BUILT-IN COLLECTIONS
+# 📁 PRACTICAL & REAL-WORLD EXAMPLES
+# ====================================================
 
 This file contains professional, real-world examples
 demonstrating how Python built-in collections are used.
 
 Collections covered:
-- list
-- tuple
-- str
-- range
-- set
+# - list
+# - tuple
+# - str
+# - range
+# - set
 
 Each collection includes THREE practical examples
 to reinforce understanding and real usage.
@@ -145,11 +145,11 @@ BUILT-IN COLLECTIONS — TASKS
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
 # 🏁 End of Notes
 # ===========================================================================

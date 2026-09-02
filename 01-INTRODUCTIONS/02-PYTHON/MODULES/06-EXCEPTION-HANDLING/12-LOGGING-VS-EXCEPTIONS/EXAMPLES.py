@@ -1,7 +1,7 @@
 """
-📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
+# 📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
 
-📁 LoggingVsExceptions-Examples
+# 📁 LoggingVsExceptions-Examples
 
 Topic: Exception Handling — Logging vs Exceptions
 
@@ -9,9 +9,9 @@ This file contains RUNNABLE EXAMPLES demonstrating how logging
 and exceptions are used separately and together in real scenarios.
 
 How to use this file:
-- Run it with: python LoggingVsExceptions_Examples.py
-- Read the comment before each example
-- Observe when logging is used vs when exceptions are raised
+# - Run it with: python LoggingVsExceptions_Examples.py
+# - Read the comment before each example
+# - Observe when logging is used vs when exceptions are raised
 """
 
 import logging
@@ -85,11 +85,11 @@ except ZeroDivisionError:
 # End of LoggingVsExceptions-Examples
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

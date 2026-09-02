@@ -1,7 +1,7 @@
 """
-📘 Module — Control Flow — While-loops
+# 📘 Module — Control Flow — While-loops
 
-📁 Tasks Solutions (Rank 1 → Rank 5)
+# 📁 Tasks Solutions (Rank 1 → Rank 5)
 
 These solutions represent one correct approach.
 Different implementations are valid if they work correctly.
@@ -175,11 +175,11 @@ if attempts == 0:
 # ✔ Flags and counters help control flow
 # ✔ Input validation is a real-world use case
 # ✔ Alternative solutions are acceptable
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

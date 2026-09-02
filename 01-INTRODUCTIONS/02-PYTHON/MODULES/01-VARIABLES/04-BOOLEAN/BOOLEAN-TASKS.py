@@ -1,14 +1,14 @@
 """
-📘 Module — Basic Data Types: Boolean(bool)
+# 📘 Module — Basic Data Types: Boolean(bool)
 📝 Tasks File
 This file contains practice tasks designed to help me master Boolean logic
 in Python. The tasks are organized from very basic to professional-level
 usage.
 
 Important rules:
-- I must try to solve each task myself.
-- I should NOT look at the solutions while working.
-- I should write clean, readable Python code.
+# - I must try to solve each task myself.
+# - I should NOT look at the solutions while working.
+# - I should write clean, readable Python code.
 """
 
 
@@ -170,11 +170,11 @@ Important rules:
 # 🏁 End of Tasks
 # ======================================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,14 +1,14 @@
 """
-📘 Module — Control Flow in Python
-📂 Examples File
+# 📘 Module — Control Flow in Python
+# 📂 Examples File
 
 This file contains focused, runnable examples demonstrating how
 Python control flow works in real programs.
 
 How to use this file:
-- Run it with:  python ControlFlow_Examples.py
-- Read comments before each example
-- Modify values to observe different execution paths
+# - Run it with:  python ControlFlow_Examples.py
+# - Read comments before each example
+# - Modify values to observe different execution paths
 """
 
 
@@ -176,11 +176,11 @@ print("Evens:", even_numbers)
 temperature = 18
 status = "Cold" if temperature < 20 else "Warm"
 print("Weather:", status)
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

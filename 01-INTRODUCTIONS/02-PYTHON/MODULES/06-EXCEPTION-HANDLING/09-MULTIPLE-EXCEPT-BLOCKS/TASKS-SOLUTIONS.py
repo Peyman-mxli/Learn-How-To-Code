@@ -1,7 +1,7 @@
 """
-📘 Module — Multiple Except Blocks
+# 📘 Module — Multiple Except Blocks
 
-📁 Multiple-Except-Blocks — Solutions
+# 📁 Multiple-Except-Blocks — Solutions
 
 This file contains SOLUTIONS for all tasks.
 Each solution demonstrates proper use of multiple except blocks,
@@ -88,11 +88,11 @@ finally:
 # ==================================================
 # End of Multiple-Except-Blocks — Solutions
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

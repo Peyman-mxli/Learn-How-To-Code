@@ -1,7 +1,7 @@
-📘 Module — Exception Handling — (try / else)
+# 📘 Module — Exception Handling — (try / else)
 
 """
-📁 Try-Else-Tasks
+# 📁 Try-Else-Tasks
 
 Topic: Exception Handling — try / else
 
@@ -9,9 +9,9 @@ This file contains PRACTICE TASKS designed to help you master
 how and when to use the `else` block in exception handling.
 
 Instructions:
-- Solve tasks from Rank 1 to Rank 5
-- Do NOT look at the solutions until you finish
-- Focus on placing code correctly in try vs else
+# - Solve tasks from Rank 1 to Rank 5
+# - Do NOT look at the solutions until you finish
+# - Focus on placing code correctly in try vs else
 """
 
 # ==================================================
@@ -69,11 +69,11 @@ Instructions:
 # ==================================================
 # End of Try-Else-Tasks
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

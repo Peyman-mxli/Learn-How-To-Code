@@ -1,16 +1,16 @@
 """
-📘 Module — Functions — (Advanced Concepts)
+# 📘 Module — Functions — (Advanced Concepts)
 
-📁 ADVANCED FUNCTIONS — THEORY & NOTES
+# 📁 ADVANCED FUNCTIONS — THEORY & NOTES
 
 Functions are the building blocks of clean and reusable Python code.
 Advanced function concepts allow us to write flexible, readable,
 and scalable programs used in real-world software development.
 
 This file explains each advanced function concept clearly:
-- What it is
-- Why it exists
-- When and how to use it
+# - What it is
+# - Why it exists
+# - When and how to use it
 """
 # ======================================================
 # 1. DEFAULT ARGUMENTS
@@ -21,13 +21,13 @@ Default arguments allow a function parameter to have a predefined value.
 If the caller does not provide a value, the default is used.
 
 WHY WE USE IT:
-- Simplifies function calls
-- Avoids repetitive arguments
-- Provides sensible fallback values
+# - Simplifies function calls
+# - Avoids repetitive arguments
+# - Provides sensible fallback values
 
 WHEN TO USE:
-- When a parameter usually has the same value
-- When you want optional behavior without complexity
+# - When a parameter usually has the same value
+# - When you want optional behavior without complexity
 """
 
 def greet(name="User"):
@@ -45,13 +45,13 @@ Keyword arguments allow values to be passed by parameter name
 instead of position.
 
 WHY WE USE IT:
-- Improves readability
-- Avoids mistakes with argument order
-- Makes function calls self-documenting
+# - Improves readability
+# - Avoids mistakes with argument order
+# - Makes function calls self-documenting
 
 WHEN TO USE:
-- When functions have many parameters
-- When clarity is more important than brevity
+# - When functions have many parameters
+# - When clarity is more important than brevity
 """
 
 def create_user(username, role="student"):
@@ -69,13 +69,13 @@ WHAT IT IS:
 Internally, they are stored as a tuple.
 
 WHY WE USE IT:
-- When we don’t know how many arguments will be passed
-- Makes functions flexible and reusable
+# - When we don’t know how many arguments will be passed
+# - Makes functions flexible and reusable
 
 WHEN TO USE:
-- Mathematical operations
-- Data aggregation
-- Utility/helper functions
+# - Mathematical operations
+# - Data aggregation
+# - Utility/helper functions
 """
 
 def add_numbers(*numbers):
@@ -93,14 +93,14 @@ WHAT IT IS:
 Internally, they are stored as a dictionary.
 
 WHY WE USE IT:
-- Flexible configuration
-- Optional named parameters
-- Clean APIs
+# - Flexible configuration
+# - Optional named parameters
+# - Clean APIs
 
 WHEN TO USE:
-- Configuration functions
-- User profiles
-- Settings and options
+# - Configuration functions
+# - User profiles
+# - Settings and options
 """
 
 def print_info(**info):
@@ -118,16 +118,16 @@ WHAT IT IS:
 Lambda functions are small, anonymous functions written in one line.
 
 WHY WE USE IT:
-- Short, simple logic
-- Avoid defining full functions for small operations
+# - Short, simple logic
+# - Avoid defining full functions for small operations
 
 WHEN TO USE:
-- map(), filter(), sorted()
-- Simple transformations
+# - map(), filter(), sorted()
+# - Simple transformations
 
 WHEN NOT TO USE:
-- Complex logic
-- Multi-step operations
+# - Complex logic
+# - Multi-step operations
 """
 
 square = lambda x: x * x
@@ -147,8 +147,8 @@ G → Global
 B → Built-in
 
 WHY WE USE IT:
-- Prevents naming conflicts
-- Keeps variables controlled and predictable
+# - Prevents naming conflicts
+# - Keeps variables controlled and predictable
 
 IMPORTANT:
 Changing scope incorrectly causes bugs.
@@ -173,14 +173,14 @@ from its enclosing (outer) function even after
 the outer function has finished execution.
 
 WHY WE USE IT:
-- Maintain state
-- Data hiding
-- Cleaner design than global variables
+# - Maintain state
+# - Data hiding
+# - Cleaner design than global variables
 
 WHEN TO USE:
-- Counters
-- State managers
-- Function factories
+# - Counters
+# - State managers
+# - Function factories
 """
 
 def counter():
@@ -195,11 +195,11 @@ c = counter()
 print(c())
 print(c())
 print(c())
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

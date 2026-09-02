@@ -4,9 +4,9 @@ This file contains focused, runnable examples that demonstrate how
 floating-point numbers work in Python.
 
 How to use this file:
-- Run it with:  python Float_Examples.py
-- Observe the output carefully.
-- Modify values and experiment with calculations.
+# - Run it with:  python Float_Examples.py
+# - Observe the output carefully.
+# - Modify values and experiment with calculations.
 """
 
 
@@ -157,11 +157,11 @@ print(abs(x - y) < 1e-9)
 # 🏁 End of Examples
 # ===========================================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

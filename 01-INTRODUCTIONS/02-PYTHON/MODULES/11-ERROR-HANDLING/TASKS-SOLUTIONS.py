@@ -1,7 +1,7 @@
 """
-📘 Module — Error Handling (try / except)
+# 📘 Module — Error Handling (try / except)
 
-📁 Error_Handling_Tasks_Solutions
+# 📁 Error_Handling_Tasks_Solutions
 
 This file contains clean, professional solutions
 for all Error Handling tasks.
@@ -183,11 +183,11 @@ finally:
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
 # 🏁 End of Notes
 # ===========================================================================

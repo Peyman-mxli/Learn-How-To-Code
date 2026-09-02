@@ -1,8 +1,8 @@
 """
-📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
+# 📘 Module — Python Collections (Lists, Tuples, Sets & Dictionaries)
 
 
-📁 Collections-Tasks
+# 📁 Collections-Tasks
 
 Topic: Python Collections — Lists, Tuples, Sets, Dictionaries
 
@@ -10,9 +10,9 @@ This file contains PRACTICE TASKS to help you master
 Python collections from basic to professional level.
 
 Instructions:
-- Complete tasks from Rank 1 to Rank 5
-- Think about structure and performance
-- Do NOT check solutions until all tasks are completed
+# - Complete tasks from Rank 1 to Rank 5
+# - Think about structure and performance
+# - Do NOT check solutions until all tasks are completed
 """
 
 # ==================================================
@@ -157,11 +157,11 @@ Instructions:
 # ==================================================
 # End of Collections-Tasks
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

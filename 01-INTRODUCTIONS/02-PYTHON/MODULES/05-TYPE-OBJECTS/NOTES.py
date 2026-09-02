@@ -1,12 +1,12 @@
 """
-📘 Module — Type Objects —(type, isinstance, id)
+# 📘 Module — Type Objects —(type, isinstance, id)
 📝 NOTES
 In Python, everything is an object.
 Variables do not store values directly — they reference objects.
 Each object has:
-- a value
-- a type
-- an identity
+# - a value
+# - a type
+# - an identity
 
 Understanding type objects helps explain Python’s dynamic behavior and
 prevents many common bugs.
@@ -129,11 +129,11 @@ print(type(data))
 # - How to use type(), isinstance(), and id()
 # - The difference between value, type, and identity
 # - Common mistakes and best practices
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

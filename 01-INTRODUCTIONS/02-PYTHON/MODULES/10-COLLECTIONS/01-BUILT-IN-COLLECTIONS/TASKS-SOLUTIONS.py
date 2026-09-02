@@ -1,10 +1,10 @@
-📘 Module — Built-in Collections
+# 📘 Module — Built-in Collections
 
 """
-====================================================
-📘 PYTHON BUILT-IN COLLECTIONS
-📁 TASK SOLUTIONS (RANK 1 → RANK 5)
-====================================================
+# ====================================================
+# 📘 PYTHON BUILT-IN COLLECTIONS
+# 📁 TASK SOLUTIONS (RANK 1 → RANK 5)
+# ====================================================
 
 This file contains clean and professional solutions
 for all collection tasks.
@@ -157,11 +157,11 @@ print(course1 & course2)
 # ====================================================
 # 👤 Author
 # ====================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
 # 🏁 End of Notes
 # ===========================================================================

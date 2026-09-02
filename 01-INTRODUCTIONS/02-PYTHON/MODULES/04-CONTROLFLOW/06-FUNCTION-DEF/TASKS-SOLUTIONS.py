@@ -1,9 +1,9 @@
 """
-📘 Module — Functions — def (Function Definition)
+# 📘 Module — Functions — def (Function Definition)
 
-====================================================
+# ====================================================
 FUNCTIONS — DEF (TASK SOLUTIONS)
-====================================================
+# ====================================================
 This file contains clean and correct solutions
 for all Functions — def tasks.
 
@@ -127,11 +127,11 @@ university_enrollment(
 # ====================================================
 # END OF SOLUTIONS — def
 # ====================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

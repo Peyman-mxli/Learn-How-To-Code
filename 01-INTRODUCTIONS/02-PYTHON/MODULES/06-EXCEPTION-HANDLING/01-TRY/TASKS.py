@@ -1,13 +1,13 @@
 """
-📘 Module — Exception Handling — The try Statement
+# 📘 Module — Exception Handling — The try Statement
 
-📁 Tasks File (Rank 1 → Rank 5)
+# 📁 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Use try blocks to protect risky code.
-- Use generic except for now (specific handling comes later).
-- Focus on identifying where try is needed.
-- Do NOT open the solutions until you try seriously.
+# - Use try blocks to protect risky code.
+# - Use generic except for now (specific handling comes later).
+# - Focus on identifying where try is needed.
+# - Do NOT open the solutions until you try seriously.
 """
 # ===========================================================================
 # 🟢 Rank 1 — Beginner
@@ -104,11 +104,11 @@ files = ["a.txt", "b.txt", "c.txt"]
 # ===========================================================================
 # 🧠 End of Tasks
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

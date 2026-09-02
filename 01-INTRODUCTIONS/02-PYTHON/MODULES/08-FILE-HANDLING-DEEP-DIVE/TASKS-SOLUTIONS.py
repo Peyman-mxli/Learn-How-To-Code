@@ -1,16 +1,16 @@
 """
-📘 Module — File Handling — (Deep Dive)
+# 📘 Module — File Handling — (Deep Dive)
 
-📁 FileHandling-Tasks-Solutions
+# 📁 FileHandling-Tasks-Solutions
 
 Topic: Python File Handling — Read, Write, Append, Errors
 
 This file contains SOLUTIONS for all tasks in FileHandling-Tasks.py.
 
 Review notes:
-- Focus on correct file modes
-- Use safe file handling (with)
-- Handle errors properly
+# - Focus on correct file modes
+# - Use safe file handling (with)
+# - Handle errors properly
 """
 
 # ==================================================
@@ -55,11 +55,11 @@ print(count_lines("task.txt"))
 # ==================================================
 # End of FileHandling-Tasks-Solutions
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

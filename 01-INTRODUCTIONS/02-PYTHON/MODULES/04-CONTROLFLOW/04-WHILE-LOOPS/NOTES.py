@@ -1,4 +1,4 @@
-📘 Module — Control Flow — While-loops
+# 📘 Module — Control Flow — While-loops
 """
 A while loop executes code repeatedly while a condition is True.
 The loop stops automatically when the condition becomes False.
@@ -113,11 +113,11 @@ print("Total:", total)
 # - How to prevent infinite loops
 # - How to control flow using break and continue
 # - How to write safe and readable while loops
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

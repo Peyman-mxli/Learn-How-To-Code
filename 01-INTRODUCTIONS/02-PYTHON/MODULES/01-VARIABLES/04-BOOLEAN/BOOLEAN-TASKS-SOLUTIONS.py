@@ -1,15 +1,15 @@
 
 """
-📘 Module — Basic Data Types: Boolean(bool)
+# 📘 Module — Basic Data Types: Boolean(bool)
 ✅ Tasks Solutions File
 
 This file contains one possible set of solutions for the Boolean tasks.
 The solutions prioritize clarity, readability, and correct logic.
 
 Important:
-- There are many valid ways to solve these tasks.
-- If your solution works but looks different, that is OK.
-- Use this file to compare, learn, and refactor your own code.
+# - There are many valid ways to solve these tasks.
+# - If your solution works but looks different, that is OK.
+# - Use this file to compare, learn, and refactor your own code.
 """
 
 
@@ -210,11 +210,11 @@ print("Can enter:", can_enter)
 # ===========================================================================
 # 🏁 End of Solutions
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,8 +1,8 @@
 """
-📘 Module — Python Modules
-====================================================
+# 📘 Module — Python Modules
+# ====================================================
 MODULES — PRACTICAL EXAMPLES
-====================================================
+# ====================================================
 
 This file contains professional, real-world examples
 demonstrating how MODULES are used in Python.
@@ -72,9 +72,9 @@ print("Random decimal:", random.random())
 User-defined modules are Python files created by the developer.
 
 Assume the following modules exist in the same directory:
-- greetings.py
-- calculator.py
-- user_info.py
+# - greetings.py
+# - calculator.py
+# - user_info.py
 """
 
 # ----------------------------------------------------
@@ -186,11 +186,11 @@ print(df)
 # END OF EXAMPLES — MODULES
 # ====================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

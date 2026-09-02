@@ -1,12 +1,12 @@
 """
-📘 Module — Control Flow in Python
+# 📘 Module — Control Flow in Python
 📝 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Read each task carefully.
-- Write your solution under each task.
-- Do NOT open the solutions file until you try seriously.
-- Focus on clarity, correctness, and best practices.
+# - Read each task carefully.
+# - Write your solution under each task.
+# - Do NOT open the solutions file until you try seriously.
+# - Focus on clarity, correctness, and best practices.
 """
 
 
@@ -104,11 +104,11 @@ Instructions:
 # ✔ Keep logic readable
 # ✔ Handle errors safely
 # ✔ Use control flow to express intent clearly
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

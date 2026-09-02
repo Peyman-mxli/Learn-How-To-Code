@@ -1,7 +1,7 @@
 """
-📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
+# 📘 Module — Exception Hierarchy — (Understanding Python Errors Structure)
 
-📁 Exception Hierarchy — Tasks
+# 📁 Exception Hierarchy — Tasks
 
 Complete the following exercises to practice understanding
 Python's exception hierarchy.
@@ -65,11 +65,11 @@ to Rank 5 (Professional).
 # --------------------------------------------------
 # End of Tasks
 # --------------------------------------------------
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

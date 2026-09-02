@@ -1,6 +1,6 @@
-📘 Module —  Custom Exceptions — (Class-Based)
+# 📘 Module —  Custom Exceptions — (Class-Based)
 """
-📁 CustomExceptions-Examples
+# 📁 CustomExceptions-Examples
 
 Topic: Exception Handling — Custom Exceptions (Class-Based)
 
@@ -8,9 +8,9 @@ This file contains RUNNABLE EXAMPLES showing how to define,
 raise, and catch custom (user-defined) exceptions in Python.
 
 How to use this file:
-- Run it with: python CustomExceptions_Examples.py
-- Read the comment before each example
-- Observe how custom exceptions improve clarity
+# - Run it with: python CustomExceptions_Examples.py
+# - Read the comment before each example
+# - Observe how custom exceptions improve clarity
 """
 
 # ==================================================
@@ -115,11 +115,11 @@ except PaymentError as e:
 # End of CustomExceptions-Examples
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

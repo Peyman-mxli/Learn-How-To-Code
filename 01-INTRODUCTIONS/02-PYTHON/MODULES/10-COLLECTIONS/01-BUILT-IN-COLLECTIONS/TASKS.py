@@ -1,29 +1,29 @@
-📘 Module — Built-in Collections
+# 📘 Module — Built-in Collections
 
 """
-====================================================
-📘 PYTHON BUILT-IN COLLECTIONS
-📁 TASKS (RANK 1 → RANK 5)
-====================================================
+# ====================================================
+# 📘 PYTHON BUILT-IN COLLECTIONS
+# 📁 TASKS (RANK 1 → RANK 5)
+# ====================================================
 
 This file contains structured practice tasks covering
 ALL Python built-in collections:
 
-- list
-- tuple
-- str
-- range
-- set
+# - list
+# - tuple
+# - str
+# - range
+# - set
 
 🎯 Goal:
 Progress from basic understanding to professional-level
 usage of Python collections.
 
 ❗ Rules:
-- Follow the task instructions carefully
-- Use the appropriate collection type
-- Focus on clean, readable code
-- Difficulty increases from Rank 1 to Rank 5
+# - Follow the task instructions carefully
+# - Use the appropriate collection type
+# - Focus on clean, readable code
+# - Difficulty increases from Rank 1 to Rank 5
 """
 
 # ====================================================
@@ -258,11 +258,11 @@ Built-in_Collections_Tasks_Solutions.py
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
 # 🏁 End of Notes
 # ===========================================================================

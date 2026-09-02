@@ -1,7 +1,7 @@
-📘 Module — TESTING & DEBUGGING (PYTHON)
+# 📘 Module — TESTING & DEBUGGING (PYTHON)
 """
-📘 TESTING & DEBUGGING — PYTHON
-📁 TASKS (RANK 1 → RANK 5)
+# 📘 TESTING & DEBUGGING — PYTHON
+# 📁 TASKS (RANK 1 → RANK 5)
 
 These tasks help you practice Testing and Debugging
 from basic error fixing to professional-level problem solving.
@@ -12,9 +12,9 @@ Rules:
 ❗ Write clean, testable, and reliable code
 """
 
-====================================================
-🟢 RANK 1 — VERY EASY
-====================================================
+# ====================================================
+# 🟢 RANK 1 — VERY EASY
+# ====================================================
 
 """
 Task 1:
@@ -36,9 +36,9 @@ def add_numbers(a, b):
 print(a + b)
 
 Your code here
-====================================================
-🟡 RANK 2 — EASY
-====================================================
+# ====================================================
+# 🟡 RANK 2 — EASY
+# ====================================================
 
 """
 Task 3:
@@ -60,9 +60,9 @@ def calculate_average(a, b):
 return a + b / 2
 
 Your code here
-====================================================
-🟠 RANK 3 — INTERMEDIATE
-====================================================
+# ====================================================
+# 🟠 RANK 3 — INTERMEDIATE
+# ====================================================
 
 """
 Task 5:
@@ -93,9 +93,9 @@ total = price * quantity
 return total
 
 Your code here
-====================================================
-🔵 RANK 4 — ADVANCED
-====================================================
+# ====================================================
+# 🔵 RANK 4 — ADVANCED
+# ====================================================
 
 """
 Task 7:
@@ -119,9 +119,9 @@ def calculate_invoice(price, quantity):
 return price * quantity
 
 Your code here
-====================================================
-🔴 RANK 5 — PROFESSIONAL
-====================================================
+# ====================================================
+# 🔴 RANK 5 — PROFESSIONAL
+# ====================================================
 
 """
 Task 9:
@@ -147,16 +147,16 @@ Create a function that:
 """
 
 Your code here
-====================================================
-END OF TASKS — TESTING & DEBUGGING
-====================================================
-👤 Author
-====================================================
+# ====================================================
+# END OF TASKS — TESTING & DEBUGGING
+# ====================================================
+# 👤 Author
+# ====================================================
 
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
-====================================================
+# ====================================================

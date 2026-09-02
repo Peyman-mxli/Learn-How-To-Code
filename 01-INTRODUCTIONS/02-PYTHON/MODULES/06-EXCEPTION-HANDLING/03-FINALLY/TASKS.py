@@ -1,4 +1,4 @@
-📘 Module — Exception Handling — (finally)
+# 📘 Module — Exception Handling — (finally)
 
 """
  📁Tasks FILES
@@ -6,10 +6,10 @@
 Topic: Exception Handling — finally
 
 Instructions:
-- These tasks are ordered from Rank 1 (Beginner) to Rank 5 (Advanced).
-- Do NOT write solutions in this file.
-- Try to solve each task before checking the solutions file.
-- Focus on understanding WHEN and WHY `finally` executes.
+# - These tasks are ordered from Rank 1 (Beginner) to Rank 5 (Advanced).
+# - Do NOT write solutions in this file.
+# - Try to solve each task before checking the solutions file.
+# - Focus on understanding WHEN and WHY `finally` executes.
 """
 # ==================================================
 # Rank 1 — Understanding guaranteed execution
@@ -78,11 +78,11 @@ Instructions:
 # ==================================================
 # End of Finally_Tasks.py
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

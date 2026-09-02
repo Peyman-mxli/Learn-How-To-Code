@@ -1,14 +1,14 @@
 """
-📘 Module — NoneType— (None)
+# 📘 Module — NoneType— (None)
 ✅ Tasks Solutions (Rank 1 → Rank 5)
 
 This file contains one possible set of correct and clean solutions
 for each task in NoneType_Tasks.py.
 
 These solutions prioritize:
-- Correct use of `is None`
-- Readable, professional Python code
-- Safe handling of missing values
+# - Correct use of `is None`
+# - Readable, professional Python code
+# - Safe handling of missing values
 """
 
 
@@ -155,11 +155,11 @@ if test_value is None:
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-👤 Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
+# 👤 Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
 
 # 🏁 End of Solutions
 # ===========================================================================

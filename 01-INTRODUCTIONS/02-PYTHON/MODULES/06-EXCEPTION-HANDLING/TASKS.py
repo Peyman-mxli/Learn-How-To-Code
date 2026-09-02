@@ -1,12 +1,12 @@
 """
-📘 Module — Exception-Handling-in-Python
+# 📘 Module — Exception-Handling-in-Python
 
-📁 TASKS Rank 1 → Rank 5
+# 📁 TASKS Rank 1 → Rank 5
 
 Instructions:
-- Solve each task using try / except / else / finally where appropriate.
-- Handle specific exceptions whenever possible.
-- Do NOT open the solutions until you have tried seriously.
+# - Solve each task using try / except / else / finally where appropriate.
+# - Handle specific exceptions whenever possible.
+# - Do NOT open the solutions until you have tried seriously.
 """
 # ===========================================================================
 # 🟢 Rank 1 — Beginner
@@ -126,11 +126,11 @@ files = ["a.txt", "b.txt", "c.txt"]
 # ===========================================================================
 # When ready, compare with:
 # Exception-HandlingTasks-Solutions
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

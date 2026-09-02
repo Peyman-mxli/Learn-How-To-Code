@@ -1,5 +1,5 @@
 """
-📘 Module — Control Flow — For-loops
+# 📘 Module — Control Flow — For-loops
 Examples File
 This file contains practical, runnable examples showing how `for` loops
 are used in real Python programs.
@@ -129,11 +129,11 @@ print("- range() generates numbers")
 print("- enumerate() provides index and value")
 print("- break stops a loop")
 print("- continue skips to the next iteration")
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

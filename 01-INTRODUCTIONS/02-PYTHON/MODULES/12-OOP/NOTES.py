@@ -1,9 +1,9 @@
-📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
+# 📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
 """
-====================================================
-📘 OBJECT-ORIENTED PROGRAMMING (OOP)
-📁 DEEP THEORY & PROFESSIONAL NOTES
-====================================================
+# ====================================================
+# 📘 OBJECT-ORIENTED PROGRAMMING (OOP)
+# 📁 DEEP THEORY & PROFESSIONAL NOTES
+# ====================================================
 This file provides a complete and professional explanation
 of Object-Oriented Programming (OOP) in Python.
 
@@ -84,8 +84,8 @@ When objects need to hold information.
 
 IMPORTANT:
 Two types:
-1️⃣ Instance attributes → unique per object
-2️⃣ Class attributes → shared across all objects
+# 1️⃣ Instance attributes → unique per object
+# 2️⃣ Class attributes → shared across all objects
 """
 class Car:
     wheels = 4  # Class attribute
@@ -266,9 +266,9 @@ IMPORTANT:
 # ====================================================
 # 👤 Author
 # ====================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 # ===========================================================================

@@ -1,9 +1,9 @@
 """
-📘 Module — Python Modules
+# 📘 Module — Python Modules
 
-====================================================
+# ====================================================
 MODULES — TASKS (RANK 1 → RANK 5)
-====================================================
+# ====================================================
 
 This file contains structured exercises focused on
 understanding and using Python modules.
@@ -14,10 +14,10 @@ Covered module types:
 ✔ Third-party modules
 
 Rules:
-- Follow rank order (1 → 5)
-- Focus on correct importing
-- Use clean and professional formatting
-- Do NOT solve tasks in this file
+# - Follow rank order (1 → 5)
+# - Focus on correct importing
+# - Use clean and professional formatting
+# - Do NOT solve tasks in this file
 """
 
 # ====================================================
@@ -27,7 +27,7 @@ Rules:
 """
 Task 1:
 Import the built-in `math` module and print:
-- The value of pi
+# - The value of pi
 """
 
 # Your code here
@@ -58,8 +58,8 @@ the current year.
 """
 Task 4:
 Import the `math` module and print:
-- Square root of 81
-- 3 raised to the power of 4
+# - Square root of 81
+# - 3 raised to the power of 4
 """
 
 # Your code here
@@ -78,8 +78,8 @@ a value from the list:
 """
 Task 6:
 Import `datetime` and print:
-- Current date
-- Current time
+# - Current date
+# - Current time
 """
 
 # Your code here
@@ -104,8 +104,8 @@ Import the module and call the function.
 Task 8:
 Assume a module named `calculator.py` exists
 with functions:
-- add(a, b)
-- multiply(a, b)
+# - add(a, b)
+# - multiply(a, b)
 
 Import the module and use both functions.
 """
@@ -130,9 +130,9 @@ and calculate the square root of 144.
 Task 10:
 Assume a module named `user_info.py` exists
 with the following functions:
-- display_name(name)
-- display_program(program)
-- display_status(status)
+# - display_name(name)
+# - display_program(program)
+# - display_status(status)
 
 Import the module and call all functions
 with realistic values.
@@ -169,8 +169,8 @@ a formatted message showing:
 Task 13:
 Create and use a user-defined module named
 `system_utils.py` that contains:
-- a function to print system status
-- a function to print system version
+# - a function to print system status
+# - a function to print system version
 
 Import and execute both functions.
 """
@@ -210,11 +210,11 @@ for each one.
 # END OF TASKS — MODULES
 # ====================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

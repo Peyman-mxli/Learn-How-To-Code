@@ -1,15 +1,15 @@
-📘 Module — Exception Handling — (try / else)
+# 📘 Module — Exception Handling — (try / else)
 
 """
-📁Try-Else-Tasks-Solutions
+# 📁Try-Else-Tasks-Solutions
 
 Topic: Exception Handling — try / else
 
 This file contains SOLUTIONS for all tasks in Try_Else_Tasks.py.
 
 Important:
-- Review this file only after attempting all tasks yourself
-- Focus on WHY code is placed in try vs else
+# - Review this file only after attempting all tasks yourself
+# - Focus on WHY code is placed in try vs else
 """
 
 # ==================================================
@@ -82,11 +82,11 @@ else:
 # ==================================================
 # End of Try-Else-Tasks-Solutions
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

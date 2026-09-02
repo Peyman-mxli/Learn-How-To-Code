@@ -1,12 +1,12 @@
 """
-📘 Module —  Exception Handling — The except Statement
+# 📘 Module —  Exception Handling — The except Statement
 
-📁 Tasks File (Rank 1 → Rank 5)
+# 📁 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Focus on handling errors using except blocks.
-- Prefer specific exceptions over generic ones.
-- Do NOT open the solutions until you have tried seriously.
+# - Focus on handling errors using except blocks.
+# - Prefer specific exceptions over generic ones.
+# - Do NOT open the solutions until you have tried seriously.
 """
 # ===========================================================================
 # 🟢 Rank 1 — Beginner
@@ -122,11 +122,11 @@ files = ["a.txt", "b.txt", "c.txt"]
 # ===========================================================================
 # When ready, compare with:
 # Exception-Handling-Tasks-Solutions
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

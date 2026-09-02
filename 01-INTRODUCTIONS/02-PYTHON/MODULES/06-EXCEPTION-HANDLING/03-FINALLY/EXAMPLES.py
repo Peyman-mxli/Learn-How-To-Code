@@ -1,7 +1,7 @@
-📘 Module — Exception Handling — (finally)
+# 📘 Module — Exception Handling — (finally)
 
 """
-📁Examples 
+# 📁Examples 
 
 Topic: Exception Handling — finally
 
@@ -9,9 +9,9 @@ This file contains runnable examples that demonstrate how `finally`
 controls program flow in different situations.
 
 How to use this file:
-- Run it with: python Finally_Examples.py
-- Read the comments before each example
-- Observe the output carefully
+# - Run it with: python Finally_Examples.py
+# - Read the comments before each example
+# - Observe the output carefully
 """
 # ==================================================
 # Example 1 — finally always runs (no error)
@@ -111,11 +111,11 @@ print("Both files written and closed")
 # ==================================================
 # End of Finally_Examples.py
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

@@ -1,19 +1,19 @@
 """
-📘 Module — Functions — def (Function Definition)
+# 📘 Module — Functions — def (Function Definition)
 
-====================================================
+# ====================================================
 FUNCTIONS — DEF (TASKS)
-====================================================
+# ====================================================
 
 These tasks focus ONLY on defining functions using `def`.
 
 ❗ Rules for this file:
-- Do NOT use `return`
-- Use print() for output
-- Focus on function structure, parameters, and execution
-- Follow Rank 1 → Rank 5 difficulty
+# - Do NOT use `return`
+# - Use print() for output
+# - Focus on function structure, parameters, and execution
+# - Follow Rank 1 → Rank 5 difficulty
 
-====================================================
+# ====================================================
 """
 
 # ====================================================
@@ -73,9 +73,9 @@ Call the function.
 """
 Task 5:
 Create a function named `employee_info` that accepts:
-- name
-- department
-- position
+# - name
+# - department
+# - position
 
 Print all information in a clean format.
 
@@ -88,8 +88,8 @@ Call the function.
 """
 Task 6:
 Create a function named `system_health` that accepts:
-- cpu_usage
-- memory_usage
+# - cpu_usage
+# - memory_usage
 
 Print a formatted system health report.
 """
@@ -103,9 +103,9 @@ Print a formatted system health report.
 """
 Task 7:
 Create a function named `login_audit` that accepts:
-- username
-- ip_address
-- device
+# - username
+# - ip_address
+# - device
 
 Print a professional login audit log.
 
@@ -118,10 +118,10 @@ Call the function twice with different users.
 """
 Task 8:
 Create a function named `order_invoice` that accepts:
-- customer_name
-- product_name
-- quantity
-- price_per_unit
+# - customer_name
+# - product_name
+# - quantity
+# - price_per_unit
 
 Print a detailed invoice.
 (Do NOT calculate totals — only display data.)
@@ -136,10 +136,10 @@ Print a detailed invoice.
 """
 Task 9:
 Create a function named `incident_report` that accepts:
-- incident_id
-- severity
-- description
-- reported_by
+# - incident_id
+# - severity
+# - description
+# - reported_by
 
 Print a professional incident report similar to
 real IT systems.
@@ -151,10 +151,10 @@ real IT systems.
 """
 Task 10:
 Create a function named `university_enrollment` that accepts:
-- student_name
-- student_id
-- program
-- semester
+# - student_name
+# - student_id
+# - program
+# - semester
 
 Print a clean enrollment confirmation message.
 
@@ -165,11 +165,11 @@ Call the function with realistic data.
 # ====================================================
 # END OF TASKS — def
 # ====================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

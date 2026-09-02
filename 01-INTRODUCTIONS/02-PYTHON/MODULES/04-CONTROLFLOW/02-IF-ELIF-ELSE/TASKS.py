@@ -1,12 +1,12 @@
 """
-📘 Module — Control Flow — if / elif / else in python
+# 📘 Module — Control Flow — if / elif / else in python
 📝 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Read each task carefully.
-- Write your solution under each task.
-- Do NOT check the solutions file until you have tried seriously.
-- Focus on clarity, correctness, and readability.
+# - Read each task carefully.
+# - Write your solution under each task.
+# - Do NOT check the solutions file until you have tried seriously.
+# - Focus on clarity, correctness, and readability.
 """
 
 
@@ -104,11 +104,11 @@ Instructions:
 # ✔ Conditions should be readable
 # ✔ Avoid unnecessary nesting
 # ✔ Use elif for clarity
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

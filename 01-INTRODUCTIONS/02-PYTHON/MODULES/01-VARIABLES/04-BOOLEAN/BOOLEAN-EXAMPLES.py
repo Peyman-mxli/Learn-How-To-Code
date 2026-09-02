@@ -1,12 +1,12 @@
 """
-📘 Module — Basic Data Types: Boolean(bool)
+# 📘 Module — Basic Data Types: Boolean(bool)
 This file contains focused, runnable examples that demonstrate how
 Boolean values and logical expressions work in real Python code.
 
 How to use this file:
-- Run it with:  python Boolean_Examples.py
-- Read the output carefully.
-- Change values and observe how Boolean logic affects program behavior.
+# - Run it with:  python Boolean_Examples.py
+# - Read the output carefully.
+# - Change values and observe how Boolean logic affects program behavior.
 """
 
 
@@ -174,11 +174,11 @@ print("Hot:", is_hot)
 # ===========================================================================
 # 🏁 End of Examples
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

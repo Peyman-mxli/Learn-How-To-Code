@@ -1,9 +1,9 @@
-📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
+# 📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
 """
-====================================================
-📘 OBJECT-ORIENTED PROGRAMMING (OOP)
-📁 TASKS (RANK 1 → RANK 5)
-====================================================
+# ====================================================
+# 📘 OBJECT-ORIENTED PROGRAMMING (OOP)
+# 📁 TASKS (RANK 1 → RANK 5)
+# ====================================================
 These tasks help you practice Object-Oriented Programming
 from basic concepts to professional-level design.
 
@@ -48,8 +48,8 @@ Create an object and print the title.
 Task 4:
 Create a class named Student.
 Use __init__ to store:
-- name
-- student_id
+# - name
+# - student_id
 
 Create an object and display both values.
 """
@@ -60,8 +60,8 @@ Create an object and display both values.
 Task 5:
 Create a class named Account.
 Add attributes:
-- owner
-- balance
+# - owner
+# - balance
 
 Create a method show_balance()
 that prints the balance.
@@ -126,9 +126,9 @@ Create two subclasses with different implementations.
 """
 Task 12:
 Create a class that combines:
-- Encapsulation
-- Methods
-- Inheritance
+# - Encapsulation
+# - Methods
+# - Inheritance
 """
 # Your code here
 # ====================================================
@@ -138,9 +138,9 @@ Create a class that combines:
 Task 13:
 Design a User Authentication System using OOP.
 Include:
-- User class
-- Login method
-- Encapsulation for password
+# - User class
+# - Login method
+# - Encapsulation for password
 """
 # Your code here
 
@@ -148,9 +148,9 @@ Include:
 Task 14:
 Design a small e-commerce system using OOP.
 Include:
-- Product class
-- Order class
-- Methods to display data
+# - Product class
+# - Order class
+# - Methods to display data
 """
 
 # Your code here
@@ -163,9 +163,9 @@ Build a mini system using:
 ✔ Encapsulation
 
 Example ideas:
-- Notification system
-- Payment system
-- University system
+# - Notification system
+# - Payment system
+# - University system
 """
 # Your code here
 # ====================================================
@@ -173,9 +173,9 @@ Example ideas:
 # ====================================================
 # 👤 Author
 # ====================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 # ====================================================

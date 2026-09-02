@@ -1,7 +1,7 @@
 """
-📘 Module — Exception Handling — The try Statement
+# 📘 Module — Exception Handling — The try Statement
 
-📁 Examples File
+# 📁 Examples File
 
 This file demonstrates how the try block is used to protect risky code.
 Error handling logic will be expanded later using except, else, and finally.
@@ -102,11 +102,11 @@ except:
 # - Preventing crashes
 # - Scope of try blocks
 # - Preparing for proper exception handling
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

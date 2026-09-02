@@ -1,13 +1,13 @@
 """
-📘 Module — Basic Data Types: Integer (int)
+# 📘 Module — Basic Data Types: Integer (int)
 : Practice Task Solutions
----------------------------------------------
+# ---------------------------------------------
 
 This file contains clean, professional solutions to all integer exercises
 from Integer_Tasks.py. Many tasks have multiple valid approaches; these
 solutions focus on clarity and correctness.
 
-⚠️ IMPORTANT:
+# ⚠️ IMPORTANT:
 Only read these solutions AFTER attempting the tasks yourself!
 """
 
@@ -236,9 +236,9 @@ print("next_even(10) =", next_even(10))
 
 
 # ===========================================================================
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026

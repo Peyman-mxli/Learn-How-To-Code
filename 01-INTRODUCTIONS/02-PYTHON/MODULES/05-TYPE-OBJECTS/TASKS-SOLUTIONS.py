@@ -1,5 +1,5 @@
 """
-📘 Module — Type Objects —(type, isinstance, id)
+# 📘 Module — Type Objects —(type, isinstance, id)
 
 ✅ Tasks Solutions File (Rank 1 → Rank 5)
 
@@ -134,11 +134,11 @@ for item in mixed_list:
 # ===========================================================================
 # 🏁 End of Solutions
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

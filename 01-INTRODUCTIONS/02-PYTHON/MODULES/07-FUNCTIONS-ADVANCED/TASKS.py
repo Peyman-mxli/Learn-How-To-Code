@@ -1,7 +1,7 @@
 """
-📘 Module — Functions — (Advanced Concepts)
+# 📘 Module — Functions — (Advanced Concepts)
 
-📁 AdvancedFunctions-Tasks
+# 📁 AdvancedFunctions-Tasks
 
 Topic: Python Functions — Defaults, Arguments, Lambda, Scope, Closures
 
@@ -9,9 +9,9 @@ This file contains PRACTICE TASKS to help you master advanced
 function concepts in Python.
 
 Instructions:
-- Complete tasks from Rank 1 to Rank 5
-- Follow topic sections carefully
-- Do NOT check solutions until all tasks are completed
+# - Complete tasks from Rank 1 to Rank 5
+# - Follow topic sections carefully
+# - Do NOT check solutions until all tasks are completed
 """
 
 # ==================================================
@@ -158,11 +158,11 @@ Instructions:
 # ==================================================
 # End of AdvancedFunctions-Tasks
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

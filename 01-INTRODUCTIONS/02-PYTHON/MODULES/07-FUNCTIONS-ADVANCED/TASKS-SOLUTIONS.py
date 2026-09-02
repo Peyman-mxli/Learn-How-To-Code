@@ -1,16 +1,16 @@
 """
-📘 Module — Functions — (Advanced Concepts)
+# 📘 Module — Functions — (Advanced Concepts)
 
-📁 AdvancedFunctions-Tasks-Solutions
+# 📁 AdvancedFunctions-Tasks-Solutions
 
 Topic: Python Functions — Defaults, Arguments, Lambda, Scope, Closures
 
 This file contains SOLUTIONS for all tasks in AdvancedFunctions_Tasks.py.
 
 Review notes:
-- Focus on correct syntax and patterns
-- Observe flexibility of function arguments
-- Understand scope and closures carefully
+# - Focus on correct syntax and patterns
+# - Observe flexibility of function arguments
+# - Understand scope and closures carefully
 """
 
 # ==================================================
@@ -316,11 +316,11 @@ error_log("File not found")
 # End of AdvancedFunctions-Tasks-Solutions
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

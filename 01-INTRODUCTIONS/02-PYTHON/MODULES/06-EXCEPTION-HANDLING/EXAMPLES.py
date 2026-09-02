@@ -1,6 +1,6 @@
 """
-📘 Module — Exception-Handling-in-Python
-📁 EXAMPLES
+# 📘 Module — Exception-Handling-in-Python
+# 📁 EXAMPLES
 
 This file contains practical, runnable examples demonstrating how Python
 handles runtime errors using try / except / else / finally and raise.
@@ -127,11 +127,11 @@ finally:
 # - else and finally blocks
 # - manual exception raising
 # - validation and defensive programming
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

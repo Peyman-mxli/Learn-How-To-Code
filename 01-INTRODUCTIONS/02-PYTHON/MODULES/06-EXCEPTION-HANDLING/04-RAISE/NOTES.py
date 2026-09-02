@@ -1,4 +1,4 @@
-📘 Module — Exception Handling — (raise)
+# 📘 Module — Exception Handling — (raise)
 
 """
  📁 Notes.py
@@ -112,11 +112,11 @@ It focuses on concepts, rules, and behavior — not runnable exercises.
 # ==================================================
 # End of Raise_Notes.py
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

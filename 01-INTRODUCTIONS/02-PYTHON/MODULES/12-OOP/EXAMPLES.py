@@ -1,9 +1,9 @@
-📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
+# 📘 Module — OBJECT-ORIENTED PROGRAMMING (OOP)
 """
-====================================================
-📘 OBJECT-ORIENTED PROGRAMMING (OOP)
-📁 PRACTICAL EXAMPLES
-====================================================
+# ====================================================
+# 📘 OBJECT-ORIENTED PROGRAMMING (OOP)
+# 📁 PRACTICAL EXAMPLES
+# ====================================================
 This file demonstrates real-world usage of
 Object-Oriented Programming (OOP) concepts in Python.
 
@@ -242,8 +242,8 @@ db.connect()
 # ====================================================
 # 👤 Author
 # ====================================================
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 # ====================================================

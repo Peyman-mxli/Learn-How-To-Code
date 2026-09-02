@@ -1,7 +1,7 @@
 """
-📘 Module — File Handling — (Deep Dive)
+# 📘 Module — File Handling — (Deep Dive)
 
-📁 FileHandling-Examples
+# 📁 FileHandling-Examples
 
 Topic: Python File Handling — Read, Write, Append, Errors
 
@@ -9,10 +9,10 @@ This file contains EXAMPLES demonstrating file handling
 operations in Python using safe and real-world patterns.
 
 Focus:
-- File operations
-- Safe handling (with)
-- Reading strategies
-- Error handling
+# - File operations
+# - Safe handling (with)
+# - Reading strategies
+# - Error handling
 """
 
 # ==================================================
@@ -107,11 +107,11 @@ except FileNotFoundError:
 # ==================================================
 # End of FileHandling-Examples
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

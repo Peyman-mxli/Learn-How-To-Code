@@ -1,6 +1,6 @@
 """
-📘 Module — Python Syntax
-📂 Examples File
+# 📘 Module — Python Syntax
+# 📂 Examples File
 
 This file contains clear, runnable examples that demonstrate
 correct Python syntax, indentation, structure, and style.
@@ -160,11 +160,11 @@ print("Total score:", total_score)
 # ===========================================================================
 # 🏁 End of Examples
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

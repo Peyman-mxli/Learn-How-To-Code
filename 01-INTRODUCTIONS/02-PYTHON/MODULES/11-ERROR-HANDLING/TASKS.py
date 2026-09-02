@@ -1,15 +1,15 @@
 """
-📘 Module — Error Handling (try / except)
+# 📘 Module — Error Handling (try / except)
 
-📁 Error_Handling_Tasks
+# 📁 Error_Handling_Tasks
 
 These tasks focus on mastering Python error handling.
 
 Instructions:
-- Do NOT include solutions here
-- Use try / except properly
-- Focus on real-world scenarios
-- Follow clean and professional structure
+# - Do NOT include solutions here
+# - Use try / except properly
+# - Focus on real-world scenarios
+# - Follow clean and professional structure
 """
 
 # ======================================================
@@ -81,8 +81,8 @@ Handle the KeyError.
 """
 Task 7:
 Use multiple except blocks to handle:
-- ValueError
-- ZeroDivisionError
+# - ValueError
+# - ZeroDivisionError
 """
 
 # Your code here
@@ -164,10 +164,10 @@ Raise an exception if the amount is zero or negative.
 """
 Task 15:
 Build a small system simulation that includes:
-- User input
-- Validation
-- Custom exception
-- try / except / else / finally
+# - User input
+# - Validation
+# - Custom exception
+# - try / except / else / finally
 """
 
 # Your code here
@@ -179,9 +179,9 @@ Build a small system simulation that includes:
 # ===========================================================================
 # 👤 Author
 # ===========================================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 # ===========================================================================

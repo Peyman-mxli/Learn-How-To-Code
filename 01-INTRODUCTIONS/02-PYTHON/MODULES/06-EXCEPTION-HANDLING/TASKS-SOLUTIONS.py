@@ -1,7 +1,7 @@
 """
-📘 Module — Exception-Handling-in-Python
+# 📘 Module — Exception-Handling-in-Python
 
-📁 TASKS-SOLUTIONS Rank 1 → Rank 5
+# 📁 TASKS-SOLUTIONS Rank 1 → Rank 5
 
 This file contains one possible correct solution for each task.
 Focus on clarity, correctness, and best practices.
@@ -154,11 +154,11 @@ def calculator(a, b, operator):
     except ZeroDivisionError:
         return "Error: Division by zero"
 print(calculator(10, 0, "/"))
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

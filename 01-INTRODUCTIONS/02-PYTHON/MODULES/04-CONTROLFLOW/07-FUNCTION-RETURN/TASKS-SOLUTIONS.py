@@ -1,9 +1,9 @@
 """
-📘 Module — Functions — return(Output & Control Flow)
+# 📘 Module — Functions — return(Output & Control Flow)
 
-====================================================
+# ====================================================
 FUNCTIONS — RETURN (TASK SOLUTIONS)
-====================================================
+# ====================================================
 
 This file contains clean, correct, and professional
 solutions for all Functions — return tasks.
@@ -128,11 +128,11 @@ print(access)
 # ====================================================
 # END OF SOLUTIONS — RETURN
 # ====================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

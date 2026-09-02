@@ -1,13 +1,13 @@
 """
-📘 Module — Control Flow — if / elif / else in python
-📂 Examples File
+# 📘 Module — Control Flow — if / elif / else in python
+# 📂 Examples File
 
 This file contains focused, runnable examples demonstrating how
 if / elif / else statements work in real Python programs.
 
 How to use this file:
-- Run it with:  python If_Elif_Else_Examples.py
-- Change values to observe different execution paths
+# - Run it with:  python If_Elif_Else_Examples.py
+# - Change values to observe different execution paths
 """
 
 
@@ -126,11 +126,11 @@ if username == "admin" and password_correct:
     print("Login successful")
 else:
     print("Login failed")
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

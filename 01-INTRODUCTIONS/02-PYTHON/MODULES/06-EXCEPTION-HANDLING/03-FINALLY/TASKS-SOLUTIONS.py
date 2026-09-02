@@ -1,7 +1,7 @@
-📘 Module — Exception Handling — (finally)
+# 📘 Module — Exception Handling — (finally)
 
 """
-📁Tasks-Solutions FILE
+# 📁Tasks-Solutions FILE
 
 Topic: Exception Handling — finally
 
@@ -79,11 +79,11 @@ finally:
 # ==================================================
 # End of Finally_Tasks_Solutions.py
 # ===========================================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

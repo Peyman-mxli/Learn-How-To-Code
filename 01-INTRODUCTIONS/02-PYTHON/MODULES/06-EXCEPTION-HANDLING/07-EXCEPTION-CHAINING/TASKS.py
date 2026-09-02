@@ -1,14 +1,14 @@
 """
-📘 Module —  Exception Chaining — (raise ... from ...)
+# 📘 Module —  Exception Chaining — (raise ... from ...)
 
 
 Topic: Exception Handling — Exception Chaining (raise ... from ...)
 
 INSTRUCTIONS:
-- Complete each task by writing code where indicated
-- Do NOT modify task descriptions
-- Tasks increase in difficulty from Rank 1 → Rank 5
-- Use proper exception chaining with `raise ... from ...`
+# - Complete each task by writing code where indicated
+# - Do NOT modify task descriptions
+# - Tasks increase in difficulty from Rank 1 → Rank 5
+# - Use proper exception chaining with `raise ... from ...`
 """
 
 # ==================================================
@@ -45,9 +45,9 @@ TASK:
 """
 TASK:
 Create a function `load_age(data)` that:
-- Tries to convert `data` to int
-- If conversion fails, raises ValueError
-- Then catches that ValueError and raises
+# - Tries to convert `data` to int
+# - If conversion fails, raises ValueError
+# - Then catches that ValueError and raises
   a RuntimeError("Invalid age data") chained
   from the original exception
 """
@@ -82,7 +82,7 @@ TASK:
    BUT suppress the original exception context
    using `from None`
 
-⚠️ This is ADVANCED. Use only when necessary.
+# ⚠️ This is ADVANCED. Use only when necessary.
 """
 
 # WRITE YOUR CODE BELOW
@@ -90,11 +90,11 @@ TASK:
 
 # ==================================================
 # End of Exception-Chaining-Tasks
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

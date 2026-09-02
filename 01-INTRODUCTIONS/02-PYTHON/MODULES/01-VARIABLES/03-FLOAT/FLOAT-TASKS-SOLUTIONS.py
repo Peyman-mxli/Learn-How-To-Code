@@ -1,14 +1,14 @@
 """
-📘 Module — Basic Data Types: Float(flo)
+# 📘 Module — Basic Data Types: Float(flo)
 ✅ Tasks Solutions File
 
 This file contains one possible set of solutions for the Float tasks.
 The solutions focus on clarity, correctness, and good coding practices.
 
 Important:
-- There are many correct ways to solve these tasks.
-- If your solution works but looks different, that is acceptable.
-- Use this file to learn and refactor your own code.
+# - There are many correct ways to solve these tasks.
+# - If your solution works but looks different, that is acceptable.
+# - Use this file to learn and refactor your own code.
 """
 
 
@@ -201,11 +201,11 @@ print(calculate_total_price(50.0, 0.10))
 # 🏁 End of TASKS (Solutions)
 # ===========================================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

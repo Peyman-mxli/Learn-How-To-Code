@@ -1,5 +1,5 @@
 """
-📘 Module — Basic Data Types: String (str)
+# 📘 Module — Basic Data Types: String (str)
 Professional Notes
 
 Strings represent text in Python. They are used everywhere: printing messages,
@@ -175,9 +175,9 @@ print(result)
 # - Searching, counting, and looping through strings
 # - Best practices for writing clean string-based code
 # ===========================================================================
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026

@@ -1,11 +1,11 @@
 """
-📘 Module — Basic Data Types: String (str)
-📂 Examples File
+# 📘 Module — Basic Data Types: String (str)
+# 📂 Examples File
 
 This file contains small, focused demonstrations of how strings work
 in Python. Each example illustrates a common concept or real use case.
 
-▶ Run this file directly:
+# ▶ Run this file directly:
     python String_Examples.py
 """
 
@@ -190,9 +190,9 @@ if __name__ == "__main__":
     main()
 
 # ===========================================================================
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026

@@ -1,16 +1,16 @@
-📘 Module — Exception Handling — (raise)
+# 📘 Module — Exception Handling — (raise)
 
 """
-📁 EXAMPLE FILE
+# 📁 EXAMPLE FILE
 Topic: Exception Handling — raise (manual exception control)
 
 This file contains runnable examples showing how `raise` changes
 program execution flow.
 
 How to use this file:
-- Run it with: python Raise_Examples.py
-- Read the comment before each example
-- Observe where execution stops
+# - Run it with: python Raise_Examples.py
+# - Read the comment before each example
+# - Observe where execution stops
 """
 # ==================================================
 # Example 1 — Simple manual raise
@@ -67,11 +67,11 @@ if score > 100:
 # ==================================================
 # End of Raise-Examples
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

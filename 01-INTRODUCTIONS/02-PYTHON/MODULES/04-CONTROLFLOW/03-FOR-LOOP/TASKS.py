@@ -1,12 +1,12 @@
 """
-📘 Module — Control Flow — For-loops
+# 📘 Module — Control Flow — For-loops
 Tasks File (Rank 1 → Rank 5)
 
 Instructions:
-- Read each task carefully.
-- Solve the tasks in THIS file first.
-- Do NOT look at the solutions until you have tried seriously.
-- Write clean, readable Python code.
+# - Read each task carefully.
+# - Solve the tasks in THIS file first.
+# - Do NOT look at the solutions until you have tried seriously.
+# - Write clean, readable Python code.
 """
 # ===========================================================================
 # 🟢 Rank 1 — Beginner
@@ -121,11 +121,11 @@ user = {
 # ===========================================================================
 # Try to solve everything before opening:
 # TASKS-SOLUTIONS
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

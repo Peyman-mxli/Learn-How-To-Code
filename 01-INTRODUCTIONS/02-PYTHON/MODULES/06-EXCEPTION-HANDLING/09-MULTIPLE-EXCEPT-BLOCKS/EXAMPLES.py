@@ -1,7 +1,7 @@
 """
-📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
+# 📘 Module — Multiple Except Blocks — (Handling Errors Precisely)
 
-📁 Multiple Except Blocks — Examples
+# 📁 Multiple Except Blocks — Examples
 
 This file demonstrates how multiple except blocks work in Python.
 Each example shows how different exceptions can be handled individually
@@ -116,11 +116,11 @@ finally:
 # --------------------------------------------------
 # End of Examples
 # --------------------------------------------------
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

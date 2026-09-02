@@ -1,6 +1,6 @@
 """
-📘 Module — Control Flow — break / continue / pass
-📁 Examples File
+# 📘 Module — Control Flow — break / continue / pass
+# 📁 Examples File
 
 This file contains practical, runnable examples that demonstrate how
 loop control statements affect the flow of for and while loops.
@@ -115,11 +115,11 @@ print("- break exits a loop immediately")
 print("- continue skips the current iteration")
 print("- pass does nothing (placeholder)")
 print("- use control statements to manage flow clearly")
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

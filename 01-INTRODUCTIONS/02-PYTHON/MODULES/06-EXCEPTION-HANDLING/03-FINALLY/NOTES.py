@@ -1,6 +1,6 @@
-📘 Module — Exception Handling — (finally)
+# 📘 Module — Exception Handling — (finally)
 """
-📁Notes FILE
+# 📁Notes FILE
 
 Topic: Exception Handling — finally
 This notes file explains the `finally` block in Python exception handling.
@@ -123,11 +123,11 @@ The goal is to understand HOW and WHY `finally` controls program flow.
 # ==================================================
 # End of Finally_Notes.py
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

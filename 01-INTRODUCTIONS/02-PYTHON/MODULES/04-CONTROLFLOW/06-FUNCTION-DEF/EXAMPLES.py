@@ -1,9 +1,9 @@
 """
-📘 Module — Functions — def (Function Definition)
+# 📘 Module — Functions — def (Function Definition)
 
-====================================================
+# ====================================================
 FUNCTIONS — DEF (PRACTICAL EXAMPLES)
-====================================================
+# ====================================================
 
 This file contains professional, real-world examples
 demonstrating how to DEFINE and USE functions in Python
@@ -110,11 +110,11 @@ security_alert("Server Room", "HIGH")
 # ====================================================
 # END OF EXAMPLES — def
 # ====================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

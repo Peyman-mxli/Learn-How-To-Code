@@ -1,6 +1,6 @@
 """
-📘 Module — Basic Data Types: Integer (int)
-📂 Examples File
+# 📘 Module — Basic Data Types: Integer (int)
+# 📂 Examples File
 
 This file contains small, focused demonstrations of Python integers.
 Run this file to see the output of each example:
@@ -176,9 +176,9 @@ if __name__ == "__main__":
 
 
 # ===========================================================================
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026

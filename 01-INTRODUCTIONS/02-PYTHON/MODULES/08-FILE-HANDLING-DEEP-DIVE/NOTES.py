@@ -1,16 +1,16 @@
 """
-📘 Module — File Handling — (Deep Dive)
+# 📘 Module — File Handling — (Deep Dive)
 
-📁 FILE HANDLING — THEORY & NOTES
+# 📁 FILE HANDLING — THEORY & NOTES
 
 File handling allows Python programs to work with external files
 to store, retrieve, and process data persistently. It is essential
 for real-world applications such as logging, data storage, and configuration.
 
 This module explains file handling concepts clearly:
-- What it is
-- Why it exists
-- When and how to use it
+# - What it is
+# - Why it exists
+# - When and how to use it
 """
 
 # ======================================================
@@ -25,14 +25,14 @@ SYNTAX:
 file = open("filename", "mode")
 
 WHY WE USE IT:
-- Access file content
-- Perform read/write operations
-- Enable data persistence
+# - Access file content
+# - Perform read/write operations
+# - Enable data persistence
 
 WHEN TO USE:
-- When working with external data
-- When saving results
-- When reading configuration files
+# - When working with external data
+# - When saving results
+# - When reading configuration files
 """
 
 file = open("example.txt", "w")
@@ -53,15 +53,15 @@ rb → Read binary
 wb → Write binary
 
 WHY WE USE IT:
-- Control file behavior
-- Prevent data loss
-- Define read/write permissions
+# - Control file behavior
+# - Prevent data loss
+# - Define read/write permissions
 
 WHEN TO USE:
-- 'r' → Reading existing files
-- 'w' → Creating or overwriting files
-- 'a' → Adding new content
-- 'rb/wb' → Working with binary files (images, etc.)
+# - 'r' → Reading existing files
+# - 'w' → Creating or overwriting files
+# - 'a' → Adding new content
+# - 'rb/wb' → Working with binary files (images, etc.)
 """
 
 # ======================================================
@@ -77,12 +77,12 @@ with open("filename", "mode") as file:
     operations
 
 WHY WE USE IT:
-- Automatically closes files
-- Prevents memory leaks
-- Safer and cleaner code
+# - Automatically closes files
+# - Prevents memory leaks
+# - Safer and cleaner code
 
 WHEN TO USE:
-- ALWAYS preferred over manual open/close
+# - ALWAYS preferred over manual open/close
 """
 
 with open("example.txt", "w") as f:
@@ -97,17 +97,17 @@ Errors can occur when working with files, such as missing files
 or permission issues.
 
 COMMON ERRORS:
-- FileNotFoundError
-- PermissionError
+# - FileNotFoundError
+# - PermissionError
 
 WHY WE USE IT:
-- Prevent program crashes
-- Handle unexpected situations
-- Improve reliability
+# - Prevent program crashes
+# - Handle unexpected situations
+# - Improve reliability
 
 WHEN TO USE:
-- When opening or accessing files
-- When working with user input paths
+# - When opening or accessing files
+# - When working with user input paths
 """
 
 try:
@@ -121,10 +121,10 @@ except FileNotFoundError:
 # ======================================================
 """
 KEY RULES:
-- Opening a non-existing file in 'r' → raises FileNotFoundError
-- 'w' mode → creates file if it does not exist
-- 'with' → automatically closes file
-- Always close files if not using 'with'
+# - Opening a non-existing file in 'r' → raises FileNotFoundError
+# - 'w' mode → creates file if it does not exist
+# - 'with' → automatically closes file
+# - Always close files if not using 'with'
 
 WHY IT MATTERS:
 Understanding these rules prevents bugs and data loss.
@@ -138,9 +138,9 @@ WHAT IT IS:
 Writing allows saving data into a file.
 
 WHEN TO USE:
-- Saving logs
-- Storing results
-- Creating reports
+# - Saving logs
+# - Storing results
+# - Creating reports
 """
 
 with open("notes.txt", "w") as f:
@@ -149,11 +149,11 @@ with open("notes.txt", "w") as f:
 # ======================================================
 # END OF FILE HANDLING — NOTES
 # ======================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

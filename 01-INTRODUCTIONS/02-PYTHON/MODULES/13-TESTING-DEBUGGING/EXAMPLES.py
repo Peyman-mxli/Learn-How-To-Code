@@ -1,7 +1,7 @@
-📘 Module — TESTING & DEBUGGING (PYTHON)
+# 📘 Module — TESTING & DEBUGGING (PYTHON)
 """
-📘 TESTING & DEBUGGING — PYTHON
-📁 PRACTICAL EXAMPLES
+# 📘 TESTING & DEBUGGING — PYTHON
+# 📁 PRACTICAL EXAMPLES
 
 This file demonstrates real-world usage of
 Testing and Debugging techniques in Python.
@@ -10,24 +10,24 @@ Each section contains clear, professional examples
 showing how to detect, analyze, and fix errors.
 """
 
-====================================================
-1️⃣ SYNTAX ERRORS
-====================================================
-Example 1: Missing Colon
-❌ Incorrect
+# ====================================================
+# 1️⃣ SYNTAX ERRORS
+# ====================================================
+# Example 1: Missing Colon
+# ❌ Incorrect
 if x == 5
 print("Hello")
-✅ Correct
+# ✅ Correct
 
 x = 5
 if x == 5:
 print("Hello")
 
 Example 2: Indentation Error
-❌ Incorrect
+# ❌ Incorrect
 def greet():
 print("Hi")
-✅ Correct
+# ✅ Correct
 
 def greet():
 print("Hi")
@@ -35,22 +35,22 @@ print("Hi")
 greet()
 
 Example 3: Misspelled Keyword
-❌ Incorrect
+# ❌ Incorrect
 pritn("Hello")
-✅ Correct
+# ✅ Correct
 
 print("Hello")
 
-====================================================
-2️⃣ RUNTIME ERRORS (EXCEPTIONS)
-====================================================
+# ====================================================
+# 2️⃣ RUNTIME ERRORS (EXCEPTIONS)
+# ====================================================
 Example 1: Division by Zero
 
 def divide(a, b):
 return a / b
 
 divide(10, 0) # ❌ Error
-✅ Safe Version
+# ✅ Safe Version
 
 def safe_divide(a, b):
 if b == 0:
@@ -65,7 +65,7 @@ def add_numbers(a, b):
 return a + b
 
 print(add_numbers(5, "10")) # ❌ Error
-✅ Fixed
+# ✅ Fixed
 
 print(add_numbers(5, 10))
 
@@ -75,7 +75,7 @@ def get_item(lst, index):
 return lst[index]
 
 print(get_item([1, 2, 3], 5)) # ❌ Error
-✅ Safe Version
+# ✅ Safe Version
 
 def safe_get_item(lst, index):
 if index < len(lst):
@@ -84,15 +84,15 @@ return "Index out of range"
 
 print(safe_get_item([1, 2, 3], 1))
 
-====================================================
-3️⃣ LOGIC ERRORS
-====================================================
+# ====================================================
+# 3️⃣ LOGIC ERRORS
+# ====================================================
 Example 1: Wrong Discount Calculation
 
 def wrong_discount(price):
 return price - 10 # ❌ Incorrect logic
 
-✅ Correct
+# ✅ Correct
 
 def correct_discount(price):
 return price * 0.90
@@ -104,7 +104,7 @@ Example 2: Incorrect Average
 def wrong_average(numbers):
 return sum(numbers) / 10 # ❌ Wrong divisor
 
-✅ Correct
+# ✅ Correct
 
 def correct_average(numbers):
 return sum(numbers) / len(numbers)
@@ -116,16 +116,16 @@ Example 3: Incorrect Condition
 def is_adult(age):
 return age > 18 # ❌ Excludes 18
 
-✅ Correct
+# ✅ Correct
 
 def is_adult_fixed(age):
 return age >= 18
 
 print(is_adult_fixed(18))
 
-====================================================
-4️⃣ PRINT DEBUGGING
-====================================================
+# ====================================================
+# 4️⃣ PRINT DEBUGGING
+# ====================================================
 Example 1: Inspect Variables
 
 def calculate_total(price, quantity):
@@ -157,9 +157,9 @@ print("Iteration:", i)
 
 debug_loop()
 
-====================================================
-5️⃣ STEP-BY-STEP DEBUGGING
-====================================================
+# ====================================================
+# 5️⃣ STEP-BY-STEP DEBUGGING
+# ====================================================
 Example 1: Average Calculation
 
 def calculate_average(numbers):
@@ -186,9 +186,9 @@ return total
 
 print(process_numbers([1, 2, 3]))
 
-====================================================
-6️⃣ ASSERTIONS
-====================================================
+# ====================================================
+# 6️⃣ ASSERTIONS
+# ====================================================
 Example 1: Basic Assertion
 
 def withdraw(balance, amount):
@@ -214,9 +214,9 @@ return score
 
 print(set_score(90))
 
-====================================================
-7️⃣ MANUAL TESTING
-====================================================
+# ====================================================
+# 7️⃣ MANUAL TESTING
+# ====================================================
 Example 1: Addition Tests
 
 def add(a, b):
@@ -241,9 +241,9 @@ return n > 0
 print(is_positive(5))
 print(is_positive(-3))
 
-====================================================
-8️⃣ EDGE CASE TESTING
-====================================================
+# ====================================================
+# 8️⃣ EDGE CASE TESTING
+# ====================================================
 Example 1: Empty List
 
 def get_first(items):
@@ -265,9 +265,9 @@ Example 3: Negative Numbers
 
 print(multiply(-2, 3))
 
-====================================================
-9️⃣ TRY / EXCEPT DEBUGGING
-====================================================
+# ====================================================
+# 9️⃣ TRY / EXCEPT DEBUGGING
+# ====================================================
 Example 1: Convert Input
 
 def to_int(value):
@@ -299,9 +299,9 @@ return "Error reading data"
 
 print(read_data([]))
 
-====================================================
-🔟 FUNCTION COMPOSITION TESTING
-====================================================
+# ====================================================
+# 🔟 FUNCTION COMPOSITION TESTING
+# ====================================================
 Example 1
 
 def square(x):
@@ -329,9 +329,9 @@ return x + 1
 
 print(increment(square(2)))
 
-====================================================
-1️⃣1️⃣ TESTING ASSUMPTIONS
-====================================================
+# ====================================================
+# 1️⃣1️⃣ TESTING ASSUMPTIONS
+# ====================================================
 Example 1
 
 def is_even(n):
@@ -351,9 +351,9 @@ Example 3
 
 print(is_positive(-5))
 
-====================================================
-1️⃣2️⃣ CLEAN & TESTABLE CODE
-====================================================
+# ====================================================
+# 1️⃣2️⃣ CLEAN & TESTABLE CODE
+# ====================================================
 Example 1
 
 def calculate_tax(amount, rate):
@@ -375,15 +375,15 @@ return price * (1 - discount)
 
 print(apply_discount(100, 0.1))
 
-====================================================
-END OF EXAMPLES — TESTING & DEBUGGING
-====================================================
-👤 Author
-====================================================
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
+# ====================================================
+# END OF EXAMPLES — TESTING & DEBUGGING
+# ====================================================
+# 👤 Author
+# ====================================================
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
 
-====================================================
+# ====================================================

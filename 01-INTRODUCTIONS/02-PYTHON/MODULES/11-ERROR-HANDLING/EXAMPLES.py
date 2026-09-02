@@ -1,7 +1,7 @@
 """
-📘 Module — Error Handling (try / except)
+# 📘 Module — Error Handling (try / except)
 
-📁 Error_Handling_Examples
+# 📁 Error_Handling_Examples
 
 This file demonstrates practical and real-world
 examples of Python error handling.
@@ -244,11 +244,11 @@ except PaymentError as e:
 # ======================================================
 # END OF ERROR HANDLING — EXAMPLES
 # ======================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

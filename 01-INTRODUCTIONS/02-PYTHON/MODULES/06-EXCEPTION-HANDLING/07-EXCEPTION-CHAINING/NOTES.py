@@ -1,5 +1,5 @@
 """
-📘 Module —  Exception Chaining — (raise ... from ...)
+# 📘 Module —  Exception Chaining — (raise ... from ...)
 
 Topic: Exception Handling — Exception Chaining (raise ... from ...)
 
@@ -113,11 +113,11 @@ These notes focus on concepts, rules, and best practices.
 # ==================================================
 # End of Exception-Chaining-Notes
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

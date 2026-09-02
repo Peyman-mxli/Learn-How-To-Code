@@ -1,16 +1,16 @@
 """
-📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
+# 📘 Module —  Logging vs Exceptions — (When to Record Errors and When to Stop Execution)
 
-📁 LoggingVsExceptions-Tasks-Solutions
+# 📁 LoggingVsExceptions-Tasks-Solutions
 
 Topic: Exception Handling — Logging vs Exceptions
 
 This file contains SOLUTIONS for all tasks in LoggingVsExceptions_Tasks.py.
 
 Review notes:
-- Observe where logging is used for visibility
-- Notice where exceptions enforce correctness
-- Understand how both are combined properly
+# - Observe where logging is used for visibility
+# - Notice where exceptions enforce correctness
+# - Understand how both are combined properly
 """
 
 import logging
@@ -92,11 +92,11 @@ except ValueError as e:
 # End of LoggingVsExceptions-Tasks-Solutions
 # ==================================================
 
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From Mexico
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From Mexico
+# 📅 Year: 2026
+# -----------------------------------------------------------------------

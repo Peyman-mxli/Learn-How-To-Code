@@ -1,14 +1,14 @@
-📘 Module — Context Managers — (The with Statement)
-
-📁 ContextManagers-Notes
-
-Topic: Exception Handling — Context Managers (with Statement)
-
-This file contains STUDY NOTES explaining how context managers work
-in Python and how they are used to safely manage resources.
-
-These notes focus on concepts, rules, and best practices.
-"""
+# 📘 Module — Context Managers — (The with Statement)
+# 
+# 📁 ContextManagers-Notes
+# 
+# Topic: Exception Handling — Context Managers (with Statement)
+# 
+# This file contains STUDY NOTES explaining how context managers work
+# in Python and how they are used to safely manage resources.
+# 
+# These notes focus on concepts, rules, and best practices.
+# """
 # ==================================================
 # 1. What Is a Context Manager?
 # ==================================================
@@ -81,14 +81,14 @@ These notes focus on concepts, rules, and best practices.
 # ==================================================
 # 7. Example Explanation
 # ==================================================
-class SimpleContext:
-    def __enter__(self):
-        print("Entering context")
-        return self
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        print("Exiting context")
-        return False
+# class SimpleContext:
+#     def __enter__(self):
+#         print("Entering context")
+#         return self
+# 
+#     def __exit__(self, exc_type, exc_value, traceback):
+#         print("Exiting context")
+#         return False
 # ==================================================
 # 8. When to Use Context Managers
 # ==================================================
@@ -117,11 +117,11 @@ class SimpleContext:
 # ==================================================
 # End of ContextManagers-Notes
 # ==================================================
------------------------------------------------------------------------
-👤 Author
-Peyman Miyandashti
-🎓 Polytechnic University of Baja California
-💻 Information Technology Engineering & Digital Innovation
-📍 From IRAN (Mexico)
-📅 Year: 2026
------------------------------------------------------------------------
+# -----------------------------------------------------------------------
+# 👤 Author
+# Peyman Miyandashti
+# 🎓 Polytechnic University of Baja California
+# 💻 Information Technology Engineering & Digital Innovation
+# 📍 From IRAN (Mexico)
+# 📅 Year: 2026
+# -----------------------------------------------------------------------
