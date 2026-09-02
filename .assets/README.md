@@ -120,4 +120,6 @@ Each asset should have a clear purpose and should be easy to identify from its f
 **Peyman Miyandashti**  
 Information Technology Engineering & Digital Innovation  
 Polytechnic University of Baja California  
-Mexico · 2026
+Mexico (Iran) · 2026  
+
+[LinkedIn — peyman-mxli](https://www.linkedin.com/in/peyman-mxli) · [GitHub — Peyman-mxli](https://github.com/Peyman-mxli)
