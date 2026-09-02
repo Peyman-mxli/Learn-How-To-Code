@@ -16,12 +16,14 @@ A structured collection of beginner-to-intermediate learning materials covering 
 | 08 | [Algorithms](./08-ALGORITHMS/) | Searching, sorting, complexity, graph/DP techniques |
 | 09 | [IntelliJ IDEA](./09-INTELLIJ/) | IDE, JDK, Kotlin project, debugging |
 | 10 | [Kotlin](./10-KOTLIN/) | Complete Kotlin foundations path |
+| 11 | [HTML](./11-HTML/) | Semantic HTML, accessibility, forms, media, metadata, validation, projects |
 
 ## Recommended routes
 
 **Python:** VS Code → Python → Git/GitHub  
 **C# / CS:** C# → Visual Studio → Data Structures → Algorithms  
-**Kotlin:** Git/GitHub → IntelliJ IDEA → Kotlin
+**Kotlin:** Git/GitHub → IntelliJ IDEA → Kotlin  
+**Web foundations:** VS Code → HTML → CSS → JavaScript
 
 ## Study method
 
