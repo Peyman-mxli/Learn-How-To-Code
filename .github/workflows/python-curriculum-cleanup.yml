@@ -25,9 +25,6 @@ jobs:
       - name: Sanitize Python curriculum
         run: python .github/maintenance/python_curriculum_cleanup.py
 
-      - name: Compile curriculum
-        run: python -m compileall -q 01-INTRODUCTIONS/02-PYTHON
-
       - name: Commit cleanup
         run: |
           git config user.name "github-actions[bot]"
@@ -36,6 +33,9 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "Make Python curriculum compiler-valid"
+            git commit -m "Sanitize Python curriculum source metadata"
             git push
           fi
+
+      - name: Compile curriculum
+        run: python -m compileall -q 01-INTRODUCTIONS/02-PYTHON
