@@ -112,7 +112,7 @@ except Exception as e:
 else:
     print("Example 10: No errors")
 finally:
-    print("Example 10: Cleanup done"
+    print("Example 10: Cleanup done")
 # --------------------------------------------------
 # End of Examples
 # --------------------------------------------------
