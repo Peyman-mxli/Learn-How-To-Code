@@ -105,6 +105,20 @@ jobs:
           count="$(find 01-INTRODUCTIONS/10-KOTLIN -type f -name "*.kt" | wc -l)"
           echo "Compiled $count Kotlin files successfully."
 
+
+  html:
+    name: HTML curriculum validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate HTML curriculum structure and documents
+        run: python .github/tools/html_quality_check.py
+
   curriculum-hygiene:
     name: Curriculum and repository hygiene
     runs-on: ubuntu-latest
