@@ -1,80 +1,44 @@
-# 📘 Module — Assert Statements — (Debugging & Validation)
 """
-# 📁 AssertStatements-Tasks-Solutions
-
-Topic: Exception Handling — Assert Statements
-
-This file contains SOLUTIONS for all tasks in AssertStatements_Tasks.py.
-
-Review notes:
-
-Observe how assert is used to validate conditions
-
-Notice where custom messages improve clarity
-
-Understand that assertions protect internal logic
+Module — Assert Statements — Reference Solutions
 """
 
-# ==================================================
-# Rank 1 — Positive Number Assertion (Solution)
-# ==================================================
-
+# Rank 1
 number = 5
-
 assert number > 0
 print("Number is valid")
 
-# ==================================================
-# Rank 2 — Non-Empty String Check (Solution)
-# ==================================================
-
+# Rank 2
 text = "Python"
-
 assert len(text) > 0
 print("Text is valid")
 
-# ==================================================
-# Rank 3 — List Validation Function (Solution)
-# ==================================================
+# Rank 3
 
-def first_element(lst):
-assert len(lst) > 0, "List cannot be empty"
-return lst[0]
+def first_element(items):
+    assert len(items) > 0, "List cannot be empty"
+    return items[0]
+
 
 print("First element:", first_element([1, 2, 3]))
 
-# ==================================================
-# Rank 4 — Function Preconditions (Solution)
-# ==================================================
+
+# Rank 4
 
 def divide(a, b):
-assert isinstance(a, (int, float)), "a must be a number"
-assert isinstance(b, (int, float)), "b must be a number"
-assert b != 0, "Divider must not be zero"
-return a / b
+    assert isinstance(a, (int, float)), "a must be a number"
+    assert isinstance(b, (int, float)), "b must be a number"
+    assert b != 0, "Divider must not be zero"
+    return a / b
+
 
 print("Division result:", divide(10, 2))
 
-# ==================================================
-# Rank 5 — Protect Internal Logic (Solution)
-# ==================================================
+
+# Rank 5
 
 def process_score(score):
-assert 0 <= score <= 100, "Score must be between 0 and 100"
-if score >= 60:
-return "Pass"
-return "Fail"
+    assert 0 <= score <= 100, "Score must be between 0 and 100"
+    return "Pass" if score >= 60 else "Fail"
+
 
 print("Result:", process_score(75))
-
-# ==================================================
-End of AssertStatements-Tasks-Solutions
-# ==================================================
-# -----------------------------------------------------------------------
-# 👤 Author
-# Peyman Miyandashti
-# 🎓 Polytechnic University of Baja California
-# 💻 Information Technology Engineering & Digital Innovation
-# 📍 From IRAN (Mexico)
-# 📅 Year: 2026
-# -----------------------------------------------------------------------
