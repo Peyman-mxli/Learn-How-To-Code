@@ -1,29 +1,26 @@
-from app.modelos import Automovil, Motocicleta, Camion, Bicicleta
+from app.modelos import Automovil, Bicicleta, Camion, Motocicleta
 
 
 def reporte_flota(vehiculos: list) -> None:
-    """Reporte general de la flota"""
-
+    """Procesa y muestra un reporte general de la flota."""
     print("\n=== REPORTE DE FLOTA ===")
 
-    for v in vehiculos:
-
-        if isinstance(v, Camion):
-            v.cargar(5)
+    for vehiculo in vehiculos:
+        if isinstance(vehiculo, Camion):
+            vehiculo.cargar(5)
 
         for _ in range(3):
-            v.acelerar()
+            vehiculo.acelerar()
 
-        print(v.obtener_informacion())
+        print(vehiculo.obtener_informacion())
 
-        while v._velocidad_actual > 0:
-            v.frenar()
+        while vehiculo.velocidad_actual > 0:
+            vehiculo.frenar()
 
     print(f"\nTotal de vehículos procesados: {len(vehiculos)}")
 
 
-def main():
-
+def main() -> None:
     print("=" * 55)
     print("     SISTEMA DE GESTIÓN DE VEHÍCULOS")
     print("=" * 55)
@@ -52,9 +49,7 @@ def main():
     print(camion.obtener_informacion())
     camion.descargar()
 
-    flota = [auto, moto, camion, bici]
-
-    reporte_flota(flota)
+    reporte_flota([auto, moto, camion, bici])
 
 
 if __name__ == "__main__":

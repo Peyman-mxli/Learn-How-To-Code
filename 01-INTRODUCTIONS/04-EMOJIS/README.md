@@ -1,47 +1,43 @@
 # Unicode, Symbols, ALT Codes, and Emojis
 
-This module explains how special characters, Windows ALT codes, Unicode, and emojis can be used in console programs.
+This module explains special characters, Windows ALT input, Unicode, and emojis in console programs.
 
 ## Learning objectives
 
 By the end of this module, I can:
 
-- explain the difference between ALT codes and Unicode;
-- type common special characters on Windows;
+- explain the difference between ALT input and Unicode;
 - print Unicode characters and emojis in Python;
-- build readable console menus, separators, and tables; and
-- recognize terminal/font limitations that can affect rendering.
+- build readable console separators, menus, and tables;
+- recognize terminal/font limitations;
+- design console output without sacrificing accessibility.
 
-## ALT codes
+## Important distinction
 
-ALT codes are a Windows input method that often requires a numeric keypad. Support varies by keyboard layout, Windows configuration, and application.
+**ALT codes** are a Windows input method. **Unicode** is the character standard used by Python strings.
 
-Examples include:
-
-- box-drawing characters: `║ ═ ─`
-- arrows: `➜ ➤ ➡`
-- mathematical symbols: `± × ÷`
-- currency symbols: `€ ¥ $`
-- accented letters: `ñ ü ç`
-
-## Unicode and Python
-
-Python strings support Unicode.
+Python can store the character directly:
 
 ```python
-print("Hello World 😀")
-print("Python is awesome 🐍🔥")
 print("Status: ✅ Complete")
+print("Arrow: →")
+print("Box: ╔══╗")
 ```
 
-Emoji appearance depends on the terminal, font, and operating system.
+The exact ALT-number sequence used to type a symbol can vary by Windows code page and application, so application code should not depend on ALT numbers.
 
 ## Module files
 
-- `ALT-CODES-NOTES` — concepts and reference material
-- `ALT-CODES-EXAMPLES` — practical examples
-- `TASKS` — exercises
-- `TASK-SOLUTION` — reference solutions
+- `ALT-CODES-NOTES.py` — concise notes plus small demonstrations
+- `ALT-CODES-EXAMPLES.py` — runnable Unicode console examples
+- `TASKS.py` — exercises
+- `TASK-SOLUTION.py` — reference solutions
+
+Run an example:
+
+```bash
+python ALT-CODES-EXAMPLES.py
+```
 
 ## Author
 
@@ -49,4 +45,3 @@ Emoji appearance depends on the terminal, font, and operating system.
 Information Technology Engineering & Digital Innovation  
 Polytechnic University of Baja California  
 Mexico · 2026
-

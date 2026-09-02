@@ -8,28 +8,47 @@ A Python object-oriented programming project that models several vehicle types t
 - inheritance;
 - encapsulation;
 - polymorphism;
-- package organization; and
+- package organization;
 - type-specific behavior.
 
 ## Vehicle types
 
-- Automóvil
-- Motocicleta
-- Camión
-- Bicicleta
+- `Automovil`
+- `Motocicleta`
+- `Camion`
+- `Bicicleta`
+
+## Current structure
+
+```text
+03-VEHICLE-MANAGEMENT-SYSTEM/
+├── app/
+│   ├── __init__.py
+│   └── modelos/
+│       ├── __init__.py
+│       ├── vehiculo.py
+│       ├── automovil.py
+│       ├── motocicleta.py
+│       ├── camion.py
+│       └── bicicleta.py
+├── main.py
+├── STRUCTURE.md
+└── README.md
+```
+
+The current version is intentionally a **console application**. Old unused dashboard template/static files were removed so the repository matches the executable implementation.
 
 ## Run
 
+From this project directory:
+
 ```bash
-cd 01-vehicle-management-system/vehiculos_dashboard
 python main.py
 ```
 
-The project currently runs as a console demonstration. The `static/` and `templates/` directories preserve early dashboard work.
+## Encapsulation
 
-## Repository hygiene
-
-Python cache files are intentionally excluded. Do not commit `__pycache__` or `.pyc` files.
+The base class exposes `velocidad_actual` as a read-only property. Code outside the class no longer reads the protected `_velocidad_actual` attribute directly.
 
 ## Author
 
@@ -37,4 +56,3 @@ Python cache files are intentionally excluded. Do not commit `__pycache__` or `.
 Information Technology Engineering & Digital Innovation  
 Polytechnic University of Baja California  
 Mexico · 2026
-

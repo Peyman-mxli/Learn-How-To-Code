@@ -1,4 +1,4 @@
-# Project 07 — Zoo POO
+# Project 07 — Zoo OOP
 
 A Python zoo-management exercise demonstrating the four core object-oriented programming ideas: abstraction, encapsulation, inheritance, and polymorphism.
 
@@ -24,6 +24,14 @@ A Python zoo-management exercise demonstrating the four core object-oriented pro
 ```bash
 python main.py
 ```
+
+## UML diagram
+
+The editable diagrams.net source is available at:
+
+`diagram/classes.drawio`
+
+Open it with diagrams.net / draw.io to inspect or modify the class diagram.
 
 ## Test ideas
 
