@@ -379,7 +379,7 @@ namespace RefactoringTasksSolutions
         {
             Customer customer =
                 new Customer(
-                    "Peyman",
+                    "Peyman"
                 );
 
             CustomerValidator customerValidator =
