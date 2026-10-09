@@ -20,7 +20,7 @@ The aim is to understand *why* each technology and command is used—not merely 
 
 ## Learning Objectives
 
-By the end of the track, learners should be able to:
+By the end of the 20-class track, learners should be able to:
 
 1. Explain databases, tables, rows, columns, records, and relationships.
 2. Read and write SQL queries and understand the difference between querying and changing data.
@@ -33,7 +33,7 @@ By the end of the track, learners should be able to:
 
 ## Course Roadmap
 
-All ten classes have been documented in English. Work through them **one at a time**, learning every keyword before attempting the next lesson. Completion of the files does not mean the student has completed each assessment.
+All twenty classes have been documented in English. Work through them **one at a time**, learning every keyword before attempting the next lesson. Completion of the files does not mean the student has completed each assessment.
 
 | Class | Lesson | Questions | Answers | Documentation |
 | --- | --- | --- | --- | --- |
@@ -47,6 +47,17 @@ All ten classes have been documented in English. Work through them **one at a ti
 | 08 | [Authentication and Profiles](./08-AUTHENTICATION-AND-PROFILES/README.md) | [Questions](./08-AUTHENTICATION-AND-PROFILES/QUESTIONS.md) | [Answers](./08-AUTHENTICATION-AND-PROFILES/ANSWERS.md) | Available |
 | 09 | [Authorization and RLS](./09-AUTHORIZATION-AND-RLS/README.md) | [Questions](./09-AUTHORIZATION-AND-RLS/QUESTIONS.md) | [Answers](./09-AUTHORIZATION-AND-RLS/ANSWERS.md) | Available |
 | 10 | [ProTrack MX Integration](./10-PROTRACK-MX-INTEGRATION/README.md) | [Questions](./10-PROTRACK-MX-INTEGRATION/QUESTIONS.md) | [Answers](./10-PROTRACK-MX-INTEGRATION/ANSWERS.md) | Available |
+
+| 11 | [JOINs and Relationships](./11-JOINS-AND-RELATIONSHIPS/README.md) | [Questions](./11-JOINS-AND-RELATIONSHIPS/QUESTIONS.md) | [Answers](./11-JOINS-AND-RELATIONSHIPS/ANSWERS.md) | Available |
+| 12 | [Aggregation and GROUP BY](./12-AGGREGATION-AND-GROUP-BY/README.md) | [Questions](./12-AGGREGATION-AND-GROUP-BY/QUESTIONS.md) | [Answers](./12-AGGREGATION-AND-GROUP-BY/ANSWERS.md) | Available |
+| 13 | [Subqueries and CTEs](./13-SUBQUERIES-AND-CTES/README.md) | [Questions](./13-SUBQUERIES-AND-CTES/QUESTIONS.md) | [Answers](./13-SUBQUERIES-AND-CTES/ANSWERS.md) | Available |
+| 14 | [Conflicts and UPSERTs](./14-CONFLICTS-AND-UPSERTS/README.md) | [Questions](./14-CONFLICTS-AND-UPSERTS/QUESTIONS.md) | [Answers](./14-CONFLICTS-AND-UPSERTS/ANSWERS.md) | Available |
+| 15 | [Migrations and ALTER TABLE](./15-MIGRATIONS-AND-ALTER-TABLE/README.md) | [Questions](./15-MIGRATIONS-AND-ALTER-TABLE/QUESTIONS.md) | [Answers](./15-MIGRATIONS-AND-ALTER-TABLE/ANSWERS.md) | Available |
+| 16 | [Indexes and Query Plans](./16-INDEXES-AND-QUERY-PLANS/README.md) | [Questions](./16-INDEXES-AND-QUERY-PLANS/QUESTIONS.md) | [Answers](./16-INDEXES-AND-QUERY-PLANS/ANSWERS.md) | Available |
+| 17 | [SQL Functions and Triggers](./17-SQL-FUNCTIONS-AND-TRIGGERS/README.md) | [Questions](./17-SQL-FUNCTIONS-AND-TRIGGERS/QUESTIONS.md) | [Answers](./17-SQL-FUNCTIONS-AND-TRIGGERS/ANSWERS.md) | Available |
+| 18 | [Supabase Storage](./18-SUPABASE-STORAGE/README.md) | [Questions](./18-SUPABASE-STORAGE/QUESTIONS.md) | [Answers](./18-SUPABASE-STORAGE/ANSWERS.md) | Available |
+| 19 | [Realtime and Edge Functions](./19-REALTIME-AND-EDGE-FUNCTIONS/README.md) | [Questions](./19-REALTIME-AND-EDGE-FUNCTIONS/QUESTIONS.md) | [Answers](./19-REALTIME-AND-EDGE-FUNCTIONS/ANSWERS.md) | Available |
+| 20 | [Testing, Deployment and Capstone](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/README.md) | [Questions](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/QUESTIONS.md) | [Answers](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/ANSWERS.md) | Available |
 
 **Start here for Class 02 syntax:** [INSERT, INTO, VALUES, PRIMARY KEY, IDENTITY and OVERRIDING explained word by word](./02-CREATING-TABLES-AND-INSERTING-DATA/00-READ-FIRST-SQL-KEYWORDS.md).
 
