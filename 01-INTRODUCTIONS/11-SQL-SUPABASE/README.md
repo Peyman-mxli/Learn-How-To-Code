@@ -14,7 +14,7 @@
 
 This course teaches the fundamentals of relational databases and SQL before introducing Supabase backend services, authentication, authorization, and secure application development.
 
-The aim is to understand *why* each technology and command is used—not merely to copy queries. Every lesson includes conceptual explanations, code walkthroughs, ProTrack MX examples, practice activities, and review questions.
+The aim is to understand *why* each technology and command is used—not merely to copy queries. Every lesson includes conceptual explanations, code walkthroughs, ProTrack MX examples, practice activities, and review questions. **Every class now also has a separate practical LAB.md file** with expected outputs, a troubleshooting exercise and a safety check.
 
 **ProTrack MX case study:** A teacher-facing platform that may manage educators, classes, students, attendance, configurable evaluation criteria, assignments, and grades. Examples in this course are **illustrative learning models**, not claims about the actual production schema.
 
@@ -35,46 +35,46 @@ By the end of the 35-class track, learners should be able to:
 
 All thirty-five classes have been documented in English. Work through them **one at a time**, learning every keyword before attempting the next lesson. Completion of the files does not mean the student has completed each assessment.
 
-| Class | Lesson | Questions | Answers | Documentation |
-| --- | --- | --- | --- | --- |
-| 01 | [Database & SQL Basics](./01-DATABASE-AND-SQL-BASICS/README.md) | [Questions](./01-DATABASE-AND-SQL-BASICS/QUESTIONS.md) | [Answers](./01-DATABASE-AND-SQL-BASICS/ANSWERS.md) | Available |
-| 02 | [Creating Tables and Inserting Data](./02-CREATING-TABLES-AND-INSERTING-DATA/README.md) | [Questions](./02-CREATING-TABLES-AND-INSERTING-DATA/QUESTIONS.md) | [Answers](./02-CREATING-TABLES-AND-INSERTING-DATA/ANSWERS.md) | Available |
-| 03 | [Querying and Filtering](./03-QUERYING-AND-FILTERING/README.md) | [Questions](./03-QUERYING-AND-FILTERING/QUESTIONS.md) | [Answers](./03-QUERYING-AND-FILTERING/ANSWERS.md) | Available |
-| 04 | [Updating, Deleting, and Transactions](./04-UPDATING-DELETING-TRANSACTIONS/README.md) | [Questions](./04-UPDATING-DELETING-TRANSACTIONS/QUESTIONS.md) | [Answers](./04-UPDATING-DELETING-TRANSACTIONS/ANSWERS.md) | Available |
-| 05 | [Relational Design](./05-RELATIONAL-DESIGN/README.md) | [Questions](./05-RELATIONAL-DESIGN/QUESTIONS.md) | [Answers](./05-RELATIONAL-DESIGN/ANSWERS.md) | Available |
-| 06 | [PostgreSQL Essentials](./06-POSTGRESQL-ESSENTIALS/README.md) | [Questions](./06-POSTGRESQL-ESSENTIALS/QUESTIONS.md) | [Answers](./06-POSTGRESQL-ESSENTIALS/ANSWERS.md) | Available |
-| 07 | [Supabase Foundations](./07-SUPABASE-FOUNDATIONS/README.md) | [Questions](./07-SUPABASE-FOUNDATIONS/QUESTIONS.md) | [Answers](./07-SUPABASE-FOUNDATIONS/ANSWERS.md) | Available |
-| 08 | [Authentication and Profiles](./08-AUTHENTICATION-AND-PROFILES/README.md) | [Questions](./08-AUTHENTICATION-AND-PROFILES/QUESTIONS.md) | [Answers](./08-AUTHENTICATION-AND-PROFILES/ANSWERS.md) | Available |
-| 09 | [Authorization and RLS](./09-AUTHORIZATION-AND-RLS/README.md) | [Questions](./09-AUTHORIZATION-AND-RLS/QUESTIONS.md) | [Answers](./09-AUTHORIZATION-AND-RLS/ANSWERS.md) | Available |
-| 10 | [ProTrack MX Integration](./10-PROTRACK-MX-INTEGRATION/README.md) | [Questions](./10-PROTRACK-MX-INTEGRATION/QUESTIONS.md) | [Answers](./10-PROTRACK-MX-INTEGRATION/ANSWERS.md) | Available |
+| Class | Lesson | Practical Lab | Questions | Answers | Documentation |
+| --- | --- | --- | --- | --- | --- |
+| 01 | [Database & SQL Basics](./01-DATABASE-AND-SQL-BASICS/README.md) | [Lab](./01-DATABASE-AND-SQL-BASICS/LAB.md) | [Questions](./01-DATABASE-AND-SQL-BASICS/QUESTIONS.md) | [Answers](./01-DATABASE-AND-SQL-BASICS/ANSWERS.md) | Available |
+| 02 | [Creating Tables and Inserting Data](./02-CREATING-TABLES-AND-INSERTING-DATA/README.md) | [Lab](./02-CREATING-TABLES-AND-INSERTING-DATA/LAB.md) | [Questions](./02-CREATING-TABLES-AND-INSERTING-DATA/QUESTIONS.md) | [Answers](./02-CREATING-TABLES-AND-INSERTING-DATA/ANSWERS.md) | Available |
+| 03 | [Querying and Filtering](./03-QUERYING-AND-FILTERING/README.md) | [Lab](./03-QUERYING-AND-FILTERING/LAB.md) | [Questions](./03-QUERYING-AND-FILTERING/QUESTIONS.md) | [Answers](./03-QUERYING-AND-FILTERING/ANSWERS.md) | Available |
+| 04 | [Updating, Deleting, and Transactions](./04-UPDATING-DELETING-TRANSACTIONS/README.md) | [Lab](./04-UPDATING-DELETING-TRANSACTIONS/LAB.md) | [Questions](./04-UPDATING-DELETING-TRANSACTIONS/QUESTIONS.md) | [Answers](./04-UPDATING-DELETING-TRANSACTIONS/ANSWERS.md) | Available |
+| 05 | [Relational Design](./05-RELATIONAL-DESIGN/README.md) | [Lab](./05-RELATIONAL-DESIGN/LAB.md) | [Questions](./05-RELATIONAL-DESIGN/QUESTIONS.md) | [Answers](./05-RELATIONAL-DESIGN/ANSWERS.md) | Available |
+| 06 | [PostgreSQL Essentials](./06-POSTGRESQL-ESSENTIALS/README.md) | [Lab](./06-POSTGRESQL-ESSENTIALS/LAB.md) | [Questions](./06-POSTGRESQL-ESSENTIALS/QUESTIONS.md) | [Answers](./06-POSTGRESQL-ESSENTIALS/ANSWERS.md) | Available |
+| 07 | [Supabase Foundations](./07-SUPABASE-FOUNDATIONS/README.md) | [Lab](./07-SUPABASE-FOUNDATIONS/LAB.md) | [Questions](./07-SUPABASE-FOUNDATIONS/QUESTIONS.md) | [Answers](./07-SUPABASE-FOUNDATIONS/ANSWERS.md) | Available |
+| 08 | [Authentication and Profiles](./08-AUTHENTICATION-AND-PROFILES/README.md) | [Lab](./08-AUTHENTICATION-AND-PROFILES/LAB.md) | [Questions](./08-AUTHENTICATION-AND-PROFILES/QUESTIONS.md) | [Answers](./08-AUTHENTICATION-AND-PROFILES/ANSWERS.md) | Available |
+| 09 | [Authorization and RLS](./09-AUTHORIZATION-AND-RLS/README.md) | [Lab](./09-AUTHORIZATION-AND-RLS/LAB.md) | [Questions](./09-AUTHORIZATION-AND-RLS/QUESTIONS.md) | [Answers](./09-AUTHORIZATION-AND-RLS/ANSWERS.md) | Available |
+| 10 | [ProTrack MX Integration](./10-PROTRACK-MX-INTEGRATION/README.md) | [Lab](./10-PROTRACK-MX-INTEGRATION/LAB.md) | [Questions](./10-PROTRACK-MX-INTEGRATION/QUESTIONS.md) | [Answers](./10-PROTRACK-MX-INTEGRATION/ANSWERS.md) | Available |
 
-| 11 | [JOINs and Relationships](./11-JOINS-AND-RELATIONSHIPS/README.md) | [Questions](./11-JOINS-AND-RELATIONSHIPS/QUESTIONS.md) | [Answers](./11-JOINS-AND-RELATIONSHIPS/ANSWERS.md) | Available |
-| 12 | [Aggregation and GROUP BY](./12-AGGREGATION-AND-GROUP-BY/README.md) | [Questions](./12-AGGREGATION-AND-GROUP-BY/QUESTIONS.md) | [Answers](./12-AGGREGATION-AND-GROUP-BY/ANSWERS.md) | Available |
-| 13 | [Subqueries and CTEs](./13-SUBQUERIES-AND-CTES/README.md) | [Questions](./13-SUBQUERIES-AND-CTES/QUESTIONS.md) | [Answers](./13-SUBQUERIES-AND-CTES/ANSWERS.md) | Available |
-| 14 | [Conflicts and UPSERTs](./14-CONFLICTS-AND-UPSERTS/README.md) | [Questions](./14-CONFLICTS-AND-UPSERTS/QUESTIONS.md) | [Answers](./14-CONFLICTS-AND-UPSERTS/ANSWERS.md) | Available |
-| 15 | [Migrations and ALTER TABLE](./15-MIGRATIONS-AND-ALTER-TABLE/README.md) | [Questions](./15-MIGRATIONS-AND-ALTER-TABLE/QUESTIONS.md) | [Answers](./15-MIGRATIONS-AND-ALTER-TABLE/ANSWERS.md) | Available |
-| 16 | [Indexes and Query Plans](./16-INDEXES-AND-QUERY-PLANS/README.md) | [Questions](./16-INDEXES-AND-QUERY-PLANS/QUESTIONS.md) | [Answers](./16-INDEXES-AND-QUERY-PLANS/ANSWERS.md) | Available |
-| 17 | [SQL Functions and Triggers](./17-SQL-FUNCTIONS-AND-TRIGGERS/README.md) | [Questions](./17-SQL-FUNCTIONS-AND-TRIGGERS/QUESTIONS.md) | [Answers](./17-SQL-FUNCTIONS-AND-TRIGGERS/ANSWERS.md) | Available |
-| 18 | [Supabase Storage](./18-SUPABASE-STORAGE/README.md) | [Questions](./18-SUPABASE-STORAGE/QUESTIONS.md) | [Answers](./18-SUPABASE-STORAGE/ANSWERS.md) | Available |
-| 19 | [Realtime and Edge Functions](./19-REALTIME-AND-EDGE-FUNCTIONS/README.md) | [Questions](./19-REALTIME-AND-EDGE-FUNCTIONS/QUESTIONS.md) | [Answers](./19-REALTIME-AND-EDGE-FUNCTIONS/ANSWERS.md) | Available |
-| 20 | [Testing, Deployment and Capstone](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/README.md) | [Questions](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/QUESTIONS.md) | [Answers](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/ANSWERS.md) | Available |
+| 11 | [JOINs and Relationships](./11-JOINS-AND-RELATIONSHIPS/README.md) | [Lab](./11-JOINS-AND-RELATIONSHIPS/LAB.md) | [Questions](./11-JOINS-AND-RELATIONSHIPS/QUESTIONS.md) | [Answers](./11-JOINS-AND-RELATIONSHIPS/ANSWERS.md) | Available |
+| 12 | [Aggregation and GROUP BY](./12-AGGREGATION-AND-GROUP-BY/README.md) | [Lab](./12-AGGREGATION-AND-GROUP-BY/LAB.md) | [Questions](./12-AGGREGATION-AND-GROUP-BY/QUESTIONS.md) | [Answers](./12-AGGREGATION-AND-GROUP-BY/ANSWERS.md) | Available |
+| 13 | [Subqueries and CTEs](./13-SUBQUERIES-AND-CTES/README.md) | [Lab](./13-SUBQUERIES-AND-CTES/LAB.md) | [Questions](./13-SUBQUERIES-AND-CTES/QUESTIONS.md) | [Answers](./13-SUBQUERIES-AND-CTES/ANSWERS.md) | Available |
+| 14 | [Conflicts and UPSERTs](./14-CONFLICTS-AND-UPSERTS/README.md) | [Lab](./14-CONFLICTS-AND-UPSERTS/LAB.md) | [Questions](./14-CONFLICTS-AND-UPSERTS/QUESTIONS.md) | [Answers](./14-CONFLICTS-AND-UPSERTS/ANSWERS.md) | Available |
+| 15 | [Migrations and ALTER TABLE](./15-MIGRATIONS-AND-ALTER-TABLE/README.md) | [Lab](./15-MIGRATIONS-AND-ALTER-TABLE/LAB.md) | [Questions](./15-MIGRATIONS-AND-ALTER-TABLE/QUESTIONS.md) | [Answers](./15-MIGRATIONS-AND-ALTER-TABLE/ANSWERS.md) | Available |
+| 16 | [Indexes and Query Plans](./16-INDEXES-AND-QUERY-PLANS/README.md) | [Lab](./16-INDEXES-AND-QUERY-PLANS/LAB.md) | [Questions](./16-INDEXES-AND-QUERY-PLANS/QUESTIONS.md) | [Answers](./16-INDEXES-AND-QUERY-PLANS/ANSWERS.md) | Available |
+| 17 | [SQL Functions and Triggers](./17-SQL-FUNCTIONS-AND-TRIGGERS/README.md) | [Lab](./17-SQL-FUNCTIONS-AND-TRIGGERS/LAB.md) | [Questions](./17-SQL-FUNCTIONS-AND-TRIGGERS/QUESTIONS.md) | [Answers](./17-SQL-FUNCTIONS-AND-TRIGGERS/ANSWERS.md) | Available |
+| 18 | [Supabase Storage](./18-SUPABASE-STORAGE/README.md) | [Lab](./18-SUPABASE-STORAGE/LAB.md) | [Questions](./18-SUPABASE-STORAGE/QUESTIONS.md) | [Answers](./18-SUPABASE-STORAGE/ANSWERS.md) | Available |
+| 19 | [Realtime and Edge Functions](./19-REALTIME-AND-EDGE-FUNCTIONS/README.md) | [Lab](./19-REALTIME-AND-EDGE-FUNCTIONS/LAB.md) | [Questions](./19-REALTIME-AND-EDGE-FUNCTIONS/QUESTIONS.md) | [Answers](./19-REALTIME-AND-EDGE-FUNCTIONS/ANSWERS.md) | Available |
+| 20 | [Testing, Deployment and Capstone](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/README.md) | [Lab](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/LAB.md) | [Questions](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/QUESTIONS.md) | [Answers](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/ANSWERS.md) | Available |
 
-| 21 | [Window Functions and Rankings](./21-WINDOW-FUNCTIONS/README.md) | [Questions](./21-WINDOW-FUNCTIONS/QUESTIONS.md) | [Answers](./21-WINDOW-FUNCTIONS/ANSWERS.md) | Available |
-| 22 | [Dates, Times, and Time Zones](./22-DATES-TIMES-AND-TIMEZONES/README.md) | [Questions](./22-DATES-TIMES-AND-TIMEZONES/QUESTIONS.md) | [Answers](./22-DATES-TIMES-AND-TIMEZONES/ANSWERS.md) | Available |
-| 23 | [JSONB and Flexible Data](./23-JSONB-AND-FLEXIBLE-DATA/README.md) | [Questions](./23-JSONB-AND-FLEXIBLE-DATA/QUESTIONS.md) | [Answers](./23-JSONB-AND-FLEXIBLE-DATA/ANSWERS.md) | Available |
-| 24 | [Concurrency and Locking](./24-CONCURRENCY-AND-LOCKING/README.md) | [Questions](./24-CONCURRENCY-AND-LOCKING/QUESTIONS.md) | [Answers](./24-CONCURRENCY-AND-LOCKING/ANSWERS.md) | Available |
-| 25 | [Backups and Recovery](./25-BACKUPS-AND-RECOVERY/README.md) | [Questions](./25-BACKUPS-AND-RECOVERY/QUESTIONS.md) | [Answers](./25-BACKUPS-AND-RECOVERY/ANSWERS.md) | Available |
-| 26 | [Security Auditing](./26-SECURITY-AUDITING/README.md) | [Questions](./26-SECURITY-AUDITING/QUESTIONS.md) | [Answers](./26-SECURITY-AUDITING/ANSWERS.md) | Available |
-| 27 | [Validation and Grading Rules](./27-VALIDATION-AND-GRADING-RULES/README.md) | [Questions](./27-VALIDATION-AND-GRADING-RULES/QUESTIONS.md) | [Answers](./27-VALIDATION-AND-GRADING-RULES/ANSWERS.md) | Available |
-| 28 | [Pagination and API Design](./28-PAGINATION-AND-API-DESIGN/README.md) | [Questions](./28-PAGINATION-AND-API-DESIGN/QUESTIONS.md) | [Answers](./28-PAGINATION-AND-API-DESIGN/ANSWERS.md) | Available |
-| 29 | [Monitoring and Troubleshooting](./29-MONITORING-AND-TROUBLESHOOTING/README.md) | [Questions](./29-MONITORING-AND-TROUBLESHOOTING/QUESTIONS.md) | [Answers](./29-MONITORING-AND-TROUBLESHOOTING/ANSWERS.md) | Available |
-| 30 | [End-to-End ProTrack MX Capstone](./30-END-TO-END-PROTRACK-MX-CAPSTONE/README.md) | [Questions](./30-END-TO-END-PROTRACK-MX-CAPSTONE/QUESTIONS.md) | [Answers](./30-END-TO-END-PROTRACK-MX-CAPSTONE/ANSWERS.md) | Available |
+| 21 | [Window Functions and Rankings](./21-WINDOW-FUNCTIONS/README.md) | [Lab](./21-WINDOW-FUNCTIONS/LAB.md) | [Questions](./21-WINDOW-FUNCTIONS/QUESTIONS.md) | [Answers](./21-WINDOW-FUNCTIONS/ANSWERS.md) | Available |
+| 22 | [Dates, Times, and Time Zones](./22-DATES-TIMES-AND-TIMEZONES/README.md) | [Lab](./22-DATES-TIMES-AND-TIMEZONES/LAB.md) | [Questions](./22-DATES-TIMES-AND-TIMEZONES/QUESTIONS.md) | [Answers](./22-DATES-TIMES-AND-TIMEZONES/ANSWERS.md) | Available |
+| 23 | [JSONB and Flexible Data](./23-JSONB-AND-FLEXIBLE-DATA/README.md) | [Lab](./23-JSONB-AND-FLEXIBLE-DATA/LAB.md) | [Questions](./23-JSONB-AND-FLEXIBLE-DATA/QUESTIONS.md) | [Answers](./23-JSONB-AND-FLEXIBLE-DATA/ANSWERS.md) | Available |
+| 24 | [Concurrency and Locking](./24-CONCURRENCY-AND-LOCKING/README.md) | [Lab](./24-CONCURRENCY-AND-LOCKING/LAB.md) | [Questions](./24-CONCURRENCY-AND-LOCKING/QUESTIONS.md) | [Answers](./24-CONCURRENCY-AND-LOCKING/ANSWERS.md) | Available |
+| 25 | [Backups and Recovery](./25-BACKUPS-AND-RECOVERY/README.md) | [Lab](./25-BACKUPS-AND-RECOVERY/LAB.md) | [Questions](./25-BACKUPS-AND-RECOVERY/QUESTIONS.md) | [Answers](./25-BACKUPS-AND-RECOVERY/ANSWERS.md) | Available |
+| 26 | [Security Auditing](./26-SECURITY-AUDITING/README.md) | [Lab](./26-SECURITY-AUDITING/LAB.md) | [Questions](./26-SECURITY-AUDITING/QUESTIONS.md) | [Answers](./26-SECURITY-AUDITING/ANSWERS.md) | Available |
+| 27 | [Validation and Grading Rules](./27-VALIDATION-AND-GRADING-RULES/README.md) | [Lab](./27-VALIDATION-AND-GRADING-RULES/LAB.md) | [Questions](./27-VALIDATION-AND-GRADING-RULES/QUESTIONS.md) | [Answers](./27-VALIDATION-AND-GRADING-RULES/ANSWERS.md) | Available |
+| 28 | [Pagination and API Design](./28-PAGINATION-AND-API-DESIGN/README.md) | [Lab](./28-PAGINATION-AND-API-DESIGN/LAB.md) | [Questions](./28-PAGINATION-AND-API-DESIGN/QUESTIONS.md) | [Answers](./28-PAGINATION-AND-API-DESIGN/ANSWERS.md) | Available |
+| 29 | [Monitoring and Troubleshooting](./29-MONITORING-AND-TROUBLESHOOTING/README.md) | [Lab](./29-MONITORING-AND-TROUBLESHOOTING/LAB.md) | [Questions](./29-MONITORING-AND-TROUBLESHOOTING/QUESTIONS.md) | [Answers](./29-MONITORING-AND-TROUBLESHOOTING/ANSWERS.md) | Available |
+| 30 | [End-to-End ProTrack MX Capstone](./30-END-TO-END-PROTRACK-MX-CAPSTONE/README.md) | [Lab](./30-END-TO-END-PROTRACK-MX-CAPSTONE/LAB.md) | [Questions](./30-END-TO-END-PROTRACK-MX-CAPSTONE/QUESTIONS.md) | [Answers](./30-END-TO-END-PROTRACK-MX-CAPSTONE/ANSWERS.md) | Available |
 
-| 31 | [SQL Operators and CASE](./31-SQL-OPERATORS-AND-EXPRESSIONS/README.md) | [Questions](./31-SQL-OPERATORS-AND-EXPRESSIONS/QUESTIONS.md) | [Answers](./31-SQL-OPERATORS-AND-EXPRESSIONS/ANSWERS.md) | Available |
-| 32 | [Advanced Normalization](./32-ADVANCED-DATABASE-NORMALIZATION/README.md) | [Questions](./32-ADVANCED-DATABASE-NORMALIZATION/QUESTIONS.md) | [Answers](./32-ADVANCED-DATABASE-NORMALIZATION/ANSWERS.md) | Available |
-| 33 | [Supabase CLI and Local Development](./33-SUPABASE-CLI-AND-LOCAL-DEV/README.md) | [Questions](./33-SUPABASE-CLI-AND-LOCAL-DEV/QUESTIONS.md) | [Answers](./33-SUPABASE-CLI-AND-LOCAL-DEV/ANSWERS.md) | Available |
-| 34 | [Automated Database Testing](./34-AUTOMATED-DATABASE-TESTING/README.md) | [Questions](./34-AUTOMATED-DATABASE-TESTING/QUESTIONS.md) | [Answers](./34-AUTOMATED-DATABASE-TESTING/ANSWERS.md) | Available |
-| 35 | [Backend Architecture and Secrets](./35-BACKEND-ARCHITECTURE-AND-SECRETS/README.md) | [Questions](./35-BACKEND-ARCHITECTURE-AND-SECRETS/QUESTIONS.md) | [Answers](./35-BACKEND-ARCHITECTURE-AND-SECRETS/ANSWERS.md) | Available |
+| 31 | [SQL Operators and CASE](./31-SQL-OPERATORS-AND-EXPRESSIONS/README.md) | [Lab](./31-SQL-OPERATORS-AND-EXPRESSIONS/LAB.md) | [Questions](./31-SQL-OPERATORS-AND-EXPRESSIONS/QUESTIONS.md) | [Answers](./31-SQL-OPERATORS-AND-EXPRESSIONS/ANSWERS.md) | Available |
+| 32 | [Advanced Normalization](./32-ADVANCED-DATABASE-NORMALIZATION/README.md) | [Lab](./32-ADVANCED-DATABASE-NORMALIZATION/LAB.md) | [Questions](./32-ADVANCED-DATABASE-NORMALIZATION/QUESTIONS.md) | [Answers](./32-ADVANCED-DATABASE-NORMALIZATION/ANSWERS.md) | Available |
+| 33 | [Supabase CLI and Local Development](./33-SUPABASE-CLI-AND-LOCAL-DEV/README.md) | [Lab](./33-SUPABASE-CLI-AND-LOCAL-DEV/LAB.md) | [Questions](./33-SUPABASE-CLI-AND-LOCAL-DEV/QUESTIONS.md) | [Answers](./33-SUPABASE-CLI-AND-LOCAL-DEV/ANSWERS.md) | Available |
+| 34 | [Automated Database Testing](./34-AUTOMATED-DATABASE-TESTING/README.md) | [Lab](./34-AUTOMATED-DATABASE-TESTING/LAB.md) | [Questions](./34-AUTOMATED-DATABASE-TESTING/QUESTIONS.md) | [Answers](./34-AUTOMATED-DATABASE-TESTING/ANSWERS.md) | Available |
+| 35 | [Backend Architecture and Secrets](./35-BACKEND-ARCHITECTURE-AND-SECRETS/README.md) | [Lab](./35-BACKEND-ARCHITECTURE-AND-SECRETS/LAB.md) | [Questions](./35-BACKEND-ARCHITECTURE-AND-SECRETS/QUESTIONS.md) | [Answers](./35-BACKEND-ARCHITECTURE-AND-SECRETS/ANSWERS.md) | Available |
 
 **Start here for Class 02 syntax:** [INSERT, INTO, VALUES, PRIMARY KEY, IDENTITY and OVERRIDING explained word by word](./02-CREATING-TABLES-AND-INSERTING-DATA/00-READ-FIRST-SQL-KEYWORDS.md).
 
