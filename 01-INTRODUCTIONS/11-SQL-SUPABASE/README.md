@@ -33,20 +33,22 @@ By the end of the track, learners should be able to:
 
 ## Course Roadmap
 
-| Class | Topic | Key Concepts | Status |
-| --- | --- | --- | --- |
-| [01](./01-DATABASE-AND-SQL-BASICS/README.md) | Database & SQL Basics | Database, tables, rows, columns, SELECT | Available |
-| 02 | Create Tables & Insert Data | CREATE TABLE, types, primary keys, INSERT | Planned |
-| 03 | Query and Filter Records | SELECT, WHERE, ORDER BY, LIMIT | Planned |
-| 04 | Updating and Deleting Data | UPDATE, DELETE, transactions, safe WHERE | Planned |
-| 05 | Relational Database Design | Relationships, foreign keys, normalization | Planned |
-| 06 | PostgreSQL Essentials | Constraints, indexes, schemas, useful functions | Planned |
-| 07 | Supabase Foundations | Dashboard, projects, environments, database APIs | Planned |
-| 08 | Authentication and Profiles | Supabase Auth, user sessions, profiles | Planned |
-| 09 | Authorization and RLS | GRANT, REVOKE, roles, policies, testing | Planned |
-| 10 | Connecting ProTrack MX | Client SDK, CRUD, safe access, review project | Planned |
+All ten classes have been documented in English. Work through them **one at a time**, learning every keyword before attempting the next lesson. Completion of the files does not mean the student has completed each assessment.
 
-Future lessons will be added as separate numbered directories. Their topics may be refined as learning progresses.
+| Class | Lesson | Questions | Answers | Documentation |
+| --- | --- | --- | --- | --- |
+| 01 | [Database & SQL Basics](./01-DATABASE-AND-SQL-BASICS/README.md) | [Questions](./01-DATABASE-AND-SQL-BASICS/QUESTIONS.md) | [Answers](./01-DATABASE-AND-SQL-BASICS/ANSWERS.md) | Available |
+| 02 | [Creating Tables and Inserting Data](./02-CREATING-TABLES-AND-INSERTING-DATA/README.md) | [Questions](./02-CREATING-TABLES-AND-INSERTING-DATA/QUESTIONS.md) | [Answers](./02-CREATING-TABLES-AND-INSERTING-DATA/ANSWERS.md) | Available |
+| 03 | [Querying and Filtering](./03-QUERYING-AND-FILTERING/README.md) | [Questions](./03-QUERYING-AND-FILTERING/QUESTIONS.md) | [Answers](./03-QUERYING-AND-FILTERING/ANSWERS.md) | Available |
+| 04 | [Updating, Deleting, and Transactions](./04-UPDATING-DELETING-TRANSACTIONS/README.md) | [Questions](./04-UPDATING-DELETING-TRANSACTIONS/QUESTIONS.md) | [Answers](./04-UPDATING-DELETING-TRANSACTIONS/ANSWERS.md) | Available |
+| 05 | [Relational Design](./05-RELATIONAL-DESIGN/README.md) | [Questions](./05-RELATIONAL-DESIGN/QUESTIONS.md) | [Answers](./05-RELATIONAL-DESIGN/ANSWERS.md) | Available |
+| 06 | [PostgreSQL Essentials](./06-POSTGRESQL-ESSENTIALS/README.md) | [Questions](./06-POSTGRESQL-ESSENTIALS/QUESTIONS.md) | [Answers](./06-POSTGRESQL-ESSENTIALS/ANSWERS.md) | Available |
+| 07 | [Supabase Foundations](./07-SUPABASE-FOUNDATIONS/README.md) | [Questions](./07-SUPABASE-FOUNDATIONS/QUESTIONS.md) | [Answers](./07-SUPABASE-FOUNDATIONS/ANSWERS.md) | Available |
+| 08 | [Authentication and Profiles](./08-AUTHENTICATION-AND-PROFILES/README.md) | [Questions](./08-AUTHENTICATION-AND-PROFILES/QUESTIONS.md) | [Answers](./08-AUTHENTICATION-AND-PROFILES/ANSWERS.md) | Available |
+| 09 | [Authorization and RLS](./09-AUTHORIZATION-AND-RLS/README.md) | [Questions](./09-AUTHORIZATION-AND-RLS/QUESTIONS.md) | [Answers](./09-AUTHORIZATION-AND-RLS/ANSWERS.md) | Available |
+| 10 | [ProTrack MX Integration](./10-PROTRACK-MX-INTEGRATION/README.md) | [Questions](./10-PROTRACK-MX-INTEGRATION/QUESTIONS.md) | [Answers](./10-PROTRACK-MX-INTEGRATION/ANSWERS.md) | Available |
+
+**Start here for Class 02 syntax:** [INSERT, INTO, VALUES, PRIMARY KEY, IDENTITY and OVERRIDING explained word by word](./02-CREATING-TABLES-AND-INSERTING-DATA/00-READ-FIRST-SQL-KEYWORDS.md).
 
 ## Folder Convention
 
