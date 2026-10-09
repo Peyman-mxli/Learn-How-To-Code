@@ -20,7 +20,7 @@ The aim is to understand *why* each technology and command is used—not merely 
 
 ## Learning Objectives
 
-By the end of the 30-class track, learners should be able to:
+By the end of the 35-class track, learners should be able to:
 
 1. Explain databases, tables, rows, columns, records, and relationships.
 2. Read and write SQL queries and understand the difference between querying and changing data.
@@ -33,7 +33,7 @@ By the end of the 30-class track, learners should be able to:
 
 ## Course Roadmap
 
-All thirty classes have been documented in English. Work through them **one at a time**, learning every keyword before attempting the next lesson. Completion of the files does not mean the student has completed each assessment.
+All thirty-five classes have been documented in English. Work through them **one at a time**, learning every keyword before attempting the next lesson. Completion of the files does not mean the student has completed each assessment.
 
 | Class | Lesson | Questions | Answers | Documentation |
 | --- | --- | --- | --- | --- |
@@ -69,6 +69,12 @@ All thirty classes have been documented in English. Work through them **one at a
 | 28 | [Pagination and API Design](./28-PAGINATION-AND-API-DESIGN/README.md) | [Questions](./28-PAGINATION-AND-API-DESIGN/QUESTIONS.md) | [Answers](./28-PAGINATION-AND-API-DESIGN/ANSWERS.md) | Available |
 | 29 | [Monitoring and Troubleshooting](./29-MONITORING-AND-TROUBLESHOOTING/README.md) | [Questions](./29-MONITORING-AND-TROUBLESHOOTING/QUESTIONS.md) | [Answers](./29-MONITORING-AND-TROUBLESHOOTING/ANSWERS.md) | Available |
 | 30 | [End-to-End ProTrack MX Capstone](./30-END-TO-END-PROTRACK-MX-CAPSTONE/README.md) | [Questions](./30-END-TO-END-PROTRACK-MX-CAPSTONE/QUESTIONS.md) | [Answers](./30-END-TO-END-PROTRACK-MX-CAPSTONE/ANSWERS.md) | Available |
+
+| 31 | [SQL Operators and CASE](./31-SQL-OPERATORS-AND-EXPRESSIONS/README.md) | [Questions](./31-SQL-OPERATORS-AND-EXPRESSIONS/QUESTIONS.md) | [Answers](./31-SQL-OPERATORS-AND-EXPRESSIONS/ANSWERS.md) | Available |
+| 32 | [Advanced Normalization](./32-ADVANCED-DATABASE-NORMALIZATION/README.md) | [Questions](./32-ADVANCED-DATABASE-NORMALIZATION/QUESTIONS.md) | [Answers](./32-ADVANCED-DATABASE-NORMALIZATION/ANSWERS.md) | Available |
+| 33 | [Supabase CLI and Local Development](./33-SUPABASE-CLI-AND-LOCAL-DEV/README.md) | [Questions](./33-SUPABASE-CLI-AND-LOCAL-DEV/QUESTIONS.md) | [Answers](./33-SUPABASE-CLI-AND-LOCAL-DEV/ANSWERS.md) | Available |
+| 34 | [Automated Database Testing](./34-AUTOMATED-DATABASE-TESTING/README.md) | [Questions](./34-AUTOMATED-DATABASE-TESTING/QUESTIONS.md) | [Answers](./34-AUTOMATED-DATABASE-TESTING/ANSWERS.md) | Available |
+| 35 | [Backend Architecture and Secrets](./35-BACKEND-ARCHITECTURE-AND-SECRETS/README.md) | [Questions](./35-BACKEND-ARCHITECTURE-AND-SECRETS/QUESTIONS.md) | [Answers](./35-BACKEND-ARCHITECTURE-AND-SECRETS/ANSWERS.md) | Available |
 
 **Start here for Class 02 syntax:** [INSERT, INTO, VALUES, PRIMARY KEY, IDENTITY and OVERRIDING explained word by word](./02-CREATING-TABLES-AND-INSERTING-DATA/00-READ-FIRST-SQL-KEYWORDS.md).
 
