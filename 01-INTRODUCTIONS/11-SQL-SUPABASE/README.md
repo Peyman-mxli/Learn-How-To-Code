@@ -20,7 +20,7 @@ The aim is to understand *why* each technology and command is used—not merely 
 
 ## Learning Objectives
 
-By the end of the 20-class track, learners should be able to:
+By the end of the 30-class track, learners should be able to:
 
 1. Explain databases, tables, rows, columns, records, and relationships.
 2. Read and write SQL queries and understand the difference between querying and changing data.
@@ -33,7 +33,7 @@ By the end of the 20-class track, learners should be able to:
 
 ## Course Roadmap
 
-All twenty classes have been documented in English. Work through them **one at a time**, learning every keyword before attempting the next lesson. Completion of the files does not mean the student has completed each assessment.
+All thirty classes have been documented in English. Work through them **one at a time**, learning every keyword before attempting the next lesson. Completion of the files does not mean the student has completed each assessment.
 
 | Class | Lesson | Questions | Answers | Documentation |
 | --- | --- | --- | --- | --- |
@@ -58,6 +58,17 @@ All twenty classes have been documented in English. Work through them **one at a
 | 18 | [Supabase Storage](./18-SUPABASE-STORAGE/README.md) | [Questions](./18-SUPABASE-STORAGE/QUESTIONS.md) | [Answers](./18-SUPABASE-STORAGE/ANSWERS.md) | Available |
 | 19 | [Realtime and Edge Functions](./19-REALTIME-AND-EDGE-FUNCTIONS/README.md) | [Questions](./19-REALTIME-AND-EDGE-FUNCTIONS/QUESTIONS.md) | [Answers](./19-REALTIME-AND-EDGE-FUNCTIONS/ANSWERS.md) | Available |
 | 20 | [Testing, Deployment and Capstone](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/README.md) | [Questions](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/QUESTIONS.md) | [Answers](./20-TESTING-DEPLOYMENT-AND-CAPSTONE/ANSWERS.md) | Available |
+
+| 21 | [Window Functions and Rankings](./21-WINDOW-FUNCTIONS/README.md) | [Questions](./21-WINDOW-FUNCTIONS/QUESTIONS.md) | [Answers](./21-WINDOW-FUNCTIONS/ANSWERS.md) | Available |
+| 22 | [Dates, Times, and Time Zones](./22-DATES-TIMES-AND-TIMEZONES/README.md) | [Questions](./22-DATES-TIMES-AND-TIMEZONES/QUESTIONS.md) | [Answers](./22-DATES-TIMES-AND-TIMEZONES/ANSWERS.md) | Available |
+| 23 | [JSONB and Flexible Data](./23-JSONB-AND-FLEXIBLE-DATA/README.md) | [Questions](./23-JSONB-AND-FLEXIBLE-DATA/QUESTIONS.md) | [Answers](./23-JSONB-AND-FLEXIBLE-DATA/ANSWERS.md) | Available |
+| 24 | [Concurrency and Locking](./24-CONCURRENCY-AND-LOCKING/README.md) | [Questions](./24-CONCURRENCY-AND-LOCKING/QUESTIONS.md) | [Answers](./24-CONCURRENCY-AND-LOCKING/ANSWERS.md) | Available |
+| 25 | [Backups and Recovery](./25-BACKUPS-AND-RECOVERY/README.md) | [Questions](./25-BACKUPS-AND-RECOVERY/QUESTIONS.md) | [Answers](./25-BACKUPS-AND-RECOVERY/ANSWERS.md) | Available |
+| 26 | [Security Auditing](./26-SECURITY-AUDITING/README.md) | [Questions](./26-SECURITY-AUDITING/QUESTIONS.md) | [Answers](./26-SECURITY-AUDITING/ANSWERS.md) | Available |
+| 27 | [Validation and Grading Rules](./27-VALIDATION-AND-GRADING-RULES/README.md) | [Questions](./27-VALIDATION-AND-GRADING-RULES/QUESTIONS.md) | [Answers](./27-VALIDATION-AND-GRADING-RULES/ANSWERS.md) | Available |
+| 28 | [Pagination and API Design](./28-PAGINATION-AND-API-DESIGN/README.md) | [Questions](./28-PAGINATION-AND-API-DESIGN/QUESTIONS.md) | [Answers](./28-PAGINATION-AND-API-DESIGN/ANSWERS.md) | Available |
+| 29 | [Monitoring and Troubleshooting](./29-MONITORING-AND-TROUBLESHOOTING/README.md) | [Questions](./29-MONITORING-AND-TROUBLESHOOTING/QUESTIONS.md) | [Answers](./29-MONITORING-AND-TROUBLESHOOTING/ANSWERS.md) | Available |
+| 30 | [End-to-End ProTrack MX Capstone](./30-END-TO-END-PROTRACK-MX-CAPSTONE/README.md) | [Questions](./30-END-TO-END-PROTRACK-MX-CAPSTONE/QUESTIONS.md) | [Answers](./30-END-TO-END-PROTRACK-MX-CAPSTONE/ANSWERS.md) | Available |
 
 **Start here for Class 02 syntax:** [INSERT, INTO, VALUES, PRIMARY KEY, IDENTITY and OVERRIDING explained word by word](./02-CREATING-TABLES-AND-INSERTING-DATA/00-READ-FIRST-SQL-KEYWORDS.md).
 
